@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Maria Poutiou
 
-Mentor: 
+Mentor: Mykola Kushka
