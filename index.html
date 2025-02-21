@@ -13,27 +13,35 @@
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <div>
-        <a href="#">
-          <img src="#" alt="Binabox-logo" />
+    <header class="header">
+      <div class="header-logo">
+        <a class="header-logo__link" href="#">
+          <img class="header-logo__image" src="#" alt="Binabox-logo" />
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog-article.html">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact us</a></li>
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Home</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="blog-article.html">Blog</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Catalog</a>
+          </li class="main-navigation__item">
+          <li>
+            <a class="main-navigation__link" href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <button>
-          <img src="#" alt="Discord" />
+      <div class="header-actions">
+        <button class="button header__button button--secondary">
+          <img class="header-button_img" src="#" alt="Discord" />
           Discord
         </button>
-        <button>
-          <img src="#" alt="Connect" />
+        <button class="button header__button button--primary">
+          <img class="header-button_img" src="#" alt="Connect" />
           Connect
         </button>
       </div>
@@ -525,58 +533,88 @@
     </main>
 
     <!--FOOTER-->
-    <footer>
-      <div>
-        <div>
-          <a href="#" title="Binabox">
-            <img src="#" alt="Binabox-logo" />
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-logo">
+          <a class="footer-logo__link" href="#" title="Binabox">
+            <img class="footer-logo__img" src="#" alt="Binabox-logo" />
           </a>
         </div>
-        <p>We are the best way to check the rarity of NFT collection</p>
+        <p class="footer__description">We are the best way to check the rarity of NFT collection</p>
       </div>
-      <div>
-        <nav>
-          <h5>Subscribe</h5>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Catalog</a></li>
-            <li><a href="#">Contact us</a></li>
+      <div class="footer__list-wrapper">
+        <nav class="footer-nav">
+          <h5 class="footer-nav__title">Subscribe</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item" >
+              <a class="footer-nav__link" href="#">Home</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Blog</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Catalog</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Contact us</a>
+            </li>
           </ul>
         </nav>
-        <nav>
-          <ul>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Terms Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Whitepaper</a></li>
-            <li><a href="#">Help Center</a></li>
+        <nav class="footer-nav">
+          <h5 class="footer-nav__title">Company</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Terms Conditions</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Whitepaper</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Help Center</a>
+            </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <div>
-          <p>BINABOX 2022 - All rights reserved</p>
+      <div class="footer-lower">
+        <div class="copyright">
+          <p class="copyright__text">BINABOX 2022 - All rights reserved</p>
         </div>
-        <div>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="#" alt="Instagram-logo" />
-          </a>
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="#" alt="Facebook-logo" />
-          </a>
-          <a href="https://web.telegram.org/k/" target="_blank">
-            <img src="#" alt="Telegram-logo" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="#" alt="YouTube-logo" />
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank">
-            <img src="#" alt="TikTok-logo" />
-          </a>
-          <a href="https://discord.com/" target="_blank">
-            <img src="#" alt="Discord-logo" />
-          </a>
+        <div class="social-media">
+          <ul class="social-media__list" >
+            <li class="social-media__list-item" >
+              <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Instagram-logo" /> 
+              </a>
+            </li>
+            <li class="social-media__list-item" >
+              <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Facebook-logo" />
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Telegram-logo" />
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.youtube.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="YouTube-logo" />
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.tiktok.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="TikTok-logo" />
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://discord.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Discord-logo" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
