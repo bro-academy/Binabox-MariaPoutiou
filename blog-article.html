@@ -14,27 +14,35 @@
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <div>
-        <a href="#" title="Binabox">
-          <img src="#" alt="Binabox-logo" />
+    <header class="header">
+      <div class="header-logo">
+        <a class="header-logo__link" href="#" title="Binabox">
+          <img class="header-logo__image" src="#" alt="Binabox-logo" />
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog-article.html">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact us</a></li>
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__list" href="index.html">Home</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__list" href="blog-article.html">Blog</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__list" href="#">Catalog</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__list" href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <button>
-          <img src="#" alt="Discord" />
+      <div class="header-actions">
+        <button class="button header__button button--secondary">
+          <img class="header-button_img" src="#" alt="Discord" />
           Discord
         </button>
-        <button>
-          <img src="#" alt="Connect" />
+        <button class="button header__button button--primary">
+          <img class="header-button_img" src="#" alt="Connect" />
           Connect
         </button>
       </div>
@@ -42,19 +50,21 @@
 
     <!--MAIN STARTS HERE-->
     <!--Hero Section-->
-    <main>
-      <section>
-        <h1>Our blog</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://vyfy8k.csb.app/">Home</a>
+    <main class="main">
+      <section class="hero-section hero-section--blog-article">
+        <h1 class="hero-section__blog-title">Our blog</h1>
+        <nav class="hero-section__nav">
+          <ul class="hero-section__list">
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="https://vyfy8k.csb.app/">Home</a>
             </li>
-            <li>
-              <a href="https://pqpj65.csb.app/">Our blog</a>
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="https://pqpj65.csb.app/">Our blog</a>
             </li>
-            <li>
-              <a href="#"><span style="color: gray">The Basilisks NFT</span></a>
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="#">
+                <span class="hero-section__word hero-section__word--blog-article">The Basilisks NFT</span>
+              </a>
             </li>
           </ul>
         </nav>
