@@ -20,29 +20,29 @@
           <img class="header-logo__image" src="#" alt="Binabox-logo" />
         </a>
       </div>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__list" href="index.html">Home</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Home</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__list" href="blog-article.html">Blog</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="blog-article.html">Blog</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__list" href="#">Catalog</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Catalog</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__list" href="#">Contact us</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contact us</a>
           </li>
         </ul>
       </nav>
       <div class="header-actions">
         <button class="button header__button button--secondary">
-          <img class="header-button_img" src="#" alt="Discord" />
+          <img class="header-button__img" src="#" alt="Discord" />
           Discord
         </button>
         <button class="button header__button button--primary">
-          <img class="header-button_img" src="#" alt="Connect" />
+          <img class="header-button__img" src="#" alt="Connect" />
           Connect
         </button>
       </div>
@@ -144,7 +144,7 @@
 
         <!--NFT EXPLANATION-->
         <h3 class="subarticle-title">NFTs are digital assets that represent real-world objects</h3>
-        <p class="subarticle_text">
+        <p class="subarticle__text">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -152,7 +152,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-        <p class="subarticle_text">
+        <p class="subarticle__text">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -161,12 +161,13 @@
           ecosystem.
         </p>
         <h3 class="subarticle-title">NFT AVATAR GENERATORS</h3>
-        <p class="subarticle_text">
+        <p class="subarticle__text">
           You can find a range of NFT marketplaces where you can buy existing
           NFTs or list your own NFTs for sale.
         </p>
         <div class="subarticle__wrapper subarticle__wrapper--tags">
           <p class="subarticle__tags-title"><strong>Tags:</strong></p>
+          <div class="tags tags--subarticle">
           <ul class="subarticle__tags-list">
             <li class="subarticle__tag">
               <a class="subarticle__tag-link" href="#">NFT</a>
@@ -178,6 +179,7 @@
               <a class="subarticle__tag-link" href="#">Crypto</a>
             </li>
           </ul>
+        </div>
         </div>
         <div class="subarticle__wrapper subarticle__wrapper--share">
           <p class="subarticle__share-title"><strong>Share:</strong></p>
@@ -235,6 +237,7 @@
         <!--SIDEBAR TAG-->
         <section class="aside__block aside__block--lower">
           <h4 class="aside__block-title">Tag</h4>
+          <div class="tags tags--sidebar">
           <ul class="aside__block-list aside__block-list--tags">
             <li class="aside__tag">
               <a class="aside__tag-link" href="#">NFT</a>
@@ -255,6 +258,7 @@
               <a class="aside__tag-link" href="#">Metaverse</a>
             </li>
           </ul>
+        </div>
         </section>
       </aside>
     </main>
@@ -309,7 +313,7 @@
         <div class="copyright">
           <p class="copyright__text">BINABOX 2022 - All rights reserved</p>
         </div>
-        <div class="social-media">
+        <div class="social-media social-media--footer">
           <ul class="social-media__list">
             <li class="social-media__list-item">
               <a class="social-media__link" href="https://www.instagram.com/" target="_blank">

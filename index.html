@@ -19,29 +19,29 @@
           <img class="header-logo__image" src="#" alt="Binabox-logo" />
         </a>
       </div>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html">Home</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Home</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="blog-article.html">Blog</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog-article.html">Blog</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Catalog</a>
-          </li class="main-navigation__item">
-          <li>
-            <a class="main-navigation__link" href="#">Contact us</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Catalog</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contact us</a>
           </li>
         </ul>
       </nav>
       <div class="header-actions">
         <button class="button header__button button--secondary">
-          <img class="header-button_img" src="#" alt="Discord" />
+          <img class="header-button__img" src="#" alt="Discord" />
           Discord
         </button>
         <button class="button header__button button--primary">
-          <img class="header-button_img" src="#" alt="Connect" />
+          <img class="header-button__img" src="#" alt="Connect" />
           Connect
         </button>
       </div>
@@ -77,7 +77,7 @@
       <!--CATALOG SECTION-->
       <section class="catalog-section" >
         <div class="catalog-header">
-        <h3 class="catalog__title" >Catalog</h3>
+        <h3 class="catalog__title">Catalog</h3>
         <img class="catalog__title-img" src="#" alt="folder-icon">
         <div class="catalog__controls">
           <button class="button-all catalog__button--all">See All</button>
@@ -88,40 +88,40 @@
         <ul class="product-wrapper">
           <li class="product-list__item">
             <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
               <img class="product-card__img" src="#" alt="skeleton" />
-              <h4 class="product-card__name">Name Product</h4>
               <p class="product-card__price">$199</p>
               <p class="product-label product-card__label">New</p>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
               <img class="product-card__img" src="#" alt="cat" />
-              <h4 class="product-card__name">Name Product</h4>
               <p class="product-card__price">$199</p>
               <p class="product-label product-card__label">New</p>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
-              <img class="product-card__img" src="#" alt="scissors" />
               <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="scissors" />
               <p class="product-card__price">$199</p>
               <p class="product-label product-card__label--updated">Sold Out</p>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
-              <img class="product-card__img" src="#" alt="neon-card" />
               <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="neon-card" />
               <p class="product-card__price">$199</p>
               <p class="product-label product-card__label">New</p>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
-              <img class="product-card__img" src="#" alt="console" />
               <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="console" />
               <p class="product-card__price">$199</p>
               <p class="product-label product-card__label">New</p>
             </article>
@@ -150,7 +150,7 @@
           <img class="blog-card__img" src="#" alt="monkey" />
           <p class="blog-card__label">NFT</p>
           <div class="blog-card__meta">
-            <img class="blog-card__author-icon"src="#" alt="person-icon" />
+            <img class="blog-card__author-icon" src="#" alt="person-icon" />
             <span class="blog-card__author">Tony Nguyen</span>
             <img class="blog-card__date-icon" src="#" alt="calendar" />
             <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
@@ -176,7 +176,7 @@
           <img class="blog-card__img" src="#" alt="skeleton" />
           <p class="blog-card__label">NFT</p>
           <div class="blog-card__meta">
-            <img class="blog-card__author-icon"src="#" alt="person-icon" />
+            <img class="blog-card__author-icon" src="#" alt="person-icon" />
             <span class="blog-card__author">Tony Nguyen</span>
             <img class="blog-card__date-icon" src="#" alt="calendar" />
             <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
@@ -189,7 +189,7 @@
           <img class="blog-card__img" src="#" alt="cat" />
           <p class="blog-card__label">NFT</p>
           <div class="blog-card__meta">
-            <img class="blog-card__author-icon"src="#" alt="person-icon" />
+            <img class="blog-card__author-icon" src="#" alt="person-icon" />
             <span class="blog-card__author">Tony Nguyen</span>
             <img class="blog-card__date-icon" src="#" alt="calendar" />
             <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
@@ -611,7 +611,7 @@
         <div class="copyright">
           <p class="copyright__text">BINABOX 2022 - All rights reserved</p>
         </div>
-        <div class="social-media">
+        <div class="social-media social-media--footer">
           <ul class="social-media__list" >
             <li class="social-media__list-item" >
               <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
