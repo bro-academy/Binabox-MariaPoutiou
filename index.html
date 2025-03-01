@@ -2,496 +2,511 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta
       name="description"
       content="BINABOX - The best way to check the 
     rarity of NFT collections. Discover, explore, and analyze NFTs easily."
     />
     <title>BINABOX - NFT Rarity Checker</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <div>
-        <a href="#">
-          <img src="#" alt="Binabox-logo" />
+    <header class="header">
+      <div class="header-logo">
+        <a class="header-logo__link" href="#">
+          <img class="header-logo__image" src="#" alt="Binabox-logo"/>
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog-article.html">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact us</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog-article.html">Blog</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Catalog</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <button>
-          <img src="#" alt="Discord" />
+      <div class="header-actions">
+        <button class="button header__button button--secondary">
+          <img class="header-button__img" src="#" alt="Discord"/>
           Discord
         </button>
-        <button>
-          <img src="#" alt="Connect" />
+        <button class="button header__button button--primary">
+          <img class="header-button__img" src="#" alt="Connect"/>
           Connect
         </button>
       </div>
     </header>
 
     <!--MAIN STARTS HERE-->
-    <main>
-      <section>
-        <h1>WITH BINABOX EXPLORE NFT COLLECTION</h1>
-        <h2>
+    <main class="main">
+      <section class="hero-section hero-section--homepage">
+        <h1 class="hero-section__title">WITH <span class="hero-section__brand">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+        <h2 class="hero-section__description">
           We are the best way to check the rarity of NFT
-          <span style="color: gray">collection</span>
+          <span class="hero-section__word">collection</span>
         </h2>
-        <div>
-          <div>
-            <div>
-              <p>2240+</p>
-              <p>Total team</p>
+        <div class="hero-section__content">
+          <div class="hero-section__text-content">
+            <div class="hero-section__stats">
+              <p class="hero-section__stat-value">2240+</p>
+              <p class="hero-section__stat-label">Total team</p>
             </div>
-            <div>
-              <p>1000+</p>
-              <p>Profiles whitelisted</p>
+            <div class="hero-section__stats">
+              <p class="hero-section__stat-value">1000+</p>
+              <p class="hero-section__stat-label">Profiles whitelisted</p>
             </div>
           </div>
-          <div>
-            <button>Connect Wallet</button>
-            <button>Whitelist</button>
+          <div class="hero-section__buttons">
+            <button class="button hero-section__button hero-section__button--primary">Connect Wallet</button>
+            <button class="button hero-section__button hero-section__button--secondary">Whitelist</button>
           </div>
         </div>
-        <img src="#" alt="Binabox-Cube" />
+        <img class="hero-section__img" src="#" alt="Binabox-Cube"/>
       </section>
 
       <!--CATALOG SECTION-->
-      <section>
-        <h3>Catalog</h3>
-        <div>
-          <a href="#">See all</a>
-          <button>&lt;</button>
-          <button>&gt;</button>
+      <section class="catalog-section">
+        <div class="catalog-header">
+        <h3 class="section__title">Catalog</h3>
+        <img class="catalog__title-img" src="#" alt="folder-icon">
+        <div class="catalog__controls">
+          <button class="button-all catalog__button--all">See All</button>
+          <button class="button-prev catalog__button--prev">&lt;</button>
+          <button class="button-next catalog__button--next">&gt;</button>
         </div>
-        <ul>
-          <li>
-            <article>
-              <img src="#" alt="skeleton" />
-              <h4>Name Product</h4>
-              <p>$199</p>
-              <p>New</p>
+      </div>
+        <ul class="product-wrapper">
+          <li class="product-list__item">
+            <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="skeleton"/>
+              <p class="product-card__price">$199</p>
+              <p class="product-label">New</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="#" alt="cat" />
-              <h4>Name Product</h4>
-              <p>$199</p>
-              <p>New</p>
+          <li class="product-list__item">
+            <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="cat"/>
+              <p class="product-card__price">$199</p>
+              <p class="product-label">New</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="#" alt="scissors" />
-              <h4>Name Product</h4>
-              <p>$199</p>
-              <p>Sold Out</p>
+          <li class="product-list__item">
+            <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="scissors"/>
+              <p class="product-card__price">$199</p>
+              <p class="product-label product-label--updated">Sold Out</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="#" alt="neon-card" />
-              <h4>Name Product</h4>
-              <p>$199</p>
-              <p>New</p>
+          <li class="product-list__item">
+            <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="neon-card"/>
+              <p class="product-card__price">$199</p>
+              <p class="product-label">New</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="#" alt="console" />
-              <h4>Name Product</h4>
-              <p>$199</p>
-              <p>New</p>
+          <li class="product-list__item">
+            <article class="product-card">
+              <h4 class="product-card__name">Name Product</h4>
+              <img class="product-card__img" src="#" alt="console"/>
+              <p class="product-card__price">$199</p>
+              <p class="product-label">New</p>
             </article>
           </li>
         </ul>
       </section>
 
       <!--BLOG SECTION-->
-      <section>
-        <h3>Our blog</h3>
-        <article>
-          <img src="#" alt="face" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+      <section class="blog-section">
+        <h3 class="section__title">Our blog</h3>
+        <div class="blog-section__grid">
+        <article class="blog-card blog-card--large">
+          <img class="blog-card__img" src="#" alt="face"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description">One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <article>
-          <img src="#" alt="monkey" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+        <article class="blog-card blog-card--small">
+          <img class="blog-card__img" src="#" alt="monkey"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description"> One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <article>
-          <img src="#" alt="bird" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+        <article class="blog-card blog-card--small">
+          <img class="blog-card__img" src="#" alt="bird"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description">One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <article>
-          <img src="#" alt="skeleton" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+        <article class="blog-card blog-card--small">
+          <img class="blog-card__img" src="#" alt="skeleton"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description"> One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <article>
-          <img src="#" alt="cat" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+        <article class="blog-card blog-card--small">
+          <img class="blog-card__img" src="#" alt="cat"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description"> One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <article>
-          <img src="#" alt="rectangle-console" />
-          <p>NFT</p>
-          <div>
-            <img src="#" alt="person-icon" />
-            <span>Tony Nguyen</span>
-            <img src="#" alt="calendar" />
-            <time datetime="2022-06-20">20 Jun 2022</time>
+        <article class="blog-card blog-card--large">
+          <img class="blog-card__img" src="#" alt="rectangle-console"/>
+          <p class="blog-card__label">NFT</p>
+          <div class="blog-card__meta">
+            <img class="blog-card__author-icon" src="#" alt="person-icon"/>
+            <span class="blog-card__author">Tony Nguyen</span>
+            <img class="blog-card__date-icon" src="#" alt="calendar"/>
+            <time class="blog-card__date" datetime="2022-06-20">20 Jun 2022</time>
           </div>
-          <h4>Sonic Live</h4>
-          <p>One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
-          <a href="#">Read more ></a>
+          <h4 class="blog-card__title">Sonic Live</h4>
+          <p class="blog-card__description">One September 22, 2021 A volutpat nulla eros, nulla ultric</p>
+          <a class="blog-link" href="#">Read more ></a>
         </article>
-        <a href="#">Read more</a>
+      </div>
+      <div class="cta-more">
+        <a class="cta-more__link" href="#">Read more</a>
+      </div>
       </section>
 
       <!--ABOUT US SECTION-->
-      <section>
-        <h3>About us</h3>
-        <p>
+      <section class="about">
+        <h3 class="section__title">About us</h3>
+        <p class="about__description">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
           non proident, sunt in c ulpa qui officia dese runt mollit anim id est
           laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
           occaecat
         </p>
-        <ul>
-          <li>
-            <h4>High quality</h4>
-            <p>
+        <ul class="about-list">
+          <li class="about-list__item">
+            <h4 class="about-list__title">High quality</h4>
+            <p class="about-list__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li>
-            <h4>Big collection</h4>
-            <p>
+          <li class="about-list__item">
+            <h4 class="about-list__title">Big collection</h4>
+            <p class="about-list__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li>
-            <h4>Top resource</h4>
-            <p>
+          <li class="about-list__item">
+            <h4 class="about-list__title">Top resource</h4>
+            <p class="about-list__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li>
-            <h4>Big community</h4>
-            <p>
+          <li class="about-list__item">
+            <h4 class="about-list__title">Big community</h4>
+            <p class="about-list__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
         </ul>
-        <div>
-          <a href="#">Read more</a>
+        <div class="cta-more">
+          <a class="cta-more__link" href="#">Read more</a>
         </div>
       </section>
 
       <!-- OUR TEAM SECTION-->
-      <section>
-        <h3>Our team</h3>
-        <ul>
+      <section class="team">
+        <h3 class="section__title">Our team</h3>
+        <ul class="team__list">
           <!--team member1-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member2-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member3-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member4-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member5-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member6-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
           </li>
           <!--team member7-->
-          <li>
-            <div>
-              <img src="#" alt="jason-smith-picture" />
-              <h4>Jason Smith</h4>
-              <p>Co-Founder</p>
+          <li class="team-member">
+            <div class="team-member__details">
+              <img class="team-member__img" src="#" alt="jason-smith-picture"/>
+              <h4 class="team-member__name">Jason Smith</h4>
+              <p class="team-member__role">Co-Founder</p>
             </div>
-            <ul>
-              <li>
-                <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                  <img src="#" alt="twitter-logo" />
+            <ul class="social-media-list social-media-list--team">
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                  <img class="social-media__icon" src="#" alt="twitter-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img src="#" alt="facebook-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="facebook-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                  <img src="#" alt="telegram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="telegram-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="#" alt="LinkedIn-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="LinkedIn-logo"/>
                 </a>
               </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="#" alt="instagram-logo" />
+              <li class="social-media__list-item">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img class="social-media__icon" src="#" alt="instagram-logo"/>
                 </a>
               </li>
             </ul>
@@ -500,85 +515,121 @@
       </section>
 
       <!--FAQs SECTION-->
-      <section>
-        <h3>FAQs</h3>
-        <details>
-          <summary><h4>What are the NFTs?</h4></summary>
-          <p>
+      <section class="faqs">
+        <h3 class="section__title">FAQs</h3>
+        <details class="faqs__item">
+          <summary class="faqs__question">
+            <h4 class="faqs__question-text">What are the NFTs?</h4>
+          </summary>
+          <p class="faqs__answer">
             Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
             Nulla dapibus urna volutpat venenatis, risus faucibus.
           </p>
         </details>
-        <details>
-          <summary><h4>How do i get NFTs?</h4></summary>
-          <p>#</p>
+        <details class="faqs__item">
+          <summary class="faqs__question">
+            <h4 class="faqs__question-text">How do i get NFTs?</h4>
+          </summary>
+          <p class="faqs__answer">#</p>
         </details>
-        <details>
-          <summary><h4>How can we buy your NFTs</h4></summary>
-          <p>#</p>
+        <details class="faqs__item">
+          <summary class="faqs__question">
+            <h4 class="faqs__question-text">How can we buy your NFTs</h4>
+          </summary>
+          <p class="faqs__answer">#</p>
         </details>
-        <details>
-          <summary><h4>Who are the team behind the project</h4></summary>
-          <p>#</p>
+        <details class="faqs__item">
+          <summary class="faqs__question">
+            <h4 class="faqs__question-text">Who are the team behind the project</h4>
+          </summary>
+          <p class="faqs__answer">#</p>
         </details>
       </section>
     </main>
 
     <!--FOOTER-->
-    <footer>
-      <div>
-        <div>
-          <a href="#" title="Binabox">
-            <img src="#" alt="Binabox-logo" />
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-logo">
+          <a class="footer-logo__link" href="#" title="Binabox">
+            <img class="footer-logo__img" src="#" alt="Binabox-logo"/>
           </a>
         </div>
-        <p>We are the best way to check the rarity of NFT collection</p>
+        <p class="footer__description">We are the best way to check the rarity of NFT collection</p>
       </div>
-      <div>
-        <nav>
-          <h5>Subscribe</h5>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Catalog</a></li>
-            <li><a href="#">Contact us</a></li>
+      <div class="footer__list-wrapper">
+        <nav class="footer-nav">
+          <h5 class="footer-nav__title">Subscribe</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item" >
+              <a class="footer-nav__link" href="#">Home</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Blog</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Catalog</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Contact us</a>
+            </li>
           </ul>
         </nav>
-        <nav>
-          <ul>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Terms Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Whitepaper</a></li>
-            <li><a href="#">Help Center</a></li>
+        <nav class="footer-nav">
+          <h5 class="footer-nav__title">Company</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Terms Conditions</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Whitepaper</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a class="footer-nav__link" href="#">Help Center</a>
+            </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <div>
-          <p>BINABOX 2022 - All rights reserved</p>
+      <div class="footer-lower">
+        <div class="copyright">
+          <p class="copyright__text">BINABOX 2022 - All rights reserved</p>
         </div>
-        <div>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="#" alt="Instagram-logo" />
-          </a>
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="#" alt="Facebook-logo" />
-          </a>
-          <a href="https://web.telegram.org/k/" target="_blank">
-            <img src="#" alt="Telegram-logo" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="#" alt="YouTube-logo" />
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank">
-            <img src="#" alt="TikTok-logo" />
-          </a>
-          <a href="https://discord.com/" target="_blank">
-            <img src="#" alt="Discord-logo" />
-          </a>
+          <ul class="social-media-list social-media-list--footer">
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Instagram-logo"/> 
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Facebook-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Telegram-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.youtube.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="YouTube-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.tiktok.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="TikTok-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://discord.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Discord-logo"/>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
     </footer>
   </body>
 </html>

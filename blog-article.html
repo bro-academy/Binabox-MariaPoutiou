@@ -14,27 +14,35 @@
   </head>
   <body>
     <!-- HEADER-->
-    <header>
-      <div>
-        <a href="#" title="Binabox">
-          <img src="#" alt="Binabox-logo" />
+    <header class="header">
+      <div class="header-logo">
+        <a class="header-logo__link" href="#" title="Binabox">
+          <img class="header-logo__image" src="#" alt="Binabox-logo"/>
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog-article.html">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact us</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="blog-article.html">Blog</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Catalog</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <button>
-          <img src="#" alt="Discord" />
+      <div class="header-actions">
+        <button class="button header__button button--secondary">
+          <img class="header-button__img" src="#" alt="Discord"/>
           Discord
         </button>
-        <button>
-          <img src="#" alt="Connect" />
+        <button class="button header__button button--primary">
+          <img class="header-button__img" src="#" alt="Connect"/>
           Connect
         </button>
       </div>
@@ -42,43 +50,45 @@
 
     <!--MAIN STARTS HERE-->
     <!--Hero Section-->
-    <main>
-      <section>
-        <h1>Our blog</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://vyfy8k.csb.app/">Home</a>
+    <main class="main">
+      <section class="hero-section">
+        <h1 class="hero-section__blog-title">Our blog</h1>
+        <nav class="hero-section__nav">
+          <ul class="hero-section__list">
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="https://vyfy8k.csb.app/">Home</a>
             </li>
-            <li>
-              <a href="https://pqpj65.csb.app/">Our blog</a>
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="https://pqpj65.csb.app/">Our blog</a>
             </li>
-            <li>
-              <a href="#"><span style="color: gray">The Basilisks NFT</span></a>
+            <li class="hero-section__list-item">
+              <a class="hero-section__link" href="#">
+                <span class="hero-section__word hero-section__word--blog-article">The Basilisks NFT</span>
+              </a>
             </li>
           </ul>
         </nav>
       </section>
 
       <!--BLOG CONTENT-->
-      <article>
-        <h2>The Basilisks NFT</h2>
-        <div class="category-label">Gaming</div>
-        <figure>
-          <img src="#" alt="dragon-man" />
-          <figcaption>Photo caption</figcaption>
+      <article class="blog-article">
+        <h2 class="blog-article__title">The Basilisks NFT</h2>
+        <div class="blog-article__label">Gaming</div>
+        <figure class="blog-article__figure">
+          <img class="blog-article__img" src="#" alt="dragon-man"/>
+          <figcaption class="blog-article__caption">Photo caption</figcaption>
         </figure>
-        <div>
-          <img src="#" alt="person-icon" />
-          <span>Tony Nguyen</span>
-          <img src="#" alt="calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
+        <div class="blog-article__meta">
+          <img class="blog-article__author-icon" src="#" alt="person-icon"/>
+          <span class="blog-article__author">Tony Nguyen</span>
+          <img class="blog-article__date-icon" src="#" alt="calendar"/>
+          <time class="blog-article__date" datetime="2022-06-20">20 Jun 2022</time>
         </div>
-        <p>
-          The Basilisks that <strong>players</strong> collect are represented
+        <p class="blog-article__text">
+          The Basilisks that <strong class="blog-article__word-bg">players</strong> collect are represented
           with NFTs on Ethereum’s blockchain with real-world value. Players use
           the
-          <a href="#"><strong>Basilisks they have</strong></a>
+          <a class="blog-article__link" href="#"><strong class="blog-article__word">Basilisks they have</strong></a>
           gathered to battle other players to win ether (ETH). In Balthazar
           Dragons, players are immersed in a 3D open world to explore and
           capture dragon-like beasts called Basilisks. Balthazar Dragons is an
@@ -86,55 +96,55 @@
           blockchain by a decentralized autonomous organization (DAO) called the
           Balthazar DAO.
         </p>
-        <ul>
-          <li>
+        <ul class="blog-article__bullet-list">
+          <li class="blog-article__bullet-item">
             The Basilisks that players collect are represented with NFTs on
             Ethereum’s blockchain with real-world value. Players use the
             Basilisks they have gathered to battle other players to win ether
             (ETH).
           </li>
-          <li>
+          <li class="blog-article__bullet-item">
             In Balthazar Dragons, players are immersed in a 3D open world to
             explore and capture dragon-like beasts called Basilisks. Balthazar
             Dragons is an upcoming fantasy role-playing
-            <a href="#"><strong>game developed</strong></a>
+            <a class="blog-article__link" href="#"><strong class="blog-article__word">game developed</strong></a>
             on the Ethereum blockchain by a decentralized autonomous
             organization (DAO) called the Balthazar DAO.
           </li>
         </ul>
-        <ul>
-          <li>List name 1</li>
-          <li>List name 2</li>
-          <li>List name 3</li>
-          <li>List name 4</li>
+        <ul class="blog-article__list">
+          <li class="blog-article__item">List name 1</li>
+          <li class="blog-article__item">List name 2</li>
+          <li class="blog-article__item">List name 3</li>
+          <li class="blog-article__item">List name 4</li>
         </ul>
-        <div>
-          <figure>
-            <blockquote>
+        <div class="blog-article__quote-wrapper">
+          <figure class="blog-article__quote">
+            <blockquote class="blog-article__quote-text">
               “The first huge metaverse arena to arrange live sports, hang out
               and even make bets and wagers”
             </blockquote>
           </figure>
-          <div>
-            <img src="#" alt="star-icon" />
-            <span>8.5/10</span>
-            <span>Markout Corporation</span>
+          <div class="blog-article__quote-meta">
+            <img class="blog-article__quote-icon" src="#" alt="star-icon"/>
+            <span class="blog-article__quote-value">8.5/10</span>
+            <span class="blog-article__quote-author">Markout Corporation</span>
           </div>
         </div>
-        <div>
-          <figure>
-            <img src="#" alt="dragon" />
-            <figcaption>Photo caption</figcaption>
+        <div class="blog-article__gallery-wrapper">
+          <figure class="blog-article__gallery">
+            <img class="blog-article__gallery-img" src="#" alt="dragon"/>
+            <figcaption class="blog-article__gallery-caption">Photo caption</figcaption>
           </figure>
-          <figure>
-            <img src="#" alt="dragon-man" />
-            <figcaption>Photo caption</figcaption>
+          <figure class="blog-article__gallery">
+            <img class="blog-article__gallery-img" src="#" alt="dragon-man"/>
+            <figcaption class="blog-article__gallery-caption">Photo caption</figcaption>
           </figure>
         </div>
 
         <!--NFT EXPLANATION-->
-        <h3>NFTs are digital assets that represent real-world objects</h3>
-        <p>
+        <h3 class="subarticle-title">NFTs are digital assets that represent real-world objects</h3>
+        <p class="subarticle__text">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -142,7 +152,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-        <p>
+        <p class="subarticle__text">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -150,39 +160,41 @@
           nickname, it will be standardized and used across the Binance
           ecosystem.
         </p>
-        <h3>NFT AVATAR GENERATORS</h3>
-        <p>
+        <h3 class="subarticle-title">NFT AVATAR GENERATORS</h3>
+        <p class="subarticle__text">
           You can find a range of NFT marketplaces where you can buy existing
           NFTs or list your own NFTs for sale.
         </p>
-        <div>
-          <p><strong>Tags:</strong></p>
-          <ul>
-            <li>
-              <a href="#">NFT</a>
+        <div class="subarticle__wrapper">
+          <p class="subarticle__tags-title"><strong>Tags:</strong></p>
+          <ul class="tag-list tag-list--subarticle">
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">NFT</a>
             </li>
-            <li>
-              <a href="#">ICO</a>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">ICO</a>
             </li>
-            <li>
-              <a href="#">Crypto</a>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">Crypto</a>
             </li>
           </ul>
-          <p><strong>Share:</strong></p>
-          <ul>
-            <li>
-              <a href="https://x.com/?lang=en&mx=2" target="_blank">
-                <img src="#" alt="twitter-logo" />
+        </div>
+        <div class="subarticle__wrapper">
+          <p class="subarticle__share-title"><strong>Share:</strong></p>
+          <ul class="subarticle__socials-list">
+            <li class="subarticle__socials-item">
+              <a class="subarticle__socials-link" href="https://x.com/?lang=en&mx=2" target="_blank">
+                <img class="subarticle__socials-icon" src="#" alt="twitter-logo"/>
               </a>
             </li>
-            <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="#" alt="facebook-logo" />
+            <li class="subarticle__socials-item">
+              <a class="subarticle__socials-link" href="https://www.facebook.com/" target="_blank">
+                <img class="subarticle__socials-icon" src="#" alt="facebook-logo"/>
               </a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="#" alt="instagram-logo" />
+            <li class="subarticle__socials-item">
+              <a class="subarticle__socials-link" href="https://www.instagram.com/" target="_blank">
+                <img class="subarticle__socials-icon" src="#" alt="instagram-logo"/>
               </a>
             </li>
           </ul>
@@ -190,91 +202,145 @@
       </article>
 
       <!--SIDEBAR CATEGORIES-->
-      <aside>
-        <section>
-          <h3>Categories</h3>
-          <nav>
-            <ul>
-              <li><a href="#">Our blog (12)</a></li>
-              <li><a href="#">Metaverse (24)</a></li>
-              <li><a href="#">Gaming (24)</a></li>
-              <li><a href="#">Art (24)</a></li>
-              <li><a href="#">Robot (24)</a></li>
-              <li><a href="#">Launchpad (24)</a></li>
-              <li><a href="#">Crypto (430)</a></li>
+      <aside class="aside-section">
+        <section class="aside__block">
+          <h3 class="aside__block-title">Categories</h3>
+          <nav class="aside__block-nav">
+            <ul class="aside__block-list">
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Our blog (12)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Metaverse (24)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Gaming (24)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Art (24)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Robot (24)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Launchpad (24)</a>
+              </li>
+              <li class="aside__block-item">
+                <a class="aside__block-link" href="#">Crypto (430)</a>
+              </li>
             </ul>
           </nav>
         </section>
 
         <!--SIDEBAR TAG-->
-        <section>
-          <h4>Tag</h4>
-          <ul>
-            <li><a href="#">NFT</a></li>
-            <li><a href="#">ICO</a></li>
-            <li><a href="#">Robot</a></li>
-            <li><a href="#">Crypto</a></li>
-            <li><a href="#">Launchpad</a></li>
-            <li><a href="#">Metaverse</a></li>
+        <section class="aside__block">
+          <h4 class="aside__block-title">Tag</h4>
+          <ul class="tag-list tag-list--aside">
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">NFT</a>
+            </li>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">ICO</a>
+            </li>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">Robot</a>
+            </li>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">Crypto</a>
+            </li>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">Launchpad</a>
+            </li>
+            <li class="tag-list__item">
+              <a class="tag-list__link" href="#">Metaverse</a>
+            </li>
           </ul>
         </section>
       </aside>
     </main>
 
     <!--FOOTER-->
-    <footer>
-      <div>
-        <div>
-          <div>
-            <a href="#" title="Binabox">
-              <img src="#" alt="Binabox-logo" />
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-logo">
+            <a class="footer-logo__link" href="#" title="Binabox">
+              <img class="footer-logo__img" src="#" alt="Binabox-logo"/>
             </a>
           </div>
-          <p>We are the best way to check the rarity of NFT collection</p>
+          <p class="footer__description">We are the best way to check the rarity of NFT collection</p>
         </div>
-        <div>
-          <nav>
-            <h5>Subscribe</h5>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Catalog</a></li>
-              <li><a href="#">Contact us</a></li>
+        <div class="footer__list-wrapper">
+          <nav class="footer-nav">
+            <h5 class="footer-nav__title">Subscribe</h5>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Home</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Blog</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Catalog</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Contact us</a>
+              </li>
             </ul>
           </nav>
-          <nav>
-            <h5>Company</h5>
-            <ul>
-              <li><a href="#">Terms Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Whitepaper</a></li>
-              <li><a href="#">Help Center</a></li>
+          <nav class="footer-nav">
+            <h5 class="footer-nav__title">Company</h5>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Terms Conditions</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Whitepaper</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Help Center</a>
+              </li>
             </ul>
           </nav>
         </div>
-      </div>
-      <div>
-        <div>BINABOX 2022 - All rights reserved</div>
-        <div>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="#" alt="Instagram-logo" />
-          </a>
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="#" alt="Facebook-logo" />
-          </a>
-          <a href="https://web.telegram.org/k/" target="_blank">
-            <img src="#" alt="Telegram-logo" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="#" alt="YouTube-logo" />
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank">
-            <img src="#" alt="TikTok-logo" />
-          </a>
-          <a href="https://discord.com/" target="_blank">
-            <img src="#" alt="Discord-logo" />
-          </a>
+      <div class="footer-lower">
+        <div class="copyright">
+          <p class="copyright__text">BINABOX 2022 - All rights reserved</p>
         </div>
+          <ul class="social-media-list social-media-list--footer">
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Instagram-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Facebook-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://web.telegram.org/k/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Telegram-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.youtube.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="YouTube-logo"/>
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://www.tiktok.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="TikTok-logo" />
+              </a>
+            </li>
+            <li class="social-media__list-item">
+              <a class="social-media__link" href="https://discord.com/" target="_blank">
+                <img class="social-media__icon" src="#" alt="Discord-logo"/>
+              </a>
+            </li>
+          </ul>
       </div>
     </footer>
   </body>
