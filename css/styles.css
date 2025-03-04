@@ -16,7 +16,7 @@ body, html {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .main-nav__item {
@@ -42,7 +42,7 @@ body, html {
   line-height: 28px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins","Arial", sans-serif;
 }
 
 .button--secondary {
@@ -76,7 +76,7 @@ body, html {
   line-height: 62px;
   letter-spacing: -0.5px;
   margin-bottom: 10px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .hero-section__brand {
@@ -91,7 +91,7 @@ body, html {
   line-height: 28px;
   letter-spacing: 0px;
   margin-top: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .hero-section__stats {
@@ -109,7 +109,7 @@ body, html {
   letter-spacing: 0.5px;
   text-shadow: 0px 4px 13px #FFFFFF66;
   margin-bottom: 10px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .hero-section__stat-label {
@@ -120,7 +120,7 @@ body, html {
   line-height: 24px;
   letter-spacing: 0px;
   margin-top: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .hero-section__button {
@@ -142,7 +142,7 @@ body, html {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .hero-section__button--secondary {
@@ -155,7 +155,7 @@ body, html {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .hero-section__button--text{
@@ -176,7 +176,7 @@ color: #F5F8FB;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
   margin-top: 100px;
 }
 
@@ -203,7 +203,7 @@ color: #F5F8FB;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .catalog__button--prev {
@@ -268,7 +268,7 @@ color: #F5F8FB;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .product-card__price {
@@ -280,7 +280,7 @@ color: #F5F8FB;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .product-label {
@@ -304,7 +304,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: right;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .product-label--updated {
@@ -328,7 +328,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: right;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-section {
@@ -385,7 +385,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: right;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-card__author {
@@ -395,7 +395,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-card__date {
@@ -405,7 +405,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-card__title {
@@ -415,7 +415,7 @@ color: #F5F8FB;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .blog-card__description {
@@ -425,7 +425,7 @@ color: #F5F8FB;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-link {
@@ -438,7 +438,7 @@ color: #F5F8FB;
   border: 2px solid #D0D7FB2B;
   padding: 8px 20px;
   gap: 8px;
-  font-family:"Poppins", sans-serif;
+  font-family:"Poppins", "Arial", sans-serif;
 }
 
 .cta-more__link {
@@ -454,7 +454,7 @@ color: #F5F8FB;
   line-height: 28px;
   letter-spacing: 0px;
   gap: 8px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .about {
@@ -473,7 +473,7 @@ color: #F5F8FB;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .about-list__item {
@@ -493,7 +493,7 @@ color: #F5F8FB;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .about-list__description {
@@ -504,7 +504,7 @@ color: #F5F8FB;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .team {
@@ -533,7 +533,7 @@ color: #F5F8FB;
   line-height: 32px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
   margin-bottom: 2px;
 }
 
@@ -546,7 +546,7 @@ color: #F5F8FB;
   letter-spacing: 0px;
   text-align: center;
   margin-top: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .faqs {
@@ -576,7 +576,7 @@ color: #F5F8FB;
   letter-spacing: 0px;
   text-align: left;
   margin-top: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .faqs__answer {
@@ -587,7 +587,7 @@ color: #F5F8FB;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .footer {
@@ -606,7 +606,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .footer-nav {
@@ -621,7 +621,7 @@ color: #F5F8FB;
   font-size: 20px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .footer-nav__list-item {
@@ -638,7 +638,7 @@ color: #F5F8FB;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .copyright__text {
@@ -648,7 +648,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   }
 
 .hero-section {
@@ -665,7 +665,7 @@ color: #F5F8FB;
   line-height: 62px;
   letter-spacing: -0.5px;
   align-items: center;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .hero-section__list-item {
@@ -680,7 +680,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .hero-section__word--blog-article {
@@ -694,7 +694,7 @@ color: #F5F8FB;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__title {
@@ -704,7 +704,7 @@ color: #F5F8FB;
   line-height: 48px;
   letter-spacing: -0.5px;
   text-align: left;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .blog-article__label {
@@ -720,7 +720,7 @@ color: #F5F8FB;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__author {
@@ -730,7 +730,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__date {
@@ -740,7 +740,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__text {
@@ -750,7 +750,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__word-bg {
@@ -764,7 +764,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__word {
@@ -774,7 +774,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__bullet-list {
@@ -791,7 +791,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -802,7 +802,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   margin-bottom: 8px;
 }
 
@@ -822,7 +822,7 @@ color: #F5F8FB;
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .blog-article__quote-value {
@@ -832,7 +832,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .blog-article__quote-author {
@@ -842,7 +842,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif
+  font-family: "Poppins", "Arial", sans-serif
 }
 
 .blog-article__gallery-caption {
@@ -852,7 +852,7 @@ color: #F5F8FB;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .subarticle-title {
@@ -862,7 +862,7 @@ color: #F5F8FB;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .subarticle__text {
@@ -871,7 +871,7 @@ color: #F5F8FB;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .subarticle__tags-title {
@@ -880,7 +880,7 @@ color: #F5F8FB;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .tag-list__item {
@@ -902,7 +902,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .subarticle__share-title {
@@ -911,7 +911,7 @@ color: #F5F8FB;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .subarticle__socials-item {
@@ -932,7 +932,7 @@ color: #F5F8FB;
   line-height: 20px;
   letter-spacing: 0px;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 .aside__block {
@@ -951,7 +951,7 @@ color: #F5F8FB;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
 .aside__block--lower{
@@ -971,7 +971,7 @@ color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   margin-bottom: 20px;
 }
 
