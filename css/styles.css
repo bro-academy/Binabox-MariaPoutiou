@@ -1,3 +1,743 @@
-h1 {
-  text-decoration: underline;
+body {
+  background-color: #0d0d15;
+  color: #F5F8FB;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+
+/********** HOMEPAGE STARTS HERE ************/
+
+/* HEADER */
+
+.header {
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.main-nav__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-nav__link--active {
+  border-bottom: 2px solid #0265DC;
+  padding-block: 8px;
+  padding-inline: 20x;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.header__button {
+  border: 2px;  
+  padding-block: 10px;
+  padding-inline: 24px;
+}
+
+.header-button__text {
+  color: #f5f8fb;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 2px solid; color: #D0D7FB2B;
+}
+
+.button--primary {
+  background-color: #0265DC;
+  border: none;
+}
+
+/* HERO SECTION */
+
+.hero-section--homepage {
+  padding-inline: 164px;
+  padding-block: 64px;
+}
+
+.hero-section__title {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.hero-section__brand {
+  color: #0265DC;
+}
+
+.hero-section__description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hero-section__stats {
+  display: inline-block;
+}
+
+.hero-section__stat-value {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.5px;
+  text-shadow: 0px 4px 13px #FFFFFF66;
+  margin-bottom: 10px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.hero-section__stat-label {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.hero-section__button {
+  border: 2px;
+  padding-block: 10px;
+  padding-inline: 24px;
+}
+
+.hero-section__button--primary {
+  background-color: #0265DC;
+  border: none;
+  color: #F5F8FB;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero-section__button--secondary {
+  background-color: transparent;
+  border: 2px solid; color: #D0D7FB2B;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero-section__button--text{
+  color: #F5F8FB;
+  }
+
+/* CATALOG SECTION */
+
+.catalog-section {
+  padding: 64px;
+}
+
+.section-title--catalog { /* i had to make a modifier because this section title is smaller */
+  color: #F8F7FF;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-top: 100px;
+}
+
+.catalog-header__divider {
+  width: 1167px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #D0D7FB2B; 
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+
+.catalog__button--all {
+  background-color: transparent;
+  border: 2px solid; color: #D0D7FB2B;
+  padding-block: 10px;
+  padding-inline: 24px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+
+.catalog__button--text {
+  color: #F5F8FB;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.catalog__button--prev {
+  background-color: transparent;
+  border: 2px solid; color: #D0D7FB2B;
+  padding-block: 20px;
+  padding-inline: 24px;
+}
+
+.catalog__button--prev-text {
+  color: #F5F8FB;
+  top: 5px;
+  left: 8px;
+}
+
+.catalog__button--next {
+  background-color: #0265DC;
+  padding-block: 10px;
+  padding-inline: 24px;
+  color: #F5F8FB;
+}
+
+.catalog__button--next-text {
+  color: #0D0D15;
+  top: 5px;
+  left: 8px;
+}
+
+.product-list__item {
+  background-color: #1D1C28;
+  display: flex;
+  padding: 24px;
+  display: inline-block;
+  margin-inline: 24px;
+}
+
+.product-card__name {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product-card__price {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.product-label {
+  background-color: #F5F8FB;
+  padding-block: 8px;
+  padding-inline: 10px;
+  color: #0265DC;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.product-label--updated {
+  background-color:#EA3829;
+  padding-block: 8px;
+  padding-inline: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.product-label__text--updated {
+  line-height: 20px;
+  text-align: right;
+}
+
+/* BLOG SECTION */
+
+.blog-section {
+  padding: 64px;
+}
+
+.blog-card {
+  background-color: #1D1C28;
+  display: inline-block;
+}
+
+.blog-card--large {
+  min-width: 512px;
+  padding: 24px;
+  gap: 24px;
+  margin-block: 10px;
+  margin-inline: 10px;
+}
+
+.blog-card--small {
+  padding: 24px;
+  margin-block: 10px;
+  margin-inline: 10px;
+}
+
+.blog-card__label {
+  background-color: #F5F8FB;
+  padding-inline: 10px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.blog-card__text-label {
+  color: #0265DC;
+  line-height: 20px;
+  text-align: right;
+}
+
+.blog-card__author {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.blog-card__date {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  line-height: 20px;
+}
+
+.blog-card__title {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.blog-card__description {
+  color: #EFF5FAD1; opacity: 82%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.blog-link { /* read more button of blog cards */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F5F8FB;
+  border: 2px solid #D0D7FB2B;
+  padding-block: 8px;
+  padding-inline: 20px;
+}
+
+.cta-more__link { /* read more button of the whole section */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #F5F8FB;
+  border: 2px solid #D0D7FB2B;
+  padding-block: 10px;
+  padding-inline: 24px;
+  line-height: 28px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  padding: 64px;
+}
+
+.about-list {
+  counter-reset: about-counter; 
+  padding: 0;
+}
+
+.about-list__item {
+  position: relative;
+  counter-increment: about-counter; 
+  padding-left: 50px; 
+}
+
+.about-list__item::before {
+  content: "0" counter(about-counter);
+  font-size: 70px;
+  font-weight: bold;
+  color: #0265DC; 
+  opacity: 50%;
+  color: transparent; 
+  border: 2px;
+  -webkit-text-stroke: 2px #0265DC; 
+  position: absolute;
+}
+
+.about__description {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.about-list__item {
+  background-color: #1A1925;
+  min-width: 328px;
+  padding: 32px;
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+.about-list__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.about-list__description {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.team {
+  padding: 64px;
+  margin-top: 200px;
+}
+
+.team-member {
+  background-color: #1D1C28;
+  padding: 32px;
+  display: inline-block;
+  margin-block: 20px;
+  margin-inline: 20px;
+}
+
+.team-member__name {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-bottom: 2px;
+}
+
+.team-member__role {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* FAQs SECTION */
+
+.faqs {
+  padding-top: 64px;
+  padding-inline: 64px;
+  padding-bottom: 104px;
+}
+
+.faqs__item {
+  background-color: #1D1C28;
+  padding: 24px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(20px)
+}
+
+.faqs__question-text {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.faqs__answer {
+  font-size: 16px;
+  line-height: 24px;
+} 
+
+/* FOOTER */
+
+.footer {
+  background-color: #1A1925;
+  padding: 64px 64px 32px;
+}
+
+.footer__description {
+  line-height: 20px;
+}
+
+.footer-nav {
+  display: inline-block;
+}
+
+
+.footer-nav__title {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.footer-nav__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.copyright__text {
+  line-height: 20px;
+  }
+
+  /********** HOMEPAGE ENDS HERE ************/
+
+  /********** BLOG-ARTICLE STARTS HERE ************/
+
+.hero-section {
+  position: static;
+}
+
+.hero-section__blog-title {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.hero-section__nav {
+  text-align: center;
+}
+
+.hero-section__list-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+.hero-section__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.hero-section__word--blog-article { /* highlighted word */
+  color: #E7EEF7A8; 
+  opacity: 66%;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.blog-article__caption {
+  color: #F8F7FF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.blog-article__title {
+  color: #F8F7FF;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.blog-article__label {
+  background-color: #0265DC;
+  padding-block: 10px;
+  padding-inline: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.blog-article__author {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.blog-article__date {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.blog-article__text {
+  color: #F8F7FF;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog-article__word-bg { /* highlighted word */
+  margin: 0px 0px;
+  background-color: #0265dc;
+  color: #F8F7FF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog-article__word { /* highlighted word */
+  color: #78bbfa;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog-article__bullet-list {
+  list-style: disc;  
+  padding-left: 20px; 
+}
+
+.blog-article__bullet-item {
+  color: #F8F7FF;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.blog-article__item {
+  color: #F8F7FF;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.blog-article__quote-wrapper {
+  background-color: #002754;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.blog-article__quote-text {
+  color: #F8F7FF;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.blog-article__quote-value {
+  color: #EFF5FAD1; 
+  opacity: 82%;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.blog-article__quote-author {
+  color: #F8F7FF;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.blog-article__gallery-caption {
+  color: #F8F7FF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subarticle-title {
+  color: #F8F7FF;
+  font-size: 28px;
+  line-height: 38px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.subarticle__text {
+  color: #F8F7FF;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.subarticle__tags-title {
+  color: #F8F7FF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tag-list__item { /* this class also applies to side section tags */
+  height: 32px;
+  padding-block: 6px;
+  padding-inline: 12px;
+  margin-block: 5px;
+  margin-inline: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid #D0D7FB2B;
+}
+
+.tag-list__link { /* this class also applies to side section tags */
+  color: #F8F7FF;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 20px;
+  align-items: center;
+}
+
+.subarticle__share-title {
+  color: #F8F7FF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subarticle__socials-item {
+  padding-block: 6px;
+  padding-inline: 12px;
+  margin-block: 5px;
+  margin-inline: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid #D0D7FB2B;
+}
+
+.subarticle__socials-link {
+  color: #F8F7FF;
+  font-weight: 600;
+  line-height: 20px;
+  align-items: center;
+}
+
+.aside__block {
+  background-color:#BFC5EE1F;
+  padding: 16px;
+  margin-block: 21px;
+  border: 1px;
+}
+
+.aside__block-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+}
+
+.aside__block--lower {
+  padding: 24px;
+}
+
+.aside__block-item {
+  min-width: 200px;
+  padding-block: 6px;
+  padding-inline: 12px;
+}
+
+.aside__block-link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media__list-item {
+  display: inline-block;
+}
+
+/********** BLOG-ARTICLE ENDS HERE ************/
