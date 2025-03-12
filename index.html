@@ -53,7 +53,7 @@
     </header>
 
     <!--MAIN STARTS HERE-->
-    <main class="main">
+    <main class="main--blog-article">
       <section class="hero-section hero-section--homepage">
         <div class="hero-section__block">
         <h1 class="hero-section__title">WITH <span class="hero-section__brand">BINABOX</span> EXPLORE NFT COLLECTION</h1>
@@ -84,8 +84,10 @@
       <!--CATALOG SECTION-->
       <section class="catalog-section">
         <div class="catalog-header">
+          <div class="catalog-header__title"> <!--the reason i add this div is because i saw that icon with title are a separate block with paddings-->
         <h3 class="section-title section-title--catalog">Catalog</h3>
         <img class="catalog__title-img" src="#" alt="folder-icon">
+          </div>
         <div class="catalog-header__divider"></div>
         <div class="catalog__controls">
           <button class="button-all catalog__button catalog__button--all">
@@ -97,6 +99,8 @@
           <button class="button-next catalog__button catalog__button--next">
             <span class="catalog__button catalog__button--next-text">&gt;</span>
           </button>
+          <div class="catalog__controls-separator">
+          </div>
         </div>
       </div>
         <ul class="product-wrapper">

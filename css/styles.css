@@ -62,6 +62,7 @@ ul {
 
 .main-nav__item {
   display: inline-block;
+  padding: 8px 20px;
 }
 
 .header__button {
@@ -150,8 +151,8 @@ ul {
   line-height: 62px;
   letter-spacing: 0.5px;
   text-shadow: 0px 4px 13px #FFFFFF66;
-  margin-bottom: 10px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-bottom: 10px;
   margin-right: 40px;
 }
 
@@ -231,6 +232,10 @@ ul {
   margin-bottom: 40px;
 }
 
+.catalog-header__title {
+  padding: 2px;
+}
+
 .section-title--catalog { /* i had to make a modifier because this section title is smaller */
   color: #F8F7FF;
   font-size: 24px;
@@ -281,11 +286,17 @@ ul {
   text-align: center;
 }
 
+.catalog__controls-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #D0D7FB2B;
+}
+
 .catalog__button--prev {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
-  padding-block: 20px;
-  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .catalog__button--prev:hover {
@@ -311,8 +322,7 @@ ul {
 
 .catalog__button--next {
   background-color: #0265DC;
-  padding-block: 10px;
-  padding-inline: 24px;
+  padding-block: 16px;
   color: #F5F8FB;
 }
 
@@ -341,7 +351,6 @@ ul {
   padding: 24px;
   display: inline-block;
   margin-inline: 24px;
-  margin-block: 24px;
 }
 
 .product-card__name {
@@ -412,7 +421,7 @@ ul {
   background-color: #F5F8FB;
   padding-inline: 10px;
   padding-top: 8px;
-  padding-bottom: 10px;
+  padding-block: 10px;
 }
 
 .blog-card__text-label {
@@ -452,8 +461,10 @@ ul {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  line-height: 24px;
   color: #F5F8FB;
   border: 2px solid #D0D7FB2B;
+  text-align: center;
   padding-block: 8px;
   padding-inline: 20px;
 }
@@ -486,11 +497,11 @@ ul {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
+  line-height: 28px;
   color: #F5F8FB;
   border: 2px solid #D0D7FB2B;
   padding-block: 10px;
   padding-inline: 24px;
-  line-height: 28px;
 }
 
 .cta-more__link:hover {
@@ -609,9 +620,16 @@ ul {
 
 .faqs__item {
   background-color: #1D1C28;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  padding-inline: 24px;
   margin-bottom: 10px;
   backdrop-filter: blur(20px)
+}
+
+.faqs__question {
+  border-bottom: 1px solid #BFC5EE1F;
+  padding-bottom: 24px;
 }
 
 .faqs__question-text {
@@ -632,27 +650,26 @@ ul {
   padding: 64px 64px 32px;
 }
 
+.footer-upper {
+  justify-content: space-between;
+}
+
+.footer-lower {
+  justify-content: space-between;
+  border-top: 1px solid #BFC5EE1F;
+}
+
 .footer__description {
   line-height: 20px;
 }
 
+.footer__list-wrapper {
+  margin-left: 1000px;
+}
+
 .footer-nav {
   display: inline-block;
-}
-
-.footer-nav__link:hover {
-  color: #3892f3;
-  font-weight: 590;
-}
-
-.footer-nav__link:focus {
-  font-weight: 590;
-  border: 4px solid #3892f3;
-}
-
-.footer-nav__link:active {
-  color: #0054b6;
-  font-weight: 590;
+  margin-inline: 30px;
 }
 
 .footer-nav__title {
@@ -670,6 +687,21 @@ ul {
   text-align: center;
 }
 
+.footer-nav__link:hover {
+  color: #3892f3;
+  font-weight: 590;
+}
+
+.footer-nav__link:focus {
+  font-weight: 590;
+  border: 4px solid #3892f3;
+}
+
+.footer-nav__link:active {
+  color: #0054b6;
+  font-weight: 590;
+}
+
 .copyright__text {
   line-height: 20px;
   }
@@ -680,6 +712,11 @@ ul {
 
 .hero-section {
   position: static;
+  padding-top: 64px;
+}
+
+.hero-section__banner-text {
+  padding-inline: 64px;
 }
 
 .hero-section__blog-title {
@@ -697,6 +734,13 @@ ul {
 .hero-section__list-item {
   display: inline-block;
   margin: 20px;
+}
+
+.her-section__item-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #D0D7FB2B;
 }
 
 .hero-section__link {
@@ -737,6 +781,15 @@ ul {
   text-align: center;
 }
 
+.blog-article {
+  padding-bottom: 64px;
+}
+
+.main--blog-article {
+  padding-top: 64px;
+  padding-inline: 64px;
+}
+
 .blog-article__caption {
   color: #F8F7FF;
   font-weight: 500;
@@ -756,10 +809,9 @@ ul {
   background-color: #0265DC;
   padding-block: 10px;
   padding-inline: 24px;
-  font-size: 18px;
   font-weight: 600;
+  font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -781,6 +833,7 @@ ul {
   color: #F8F7FF;
   font-size: 18px;
   line-height: 28px;
+  margin-block: 40px
 }
 
 .blog-article__word-bg { /* highlighted word */
@@ -823,14 +876,19 @@ ul {
 
 .blog-article__bullet-list {
   list-style: disc;  
-  padding-left: 20px; 
+  padding-left: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .blog-article__bullet-item {
   color: #F8F7FF;
   font-size: 18px;
   line-height: 28px;
-  margin-bottom: 20px;
+}
+
+.blog-article__list {
+  margin-top: 40px;
 }
 
 .blog-article__item {
@@ -844,6 +902,7 @@ ul {
   background-color: #002754;
   padding: 16px;
   border-radius: 16px;
+  margin-top: 40px;
 }
 
 .blog-article__quote-text {
@@ -892,11 +951,13 @@ ul {
   line-height: 24px;
 }
 
+.subarticle__wrapper {
+  display: inline-block;
+}
+
 .tag-list__item { /* this class also applies to side section tags */
-  height: 32px;
   padding-block: 6px;
   padding-inline: 12px;
-  margin-block: 5px;
   margin-inline: 5px;
   box-sizing: border-box;
   display: inline-block;
@@ -929,15 +990,19 @@ ul {
   border: 4px solid #3892f3;
 }
 
+.subarticle__socials-list {
+  margin-left: 700px;
+}
+
 .subarticle__share-title {
   color: #F8F7FF;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 700px;
 }
 
 .subarticle__socials-item {
-  padding-block: 6px;
-  padding-inline: 12px;
+  padding: 8px;
   margin-block: 5px;
   margin-inline: 5px;
   box-sizing: border-box;
@@ -972,12 +1037,14 @@ ul {
 
 .aside__block {
   background-color:#BFC5EE1F;
-  padding: 16px;
+  padding: 24px;
   margin-block: 21px;
   border: 1px;
 }
 
 .aside__block-title {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #BFC5EE1F;
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
