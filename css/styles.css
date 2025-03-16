@@ -364,6 +364,8 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+  margin-block: 0px;
+  padding: 0px;
 }
 
 .product-card__price {
@@ -371,6 +373,8 @@ ul {
   line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0px;
+  padding: 0px;
 }
 
 .product-label {
@@ -598,6 +602,7 @@ ul {
   line-height: 32px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0px;
 }
 
 .team-member__role {
@@ -606,6 +611,7 @@ ul {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
+  margin-block: 0px;
 }
 
 /* FAQs SECTION */
@@ -719,7 +725,11 @@ ul {
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-block: 0px;
+  margin-block: 20px;
+}
+
+.hero-section__list {
+  margin: 0px;
 }
 
 .hero-section__nav {
