@@ -11,6 +11,15 @@ ul {
   padding: 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%; 
+  max-width: 1728px; 
+  padding-inline: 64px
+}
 
 /********** HOMEPAGE STARTS HERE ************/
 
@@ -57,7 +66,7 @@ ul {
 .main-nav__link--active {
   border-bottom: 2px solid #0265DC;
   padding-block: 8px;
-  padding-inline: 20x;
+  padding-inline: 20px;
 }
 
 .main-nav__item {
@@ -120,7 +129,6 @@ ul {
 /* HERO SECTION */
 
 .hero-section--homepage {
-  padding-inline: 164px;
   padding-block: 64px;
 }
 
@@ -229,7 +237,6 @@ ul {
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-bottom: 40px;
 }
 
 .catalog-header__title {
@@ -259,7 +266,6 @@ ul {
   padding-block: 10px;
   padding-inline: 24px;
   margin-right: 24px;
-  box-sizing: border-box;
 }
 
 .catalog__button--all:hover {
@@ -350,7 +356,6 @@ ul {
   display: flex;
   padding: 24px;
   display: inline-block;
-  margin-inline: 24px;
 }
 
 .product-card__name {
@@ -396,7 +401,6 @@ ul {
 
 .blog-section {
   padding: 64px;
-  margin-top: 10px;
 }
 
 .blog-card {
@@ -537,6 +541,9 @@ ul {
   position: relative;
   counter-increment: about-counter; 
   padding-left: 50px; 
+  background-color: #1A1925;
+  padding: 32px;
+  display: inline-block;
 }
 
 .about-list__item::before {
@@ -558,14 +565,6 @@ ul {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-}
-
-.about-list__item {
-  background-color: #1A1925;
-  min-width: 328px;
-  padding: 32px;
-  display: inline-block;
-  margin: 20px 20px;
 }
 
 .about-list__title {
@@ -599,7 +598,6 @@ ul {
   line-height: 32px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-bottom: 2px;
 }
 
 .team-member__role {
@@ -715,16 +713,13 @@ ul {
   padding-top: 64px;
 }
 
-.hero-section__banner-text {
-  padding-inline: 64px;
-}
-
 .hero-section__blog-title {
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0px;
 }
 
 .hero-section__nav {
@@ -736,7 +731,7 @@ ul {
   margin: 20px;
 }
 
-.her-section__item-separator {
+.hero-section__item-separator {
   width: 2px;
   height: 24px;
   border-radius: 2px;
@@ -959,7 +954,6 @@ ul {
   padding-block: 6px;
   padding-inline: 12px;
   margin-inline: 5px;
-  box-sizing: border-box;
   display: inline-block;
   border: 2px solid #D0D7FB2B;
 }
@@ -1005,7 +999,6 @@ ul {
   padding: 8px;
   margin-block: 5px;
   margin-inline: 5px;
-  box-sizing: border-box;
   display: inline-block;
   border: 2px solid #D0D7FB2B;
 }
