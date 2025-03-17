@@ -44,9 +44,6 @@ ul {
 
 .main-nav__link:hover {
   color: #3892f3;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .main-nav__link:focus {
@@ -237,6 +234,7 @@ ul {
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0 40px;
 }
 
 .catalog-header__title {
@@ -249,7 +247,7 @@ ul {
   line-height: 32px;
   letter-spacing: 0px;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-top: 100px;
+  margin-block: 0px;
   text-align: left;
 }
 
@@ -365,7 +363,6 @@ ul {
   font-size: 20px;
   line-height: 28px;
   margin-block: 0px;
-  padding: 0px;
 }
 
 .product-card__price {
@@ -374,7 +371,6 @@ ul {
   letter-spacing: -0.5px;
   font-family: "Bakbak One", "Georgia", sans-serif;
   margin-block: 0px;
-  padding: 0px;
 }
 
 .product-label {
@@ -547,7 +543,6 @@ ul {
   padding-left: 50px; 
   background-color: #1A1925;
   padding: 32px;
-  display: inline-block;
 }
 
 .about-list__item::before {
@@ -667,15 +662,6 @@ ul {
   line-height: 20px;
 }
 
-.footer__list-wrapper {
-  margin-left: 1000px;
-}
-
-.footer-nav {
-  display: inline-block;
-  margin-inline: 30px;
-}
-
 .footer-nav__title {
   font-weight: 500;
   line-height: 28px;
@@ -689,6 +675,7 @@ ul {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  display: block; padding-block: 4px;
 }
 
 .footer-nav__link:hover {
@@ -725,7 +712,7 @@ ul {
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-block: 20px;
+  margin-block-end: 20px;
 }
 
 .hero-section__list {
