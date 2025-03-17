@@ -11,6 +11,15 @@ ul {
   padding: 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%; 
+  max-width: 1728px; 
+  padding-inline: 64px
+}
 
 /********** HOMEPAGE STARTS HERE ************/
 
@@ -29,14 +38,37 @@ ul {
   line-height: 24px;
 }
 
+.main-nav__list {
+  text-align: center;
+}
+
+.main-nav__link:hover {
+  color: #3892f3;
+}
+
+.main-nav__link:focus {
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+  border: 4px solid #3892F3;
+}
+
+.main-nav__link:active {
+  color: #0054b6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .main-nav__link--active {
   border-bottom: 2px solid #0265DC;
   padding-block: 8px;
-  padding-inline: 20x;
+  padding-inline: 20px;
 }
 
 .main-nav__item {
   display: inline-block;
+  padding: 8px 20px;
 }
 
 .header__button {
@@ -63,10 +95,37 @@ ul {
   border: none;
 }
 
+.button--primary:hover {
+  background-color: #3892F3;
+}
+
+.button--primary:active {
+  background-color: #0054B6;
+}
+
+.button--primary:focus {
+  background-color: #0265DC;
+  border: 4px solid #3892F3;
+}
+
+.button--secondary:hover {
+  background-color: #BFC5EE1F;
+  border: 2px solid #bfc5ee1f;
+}
+
+.button--secondary:active {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.button--secondary:focus {
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
+}
+
 /* HERO SECTION */
 
 .hero-section--homepage {
-  padding-inline: 164px;
   padding-block: 64px;
 }
 
@@ -97,8 +156,9 @@ ul {
   line-height: 62px;
   letter-spacing: 0.5px;
   text-shadow: 0px 4px 13px #FFFFFF66;
-  margin-bottom: 10px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-bottom: 10px;
+  margin-right: 40px;
 }
 
 .hero-section__stat-label {
@@ -111,6 +171,7 @@ ul {
   border: 2px;
   padding-block: 10px;
   padding-inline: 24px;
+  margin-top: 15px;
 }
 
 .hero-section__button--primary {
@@ -121,11 +182,39 @@ ul {
   line-height: 28px;
 }
 
+.hero-section__button--primary:hover {
+  background-color: #3892F3;
+}
+
+.hero-section__button--primary:active {
+  background-color: #0054B6;
+}
+
+.hero-section__button--primary:focus {
+  background-color: #0265DC;
+  border: 4px solid #3892F3;
+}
+
 .hero-section__button--secondary {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
   font-size: 18px;
   line-height: 28px;
+}
+
+.hero-section__button--secondary:hover {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.hero-section__button--secondary:active {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.hero-section__button--secondary:focus {
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
 }
 
 .hero-section__button--text{
@@ -136,6 +225,20 @@ ul {
 
 .catalog-section {
   padding: 64px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0 40px;
+}
+
+.catalog-header__title {
+  padding: 2px;
 }
 
 .section-title--catalog { /* i had to make a modifier because this section title is smaller */
@@ -144,7 +247,8 @@ ul {
   line-height: 32px;
   letter-spacing: 0px;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-top: 100px;
+  margin-block: 0px;
+  text-align: left;
 }
 
 .catalog-header__divider {
@@ -154,22 +258,27 @@ ul {
   background-color: #D0D7FB2B; 
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  text-align: center;
-  font-family: "Bakbak One", "Georgia", sans-serif;
-}
-
-
 .catalog__button--all {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
   padding-block: 10px;
   padding-inline: 24px;
   margin-right: 24px;
-  box-sizing: border-box;
+}
+
+.catalog__button--all:hover {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.catalog__button--all:active {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.catalog__button--all:focus {
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
 }
 
 .catalog__button--text {
@@ -181,11 +290,32 @@ ul {
   text-align: center;
 }
 
+.catalog__controls-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #D0D7FB2B;
+}
+
 .catalog__button--prev {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
-  padding-block: 20px;
-  padding-inline: 24px;
+  padding-block: 16px;
+}
+
+.catalog__button--prev:hover {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.catalog__button--prev:active {
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.catalog__button--prev:focus {
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
 }
 
 .catalog__button--prev-text {
@@ -196,9 +326,21 @@ ul {
 
 .catalog__button--next {
   background-color: #0265DC;
-  padding-block: 10px;
-  padding-inline: 24px;
+  padding-block: 16px;
   color: #F5F8FB;
+}
+
+.catalog__button--next:hover {
+  background-color: #3892F3;
+}
+
+.catalog__button--next:active {
+  background-color: #0054B6;
+}
+
+.catalog__button--next:focus {
+  background-color: #0265DC;
+  border: 4px solid #3892F3;
 }
 
 .catalog__button--next-text {
@@ -212,7 +354,6 @@ ul {
   display: flex;
   padding: 24px;
   display: inline-block;
-  margin-inline: 24px;
 }
 
 .product-card__name {
@@ -221,6 +362,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+  margin-block: 0px;
 }
 
 .product-card__price {
@@ -228,6 +370,7 @@ ul {
   line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0px;
 }
 
 .product-label {
@@ -268,22 +411,21 @@ ul {
 .blog-card--large {
   min-width: 512px;
   padding: 24px;
-  gap: 24px;
-  margin-block: 10px;
-  margin-inline: 10px;
+  margin-block: 24px;
+  margin-inline: 24px;
 }
 
 .blog-card--small {
   padding: 24px;
-  margin-block: 10px;
-  margin-inline: 10px;
+  margin-block: 30px;
+  margin-inline: 30px;
 }
 
 .blog-card__label {
   background-color: #F5F8FB;
   padding-inline: 10px;
   padding-top: 8px;
-  padding-bottom: 10px;
+  padding-block: 10px;
 }
 
 .blog-card__text-label {
@@ -310,6 +452,7 @@ ul {
   line-height: 48px;
   letter-spacing: 0px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-bottom: 10px;
 }
 
 .blog-card__description {
@@ -322,21 +465,65 @@ ul {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  line-height: 24px;
   color: #F5F8FB;
   border: 2px solid #D0D7FB2B;
+  text-align: center;
   padding-block: 8px;
   padding-inline: 20px;
+}
+
+.blog-link:hover {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.blog-link:active {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+  border: 4px solid #3892f3;
+}
+
+.blog-link:active:focus {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
+}
+
+.cta-more {
+  margin-top: 40px;
+  text-align: center;
 }
 
 .cta-more__link { /* read more button of the whole section */
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
+  line-height: 28px;
   color: #F5F8FB;
   border: 2px solid #D0D7FB2B;
   padding-block: 10px;
   padding-inline: 24px;
-  line-height: 28px;
+}
+
+.cta-more__link:hover {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.cta-more__link:active {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 2px solid #bfc5ee1f;
+}
+
+.cta-more__link:focus {
+  color: #f5f8fb;
+  background-color: #bfc5ee1f;
+  border: 4px solid #3892f3;
 }
 
 /* ABOUT SECTION */
@@ -354,6 +541,8 @@ ul {
   position: relative;
   counter-increment: about-counter; 
   padding-left: 50px; 
+  background-color: #1A1925;
+  padding: 32px;
 }
 
 .about-list__item::before {
@@ -375,14 +564,6 @@ ul {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-}
-
-.about-list__item {
-  background-color: #1A1925;
-  min-width: 328px;
-  padding: 32px;
-  display: inline-block;
-  margin: 20px 20px;
 }
 
 .about-list__title {
@@ -416,7 +597,7 @@ ul {
   line-height: 32px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-bottom: 2px;
+  margin-block: 0px;
 }
 
 .team-member__role {
@@ -425,6 +606,7 @@ ul {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
+  margin-block: 0px;
 }
 
 /* FAQs SECTION */
@@ -437,9 +619,16 @@ ul {
 
 .faqs__item {
   background-color: #1D1C28;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  padding-inline: 24px;
   margin-bottom: 10px;
   backdrop-filter: blur(20px)
+}
+
+.faqs__question {
+  border-bottom: 1px solid #BFC5EE1F;
+  padding-bottom: 24px;
 }
 
 .faqs__question-text {
@@ -460,14 +649,18 @@ ul {
   padding: 64px 64px 32px;
 }
 
+.footer-upper {
+  justify-content: space-between;
+}
+
+.footer-lower {
+  justify-content: space-between;
+  border-top: 1px solid #BFC5EE1F;
+}
+
 .footer__description {
   line-height: 20px;
 }
-
-.footer-nav {
-  display: inline-block;
-}
-
 
 .footer-nav__title {
   font-weight: 500;
@@ -482,6 +675,22 @@ ul {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  display: block; padding-block: 4px;
+}
+
+.footer-nav__link:hover {
+  color: #3892f3;
+  font-weight: 590;
+}
+
+.footer-nav__link:focus {
+  font-weight: 590;
+  border: 4px solid #3892f3;
+}
+
+.footer-nav__link:active {
+  color: #0054b6;
+  font-weight: 590;
 }
 
 .copyright__text {
@@ -494,6 +703,7 @@ ul {
 
 .hero-section {
   position: static;
+  padding-top: 64px;
 }
 
 .hero-section__blog-title {
@@ -502,6 +712,11 @@ ul {
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block-end: 20px;
+}
+
+.hero-section__list {
+  margin: 0px;
 }
 
 .hero-section__nav {
@@ -513,12 +728,40 @@ ul {
   margin: 20px;
 }
 
+.hero-section__item-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #D0D7FB2B;
+}
+
 .hero-section__link {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
   line-height: 20px;
   text-align: center;
+}
+
+.hero-section__link:hover {
+  color: #3892f3;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.hero-section__link:focus {
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 12px;
+  border: 4px solid #3892f3;
+}
+
+.hero-section__link:active {
+  color: #0054b6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .hero-section__word--blog-article { /* highlighted word */
@@ -528,6 +771,15 @@ ul {
   line-height: 20px;
   letter-spacing: 0px;
   text-align: center;
+}
+
+.blog-article {
+  padding-bottom: 64px;
+}
+
+.main--blog-article {
+  padding-top: 64px;
+  padding-inline: 64px;
 }
 
 .blog-article__caption {
@@ -549,10 +801,9 @@ ul {
   background-color: #0265DC;
   padding-block: 10px;
   padding-inline: 24px;
-  font-size: 18px;
   font-weight: 600;
+  font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -574,6 +825,7 @@ ul {
   color: #F8F7FF;
   font-size: 18px;
   line-height: 28px;
+  margin-block: 40px
 }
 
 .blog-article__word-bg { /* highlighted word */
@@ -592,16 +844,43 @@ ul {
   line-height: 28px;
 }
 
+.blog-article__word:hover {
+  color: #3892f3;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.blog-article__word:focus {
+  color: #78bbfa;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+  border: 4px solid #3892f3;
+}
+
+.blog-article__word:active {
+  color: #0054b6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .blog-article__bullet-list {
   list-style: disc;  
-  padding-left: 20px; 
+  padding-left: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .blog-article__bullet-item {
   color: #F8F7FF;
   font-size: 18px;
   line-height: 28px;
-  margin-bottom: 20px;
+}
+
+.blog-article__list {
+  margin-top: 40px;
 }
 
 .blog-article__item {
@@ -615,6 +894,7 @@ ul {
   background-color: #002754;
   padding: 16px;
   border-radius: 16px;
+  margin-top: 40px;
 }
 
 .blog-article__quote-text {
@@ -663,13 +943,14 @@ ul {
   line-height: 24px;
 }
 
+.subarticle__wrapper {
+  display: inline-block;
+}
+
 .tag-list__item { /* this class also applies to side section tags */
-  height: 32px;
   padding-block: 6px;
   padding-inline: 12px;
-  margin-block: 5px;
   margin-inline: 5px;
-  box-sizing: border-box;
   display: inline-block;
   border: 2px solid #D0D7FB2B;
 }
@@ -682,18 +963,39 @@ ul {
   align-items: center;
 }
 
+.tag-list__link:hover {
+  color: #3892F3;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tag-list__link:active {
+  color: #0054B6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tag-list__link:focus {
+  border: 4px solid #3892f3;
+}
+
+.subarticle__socials-list {
+  margin-left: 700px;
+}
+
 .subarticle__share-title {
   color: #F8F7FF;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 700px;
 }
 
 .subarticle__socials-item {
-  padding-block: 6px;
-  padding-inline: 12px;
+  padding: 8px;
   margin-block: 5px;
   margin-inline: 5px;
-  box-sizing: border-box;
   display: inline-block;
   border: 2px solid #D0D7FB2B;
 }
@@ -705,14 +1007,34 @@ ul {
   align-items: center;
 }
 
+.subarticle__socials-link:hover {
+  color: #3892F3;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.subarticle__socials-link:active {
+  color: #0054B6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.subarticle__socials-link:focus {
+  border: 4px solid #3892f3;
+}
+
 .aside__block {
   background-color:#BFC5EE1F;
-  padding: 16px;
+  padding: 24px;
   margin-block: 21px;
   border: 1px;
 }
 
 .aside__block-title {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #BFC5EE1F;
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
@@ -726,6 +1048,27 @@ ul {
   min-width: 200px;
   padding-block: 6px;
   padding-inline: 12px;
+}
+
+.aside__block-link:hover {
+  color: #3892f3;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.aside__block-link:focus {
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
+  border: 4px solid #3892f3;
+}
+
+.aside__block-link:active {
+  color: #0054b6;
+  font-weight: 590;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .aside__block-link {

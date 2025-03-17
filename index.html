@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- HEADER-->
-    <header class="header">
+    <header class="header container">
       <div class="header-logo">
         <a class="header-logo__link" href="#">
           <img class="header-logo__image" src="#" alt="Binabox-logo"/>
@@ -54,7 +54,7 @@
 
     <!--MAIN STARTS HERE-->
     <main class="main">
-      <section class="hero-section hero-section--homepage">
+      <section class="hero-section hero-section--homepage container">
         <div class="hero-section__block">
         <h1 class="hero-section__title">WITH <span class="hero-section__brand">BINABOX</span> EXPLORE NFT COLLECTION</h1>
         <h2 class="hero-section__description">
@@ -82,10 +82,12 @@
       </section>
 
       <!--CATALOG SECTION-->
-      <section class="catalog-section">
+      <section class="catalog-section container">
         <div class="catalog-header">
+          <div class="catalog-header__title"> <!--the reason i add this div is because i saw that icon with title are a separate block with paddings-->
         <h3 class="section-title section-title--catalog">Catalog</h3>
         <img class="catalog__title-img" src="#" alt="folder-icon">
+          </div>
         <div class="catalog-header__divider"></div>
         <div class="catalog__controls">
           <button class="button-all catalog__button catalog__button--all">
@@ -97,54 +99,66 @@
           <button class="button-next catalog__button catalog__button--next">
             <span class="catalog__button catalog__button--next-text">&gt;</span>
           </button>
+          <div class="catalog__controls-separator">
+          </div>
         </div>
       </div>
         <ul class="product-wrapper">
           <li class="product-list__item">
             <article class="product-card">
+              <div class="product-card__img-wrapper"> 
+                <img class="product-card__img" src="#" alt="skeleton"/>
+                <div class="product-label">New</div>
+              </div>
               <p class="product-card__price">$199</p>
               <h4 class="product-card__name">Name Product</h4>
-              <img class="product-card__img" src="#" alt="skeleton"/>
-              <div class="product-label">New</div>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
+              <div class="product-card__img-wrapper"> 
+                <img class="product-card__img" src="#" alt="skeleton"/>
+                <div class="product-label">New</div>
+                </div>
               <p class="product-card__price">$199</p>
               <h4 class="product-card__name">Name Product</h4>
-              <img class="product-card__img" src="#" alt="cat"/>
-              <div class="product-label">New</div>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
+              <div class="product-card__img-wrapper"> 
+                <img class="product-card__img" src="#" alt="skeleton"/>
+                <div class="product-label">New</div>
+                </div>
               <p class="product-card__price">$199</p>
               <h4 class="product-card__name">Name Product</h4>
-              <img class="product-card__img" src="#" alt="scissors"/>
-              <div class="product-label product-label--updated">Sold Out</div>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
+              <div class="product-card__img-wrapper"> 
+                <img class="product-card__img" src="#" alt="skeleton"/>
+                <div class="product-label">New</div>
+                </div>
               <p class="product-card__price">$199</p>
               <h4 class="product-card__name">Name Product</h4>
-              <img class="product-card__img" src="#" alt="neon-card"/>
-              <div class="product-label">New</div>
             </article>
           </li>
           <li class="product-list__item">
             <article class="product-card">
+              <div class="product-card__img-wrapper"> 
+                <img class="product-card__img" src="#" alt="skeleton"/>
+                <div class="product-label">New</div>
+                </div>
               <p class="product-card__price">$199</p>
               <h4 class="product-card__name">Name Product</h4>
-              <img class="product-card__img" src="#" alt="console"/>
-              <div class="product-label">New</div>
             </article>
           </li>
         </ul>
       </section>
 
       <!--BLOG SECTION-->
-      <section class="blog-section">
+      <section class="blog-section container">
         <h3 class="section-title">Our blog</h3>
         <div class="blog-section__grid">
         <article class="blog-card blog-card--large">
@@ -244,7 +258,7 @@
       </section>
 
       <!--ABOUT US SECTION-->
-      <section class="about">
+      <section class="about container">
         <h3 class="section-title">About us</h3>
         <p class="about__description">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -289,7 +303,7 @@
       </section>
 
       <!-- OUR TEAM SECTION-->
-      <section class="team">
+      <section class="team container">
         <h3 class="section-title">Our team</h3>
         <ul class="team__list">
           <!--team member1-->
@@ -541,7 +555,7 @@
       </section>
 
       <!--FAQs SECTION-->
-      <section class="faqs">
+      <section class="faqs container">
         <h3 class="section-title">FAQs</h3>
         <details class="faqs__item">
           <summary class="faqs__question">
@@ -574,7 +588,7 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer-upper">
         <div class="footer-logo">
           <a class="footer-logo__link" href="#" title="Binabox">
@@ -582,7 +596,6 @@
           </a>
         </div>
         <p class="footer__description">We are the best way to check the rarity of NFT collection</p>
-      </div>
       <div class="footer__list-wrapper">
         <nav class="footer-nav">
           <h5 class="footer-nav__title">Subscribe</h5>
@@ -618,6 +631,7 @@
             </li>
           </ul>
         </nav>
+      </div>
       </div>
       <div class="footer-lower">
         <div class="copyright">
