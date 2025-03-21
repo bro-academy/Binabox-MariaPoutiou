@@ -6,6 +6,10 @@ body {
   font-size: 14px;
 }
 
+h1, h2,h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
 ul {
   list-style: none;
   padding: 0px;
@@ -134,7 +138,6 @@ img {
 }
 
 .hero-section__title {
-  font-weight: 400;
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
@@ -231,7 +234,6 @@ img {
 }
 
 .section-title {
-  font-weight: 400;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -453,7 +455,6 @@ img {
 }
 
 .blog-card__title {
-  font-weight: 400;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0px;
@@ -573,7 +574,6 @@ img {
 }
 
 .about-list__title {
-  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
@@ -601,7 +601,6 @@ img {
 }
 
 .team-member__name {
-  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
@@ -639,7 +638,6 @@ img {
 }
 
 .faqs__question-text {
-  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
@@ -725,7 +723,6 @@ img {
 }
 
 .hero-section__blog-title {
-  font-weight: 400;
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
@@ -792,7 +789,6 @@ img {
 }
 
 .blog-article__title {
-  font-weight: 400;
   color: #F8F7FF;
   font-size: 36px;
   line-height: 48px;
@@ -899,7 +895,6 @@ img {
 }
 
 .blog-article__quote-text {
-  font-weight: 400;
   color: #F8F7FF;
   font-size: 28px;
   line-height: 36px;
@@ -927,7 +922,6 @@ img {
 }
 
 .subarticle-title {
-  font-weight: 400;
   color: #F8F7FF;
   font-size: 28px;
   line-height: 38px;
@@ -1023,7 +1017,6 @@ img {
 }
 
 .aside__block-title {
-  font-weight: 400;
   padding-bottom: 16px;
   border-bottom: 1px solid #BFC5EE1F;
   font-size: 24px;
