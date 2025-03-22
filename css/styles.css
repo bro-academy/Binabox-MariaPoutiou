@@ -6,6 +6,10 @@ body {
   font-size: 14px;
 }
 
+h1, h2,h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
 ul {
   list-style: none;
   padding: 0px;
@@ -13,6 +17,11 @@ ul {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -46,18 +55,8 @@ ul {
   color: #3892f3;
 }
 
-.main-nav__link:focus {
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
-  border: 4px solid #3892F3;
-}
-
 .main-nav__link:active {
   color: #0054b6;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .main-nav__link--active {
@@ -71,28 +70,39 @@ ul {
   padding: 8px 20px;
 }
 
-.header__button {
-  border: 2px;  
-  padding-block: 10px;
-  padding-inline: 24px;
-}
-
-.header-button__text {
-  color: #f5f8fb;
+.button {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
 }
 
+.button {
+  border: 2px solid transparent;
+}
+
+.button:focus {
+  border-color: #3892F3;
+}
+
+.header__button {
+  padding-block: 10px;
+  padding-inline: 24px;
+}
+
+.header-button__text {
+  color: #f5f8fb;
+}
+
 .button--secondary {
+  color: #F5F8FB;
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
 }
 
 .button--primary {
   background-color: #0265DC;
-  border: none;
+  border-color: #0265DC;
 }
 
 .button--primary:hover {
@@ -105,7 +115,6 @@ ul {
 
 .button--primary:focus {
   background-color: #0265DC;
-  border: 4px solid #3892F3;
 }
 
 .button--secondary:hover {
@@ -120,20 +129,25 @@ ul {
 
 .button--secondary:focus {
   background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
 }
 
 /* HERO SECTION */
 
 .hero-section--homepage {
   padding-block: 64px;
+  background: radial-gradient(
+    45% 30% at 22% -4%,
+    #0265dc80,
+    #0265dc00 100%
+  ),
+  #0d0d15;
 }
 
 .hero-section__title {
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: "Bakbak One", "Georgia", sans-serif;
 }
 
@@ -145,6 +159,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+  margin-block: 0 32px;
 }
 
 .hero-section__stats {
@@ -157,14 +172,14 @@ ul {
   letter-spacing: 0.5px;
   text-shadow: 0px 4px 13px #FFFFFF66;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-bottom: 10px;
-  margin-right: 40px;
+  margin: 0;
 }
 
 .hero-section__stat-label {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
+  margin: 0;
 }
 
 .hero-section__button {
@@ -176,10 +191,8 @@ ul {
 
 .hero-section__button--primary {
   background-color: #0265DC;
-  border: none;
+  border-color: #0265DC;
   color: #F5F8FB;
-  font-size: 18px;
-  line-height: 28px;
 }
 
 .hero-section__button--primary:hover {
@@ -192,14 +205,12 @@ ul {
 
 .hero-section__button--primary:focus {
   background-color: #0265DC;
-  border: 4px solid #3892F3;
 }
 
 .hero-section__button--secondary {
+  color: #F5F8FB;
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
-  font-size: 18px;
-  line-height: 28px;
 }
 
 .hero-section__button--secondary:hover {
@@ -214,7 +225,6 @@ ul {
 
 .hero-section__button--secondary:focus {
   background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
 }
 
 .hero-section__button--text{
@@ -235,10 +245,6 @@ ul {
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
   margin-block: 0 40px;
-}
-
-.catalog-header__title {
-  padding: 2px;
 }
 
 .section-title--catalog { /* i had to make a modifier because this section title is smaller */
@@ -356,6 +362,10 @@ ul {
   display: inline-block;
 }
 
+.product-card__img {
+  object-fit: cover;
+}
+
 .product-card__name {
   color: #EFF5FAD1; 
   opacity: 82%;
@@ -381,20 +391,17 @@ ul {
   font-weight: 600;
   line-height: 20px;
   text-align: center;
+  display: inline-block
 }
 
 .product-label--updated {
   background-color:#EA3829;
+  color: #F5F8FB;
   padding-block: 8px;
   padding-inline: 10px;
   font-weight: 600;
   line-height: 20px;
   text-align: center;
-}
-
-.product-label__text--updated {
-  line-height: 20px;
-  text-align: right;
 }
 
 /* BLOG SECTION */
@@ -426,6 +433,7 @@ ul {
   padding-inline: 10px;
   padding-top: 8px;
   padding-block: 10px;
+  display: inline-block
 }
 
 .blog-card__text-label {
@@ -570,18 +578,18 @@ ul {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0 24px;
 }
 
 .about-list__description {
   color: #EFF5FAD1; 
-  opacity: 82%;
   font-size: 18px;
   line-height: 28px;
+  margin-block: 0;
 }
 
-.team {
-  padding: 64px;
-  margin-top: 200px;
+.team-member__img {
+  border-radius: 50%;
 }
 
 .team-member {
@@ -590,12 +598,12 @@ ul {
   display: inline-block;
   margin-block: 20px;
   margin-inline: 20px;
+  text-align: center;
 }
 
 .team-member__name {
   font-size: 24px;
   line-height: 32px;
-  text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
   margin-block: 0px;
 }
@@ -605,7 +613,6 @@ ul {
   opacity: 82%;
   font-size: 18px;
   line-height: 28px;
-  text-align: center;
   margin-block: 0px;
 }
 
@@ -635,11 +642,13 @@ ul {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 0;
 }
 
 .faqs__answer {
   font-size: 16px;
   line-height: 24px;
+  margin-block: 16px 0;
 } 
 
 /* FOOTER */
@@ -666,6 +675,7 @@ ul {
   font-weight: 500;
   line-height: 28px;
   font-size: 20px;
+  margin-block: 0 8px;
 }
 
 .footer-nav__link {
@@ -674,23 +684,23 @@ ul {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
   display: block; padding-block: 4px;
 }
 
 .footer-nav__link:hover {
   color: #3892f3;
-  font-weight: 590;
 }
 
 .footer-nav__link:focus {
-  font-weight: 590;
   border: 4px solid #3892f3;
 }
 
 .footer-nav__link:active {
   color: #0054b6;
-  font-weight: 590;
+}
+
+.footer-nav__list {
+  margin: 0
 }
 
 .copyright__text {
@@ -706,13 +716,20 @@ ul {
   padding-top: 64px;
 }
 
+.hero-section--blog-article {
+  background-image: url(/img/hero-section-banner-background.webp);
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
 .hero-section__blog-title {
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
   text-align: center;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-block-end: 20px;
+  margin-block: 0 20px;
 }
 
 .hero-section__list {
@@ -728,13 +745,6 @@ ul {
   margin: 20px;
 }
 
-.hero-section__item-separator {
-  width: 2px;
-  height: 24px;
-  border-radius: 2px;
-  background-color: #D0D7FB2B;
-}
-
 .hero-section__link {
   color: #F5F8FB;
   text-decoration: none;
@@ -745,23 +755,18 @@ ul {
 
 .hero-section__link:hover {
   color: #3892f3;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 12px;
 }
 
 .hero-section__link:focus {
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 12px;
   border: 4px solid #3892f3;
 }
 
 .hero-section__link:active {
   color: #0054b6;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 12px;
+}
+
+.blog-article__figure {
+  margin: 0;
 }
 
 .hero-section__word--blog-article { /* highlighted word */
@@ -777,11 +782,6 @@ ul {
   padding-bottom: 64px;
 }
 
-.main--blog-article {
-  padding-top: 64px;
-  padding-inline: 64px;
-}
-
 .blog-article__caption {
   color: #F8F7FF;
   font-weight: 500;
@@ -795,6 +795,7 @@ ul {
   line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", "Georgia", sans-serif;
+  margin-block: 16px
 }
 
 .blog-article__label {
@@ -846,14 +847,12 @@ ul {
 
 .blog-article__word:hover {
   color: #3892f3;
-  font-weight: 590;
   font-size: 12px;
   line-height: 16px;
 }
 
 .blog-article__word:focus {
   color: #78bbfa;
-  font-weight: 590;
   font-size: 12px;
   line-height: 16px;
   border: 4px solid #3892f3;
@@ -861,7 +860,6 @@ ul {
 
 .blog-article__word:active {
   color: #0054b6;
-  font-weight: 590;
   font-size: 12px;
   line-height: 16px;
 }
@@ -965,16 +963,10 @@ ul {
 
 .tag-list__link:hover {
   color: #3892F3;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .tag-list__link:active {
   color: #0054B6;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .tag-list__link:focus {
@@ -1009,16 +1001,10 @@ ul {
 
 .subarticle__socials-link:hover {
   color: #3892F3;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .subarticle__socials-link:active {
   color: #0054B6;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .subarticle__socials-link:focus {
@@ -1028,8 +1014,7 @@ ul {
 .aside__block {
   background-color:#BFC5EE1F;
   padding: 24px;
-  margin-block: 21px;
-  border: 1px;
+  margin-block: 0 21px;
 }
 
 .aside__block-title {
@@ -1052,29 +1037,20 @@ ul {
 
 .aside__block-link:hover {
   color: #3892f3;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .aside__block-link:focus {
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
   border: 4px solid #3892f3;
 }
 
 .aside__block-link:active {
   color: #0054b6;
-  font-weight: 590;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .aside__block-link {
   color: #F5F8FB;
   text-decoration: none;
-  font-weight: 600;;
+  font-weight: 600;
   line-height: 20px;
   margin-bottom: 20px;
 }
