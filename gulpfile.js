@@ -32,10 +32,10 @@ const paths = {
   viewsDir: dev + 'templates/',
   distDir: dist,
   dev: {
-    scss:  dev+'styles/**/*.scss',
-    styles: dev+'styles/pages/*.scss',
+    scss:  dev+'styles/**/*.{css,scss}',
+    styles: dev+'styles/pages/*.{css,scss}',
     svg: dev+'images/sprite/*.svg',
-    views: dev+'templates/**/*.njk',
+    views: dev+'templates/**/*.{json,njk,html}',
     pages: dev+'templates/pages/*/*.{njk,html}',
     images: dev+'images/static/**/*.{jpg,jpeg,png,svg}',
   },
@@ -244,9 +244,9 @@ export const build = series(clean, parallel(styles, images, sprite, markup))
 
 const watchFiles = (cb) => {
   watch(paths.dev.scss, { delay: 1000 }, styles)
-  watch(paths.dev.images, { delay: 1000 }, images)
-  watch(paths.dev.svg, { delay: 1000 }, sprite)
-  watch(paths.dev.views, { delay: 1000 }, markup)
+  watch(paths.dev.images, images)
+  watch(paths.dev.svg, sprite)
+  watch(paths.dev.views, markup)
   cb()
 }
 export { watchFiles as watch }
