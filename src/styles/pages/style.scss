@@ -1032,6 +1032,14 @@ img {
   padding-inline: 12px;
 }
 
+.aside__block-link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
 .aside__block-link:hover {
   color: #3892f3;
 }
@@ -1042,14 +1050,6 @@ img {
 
 .aside__block-link:active {
   color: #0054b6;
-}
-
-.aside__block-link {
-  color: #F5F8FB;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 20px;
-  margin-bottom: 20px;
 }
 
 .social-media__list-item {

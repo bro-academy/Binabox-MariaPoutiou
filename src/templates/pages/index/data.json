@@ -1,4 +1,453 @@
 {
-  "title": "test",
-  "h1": ""
+
+  "heroStats":[
+    {
+      "value": "2040+",
+      "label": "Total team"
+    },
+    {
+      "value": "1000+",
+      "label": "Profiles whitelisted"
+    }
+  ],
+
+  "catalogButtons":[
+    {
+      "all": "See all",
+      "prev": "&lt;",
+      "next": "&gt;"
+    }
+  ],
+
+  "products":[
+    {
+      "img": "src/images/static/product-skeleton.webp",
+      "alt": "futiristc skeleton in front of smoke",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+    },
+    {
+      "img": "/src/images/static/product-cat.webp",
+      "alt": "cyber looking cat with green eyes glowing in the dark",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+    },
+    {
+      "img": "src/images/static/product-scissors.webp",
+      "alt": "futuristic dark colored scissors",
+      "label": "Sold out",
+      "price": "$199",
+      "name": "Name Product"
+    },
+    {
+      "img": "src/images/static/product-digital-card.webp",
+      "alt": "glowing green futuristic digital card",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+    },
+    {
+      "img": "src/images/static/product-console.webp",
+      "alt": "cyberpunk holographic game console",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+    }
+  ],
+
+ "blogCard":[
+    {
+      "img": "src/images/static/sonic-live-face.webp",
+      "alt": "abstract cyber face illustration",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    },
+    {
+      "img": "src/images/static/sonic-live-skeleton.webp",
+      "alt": "futiristc skeleton in front of smoke",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    },
+    {
+      "img": "src/images/static/sonic-live-cat.webp",
+      "alt": "cyber looking cat with green eyes glowing in the dark",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    },
+    {
+      "img": "src/images/static/sonic-live-gorilla.webp",
+      "alt": "AI-enhanced gorilla with piercing eyes and cybernetic effects",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    },
+    {
+      "img": "src/images/static/sonic-live-duck.webp",
+      "alt": "futuristic duck with a digital background and neon elements",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    },
+    {
+      "img": "src/images/static/sonic-live-console.webp",
+      "alt": "cyberpunk holographic game console",
+      "label": "NFT",
+      "authorIcon": "#",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "#",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "link": "Read more"
+    }
+  ],
+
+  "aboutCard":[
+    {
+      "title": "High quality",
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big collection",
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Top resource",
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big community",
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    }
+   ],
+
+   "teamMember": [
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  {
+    "img": "src/images/static/jason-smith.webp",
+    "alt": "Portrait of Jason Smith",
+    "name": "Jason Smith",
+    "role": "Co-Founder",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "link": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "platform": "Facebook",
+        "link": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "platform": "Telegram",
+        "link": "https://web.telegram.org/k/",
+        "icon": "#",
+        "alt": "telegram-logo"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/",
+        "icon": "#",
+        "alt": "linkedin-logo"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  }
+],
+
+"faqsItem":[
+  {
+    "question": "What are the NFTs?",
+    "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+  },
+  {
+    "question": "How do i get NFTs?",
+    "answer": "#"
+  },
+  {
+    "question": "How can we buy your NFTs",
+    "answer": "#"
+  },
+  {
+    "question": "Who are the team behind the project?",
+    "answer": "#"
+  }
+ ]
 }
