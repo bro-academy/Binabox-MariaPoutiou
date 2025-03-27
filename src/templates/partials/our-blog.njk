@@ -1,3 +1,7 @@
+<section class="blog-section container">
+  <h3 class="section-title">{{ blogSection.title }}</h3>
+  <div class="blog-section__grid">
+    {%for blog in blogCard %}
 <article class="blog-card blog-card--large">
           <img class="blog-card__img" src="{{ blog.img }}" alt="{{ blog.alt }}"
           width="736" height="664" loading="lazy" decoding="async"/>
@@ -14,3 +18,9 @@
           <p class="blog-card__description">{{ blog.cardDescription }}</p>
           <a class="blog-link" href="#">{{ blog.link }}</a>
         </article>
+        {% endfor %}
+      </div>
+      <div class="cta-more">
+        <a class="cta-more__link" href="#">{{ blogSection.cta }}</a>
+      </div>
+      </section>

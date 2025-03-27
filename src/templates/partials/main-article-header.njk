@@ -1,0 +1,15 @@
+      <div class="container">
+      <article class="blog-article">
+        <figure class="blog-article__figure">
+          <img class="blog-article__img" src="{{ header.img }}" alt="{{ header.alt }}" 
+          width="1024" height="557" load="lazy" decoding="async"/>
+          <figcaption class="blog-article__caption">{{ header.caption }}</figcaption>
+        </figure>
+        <h2 class="blog-article__title">{{ header.title }}</h2>
+        <div class="blog-article__label">{{ header.label }}</div>
+        <div class="blog-article__meta">
+          <img class="blog-article__author-icon" src="{{ header.authorIcon }}" alt="{{ header.authorIconAlt }}"/>
+          <span class="blog-article__author">{{ header.author }}</span>
+          <img class="blog-article__date-icon" src="{{ header.dateIcon }}" alt="{{ header.dateIconAlt }}"/>
+          <time class="blog-article__date" datetime="2022-06-20">{{ header.datetime }}</time>
+        </div>

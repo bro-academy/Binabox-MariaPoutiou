@@ -7,109 +7,25 @@
 {% block content %}
     <!--MAIN STARTS HERE-->
     <main class="main">
-      <section class="hero-section hero-section--homepage container">
-        <div class="hero-section__block">
-        <h1 class="hero-section__title">WITH <span class="hero-section__brand">BINABOX</span> EXPLORE NFT COLLECTION</h1>
-        <h2 class="hero-section__description">
-          We are the best way to check the rarity of NFT
-          <span class="hero-section__word">collection</span>
-        </h2>
-        <div class="hero-section__content">
-          <div class="hero-section__text-content">
-            {% for stat in heroStats %}
-            {% set stat = stat %}
-            {% include "partials/hero-stats.njk" %}
-          {% endfor %}
-          </div>
-          <div class="hero-section__buttons">
-            <button class="button hero-section__button hero-section__button--primary">Connect Wallet</button>
-            <button class="button hero-section__button hero-section__button--secondary"><span class="hero-section__button--text">Whitelist now</span></button>
-          </div>
-        </div>
-      </div>
-        <img class="hero-section__img" src="src/images/static/binabox-cube.webp" alt="glowing futuristic cube with digital circuits and BINABOX text" 
-        width="533.5" height="641.8px" load="eager" decoding="async"/>
-      </section>
+
+      <!--HERO SECTION-->
+      {% include "partials/hero-section.njk" %}
 
       <!--CATALOG SECTION-->
-      <section class="catalog-section container">
-        <div class="catalog-header">
-          <div class="catalog-header__title"> <!--the reason i add this div is because i saw that icon with title are a separate block with paddings-->
-        <h3 class="section-title section-title--catalog">Catalog</h3>
-        <img class="catalog__title-img" src="#" alt="folder icon" loading="lazy" decoding="async">
-          </div>
-        <div class="catalog-header__divider"></div>
-        <div class="catalog__controls">
-          {% for button in catalogButtons %}
-          {% set button = button %}
-          {% include "partials/catalog-buttons.njk" %}
-        {% endfor %}
-          <div class="catalog__controls-separator">
-          </div>
-        </div>
-      </div>
-        <ul class="product-wrapper">
-          {% for product in products %}
-          {% set product = product %}
-          {% include "partials/product-card.njk" %}
-        {% endfor %}
-        </ul>
-      </section>
+      {% include "partials/catalog-section.njk" %}
 
       <!--BLOG SECTION-->
-      <section class="blog-section container">
-        <h3 class="section-title">Our blog</h3>
-        <div class="blog-section__grid">
-          {% for blog in blogCard %}
-          {% set blog = blog %}
-          {% include "partials/blog-card.njk" %}
-        {% endfor %}
-      </div>
-      <div class="cta-more">
-        <a class="cta-more__link" href="#">Read more</a>
-      </div>
-      </section>
+      {% include "partials/our-blog.njk" %}
 
       <!--ABOUT US SECTION-->
-      <section class="about container">
-        <h3 class="section-title">About us</h3>
-        <p class="about__description">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
-          non proident, sunt in c ulpa qui officia dese runt mollit anim id est
-          laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
-          occaecat
-        </p>
-        <ul class="about-list">
-          {% for item in aboutCard %}
-          {% set item = item %}
-          {% include "partials/about-list.njk" %}
-        {% endfor %}
-        </ul>
-        <div class="cta-more">
-          <a class="cta-more__link" href="#">Read more</a>
-        </div>
-      </section>
+      {% include "partials/about-us.njk" %}
 
       <!-- OUR TEAM SECTION-->
-      <section class="team container">
-        <h3 class="section-title">Our team</h3>
-        <ul class="team__list">
-          {% for member in teamMember %}
-          {% set member = member %}
-          {% include "partials/team-member.njk" %}
-        {% endfor %}
-        </ul>
-      </section>
+      {% include "partials/team.njk" %}
 
       <!--FAQs SECTION-->
-      <section class="faqs container">
-        <h3 class="section-title">FAQs</h3>
-        {% for faq in faqsItem %}
-        {% set faq = faq %}
-        {% include "partials/faqs-item.njk" %}
-      {% endfor %}
-      </section>
+      {% include "partials/faqs.njk" %}
+
     </main>
 {% endblock %}
 

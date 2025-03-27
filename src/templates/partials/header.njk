@@ -1,33 +1,19 @@
     <header class="header container">
       <div class="header-logo">
-        <a class="header-logo__link" href="#">
-          <img class="header-logo__image" src="#" alt="Binabox-logo" load="eager" decoding="sync"/>
+        <a class="header-logo__link" href="{{ header.logolink }}">
+          <img class="header-logo__image" src="{{ header.logoimg }}" alt="{{ header.logoalt }}" load="eager" decoding="sync"/>
         </a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
+          {% for item in header.nav %}
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Home</a>
+            <a class="main-nav__link {% if item.text == currentPage %} main-nav__link--active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blog-article.html">Blog</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Catalog</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Contact us</a>
-          </li>
+          {% endfor %}
         </ul>
       </nav>
       <div class="header-actions">
-        <button class="button header__button button--secondary">
-          <img class="header-button__img" src="#" alt="Discord"/>
-          <span class="header-button__text">Discord</span>
-        </button>
-        <button class="button header__button button--primary">
-          <img class="header-button__img" src="#" alt="Connect"/>
-          <span class="header-button__text">Connect</span>
-        </button>
+     {% include "partials/header-buttons.njk" %}
       </div>
     </header>
