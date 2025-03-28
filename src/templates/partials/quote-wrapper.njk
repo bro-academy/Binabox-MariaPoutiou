@@ -1,0 +1,21 @@
+<div class="blog-article__quote-wrapper">
+          <figure class="blog-article__quote">
+            <blockquote class="blog-article__quote-text">
+              {{ quoteWrapper.text }}
+            </blockquote>
+          </figure>
+          <div class="blog-article__quote-meta">
+            <img class="blog-article__quote-icon" src="{{ quoteWrapper.icon }}" alt="{{ quoteWrapper.altIcon }}" loading="lazy" decoding="async"/>
+            <span class="blog-article__quote-value">{{ quoteWrapper.value }}</span>
+            <span class="blog-article__quote-author">{{ quoteWrapper.author }}</span>
+          </div>
+        </div>
+        <div class="blog-article__gallery-wrapper">
+          <figure class="blog-article__gallery">
+            {% for item in quoteWrapper.imageWrapper %}
+            <img class="blog-article__gallery-img" src="{{ item.img }}" alt="{{ item.alt }}" 
+            width="500" height="393.94" load="lazy" decoding="async"/>
+            <figcaption class="blog-article__gallery-caption">{{ item.caption }}</figcaption>
+          </figure>
+           {% endfor %}
+        </div>
