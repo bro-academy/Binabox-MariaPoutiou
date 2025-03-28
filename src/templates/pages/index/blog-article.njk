@@ -8,126 +8,20 @@
 
 {% block content %}
 <main class="main">
+    <!--HERO SECTION-->
        {% include "partials/hero-blog.njk" %}   
 
       <!--BLOG CONTENT-->
       {% include "partials/main-article.njk" %}
 
         <!--NFT EXPLANATION-->
-        <h3 class="subarticle-title">NFTs are digital assets that represent real-world objects</h3>
-        <p class="subarticle__text">
-          Setting up your avatar and personalizing your nickname on Binance is
-          quick and easy. Users can go to binance.com under Dashboard > Settings
-          > My Profile > Avatar and Nickname. For those of you who own NFT
-          assets, you can select the NFT you want to use from your collection as
-          your avatar to personalize your profile. For users who do not own any
-          NFT avatars, check out the NFT avatar collections page to get started.
-        </p>
-        <p class="subarticle__text">
-          Alternatively, if you’re on nft.binance.com, go to User Center >
-          Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
-          to the main site. Binance NFT Creators have the option of setting
-          their Avatars on nft.binance.com. Once you set your new unique
-          nickname, it will be standardized and used across the Binance
-          ecosystem.
-        </p>
-        <h3 class="subarticle-title">NFT Avatar Generators</h3>
-        <p class="subarticle__text">
-          You can find a range of NFT marketplaces where you can buy existing
-          NFTs or list your own NFTs for sale.
-        </p>
-        <div class="subarticle__wrapper">
-          <p class="subarticle__tags-title"><strong>Tags:</strong></p>
-          <ul class="tag-list tag-list--subarticle">
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">NFT</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">ICO</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">Crypto</a>
-            </li>
-          </ul>
-        </div>
-        <div class="subarticle__wrapper">
-          <p class="subarticle__share-title"><strong>Share:</strong></p>
-          <ul class="subarticle__socials-list">
-            <li class="subarticle__socials-item">
-              <a class="subarticle__socials-link" href="https://x.com/?lang=en&mx=2" target="_blank">
-                <img class="subarticle__socials-icon" src="#" alt="twitter-logo" load="lazy" decoding="async"/>
-              </a>
-            </li>
-            <li class="subarticle__socials-item">
-              <a class="subarticle__socials-link" href="https://www.facebook.com/" target="_blank">
-                <img class="subarticle__socials-icon" src="#" alt="facebook-logo" load="lazy" decoding="async"/>
-              </a>
-            </li>
-            <li class="subarticle__socials-item">
-              <a class="subarticle__socials-link" href="https://www.instagram.com/" target="_blank">
-                <img class="subarticle__socials-icon" src="#" alt="instagram-logo" load="lazy" decoding="async"/>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </article>
-
+        {% include "partials/subarticle.njk" %}
+        
       <!--SIDEBAR CATEGORIES-->
-      <aside class="aside-section">
-        <section class="aside__block">
-          <h3 class="aside__block-title">Categories</h3>
-          <nav class="aside__block-nav">
-            <ul class="aside__block-list">
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Our blog (12)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Metaverse (24)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Gaming (24)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Art (24)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Robot (24)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Launchpad (24)</a>
-              </li>
-              <li class="aside__block-item">
-                <a class="aside__block-link" href="#">Crypto (430)</a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-
+      {% include "partials/aside-upper.njk" %}
+      
         <!--SIDEBAR TAG-->
-        <section class="aside__block aside__block--lower">
-          <h4 class="aside__block-title">Tag</h4>
-          <ul class="tag-list tag-list--aside">
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">NFT</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">ICO</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">Robot</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">Crypto</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">Launchpad</a>
-            </li>
-            <li class="tag-list__item">
-              <a class="tag-list__link" href="#">Metaverse</a>
-            </li>
-          </ul>
-        </section>
-      </aside>
-    </div>
+        {% include "partials/aside-lower.njk" %}
+        
     </main>
 {% endblock %}
