@@ -4,8 +4,12 @@
           {% for member in teamMember %}
           <li class="team-member">
             <div class="team-member__details">
-              <img class="team-member__img" src="{{ member.img }}" alt="{{ member.alt }}" 
-              width="120" height="120" loading="lazy" decoding="async"/>
+              <picture class="team-member__picture">
+                <source srcset="/img/{{ member.img }}-1x.avif 1x, /img/{{ member.img }}-2x.avif 2x" type="image/avif">
+                <source srcset="/img/{{ member.img }}-1x.webp 1x, /img/{{ member.img }}-2x.webp 2x" type="image/webp">
+                <img class="team-member__img" src="/img/{{ member.img }}-2x.webp" alt="{{ member.alt }}" 
+                  width="120" height="120" loading="lazy" decoding="async"/>
+              </picture>
               <h4 class="team-member__name">{{ member.name }}</h4>
               <p class="team-member__role">{{ member.role }}</p>
             </div>

@@ -13,6 +13,10 @@
           {% include "partials/hero-buttons.njk" %}
         </div>
       </div>
-        <img class="hero-section__img" src="{{ heroSection.img }}" alt="{{ heroSection.alt }}" 
-        width="533.5" height="641.8px" load="eager" decoding="async"/>
+      <picture>
+        <source srcset="/img/{{ heroSection.img }}-1x.avif 1x, /img/{{ heroSection.img }}-2x.avif 2x" type="image/avif">
+        <source srcset="/img/{{ heroSection.img }}-1x.webp 1x, /img/{{ heroSection.img }}-2x.webp 2x" type="image/webp">
+        <img class="hero-section__img" src="/img/{{ heroSection.img }}-2x.webp" alt="{{ heroSection.alt }}" 
+        width="533.5" height="641.8" loading="eager" decoding="async"/>
+      </picture>
       </section>

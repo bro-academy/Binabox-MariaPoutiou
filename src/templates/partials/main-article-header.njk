@@ -1,8 +1,12 @@
       <div class="container">
       <article class="blog-article">
         <figure class="blog-article__figure">
-          <img class="blog-article__img" src="{{ header.img }}" alt="{{ header.alt }}" 
-          width="1024" height="557" load="lazy" decoding="async"/>
+          <picture class="blog-article__picture">
+            <source srcset="/img/{{ header.img }}-1x.avif 1x, /img/{{ header.img }}-2x.avif 2x" type="image/avif">
+            <source srcset="/img/{{ header.img }}-1x.webp 1x, /img/{{ header.img }}-2x.webp 2x" type="image/webp">
+            <img class="blog-article__img" src="/img/{{ header.img }}-2x.webp" alt="{{ header.alt }}" 
+              width="1024" height="557" loading="lazy" decoding="async"/>
+          </picture>
           <figcaption class="blog-article__caption">{{ header.caption }}</figcaption>
         </figure>
         <h2 class="blog-article__title">{{ header.title }}</h2>

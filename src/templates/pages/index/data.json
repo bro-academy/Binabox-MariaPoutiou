@@ -37,7 +37,7 @@
     "brand": "BINABOX",
     "suffix": "EXPLORE NFT COLLECTION",
     "description": "We are the best way to check the rarity of NFT collection", 
-    "img": "src/images/static/binabox-cube.webp",
+    "img": "binabox-cube",
     "alt": "glowing futuristic cube with digital circuits and BINABOX text"
   },
 
@@ -88,35 +88,35 @@
 
   "products":[
     {
-      "img": "src/images/static/product-skeleton.webp",
+      "img": "product-skeleton",
       "alt": "futiristc skeleton in front of smoke",
       "label": "New",
       "price": "$199",
       "name": "Name Product"
     },
     {
-      "img": "/src/images/static/product-cat.webp",
+      "img": "product-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "New",
       "price": "$199",
       "name": "Name Product"
     },
     {
-      "img": "src/images/static/product-scissors.webp",
+      "img": "product-scissors",
       "alt": "futuristic dark colored scissors",
       "label": "Sold out",
       "price": "$199",
       "name": "Name Product"
     },
     {
-      "img": "src/images/static/product-digital-card.webp",
+      "img": "product-digital-card",
       "alt": "glowing green futuristic digital card",
       "label": "New",
       "price": "$199",
       "name": "Name Product"
     },
     {
-      "img": "src/images/static/product-console.webp",
+      "img": "product-console",
       "alt": "cyberpunk holographic game console",
       "label": "New",
       "price": "$199",
@@ -132,7 +132,7 @@
 
  "blogCard":[
     {
-      "img": "src/images/static/sonic-live-face.webp",
+      "img": "sonic-live-face",
       "alt": "abstract cyber face illustration",
       "label": "NFT",
       "authorIcon": "#",
@@ -146,7 +146,7 @@
       "link": "Read more"
     },
     {
-      "img": "src/images/static/sonic-live-skeleton.webp",
+      "img": "sonic-live-skeleton",
       "alt": "futiristc skeleton in front of smoke",
       "label": "NFT",
       "authorIcon": "#",
@@ -160,7 +160,7 @@
       "link": "Read more"
     },
     {
-      "img": "src/images/static/sonic-live-cat.webp",
+      "img": "sonic-live-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "NFT",
       "authorIcon": "#",
@@ -174,7 +174,7 @@
       "link": "Read more"
     },
     {
-      "img": "src/images/static/sonic-live-gorilla.webp",
+      "img": "sonic-live-gorilla",
       "alt": "AI-enhanced gorilla with piercing eyes and cybernetic effects",
       "label": "NFT",
       "authorIcon": "#",
@@ -188,7 +188,7 @@
       "link": "Read more"
     },
     {
-      "img": "src/images/static/sonic-live-duck.webp",
+      "img": "sonic-live-duck",
       "alt": "futuristic duck with a digital background and neon elements",
       "label": "NFT",
       "authorIcon": "#",
@@ -202,7 +202,7 @@
       "link": "Read more"
     },
     {
-      "img": "src/images/static/sonic-live-console.webp",
+      "img": "sonic-live-console",
       "alt": "cyberpunk holographic game console",
       "label": "NFT",
       "authorIcon": "#",
@@ -250,7 +250,7 @@
 
    "teamMember": [
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -326,7 +326,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -364,7 +364,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -402,7 +402,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -440,7 +440,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -478,7 +478,7 @@
     ]
   },
   {
-    "img": "src/images/static/jason-smith.webp",
+    "img": "jason-smith",
     "alt": "Portrait of Jason Smith",
     "name": "Jason Smith",
     "role": "Co-Founder",
@@ -587,7 +587,7 @@
 ],
 
 "mainArticleHeader": {
-  "img": "src/images/static/dragon-main.webp",
+  "img": "dragon-main",
   "alt": "a person standing in front of a big dragon with open wings", 
   "caption": "Photo caption",
   "title": "The Basilisks NFT",
@@ -636,12 +636,12 @@
   "author": "Markout Corporation",
   "imageWrapper": [
     {
-      "img": "src/images/static/dragon-closeup.webp",
+      "img": "dragon-closeup",
       "alt": "close up of a dragon",
       "caption": "Photo caption"
     },
     {
-      "img": "src/images/static/dragon-full.webp",
+      "img": "dragon-full",
       "alt": "a person with a knife standing in front of big dragon",
       "caption": "Photo caption"
     }

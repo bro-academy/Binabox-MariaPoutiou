@@ -3,8 +3,12 @@
   <div class="blog-section__grid">
     {%for blog in blogCard %}
 <article class="blog-card blog-card--large">
-          <img class="blog-card__img" src="{{ blog.img }}" alt="{{ blog.alt }}"
-          width="736" height="664" loading="lazy" decoding="async"/>
+  <picture class="blog-card__picture">
+    <source srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x" type="image/avif">
+    <source srcset="/img/{{ blog.img }}-1x.webp 1x, /img/{{ blog.img }}-2x.webp 2x" type="image/webp">
+    <img class="blog-card__img" src="/img/{{ blog.img }}-2x.webp" alt="{{ blog.alt }}" 
+      width="736" height="664" loading="lazy" decoding="async"/>
+  </picture>
           <div class="blog-card__label">
             <span class="blog-card__text-label">{{ blog.label }}</span> 
           </div>

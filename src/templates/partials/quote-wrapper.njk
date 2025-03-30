@@ -13,8 +13,12 @@
         <div class="blog-article__gallery-wrapper">
           <figure class="blog-article__gallery">
             {% for item in quoteWrapper.imageWrapper %}
-            <img class="blog-article__gallery-img" src="{{ item.img }}" alt="{{ item.alt }}" 
-            width="500" height="393.94" load="lazy" decoding="async"/>
+            <picture class="blog-article__picture">
+              <source srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x" type="image/avif">
+              <source srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x" type="image/webp">
+              <img class="blog-article__gallery-img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" 
+                width="500" height="393.94" loading="lazy" decoding="async"/>
+            </picture>
             <figcaption class="blog-article__gallery-caption">{{ item.caption }}</figcaption>
           </figure>
            {% endfor %}

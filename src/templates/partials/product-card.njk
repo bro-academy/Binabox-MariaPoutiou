@@ -1,9 +1,12 @@
 <li class="product-list__item">
             <article class="product-card"> 
               <div class="product-card__img-wrapper"> 
-                <img class="product-card__img" src="{{ product.img }}" alt="{{ product.alt }}"
-                width="252.8" height="324"
-                loading="lazy" decoding="async"/>
+                <picture class="product-card__picture">
+                  <source srcset="/img/{{ product.img }}-1x.avif 1x, /img/{{ product.img }}-2x.avif 2x" type="image/avif">
+                  <source srcset="/img/{{ product.img }}-1x.webp 1x, /img/{{ product.img }}-2x.webp 2x" type="image/webp">
+                  <img class="product-card__img" src="/img/{{ product.img }}-2x.webp" alt="{{ product.alt }}" 
+                    width="252.8" height="324" loading="lazy" decoding="async"/>
+                </picture>
                 <div class="product-label">{{ product.label }}</div>
               </div>
               <p class="product-card__price">{{ product.price }}</p>
