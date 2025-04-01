@@ -5,38 +5,38 @@
     "logoalt": "Binabox-logo",
     "nav": [
       {
-      "text": "Home",
-      "link": "index.html"
-    },
+        "text": "Home",
+        "link": "index.html"
+      },
       {
-      "text": "Blog",
-      "link": "blog-article.html"
+        "text": "Blog",
+        "link": "blog-article.html"
       },
-    {
-      "text": "Catalog",
-      "link": "#"
+      {
+        "text": "Catalog",
+        "link": "#"
       },
-    {
-      "text": "Contact us",
-      "link": "#"
-    }
+      {
+        "text": "Contact us",
+        "link": "#"
+      }
     ]
-    },
+  },
 
-    "headerButtons": {
-        "textSecondary": "Discord",
-        "imgSecondary": "#",
-        "altSecondary": "Discord icon",
-        "textPrimary": "Connect",
-        "imgPrimary": "#",
-        "altPrimary": "Connect icon"
-      },
+  "headerButtons": {
+    "textSecondary": "Discord",
+    "imgSecondary": "#",
+    "altSecondary": "Discord icon",
+    "textPrimary": "Connect",
+    "imgPrimary": "#",
+    "altPrimary": "Connect icon"
+  },
 
   "heroSection": {
     "prefix": "WITH",
     "brand": "BINABOX",
     "suffix": "EXPLORE NFT COLLECTION",
-    "description": "We are the best way to check the rarity of NFT collection", 
+    "description": "We are the best way to check the rarity of NFT collection",
     "img": "binabox-cube",
     "alt": "glowing futuristic cube with digital circuits and BINABOX text"
   },
@@ -46,7 +46,7 @@
     "secondary": "Whitelist now"
   },
 
-  "heroStats":[
+  "heroStats": [
     {
       "value": "2040+",
       "label": "Total team"
@@ -58,35 +58,33 @@
   ],
 
   "heroBlog": {
-    "title": "Our blog", 
+    "title": "Our blog",
     "nav": [
-    {
-      "link": "index.html",
-      "text": "Home"
-    },
-    {
-      "link": "blog-article.html",
-      "text": "Our blog"
-    }
-  ],
-      "textHighlighted": "The Basilisks NFT"
+      {
+        "link": "index.html",
+        "text": "Home"
+      },
+      {
+        "link": "blog-article.html",
+        "text": "Our blog"
+      }
+    ],
+    "textHighlighted": "The Basilisks NFT"
   },
 
-  "catalogSection": 
-    {
-      "title": "Catalog",
-      "img": "#",
-      "alt": "folder icon"   
-    },
+  "catalogSection": {
+    "title": "Catalog",
+    "img": "#",
+    "alt": "folder icon"
+  },
 
-  "catalogButtons":
-    {
-      "all": "See all",
-      "prev": "&lt;",
-      "next": "&gt;"
-    },
+  "catalogButtons": {
+    "all": "See all",
+    "prev": "&lt;",
+    "next": "&gt;"
+  },
 
-  "products":[
+  "products": [
     {
       "img": "product-skeleton",
       "alt": "futiristc skeleton in front of smoke",
@@ -124,13 +122,12 @@
     }
   ],
 
-  "blogSection": 
-{
-  "title": "Our blog",
-  "cta": "Read More"
-},
+  "blogSection": {
+    "title": "Our blog",
+    "cta": "Read More"
+  },
 
- "blogCard":[
+  "blogCard": [
     {
       "img": "sonic-live-face",
       "alt": "abstract cyber face illustration",
@@ -217,12 +214,11 @@
     }
   ],
 
-  "aboutSection": 
-    {
-      "sectionTitle": "About Us",
-      "sectionDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in c ulpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
-      "cta": "Read More"
-      },
+  "aboutSection": {
+    "sectionTitle": "About Us",
+    "sectionDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in c ulpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
+    "cta": "Read More"
+  },
 
   "aboutCard": [
     {
@@ -243,562 +239,559 @@
     }
   ],
 
-  "teamSection":
-  {
+  "teamSection": {
     "Title": "Our Team"
   },
 
-   "teamMember": [
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  },
-  {
-    "img": "jason-smith",
-    "alt": "Portrait of Jason Smith",
-    "name": "Jason Smith",
-    "role": "Co-Founder",
-    "socials": [
-      {
-        "platform": "Twitter",
-        "link": "https://x.com/?lang=en&mx=2",
-        "icon": "#",
-        "alt": "twitter-logo"
-      },
-      {
-        "platform": "Facebook",
-        "link": "https://www.facebook.com/",
-        "icon": "#",
-        "alt": "facebook-logo"
-      },
-      {
-        "platform": "Telegram",
-        "link": "https://web.telegram.org/k/",
-        "icon": "#",
-        "alt": "telegram-logo"
-      },
-      {
-        "platform": "LinkedIn",
-        "link": "https://www.linkedin.com/",
-        "icon": "#",
-        "alt": "linkedin-logo"
-      },
-      {
-        "platform": "Instagram",
-        "link": "https://www.instagram.com/",
-        "icon": "#",
-        "alt": "instagram-logo"
-      }
-    ]
-  }
-],
-
-"faqsSection": 
-{
-  "title": "FAQs"
-},
-
-"faqsItem":[
-  {
-    "question": "What are the NFTs?",
-    "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
-  },
-  {
-    "question": "How do i get NFTs?",
-    "answer": "#"
-  },
-  {
-    "question": "How can we buy your NFTs",
-    "answer": "#"
-  },
-  {
-    "question": "Who are the team behind the project?",
-    "answer": "#"
-  }
- ],
-
- "footerNav": [
-  {
-    "title": "Subscribe",
-    "links": [
-      { 
-      "item": "Home", 
-      "url": "#" 
+  "teamMember": [
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
     },
-      { 
-      "item": "Blog", 
-      "url": "#" 
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
     },
-      { 
-      "item": "Catalog", 
-      "url": "#" 
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
     },
-      { 
-      "item": "Contact us", 
-      "url": "#" 
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
+    },
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
+    },
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
+    },
+    {
+      "img": "jason-smith",
+      "alt": "Portrait of Jason Smith",
+      "name": "Jason Smith",
+      "role": "Co-Founder",
+      "socials": [
+        {
+          "platform": "Twitter",
+          "link": "https://x.com/?lang=en&mx=2",
+          "icon": "#",
+          "alt": "twitter-logo"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/",
+          "icon": "#",
+          "alt": "facebook-logo"
+        },
+        {
+          "platform": "Telegram",
+          "link": "https://web.telegram.org/k/",
+          "icon": "#",
+          "alt": "telegram-logo"
+        },
+        {
+          "platform": "LinkedIn",
+          "link": "https://www.linkedin.com/",
+          "icon": "#",
+          "alt": "linkedin-logo"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/",
+          "icon": "#",
+          "alt": "instagram-logo"
+        }
+      ]
     }
+  ],
+
+  "faqsSection": {
+    "title": "FAQs"
+  },
+
+  "faqsItem": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How do i get NFTs?",
+      "answer": "#"
+    },
+    {
+      "question": "How can we buy your NFTs",
+      "answer": "#"
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "answer": "#"
+    }
+  ],
+
+  "footerNav": [
+    {
+      "title": "Subscribe",
+      "links": [
+        {
+          "item": "Home",
+          "url": "#"
+        },
+        {
+          "item": "Blog",
+          "url": "#"
+        },
+        {
+          "item": "Catalog",
+          "url": "#"
+        },
+        {
+          "item": "Contact us",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "item": "Terms Conditions",
+          "url": "#"
+        },
+        {
+          "item": "Privacy Policy",
+          "url": "#"
+        },
+        {
+          "item": "Whitepaper",
+          "url": "#"
+        },
+        {
+          "item": "Help Center",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+
+  "mainArticleHeader": {
+    "img": "dragon-main",
+    "alt": "a person standing in front of a big dragon with open wings",
+    "caption": "Photo caption",
+    "title": "The Basilisks NFT",
+    "label": "Gaming",
+    "authorIcon": "#",
+    "authorIconAlt": "person-icon",
+    "author": "Tony Nguyen",
+    "dateIcon": "#",
+    "dateIconAlt": "calendar",
+    "datetime": "20 Jun 2022"
+  },
+
+  "mainArticle": {
+    "textPrefix": "The Basilisks that",
+    "highlightedWord": "players",
+    "textSuffix": "collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the",
+    "highlightedWordNew": "Basilisks they have",
+    "highlitedWordLink": "#",
+    "textAfterSuffix": "gathered to battle other players to win ether (ETH). In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
+    "firstItem": " The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
+    "secondItem": "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing",
+    "wordLink": "#",
+    "wordText": "game developed",
+    "secondItemSuffix": "on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
+    "list": [
+      {
+        "item": "List name 1"
+      },
+      {
+        "item": "List name 2"
+      },
+      {
+        "item": "List name 3"
+      },
+      {
+        "item": "List name 4"
+      }
     ]
   },
-  {
-    "title": "Company",
-    "links": [
+
+  "quoteWrapper": {
+    "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
+    "icon": "#",
+    "iconAlt": "star icon",
+    "value": "8.5/10",
+    "author": "Markout Corporation",
+    "imageWrapper": [
       {
-      "item": "Terms Conditions", 
-      "url": "#" 
-    },
-      { 
-      "item": "Privacy Policy", 
-      "url": "#" 
-    },
-      { 
-      "item": "Whitepaper", 
-      "url": "#" 
-    },
-      { 
-      "item": "Help Center", 
-      "url": "#" 
-    }
+        "img": "dragon-closeup",
+        "alt": "close up of a dragon",
+        "caption": "Photo caption"
+      },
+      {
+        "img": "dragon-full",
+        "alt": "a person with a knife standing in front of big dragon",
+        "caption": "Photo caption"
+      }
     ]
-  }
-],
+  },
 
-"mainArticleHeader": {
-  "img": "dragon-main",
-  "alt": "a person standing in front of a big dragon with open wings", 
-  "caption": "Photo caption",
-  "title": "The Basilisks NFT",
-  "label": "Gaming",
-  "authorIcon": "#",
-  "authorIconAlt": "person-icon",
-  "author": "Tony Nguyen",
-  "dateIcon": "#",
-  "dateIconAlt": "calendar",
-  "datetime": "20 Jun 2022"
-},
+  "subarticle": {
+    "titlePrimary": "NFTs are digital assets that represent real-world objects",
+    "textUpper": "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
+    "textLower": "Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.",
+    "titleSecondary": "NFT Avatar Generators",
+    "textSecondary": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
+  },
 
-"mainArticle": {
-  "textPrefix": "The Basilisks that",
-  "highlightedWord": "players",
-  "textSuffix": "collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the",
-  "highlightedWordNew": "Basilisks they have",
-  "highlitedWordLink": "#",
-  "textAfterSuffix": "gathered to battle other players to win ether (ETH). In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
-  "firstItem": " The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
-  "secondItem": "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing",
-  "wordLink": "#",
-  "wordText": "game developed",
-  "secondItemSuffix": "on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
-  "list":[
+  "subarticleTags": {
+    "title": "Tags:",
+    "item": [
+      {
+        "tag": "NFT",
+        "link": "#"
+      },
+      {
+        "tag": "ICO",
+        "link": "#"
+      },
+      {
+        "tag": "Crypto",
+        "link": "#"
+      }
+    ]
+  },
+
+  "subarticleSocials": {
+    "title": "Share:",
+    "socials": [
+      {
+        "icon": "#",
+        "alt": "twitter-logo",
+        "link": "https://x.com/?lang=en&mx=2"
+      },
+      {
+        "icon": "#",
+        "alt": "facebook-logo",
+        "link": "https://www.facebook.com/"
+      },
+      {
+        "icon": "#",
+        "alt": "instagram-logo",
+        "link": "https://www.instagram.com/"
+      }
+    ]
+  },
+
+  "asideUpper": {
+    "title": "Categories",
+    "item": [
+      {
+        "link": "#",
+        "text": "Our blog (12)"
+      },
+      {
+        "link": "#",
+        "text": "Metaverse (24)"
+      },
+      {
+        "link": "#",
+        "text": "Gaming (24)"
+      },
+      {
+        "link": "#",
+        "text": "Art (24)"
+      },
+      {
+        "link": "#",
+        "text": "Robot (24)"
+      },
+      {
+        "link": "#",
+        "text": "Launchpad (24)"
+      },
+      {
+        "link": "#",
+        "text": "Crypto (430)"
+      }
+    ]
+  },
+
+  "asideLower": {
+    "title": "Tag",
+    "item": [
+      {
+        "link": "#",
+        "text": "NFT"
+      },
+      {
+        "link": "#",
+        "text": "ICO"
+      },
+      {
+        "link": "#",
+        "text": "Robot"
+      },
+      {
+        "link": "#",
+        "text": "Crypto"
+      },
+      {
+        "link": "#",
+        "text": "Launchpad"
+      },
+      {
+        "link": "#",
+        "text": "Metaverse"
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Binabox",
+    "logolink": "#",
+    "logoimg": "#",
+    "logoalt": "Binabox logo",
+    "description": "We are the best way to check the rarity of NFT collection",
+    "copyright": "BINABOX 2022 - All rights reserved"
+  },
+
+  "footerSocials": [
     {
-      "item": "List name 1"
+      "link": "https://www.instagram.com/",
+      "img": "#",
+      "alt": "Instagram-logo"
     },
     {
-      "item": "List name 2"
+      "link": "https://www.facebook.com/",
+      "img": "#",
+      "alt": "Facebook-logo"
     },
     {
-      "item": "List name 3"
+      "link": "https://web.telegram.org/k/",
+      "img": "#",
+      "alt": "Telegram-logo"
     },
     {
-      "item": "List name 4"
+      "link": "https://www.youtube.com/",
+      "img": "#",
+      "alt": "YouTube-logo"
+    },
+    {
+      "link": "https://www.tiktok.com/",
+      "img": "#",
+      "alt": "TikTok-logo"
+    },
+    {
+      "link": "https://discord.com/",
+      "img": "#",
+      "alt": "Discord-logo"
     }
   ]
-},
-
-"quoteWrapper": {
-  "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
-  "icon": "#",
-  "iconAlt": "star icon",
-  "value": "8.5/10",
-  "author": "Markout Corporation",
-  "imageWrapper": [
-    {
-      "img": "dragon-closeup",
-      "alt": "close up of a dragon",
-      "caption": "Photo caption"
-    },
-    {
-      "img": "dragon-full",
-      "alt": "a person with a knife standing in front of big dragon",
-      "caption": "Photo caption"
-    }
-  ]
-},
-
-"subarticle": {
-  "titlePrimary": "NFTs are digital assets that represent real-world objects",
-  "textUpper": "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
-  "textLower": "Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.",
-  "titleSecondary": "NFT Avatar Generators",
-  "textSecondary": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
-},
-
-"subarticleTags": {
-  "title": "Tags:",
-  "item": [
-    {
-      "tag": "NFT",
-      "link": "#"
-    },
-    {
-      "tag": "ICO",
-      "link": "#"
-    },
-    {
-      "tag": "Crypto",
-      "link": "#"
-    }
-  ]
-},
-
-"subarticleSocials": {
-  "title": "Share:",
-  "socials": [
-    {
-      "icon": "#",
-      "alt": "twitter-logo",
-      "link": "https://x.com/?lang=en&mx=2"
-    },
-    {
-      "icon": "#",
-      "alt": "facebook-logo",
-      "link": "https://www.facebook.com/"
-    },
-    {
-      "icon": "#",
-      "alt": "instagram-logo",
-      "link": "https://www.instagram.com/"
-    }
-  ]
-},
-
-"asideUpper": {
-  "title": "Categories",
-  "item": [
-    {
-      "link": "#",
-      "text": "Our blog (12)"
-    },
-    {
-      "link": "#",
-      "text": "Metaverse (24)"
-    },
-    {
-      "link": "#",
-      "text": "Gaming (24)"
-    },
-    {
-      "link": "#",
-      "text": "Art (24)"
-    },
-    {
-      "link": "#",
-      "text": "Robot (24)"
-    },
-    {
-      "link": "#",
-      "text": "Launchpad (24)"
-    },
-    {
-      "link": "#",
-      "text": "Crypto (430)"
-    }
-  ]
-},
-
-"asideLower": {
-  "title": "Tag",
-  "item": [
-    {
-      "link": "#",
-      "text": "NFT"
-    },
-    {
-      "link": "#",
-      "text": "ICO"
-    },
-    {
-      "link": "#",
-      "text": "Robot"
-    },
-    {
-      "link": "#",
-      "text": "Crypto"
-    },
-    {
-      "link": "#",
-      "text": "Launchpad"
-    },
-    {
-      "link": "#",
-      "text": "Metaverse"
-    }
-  ]
-},
-
-"footer": {
-  "title": "Binabox",
-  "logolink": "#",
-  "logoimg": "#",
-  "logoalt": "Binabox logo",
-  "description": "We are the best way to check the rarity of NFT collection",
-  "copyright": "BINABOX 2022 - All rights reserved"
-},
-
-"footerSocials": [
-  {
-    "link": "https://www.instagram.com/",
-    "img": "#",
-    "alt": "Instagram-logo"
-  },
-  {
-    "link": "https://www.facebook.com/",
-    "img": "#",
-    "alt": "Facebook-logo"
-  },
-  {
-    "link": "https://web.telegram.org/k/",
-    "img": "#",
-    "alt": "Telegram-logo"
-  },
-  {
-    "link": "https://www.youtube.com/",
-    "img": "#",
-    "alt": "YouTube-logo"
-  },
-  {
-    "link": "https://www.tiktok.com/",
-    "img": "#",
-    "alt": "TikTok-logo"
-  },
-  {
-    "link": "https://discord.com/",
-    "img": "#",
-    "alt": "Discord-logo"
-  }
-]
-
 }

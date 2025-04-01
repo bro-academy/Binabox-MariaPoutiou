@@ -1,19 +1,18 @@
 <section class="about container">
-        <h3 class="section-title">{{ aboutSection.sectionTitle }}</h3>
-        <p class="about__description">
-            {{ aboutSection.sectionDescription }}
-        </p>
-        {% for item in aboutCard %}
-        <ul class="about-list">
-            <li class="about-list__item">
-              <h4 class="about-list__title">{{ item.title }}</h4>
-              <p class="about-list__description"> {{ item.description }}</p>
-            </li>
-         </ul>
-            {% endfor %}
-            <div class="cta-more">
-                <a class="cta-more__link" href="#">{{ aboutSection.cta }}</a>
-              </div>
-            </section>
-     
-          
+  <h3 class="section-title">{{ aboutSection.sectionTitle }}</h3>
+  <p class="about__description">
+    {{ aboutSection.sectionDescription }}
+  </p>
+  {% for item in aboutCard %}
+    <ul class="about-list">
+      <li class="about-list__item">
+        <h4 class="about-list__title">{{ item.title }}</h4>
+        <p class="about-list__description">
+          {{ item.description }}</p>
+      </li>
+    </ul>
+  {% endfor %}
+  <div class="cta-more">
+    <a class="cta-more__link" href="#">{{ aboutSection.cta }}</a>
+  </div>
+</section>

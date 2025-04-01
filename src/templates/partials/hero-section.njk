@@ -1,22 +1,23 @@
 <section class="hero-section hero-section--homepage container">
-        <div class="hero-section__block">
-        <h1 class="hero-section__title">{{ heroSection.prefix }} <span class="hero-section__brand">{{ heroSection.brand }}</span> {{ heroSection.suffix }}</h1>
-        <h2 class="hero-section__description">
-            {{ heroSection.description }}
-        </h2>
-        <div class="hero-section__content">
-          <div class="hero-section__text-content">
-            {% for stat in heroStats %}
-            {% include "partials/hero-stats.njk" %}
-          {% endfor %}
-          </div>
-          {% include "partials/hero-buttons.njk" %}
-        </div>
+  <div class="hero-section__block">
+    <h1 class="hero-section__title">{{ heroSection.prefix }}
+      <span class="hero-section__brand">{{ heroSection.brand }}</span>
+      {{ heroSection.suffix }}</h1>
+    <h2 class="hero-section__description">
+      {{ heroSection.description }}
+    </h2>
+    <div class="hero-section__content">
+      <div class="hero-section__text-content">
+        {% for stat in heroStats %}
+          {% include "partials/hero-stats.njk" %}
+        {% endfor %}
       </div>
-      <picture>
-        <source srcset="/img/{{ heroSection.img }}-1x.avif 1x, /img/{{ heroSection.img }}-2x.avif 2x" type="image/avif">
-        <source srcset="/img/{{ heroSection.img }}-1x.webp 1x, /img/{{ heroSection.img }}-2x.webp 2x" type="image/webp">
-        <img class="hero-section__img" src="/img/{{ heroSection.img }}-2x.webp" alt="{{ heroSection.alt }}" 
-        width="533.5" height="641.8" loading="eager" decoding="async"/>
+      {% include "partials/hero-buttons.njk" %}
+    </div>
+  </div>
+  <picture>
+    <source srcset="/img/{{ heroSection.img }}-1x.avif 1x, /img/{{ heroSection.img }}-2x.avif 2x" type="image/avif">
+      <source srcset="/img/{{ heroSection.img }}-1x.webp 1x, /img/{{ heroSection.img }}-2x.webp 2x" type="image/webp">
+        <img class="hero-section__img" src="/img/{{ heroSection.img }}-2x.webp" alt="{{ heroSection.alt }}" width="533.5" height="641.8" loading="eager" decoding="async"/>
       </picture>
-      </section>
+    </section>

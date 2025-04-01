@@ -1,17 +1,17 @@
 <section class="hero-section hero-section--blog-article container">
-        <div class="hero-section__banner-text"> 
-        <h1 class="hero-section__blog-title">{{ heroBlog.title }}</h1>
-        <nav class="hero-section__nav">
-          <ul class="hero-section__list">
-            {% for item in heroBlog.nav %}
-            <li class="hero-section__list-item">
-              <a class="hero-section__link" href="{{ item.link }}">{{ item.text }}</a>
-            </li>
-            {% endfor %}
-            <li class="hero-section__list-item">
-                <span class="hero-section__word hero-section__word--blog-article">{{ heroBlog.textHighlighted }}</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      </section>
+  <div class="hero-section__banner-text">
+    <h1 class="hero-section__blog-title">{{ heroBlog.title }}</h1>
+    <nav class="hero-section__nav">
+      <ul class="hero-section__list">
+        {% for item in heroBlog.nav %}
+          <li class="hero-section__list-item">
+            <a class="hero-section__link" href="{{ item.link }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+        <li class="hero-section__list-item">
+          <span class="hero-section__word hero-section__word--blog-article">{{ heroBlog.textHighlighted }}</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
