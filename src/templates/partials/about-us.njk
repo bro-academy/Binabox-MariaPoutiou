@@ -3,16 +3,16 @@
   <p class="about__description">
     {{ aboutSection.sectionDescription }}
   </p>
-  {% for item in aboutCard %}
     <ul class="about-list">
+  {% for item in aboutCard %}
       <li class="about-list__item">
         <h4 class="about-list__title">{{ item.title }}</h4>
         <p class="about-list__description">
           {{ item.description }}</p>
       </li>
-    </ul>
   {% endfor %}
+    </ul>
   <div class="cta-more">
-    <a class="cta-more__link" href="#">{{ aboutSection.cta }}</a>
+    <a class="cta-more__link" href="{{ aboutSection.link }}">{{ aboutSection.cta }}</a>
   </div>
 </section>

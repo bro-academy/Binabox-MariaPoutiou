@@ -1,7 +1,7 @@
 {
   "header": {
-    "logolink": "#",
-    "logoimg": "#",
+    "logolink": "https://via.placeholder.com/150",
+    "logoimg": "https://via.placeholder.com/150",
     "logoalt": "Binabox-logo",
     "nav": [
       {
@@ -14,21 +14,21 @@
       },
       {
         "text": "Catalog",
-        "link": "#"
+        "link": "https://via.placeholder.com/150"
       },
       {
         "text": "Contact us",
-        "link": "#"
+        "link": "https://via.placeholder.com/150"
       }
     ]
   },
 
   "headerButtons": {
     "textSecondary": "Discord",
-    "imgSecondary": "#",
+    "imgSecondary": "https://via.placeholder.com/150",
     "altSecondary": "Discord icon",
     "textPrimary": "Connect",
-    "imgPrimary": "#",
+    "imgPrimary": "https://via.placeholder.com/150",
     "altPrimary": "Connect icon"
   },
 
@@ -74,7 +74,7 @@
 
   "catalogSection": {
     "title": "Catalog",
-    "img": "#",
+    "img": "https://via.placeholder.com/150",
     "alt": "folder icon"
   },
 
@@ -124,7 +124,8 @@
 
   "blogSection": {
     "title": "Our blog",
-    "cta": "Read More"
+    "cta": "Read More",
+    "link":"https://via.placeholder.com/150"
   },
 
   "blogCard": [
@@ -132,92 +133,99 @@
       "img": "sonic-live-face",
       "alt": "abstract cyber face illustration",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     },
     {
       "img": "sonic-live-skeleton",
       "alt": "futiristc skeleton in front of smoke",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     },
     {
       "img": "sonic-live-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     },
     {
       "img": "sonic-live-gorilla",
       "alt": "AI-enhanced gorilla with piercing eyes and cybernetic effects",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     },
     {
       "img": "sonic-live-duck",
       "alt": "futuristic duck with a digital background and neon elements",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     },
     {
       "img": "sonic-live-console",
       "alt": "cyberpunk holographic game console",
       "label": "NFT",
-      "authorIcon": "#",
+      "authorIcon": "https://via.placeholder.com/150",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "#",
+      "dateIcon": "https://via.placeholder.com/150",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "link": "Read more"
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150"
     }
   ],
 
   "aboutSection": {
     "sectionTitle": "About Us",
     "sectionDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in c ulpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
-    "cta": "Read More"
+    "cta": "Read More",
+    "link": "https://via.placeholder.com/150"
   },
 
   "aboutCard": [
@@ -253,31 +261,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -291,31 +299,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -329,31 +337,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -367,31 +375,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -405,31 +413,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -443,31 +451,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -481,31 +489,31 @@
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "#",
+          "icon": "https://via.placeholder.com/150",
           "alt": "instagram-logo"
         }
       ]
@@ -541,19 +549,19 @@
       "links": [
         {
           "item": "Home",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Blog",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Catalog",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Contact us",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         }
       ]
     },
@@ -562,19 +570,19 @@
       "links": [
         {
           "item": "Terms Conditions",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Privacy Policy",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Whitepaper",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         },
         {
           "item": "Help Center",
-          "url": "#"
+          "url": "https://via.placeholder.com/150"
         }
       ]
     }
@@ -586,10 +594,10 @@
     "caption": "Photo caption",
     "title": "The Basilisks NFT",
     "label": "Gaming",
-    "authorIcon": "#",
+    "authorIcon": "https://via.placeholder.com/150",
     "authorIconAlt": "person-icon",
     "author": "Tony Nguyen",
-    "dateIcon": "#",
+    "dateIcon": "https://via.placeholder.com/150",
     "dateIconAlt": "calendar",
     "datetime": "20 Jun 2022"
   },
@@ -603,7 +611,7 @@
     "textAfterSuffix": "gathered to battle other players to win ether (ETH). In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
     "firstItem": " The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
     "secondItem": "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing",
-    "wordLink": "#",
+    "wordLink": "https://via.placeholder.com/150",
     "wordText": "game developed",
     "secondItemSuffix": "on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
     "list": [
@@ -624,7 +632,7 @@
 
   "quoteWrapper": {
     "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
-    "icon": "#",
+    "icon": "https://via.placeholder.com/150",
     "iconAlt": "star icon",
     "value": "8.5/10",
     "author": "Markout Corporation",
@@ -655,15 +663,15 @@
     "item": [
       {
         "tag": "NFT",
-        "link": "#"
+        "link": "https://via.placeholder.com/150"
       },
       {
         "tag": "ICO",
-        "link": "#"
+        "link": "https://via.placeholder.com/150"
       },
       {
         "tag": "Crypto",
-        "link": "#"
+        "link": "https://via.placeholder.com/150"
       }
     ]
   },
@@ -672,17 +680,17 @@
     "title": "Share:",
     "socials": [
       {
-        "icon": "#",
+        "icon": "https://via.placeholder.com/150",
         "alt": "twitter-logo",
         "link": "https://x.com/?lang=en&mx=2"
       },
       {
-        "icon": "#",
+        "icon": "https://via.placeholder.com/150",
         "alt": "facebook-logo",
         "link": "https://www.facebook.com/"
       },
       {
-        "icon": "#",
+        "icon": "https://via.placeholder.com/150",
         "alt": "instagram-logo",
         "link": "https://www.instagram.com/"
       }
@@ -693,31 +701,31 @@
     "title": "Categories",
     "item": [
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Our blog (12)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Metaverse (24)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Gaming (24)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Art (24)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Robot (24)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Launchpad (24)"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Crypto (430)"
       }
     ]
@@ -727,27 +735,27 @@
     "title": "Tag",
     "item": [
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "NFT"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "ICO"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Robot"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Crypto"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Launchpad"
       },
       {
-        "link": "#",
+        "link": "https://via.placeholder.com/150",
         "text": "Metaverse"
       }
     ]
@@ -755,8 +763,8 @@
 
   "footer": {
     "title": "Binabox",
-    "logolink": "#",
-    "logoimg": "#",
+    "logolink": "https://via.placeholder.com/150",
+    "logoimg": "https://via.placeholder.com/150",
     "logoalt": "Binabox logo",
     "description": "We are the best way to check the rarity of NFT collection",
     "copyright": "BINABOX 2022 - All rights reserved"
@@ -765,32 +773,32 @@
   "footerSocials": [
     {
       "link": "https://www.instagram.com/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "Instagram-logo"
     },
     {
       "link": "https://www.facebook.com/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "Facebook-logo"
     },
     {
       "link": "https://web.telegram.org/k/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "Telegram-logo"
     },
     {
       "link": "https://www.youtube.com/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "YouTube-logo"
     },
     {
       "link": "https://www.tiktok.com/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "TikTok-logo"
     },
     {
       "link": "https://discord.com/",
-      "img": "#",
+      "img": "https://via.placeholder.com/150",
       "alt": "Discord-logo"
     }
   ]

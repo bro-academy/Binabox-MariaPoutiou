@@ -4,7 +4,7 @@
       class="catalog-header__title">
       <!--the reason i add this div is because i saw that icon with title are a separate block with paddings-->
       <h3 class="section-title section-title--catalog">{{ catalogSection.title }}</h3>
-      <img class="catalog__title-img" src="{{ catalogSection.img }}" alt="{{ catalogSection.alt }}" loading="lazy" decoding="async"></div>
+      <img class="catalog__title-img" src="{{ catalogSection.img }}" alt="{{ catalogSection.alt }}" loading="lazy"></div>
       <div class="catalog-header__divider"></div>
       <div class="catalog__controls">
         {% include "partials/catalog-buttons.njk" %}
@@ -17,4 +17,4 @@
         {% include "partials/product-card.njk" %}
       {% endfor %}
     </ul>
-  </section>
+</section>

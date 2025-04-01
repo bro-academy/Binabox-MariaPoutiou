@@ -2,7 +2,7 @@
   <div class="footer-upper">
     <div class="footer-logo">
       <a class="footer-logo__link" href="{{ footer.logolink }}" title="{{ footer.logotitle }}">
-        <img class="footer-logo__img" src="{{ footer.logoimg }}" alt="{{ footer.logoalt }}" loading="lazy" decoding="async"/>
+        <img class="footer-logo__img" src="{{ footer.logoimg }}" alt="{{ footer.logoalt }}" loading="lazy"/>
       </a>
     </div>
     <p class="footer__description">{{ footer.description }}</p>
@@ -29,7 +29,7 @@
       {% for social in footerSocials %}
         <li class="social-media__list-item">
           <a class="social-media__link" href="{{ social.link }}" target="_blank">
-            <img class="social-media__icon" src="{{ social.img }}" alt="{{ social.alt }}" loading="lazy" decoding="async"/>
+            <img class="social-media__icon" src="{{ social.img }}" alt="{{ social.alt }}" loading="lazy"/>
           </a>
         </li>
       {% endfor %}

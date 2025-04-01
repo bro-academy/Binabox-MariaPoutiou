@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -17,7 +16,7 @@ h1, h2,h3, h4, h5, h6 {
 
 ul {
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 img {
@@ -28,8 +27,9 @@ img {
 .container {
   width: 100%; 
   max-width: 1728px; 
-  padding-inline: 64px
+  padding-inline: 64px;
 }
+
 
 /********** HOMEPAGE STARTS HERE ************/
 
@@ -40,7 +40,7 @@ img {
   padding: 32px;
 }
 
-.main-nav__link {
+.main-nav-list__list-link {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
@@ -48,25 +48,25 @@ img {
   line-height: 24px;
 }
 
-.main-nav__list {
+.main-nav-list {
   text-align: center;
 }
 
-.main-nav__link:hover {
+.main-nav-list__list-link:hover {
   color: #3892f3;
 }
 
-.main-nav__link:active {
+.main-nav-list__list-link:active {
   color: #0054b6;
 }
 
-.main-nav__link--active {
+.main-nav-list__list-link--active {
   border-bottom: 2px solid #0265DC;
   padding-block: 8px;
   padding-inline: 20px;
 }
 
-.main-nav__item {
+.main-nav-list__item {
   display: inline-block;
   padding: 8px 20px;
 }
@@ -93,9 +93,8 @@ img {
 }
 
 .button--secondary {
-  color: #F5F8FB;
   background-color: transparent;
-  border: 2px solid; color: #D0D7FB2B;
+  border: 2px solid #D0D7FB2B;
 }
 
 .button--primary {
@@ -128,7 +127,6 @@ img {
 .button--secondary:focus {
   background-color: #bfc5ee1f;
 }
-
 /* HERO SECTION */
 
 .hero-section--homepage {
@@ -176,7 +174,7 @@ img {
 .hero-section__stat-label {
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin: 0;
 }
 
@@ -206,9 +204,8 @@ img {
 }
 
 .hero-section__button--secondary {
-  color: #F5F8FB;
   background-color: transparent;
-  border: 2px solid; color: #D0D7FB2B;
+  border: 2px solid #D0D7FB2B;
 }
 
 .hero-section__button--secondary:hover {
@@ -245,7 +242,7 @@ img {
   margin-block: 0 40px;
 }
 
-.section-title--catalog { /* i had to make a modifier because this section title is smaller */
+.section-title--catalog { 
   color: #F8F7FF;
   font-size: 24px;
   line-height: 32px;
@@ -365,7 +362,7 @@ img {
 
 .product-card__name {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -441,14 +438,14 @@ img {
 
 .blog-card__author {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   line-height: 20px;
   letter-spacing: 0;
 }
 
 .blog-card__date {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   line-height: 20px;
 }
 
@@ -461,12 +458,15 @@ img {
 }
 
 .blog-card__description {
-  color: #EFF5FAD1; opacity: 82%;
+  color: #EFF5FAD1; 
+  opacity: 0.82;
   font-size: 16px;
   line-height: 24px;
 }
 
-.blog-link { /* read more button of blog cards */
+.blog-link {
+  
+  /* read more button of blog cards */
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -502,7 +502,9 @@ img {
   text-align: center;
 }
 
-.cta-more__link { /* read more button of the whole section */
+.cta-more__link {
+  
+  /* read more button of the whole section */
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -545,17 +547,15 @@ img {
 .about-list__item {
   position: relative;
   counter-increment: about-counter; 
-  padding-left: 50px; 
   background-color: #1A1925;
-  padding: 32px;
+  padding: 32px 32px 32px 50px; 
 }
 
 .about-list__item::before {
   content: "0" counter(about-counter);
   font-size: 70px;
-  font-weight: bold;
-  color: #0265DC; 
-  opacity: 50%;
+  font-weight: 700;
+  opacity: 0.5;
   color: transparent; 
   border: 2px;
   -webkit-text-stroke: 2px #0265DC; 
@@ -564,7 +564,7 @@ img {
 
 .about__description {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -607,7 +607,7 @@ img {
 
 .team-member__role {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-size: 18px;
   line-height: 28px;
   margin-block: 0;
@@ -646,7 +646,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   margin-block: 16px 0;
-} 
+}
 
 /* FOOTER */
 
@@ -697,16 +697,17 @@ img {
 }
 
 .footer-nav__list {
-  margin: 0
+  margin: 0;
 }
 
 .copyright__text {
   line-height: 20px;
-  }
+}
 
-  /********** HOMEPAGE ENDS HERE ************/
 
-  /********** BLOG-ARTICLE STARTS HERE ************/
+/********** HOMEPAGE ENDS HERE ************/
+
+/********** BLOG-ARTICLE STARTS HERE ************/
 
 .hero-section {
   position: static;
@@ -714,7 +715,7 @@ img {
 }
 
 .hero-section--blog-article {
-  background-image: url(/img/hero-section-banner-background-2x.webp);
+  background-image: url("/img/hero-section-banner-background-2x.webp");
   background-size: cover;  
   background-position: center;  
   background-repeat: no-repeat; 
@@ -766,9 +767,11 @@ img {
   margin: 0;
 }
 
-.hero-section__word--blog-article { /* highlighted word */
+.hero-section__word--blog-article {
+  
+  /* highlighted word */
   color: #E7EEF7A8; 
-  opacity: 66%;
+  opacity: 0.66;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0;
@@ -807,14 +810,14 @@ img {
 
 .blog-article__author {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-weight: 600;
   line-height: 20px;
 }
 
 .blog-article__date {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-weight: 600;
   line-height: 20px;
 }
@@ -826,8 +829,10 @@ img {
   margin-block: 40px
 }
 
-.blog-article__word-bg { /* highlighted word */
-  margin: 0px 0px;
+.blog-article__word-bg {
+  
+  /* highlighted word */
+  margin: 0;
   background-color: #0265dc;
   color: #F8F7FF;
   font-weight: 600;
@@ -835,7 +840,9 @@ img {
   line-height: 28px;
 }
 
-.blog-article__word { /* highlighted word */
+.blog-article__word {
+  
+  /* highlighted word */
   color: #78bbfa;
   font-weight: 600;
   font-size: 18px;
@@ -901,7 +908,7 @@ img {
 
 .blog-article__quote-value {
   color: #EFF5FAD1; 
-  opacity: 82%;
+  opacity: 0.82;
   font-weight: 600;
   line-height: 20px;
 }
@@ -942,7 +949,9 @@ img {
   display: inline-block;
 }
 
-.tag-list__item { /* this class also applies to side section tags */
+.tag-list__item {
+  
+  /* this class also applies to side section tags */
   padding-block: 6px;
   padding-inline: 12px;
   margin-inline: 5px;
@@ -950,7 +959,9 @@ img {
   border: 2px solid #D0D7FB2B;
 }
 
-.tag-list__link { /* this class also applies to side section tags */
+.tag-list__link {
+  
+  /* this class also applies to side section tags */
   color: #F8F7FF;
   text-decoration: none;
   font-weight: 600;
