@@ -1,13 +1,12 @@
-<aside class="aside-section">
-  <section class="aside__block">
-    <h3 class="aside__block-title">{{ asideUpper.title }}</h3>
-    <nav class="aside__block-nav">
-      <ul class="aside__block-list">
-        {% for item in asideUpper.item %}
-          <li class="aside__block-item">
-            <a class="aside__block-link" href="{{ item.link }}">{{ item.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </section>
+<section class="aside__block">
+  <h3 class="aside__block-title">{{ asideUpper.title }}</h3>
+  <nav class="aside__block-nav">
+    <ul class="aside__block-list">
+      {% for item in asideUpper.item %}
+      <li class="aside__block-item">
+        <a class="aside__block-link" href="{{ item.link }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

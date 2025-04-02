@@ -5,20 +5,40 @@
     </blockquote>
   </figure>
   <div class="blog-article__quote-meta">
-    <img class="blog-article__quote-icon" src="{{ quoteWrapper.icon }}" alt="{{ quoteWrapper.altIcon }}" loading="lazy"/>
+    <img
+      class="blog-article__quote-icon"
+      src="{{ quoteWrapper.icon }}"
+      alt="{{ quoteWrapper.iconAlt }}"
+      loading="lazy"
+    />
     <span class="blog-article__quote-value">{{ quoteWrapper.value }}</span>
     <span class="blog-article__quote-author">{{ quoteWrapper.author }}</span>
   </div>
 </div>
 <div class="blog-article__gallery-wrapper">
   {% for item in quoteWrapper.imageWrapper %}
-    <figure class="blog-article__gallery">
-      <picture class="blog-article__picture">
-        <source srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x" type="image/avif">
-        <source srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x" type="image/webp">
-        <img class="blog-article__gallery-img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" width="500" height="393.94" loading="lazy"/>
-      </picture>
-        <figcaption class="blog-article__gallery-caption">{{ item.caption }}</figcaption>
-    </figure>
+  <figure class="blog-article__gallery">
+    <picture class="blog-article__picture">
+      <source
+        srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x"
+        type="image/avif"
+      />
+      <source
+        srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x"
+        type="image/webp"
+      />
+      <img
+        class="blog-article__gallery-img"
+        src="/img/{{ item.img }}-2x.webp"
+        alt="{{ item.alt }}"
+        width="500"
+        height="394"
+        loading="lazy"
+      />
+    </picture>
+    <figcaption class="blog-article__gallery-caption">
+      {{ item.caption }}
+    </figcaption>
+  </figure>
   {% endfor %}
 </div>

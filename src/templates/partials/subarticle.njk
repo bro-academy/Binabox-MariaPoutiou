@@ -1,13 +1,7 @@
 <h3 class="subarticle-title">{{ subarticle.titlePrimary }}</h3>
-<p class="subarticle__text">
-    {{ subarticle.textUpper }}
-</p>
-<p class="subarticle__text">
-    {{ subarticle.textLower }}
-</p>
+<p class="subarticle__text">{{ subarticle.textUpper }}</p>
+<p class="subarticle__text">{{ subarticle.textLower }}</p>
 <h3 class="subarticle-title">{{ subarticle.titleSecondary }}</h3>
-<p class="subarticle__text">
-    {{ subarticle.textSecondary }}
-</p>
-{% include "partials/subarticle-tags.njk" %}
-{% include "partials/subarticle-socials.njk" %}</article>
+<p class="subarticle__text">{{ subarticle.textSecondary }}</p>
+{% include "partials/subarticle-tags.njk" %} {% include
+"partials/subarticle-socials.njk" %}

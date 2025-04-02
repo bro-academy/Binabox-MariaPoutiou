@@ -1,27 +1,51 @@
 <section class="team container">
   <h3 class="section-title">{{ teamSection.title }}</h3>
   <ul class="team__list">
-  {% for member in teamMember %}
-      <li class="team-member">
-        <div class="team-member__details">
-          <picture class="team-member__picture">
-            <source srcset="/img/{{ member.img }}-1x.avif 1x, /img/{{ member.img }}-2x.avif 2x" type="image/avif">
-            <source srcset="/img/{{ member.img }}-1x.webp 1x, /img/{{ member.img }}-2x.webp 2x" type="image/webp">
-            <img class="team-member__img" src="/img/{{ member.img }}-2x.webp" alt="{{ member.alt }}" width="120" height="120" loading="lazy"/>
-          </picture>
-            <h4 class="team-member__name">{{ member.name }}</h4>
-            <p class="team-member__role">{{ member.role }}</p>
-        </div>
-    <ul class="social-media-list social-media-list--team">
-     {% for social in member.socials %}
-      <li class="social-media__list-item">
-          <a class="social-media__link" href="{{ social.link }}" target="_blank">
-            <img class="social-media__icon" src="{{ social.icon }}" alt="{{ social.alt }}" width="40" height="40" loading="lazy"/>
+    {% for member in teamMember %}
+    <li class="team-member">
+      <div class="team-member__details">
+        <picture class="team-member__picture">
+          <source
+            srcset="/img/{{ member.img }}-1x.avif 1x, /img/{{ member.img }}-2x.avif 2x"
+            type="image/avif"
+          />
+          <source
+            srcset="/img/{{ member.img }}-1x.webp 1x, /img/{{ member.img }}-2x.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="team-member__img"
+            src="/img/{{ member.img }}-2x.webp"
+            alt="{{ member.alt }}"
+            width="120"
+            height="120"
+            loading="lazy"
+          />
+        </picture>
+        <h4 class="team-member__name">{{ member.name }}</h4>
+        <p class="team-member__role">{{ member.role }}</p>
+      </div>
+      <ul class="social-media-list social-media-list--team">
+        {% for social in member.socials %}
+        <li class="social-media__list-item">
+          <a
+            class="social-media__link"
+            href="{{ social.link }}"
+            target="_blank"
+          >
+            <img
+              class="social-media__icon"
+              src="{{ social.icon }}"
+              alt="{{ social.alt }}"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
           </a>
-      </li>
-     {% endfor %}
-  </ul>
-      </li>
-  {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
   </ul>
 </section>

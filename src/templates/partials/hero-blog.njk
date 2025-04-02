@@ -4,12 +4,16 @@
     <nav class="hero-section__nav">
       <ul class="hero-section__list">
         {% for item in heroBlog.nav %}
-          <li class="hero-section__list-item">
-            <a class="hero-section__link" href="{{ item.link }}">{{ item.text }}</a>
-          </li>
+        <li class="hero-section__list-item">
+          <a class="hero-section__link" href="{{ item.link }}"
+            >{{ item.text }}</a
+          >
+        </li>
         {% endfor %}
         <li class="hero-section__list-item">
-          <span class="hero-section__word hero-section__word--blog-article">{{ heroBlog.textHighlighted }}</span>
+          <span class="hero-section__word hero-section__word--blog-article"
+            >{{ heroBlog.textHighlighted }}</span
+          >
         </li>
       </ul>
     </nav>

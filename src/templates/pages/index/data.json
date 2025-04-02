@@ -123,9 +123,7 @@
   ],
 
   "blogSection": {
-    "title": "Our blog",
-    "cta": "Read More",
-    "link":"https://via.placeholder.com/150"
+    "title": "Our blog"
   },
 
   "blogCard": [
@@ -221,11 +219,14 @@
     }
   ],
 
+  "ctaMore": {
+    "text": "Read more",
+    "link": "https://via.placeholder.com/150"
+  },
+
   "aboutSection": {
     "sectionTitle": "About Us",
-    "sectionDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in c ulpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
-    "cta": "Read More",
-    "link": "https://via.placeholder.com/150"
+    "sectionDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in c ulpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat"
   },
 
   "aboutCard": [
@@ -248,7 +249,7 @@
   ],
 
   "teamSection": {
-    "Title": "Our Team"
+    "title": "Our Team"
   },
 
   "teamMember": [
