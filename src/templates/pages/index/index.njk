@@ -1,5 +1,23 @@
-{% extends "layouts/base.njk" %}
+{% set currentPage = "Home" %} {% extends "layouts/base.njk" %} {% set title =
+"BINABOX - NFT Rarity Checker" %} {% set description = "BINABOX - The best way
+to check the rarity of NFT collections. Discover, explore, and analyze NFTs
+easily." %} {% set page = "home" %} {% block content %}
+<!--MAIN STARTS HERE-->
 
-{% block content %}
-index page content
-{% endblock %}
+<!--HERO SECTION-->
+{% include "partials/hero-section.njk" %}
+
+<!--CATALOG SECTION-->
+{% include "partials/catalog-section.njk" %}
+
+<!--BLOG SECTION-->
+{% include "partials/our-blog.njk" %}
+
+<!--ABOUT US SECTION-->
+{% include "partials/about-us.njk" %}
+
+<!-- OUR TEAM SECTION-->
+{% include "partials/team.njk" %}
+
+<!--FAQs SECTION-->
+{% include "partials/faqs.njk" %} {% endblock %}

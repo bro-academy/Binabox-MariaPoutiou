@@ -1,0 +1,31 @@
+{% set header = mainArticleHeader %} {% include
+"partials/main-article-header.njk" %}
+<p class="blog-article__text">
+  {{ mainArticle.textPrefix }}
+  <strong class="blog-article__word-bg"
+    >{{ mainArticle.highlightedWord }}</strong
+  >
+  {{ mainArticle.textSuffix }}
+  <a class="blog-article__link" href="{{ mainArticle.highlightedWordLink }}">
+    <strong class="blog-article__word"
+      >{{ mainArticle.highlightedWordNew }}</strong
+    >
+  </a>
+  {{ mainArticle.textAfterSuffix }}
+</p>
+<ul class="blog-article__bullet-list">
+  <li class="blog-article__bullet-item">{{ mainArticle.firstItem }}</li>
+  <li class="blog-article__bullet-item">
+    {{ mainArticle.secondItem }}
+    <a class="blog-article__link" href="{{ mainArticle.wordLink }}">
+      <strong class="blog-article__word">{{ mainArticle.wordText }}</strong>
+    </a>
+    {{ mainArticle.secondItemSuffix }}
+  </li>
+</ul>
+<ul class="blog-article__list">
+  {% for text in mainArticle.list %}
+  <li class="blog-article__item">{{ text.item }}</li>
+  {% endfor %}
+</ul>
+{% include "partials/quote-wrapper.njk" %}

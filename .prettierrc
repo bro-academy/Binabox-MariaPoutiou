@@ -1,5 +1,15 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.njk",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }
+
+  

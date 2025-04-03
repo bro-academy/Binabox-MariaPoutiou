@@ -1,0 +1,46 @@
+{% for blog in blogCard %}
+<article class="blog-card blog-card--large">
+  <picture class="blog-card__picture">
+    <source
+      srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x"
+      type="image/avif"
+    />
+    <source
+      srcset="/img/{{ blog.img }}-1x.webp 1x, /img/{{ blog.img }}-2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      class="blog-card__img"
+      src="/img/{{ blog.img }}-2x.webp"
+      alt="{{ blog.alt }}"
+      width="736"
+      height="664"
+      loading="lazy"
+    />
+  </picture>
+  <div class="blog-card__label">
+    <span class="blog-card__text-label">{{ blog.label }}</span>
+  </div>
+  <div class="blog-card__meta">
+    <img
+      class="blog-card__author-icon"
+      src="{{ blog.authorIcon }}"
+      alt="{{ blog.authorIconAlt }}"
+      loading="lazy"
+    />
+    <span class="blog-card__author">{{ blog.authorName }}</span>
+    <img
+      class="blog-card__date-icon"
+      src="{{ blog.dateIcon }}"
+      alt="{{ blog.dateIconAlt }}"
+      loading="lazy"
+    />
+    <time class="blog-card__date" datetime="2022-06-20"
+      >{{ blog.dateISO }}</time
+    >
+  </div>
+  <h4 class="blog-card__title">{{ blog.cardTitle }}</h4>
+  <p class="blog-card__description">{{ blog.cardDescription }}</p>
+  <a class="blog-link" href="{{ blog.link }}">{{ blog.linkText }}</a>
+</article>
+{% endfor %}
