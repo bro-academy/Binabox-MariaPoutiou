@@ -1,0 +1,169 @@
+.catalog-section {
+    padding: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+    margin-block: 0 40px;
+  }
+  
+  .section-title--catalog { 
+    color: #F8F7FF;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+    margin-block: 0;
+    text-align: left;
+  }
+  
+  .catalog-header__divider {
+    width: 1167px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #D0D7FB2B; 
+  }
+  
+  .catalog__button--all {
+    background-color: transparent;
+    border: 2px solid; color: #D0D7FB2B;
+    padding-block: 10px;
+    padding-inline: 24px;
+    margin-right: 24px;
+  }
+  
+  .catalog__button--all:hover {
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .catalog__button--all:active {
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .catalog__button--all:focus {
+    background-color: #bfc5ee1f;
+    border: 4px solid #3892f3;
+  }
+  
+  .catalog__button--text {
+    color: #F5F8FB;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  
+  .catalog__controls-separator {
+    width: 2px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #D0D7FB2B;
+  }
+  
+  .catalog__button--prev {
+    background-color: transparent;
+    border: 2px solid; color: #D0D7FB2B;
+    padding-block: 16px;
+  }
+  
+  .catalog__button--prev:hover {
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .catalog__button--prev:active {
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .catalog__button--prev:focus {
+    background-color: #bfc5ee1f;
+    border: 4px solid #3892f3;
+  }
+  
+  .catalog__button--prev-text {
+    color: #F5F8FB;
+    top: 5px;
+    left: 8px;
+  }
+  
+  .catalog__button--next {
+    background-color: #0265DC;
+    padding-block: 16px;
+    color: #F5F8FB;
+  }
+  
+  .catalog__button--next:hover {
+    background-color: #3892F3;
+  }
+  
+  .catalog__button--next:active {
+    background-color: #0054B6;
+  }
+  
+  .catalog__button--next:focus {
+    background-color: #0265DC;
+    border: 4px solid #3892F3;
+  }
+  
+  .catalog__button--next-text {
+    color: #0D0D15;
+    top: 5px;
+    left: 8px;
+  }
+  
+  .product-list__item {
+    background-color: #1D1C28;
+    padding: 24px;
+    display: inline-block;
+  }
+  
+  .product-card__img {
+    object-fit: cover;
+  }
+  
+  .product-card__name {
+    color: #EFF5FAD1; 
+    opacity: 0.82;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-block: 0;
+  }
+  
+  .product-card__price {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+    margin-block: 0;
+  }
+  
+  .product-label {
+    background-color: #F5F8FB;
+    padding-block: 8px;
+    padding-inline: 10px;
+    color: #0265DC;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block
+  }
+  
+  .product-label--updated {
+    background-color:#EA3829;
+    color: #F5F8FB;
+    padding-block: 8px;
+    padding-inline: 10px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }

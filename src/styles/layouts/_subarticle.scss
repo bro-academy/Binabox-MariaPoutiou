@@ -1,0 +1,92 @@
+.subarticle-title {
+    color: #F8F7FF;
+    font-size: 28px;
+    line-height: 38px;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+  }
+  
+  .subarticle__text {
+    color: #F8F7FF;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .subarticle__tags-title {
+    color: #F8F7FF;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .subarticle__wrapper {
+    display: inline-block;
+  }
+  
+  .tag-list__item {
+    
+    /* this class also applies to side section tags */
+    padding-block: 6px;
+    padding-inline: 12px;
+    margin-inline: 5px;
+    display: inline-block;
+    border: 2px solid #D0D7FB2B;
+  }
+  
+  .tag-list__link {
+    
+    /* this class also applies to side section tags */
+    color: #F8F7FF;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 20px;
+    align-items: center;
+  }
+  
+  .tag-list__link:hover {
+    color: #3892F3;
+  }
+  
+  .tag-list__link:active {
+    color: #0054B6;
+  }
+  
+  .tag-list__link:focus {
+    border: 4px solid #3892f3;
+  }
+  
+  .subarticle__socials-list {
+    margin-left: 700px;
+  }
+  
+  .subarticle__share-title {
+    color: #F8F7FF;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 700px;
+  }
+  
+  .subarticle__socials-item {
+    padding: 8px;
+    margin-block: 5px;
+    margin-inline: 5px;
+    display: inline-block;
+    border: 2px solid #D0D7FB2B;
+  }
+  
+  .subarticle__socials-link {
+    color: #F8F7FF;
+    font-weight: 600;
+    line-height: 20px;
+    align-items: center;
+  }
+  
+  .subarticle__socials-link:hover {
+    color: #3892F3;
+  }
+  
+  .subarticle__socials-link:active {
+    color: #0054B6;
+  }
+  
+  .subarticle__socials-link:focus {
+    border: 4px solid #3892f3;
+  }

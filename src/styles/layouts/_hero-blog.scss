@@ -1,0 +1,67 @@
+.hero-section {
+    position: static;
+    padding-top: 64px;
+  }
+  
+  .hero-section--blog-article {
+    background-image: url("/img/hero-section-banner-background-2x.webp");
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+  }
+  
+  .hero-section__blog-title {
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+    margin-block: 0 20px;
+  }
+  
+  .hero-section__list {
+    margin: 0;
+  }
+  
+  .hero-section__nav {
+    text-align: center;
+  }
+  
+  .hero-section__list-item {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .hero-section__link {
+    color: #F5F8FB;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .hero-section__link:hover {
+    color: #3892f3;
+  }
+  
+  .hero-section__link:focus {
+    border: 4px solid #3892f3;
+  }
+  
+  .hero-section__link:active {
+    color: #0054b6;
+  }
+  
+  .blog-article__figure {
+    margin: 0;
+  }
+  
+  .hero-section__word--blog-article {
+    
+    /* highlighted word */
+    color: #E7EEF7A8; 
+    opacity: 0.66;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }

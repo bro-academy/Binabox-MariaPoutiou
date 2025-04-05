@@ -1,0 +1,32 @@
+.faqs {
+    padding-top: 64px;
+    padding-inline: 64px;
+    padding-bottom: 104px;
+  }
+  
+  .faqs__item {
+    background-color: #1D1C28;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    padding-inline: 24px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(20px)
+  }
+  
+  .faqs__question {
+    border-bottom: 1px solid #BFC5EE1F;
+    padding-bottom: 24px;
+  }
+  
+  .faqs__question-text {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+    margin-block: 0;
+  }
+  
+  .faqs__answer {
+    font-size: 16px;
+    line-height: 24px;
+    margin-block: 16px 0;
+  }

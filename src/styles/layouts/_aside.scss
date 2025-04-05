@@ -1,0 +1,43 @@
+.aside__block {
+    background-color:#BFC5EE1F;
+    padding: 24px;
+    margin-block: 0 21px;
+  }
+  
+  .aside__block-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #BFC5EE1F;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Bakbak One", "Georgia", sans-serif;
+  }
+  
+  .aside__block--lower {
+    padding: 24px;
+  }
+  
+  .aside__block-item {
+    min-width: 200px;
+    padding-block: 6px;
+    padding-inline: 12px;
+  }
+  
+  .aside__block-link {
+    color: #F5F8FB;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .aside__block-link:hover {
+    color: #3892f3;
+  }
+  
+  .aside__block-link:focus {
+    border: 4px solid #3892f3;
+  }
+  
+  .aside__block-link:active {
+    color: #0054b6;
+  }
