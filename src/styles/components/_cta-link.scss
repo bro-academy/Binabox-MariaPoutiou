@@ -1,0 +1,35 @@
+.cta-more {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .cta-more__link {
+    
+    /* read more button of the whole section */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F5F8FB;
+    border: 2px solid #D0D7FB2B;
+    padding-block: 10px;
+    padding-inline: 24px;
+  }
+  
+  .cta-more__link:hover {
+    color: #f5f8fb;
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .cta-more__link:active {
+    color: #f5f8fb;
+    background-color: #bfc5ee1f;
+    border: 2px solid #bfc5ee1f;
+  }
+  
+  .cta-more__link:focus {
+    color: #f5f8fb;
+    background-color: #bfc5ee1f;
+    border: 4px solid #3892f3;
+  }

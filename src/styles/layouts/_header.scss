@@ -1,88 +1,10 @@
+@use "../components/main-nav";
+@use "../components/header-buttons";
+
 .header {
     justify-content: space-between;
     padding: 32px;
   }
+
   
-  .main-nav-list__list-link {
-    color: #F5F8FB;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    display: inline-block;
-    padding: 8px 20px;
-  }
-  
-  .main-nav-list {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .main-nav-list__list-link:hover {
-    color: #3892f3;
-  }
-  
-  .main-nav-list__list-link:active {
-    color: #0054b6;
-  }
-  
-  .main-nav-list__list-link--active {
-    border-bottom: 2px solid #0265DC;
-  }
-  
-  .button {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    border: 2px solid transparent;
-  }
-  
-  .button:focus {
-    border-color: #3892F3;
-  }
-  
-  .header__button {
-    padding-block: 10px;
-    padding-inline: 24px;
-  }
-  
-  .header-button__text {
-    color: #f5f8fb;
-  }
-  
-  .button--secondary {
-    background-color: transparent;
-    border: 2px solid #D0D7FB2B;
-  }
-  
-  .button--primary {
-    background-color: #0265DC;
-    border-color: #0265DC;
-  }
-  
-  .button--primary:hover {
-    background-color: #3892F3;
-  }
-  
-  .button--primary:active {
-    background-color: #0054B6;
-  }
-  
-  .button--primary:focus {
-    background-color: #0265DC;
-  }
-  
-  .button--secondary:hover {
-    background-color: #BFC5EE1F;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .button--secondary:active {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .button--secondary:focus {
-    background-color: #bfc5ee1f;
-  }
+ 
