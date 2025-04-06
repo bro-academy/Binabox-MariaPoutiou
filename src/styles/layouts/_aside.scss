@@ -1,34 +1,35 @@
+@use '../abstracts/variables' as *;
 @use "../components/tags";
 
 .aside__block {
     background-color:#BFC5EE1F;
-    padding: 24px;
+    padding: $padding-2xl;
     margin-block: 0 21px;
   }
   
   .aside__block-title {
-    padding-bottom: 16px;
+    padding-bottom: $padding-lg;
     border-bottom: 1px solid #BFC5EE1F;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: "Bakbak One", "Georgia", sans-serif;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    font-family: $font-headings;
   }
   
   .aside__block--lower {
-    padding: 24px;
+    padding: $padding-2xl;
   }
   
   .aside__block-item {
     min-width: 200px;
-    padding-block: 6px;
-    padding-inline: 12px;
+    padding-block: $padding-2xs;
+    padding-inline: $padding-md;
   }
   
   .aside__block-link {
     color: #F5F8FB;
     text-decoration: none;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
     margin-bottom: 20px;
   }
   

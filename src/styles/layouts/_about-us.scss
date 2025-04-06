@@ -1,7 +1,8 @@
+@use '../abstracts/variables' as *;
 @use "../components/cta-link";
 
 .about {
-    padding: 64px;
+    padding: $padding-4xl;
   }
   
   .about-list {
@@ -12,8 +13,8 @@
   .about-list__item {
     position: relative;
     counter-increment: about-counter; 
-    background-color: #1A1925;
-    padding: 32px 32px 32px 50px; 
+    background-color: $color-background-block-light;
+    padding: $padding-3xl $padding-3xl $padding-3xl 50px; 
   }
   
   .about-list__item::before {
@@ -31,22 +32,22 @@
     color: #EFF5FAD1; 
     opacity: 0.82;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
     text-align: center;
   }
   
   .about-list__title {
-    font-size: 24px;
-    line-height: 32px;
-    font-family: "Bakbak One", "Georgia", sans-serif;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    font-family: $font-headings;
     margin-block: 0 24px;
   }
   
   .about-list__description {
     color: #EFF5FAD1; 
-    font-size: 18px;
-    line-height: 28px;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
     margin-block: 0;
   }
   

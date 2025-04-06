@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .hero-section__list {
     margin: 0;
   }
@@ -14,8 +16,8 @@
   .hero-section__link {
     color: #F5F8FB;
     text-decoration: none;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
     text-align: center;
   }
   

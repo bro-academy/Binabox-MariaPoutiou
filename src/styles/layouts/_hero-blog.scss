@@ -1,8 +1,9 @@
+@use '../abstracts/variables' as *;
 @use "../components/hero-nav";
 
 .hero-section {
     position: static;
-    padding-top: 64px;
+    padding-top: $padding-4xl;
   }
   
   .hero-section--blog-article {
@@ -13,11 +14,11 @@
   }
   
   .hero-section__blog-title {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
     letter-spacing: -0.5px;
     text-align: center;
-    font-family: "Bakbak One", "Georgia", sans-serif;
+    font-family: $font-headings;
     margin-block: 0 20px;
   }
   
@@ -30,7 +31,7 @@
     /* highlighted word */
     color: #E7EEF7A8; 
     opacity: 0.66;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
     text-align: center;
   }

@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .cta-more {
     margin-top: 40px;
     text-align: center;
@@ -7,13 +9,13 @@
     
     /* read more button of the whole section */
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
     color: #F5F8FB;
     border: 2px solid #D0D7FB2B;
-    padding-block: 10px;
-    padding-inline: 24px;
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
   }
   
   .cta-more__link:hover {

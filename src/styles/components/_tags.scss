@@ -1,8 +1,10 @@
+@use '../abstracts/variables' as *;
+
 .tag-list__item {
     
     /* this class also applies to side section tags */
-    padding-block: 6px;
-    padding-inline: 12px;
+    padding-block: $padding-2xs;
+    padding-inline: $padding-md;
     margin-inline: 5px;
     display: inline-block;
     border: 2px solid #D0D7FB2B;
@@ -13,8 +15,8 @@
     /* this class also applies to side section tags */
     color: #F8F7FF;
     text-decoration: none;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
     align-items: center;
   }
   

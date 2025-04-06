@@ -1,6 +1,8 @@
+@use '../abstracts/variables' as *;
+
 .footer {
-    background-color: #1A1925;
-    padding: 64px 64px 32px;
+    background-color: $color-background-block-light;
+    padding: $padding-4xl $padding-4xl $padding-3xl;
   }
   
   .footer-upper {
@@ -13,23 +15,24 @@
   }
   
   .footer__description {
-    line-height: 20px;
+    line-height: $line-height-sm;
   }
   
   .footer-nav__title {
     font-weight: 500;
-    line-height: 28px;
-    font-size: 20px;
+    line-height: $line-height-lg;
+    font-size: $font-size-xl;
     margin-block: 0 8px;
   }
   
   .footer-nav__link {
     color: #F5F8FB;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    display: block; padding-block: 4px;
+    font-weight:$font-weight-secondary;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    display: block; 
+    padding-block: 4px;
   }
   
   .footer-nav__link:hover {
@@ -49,7 +52,7 @@
   }
   
   .copyright__text {
-    line-height: 20px;
+    line-height: $line-height-sm;
   }
 
   .social-media__list-item {

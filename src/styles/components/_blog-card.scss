@@ -1,51 +1,53 @@
+@use '../abstracts/variables' as *;
+
 .blog-card {
-    background-color: #1D1C28;
+    background-color: $color-background-block-dark;
     display: inline-block;
   }
   
   .blog-card--large {
     min-width: 512px;
-    padding: 24px;
+    padding: $padding-2xl;
     margin-block: 24px;
     margin-inline: 24px;
   }
   
   .blog-card--small {
-    padding: 24px;
+    padding: $padding-2xl;
     margin-block: 30px;
     margin-inline: 30px;
   }
   
   .blog-card__label {
     background-color: #F5F8FB;
-    padding-inline: 10px;
-    padding-top: 8px;
-    padding-block: 10px;
+    padding-inline: $padding-sm;
+    padding-top: $padding-xs;
+    padding-block: $padding-sm;
     display: inline-block
   }
   
   .blog-card__text-label {
     color: #0265DC;
-    line-height: 20px;
+    line-height: $line-height-sm;
     text-align: right;
   }
   
   .blog-card__author {
     color: #EFF5FAD1; 
     opacity: 0.82;
-    line-height: 20px;
+    line-height: $line-height-sm;
     letter-spacing: 0;
   }
   
   .blog-card__date {
     color: #EFF5FAD1; 
     opacity: 0.82;
-    line-height: 20px;
+    line-height: $line-height-sm;
   }
   
   .blog-card__title {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
     letter-spacing: 0;
     font-family: "Bakbak One", "Georgia", sans-serif;
     margin-bottom: 10px;
@@ -54,22 +56,22 @@
   .blog-card__description {
     color: #EFF5FAD1; 
     opacity: 0.82;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
   }
   
   .blog-link {
     
     /* read more button of blog cards */
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
     color: #F5F8FB;
     border: 2px solid #D0D7FB2B;
     text-align: center;
-    padding-block: 8px;
-    padding-inline: 20px;
+    padding-block: $padding-xs;
+    padding-inline: $padding-xl;
   }
   
   .blog-link:hover {

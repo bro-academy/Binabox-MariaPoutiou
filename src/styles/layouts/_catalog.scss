@@ -1,23 +1,24 @@
+@use '../abstracts/variables' as *;
 @use "../components/product-card";
 
 .catalog-section {
-    padding: 64px;
+    padding: $padding-4xl;
     margin-bottom: 10px;
   }
   
   .section-title {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
     letter-spacing: -0.5px;
     text-align: center;
-    font-family: "Bakbak One", "Georgia", sans-serif;
+    font-family: $font-headings;
     margin-block: 0 40px;
   }
   
   .section-title--catalog { 
     color: #F8F7FF;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
     letter-spacing: 0;
     font-family: "Bakbak One", "Georgia", sans-serif;
     margin-block: 0;
@@ -34,8 +35,8 @@
   .catalog__button--all {
     background-color: transparent;
     border: 2px solid; color: #D0D7FB2B;
-    padding-block: 10px;
-    padding-inline: 24px;
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
     margin-right: 24px;
   }
   
@@ -56,9 +57,9 @@
   
   .catalog__button--text {
     color: #F5F8FB;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
     letter-spacing: 0;
     text-align: center;
   }
@@ -73,7 +74,7 @@
   .catalog__button--prev {
     background-color: transparent;
     border: 2px solid; color: #D0D7FB2B;
-    padding-block: 16px;
+    padding-block: $padding-lg;
   }
   
   .catalog__button--prev:hover {
@@ -99,7 +100,7 @@
   
   .catalog__button--next {
     background-color: #0265DC;
-    padding-block: 16px;
+    padding-block: $padding-lg;
     color: #F5F8FB;
   }
   

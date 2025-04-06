@@ -1,22 +1,23 @@
+@use '../abstracts/variables' as *;
 @use "../components/tags";
 
 .subarticle-title {
     color: #F8F7FF;
-    font-size: 28px;
+    font-size: $font-size-3xl;
     line-height: 38px;
-    font-family: "Bakbak One", "Georgia", sans-serif;
+    font-family: $font-headings;
   }
   
   .subarticle__text {
     color: #F8F7FF;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
   }
   
   .subarticle__tags-title {
     color: #F8F7FF;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
   }
   
   .subarticle__wrapper {
@@ -29,13 +30,13 @@
   
   .subarticle__share-title {
     color: #F8F7FF;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
     margin-left: 700px;
   }
   
   .subarticle__socials-item {
-    padding: 8px;
+    padding: $padding-xs;
     margin-block: 5px;
     margin-inline: 5px;
     display: inline-block;
@@ -44,8 +45,8 @@
   
   .subarticle__socials-link {
     color: #F8F7FF;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
     align-items: center;
   }
   

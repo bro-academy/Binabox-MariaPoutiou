@@ -1,17 +1,19 @@
+@use './variables' as *;
+
 * {
     box-sizing: border-box;
   }
   
   body {
-    background-color: #0d0d15;
-    color: #F5F8FB;
-    font-family: "Poppins", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    background-color: $color-background;
+    color: $color-text-base;
+    font-family: $font-primary;
+    font-weight: $font-weight-primary;
+    font-size: $font-size-sm;
   }
   
   h1, h2,h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: $font-weight-primary;
   }
   
   ul {
@@ -27,5 +29,5 @@
   .container {
     width: 100%; 
     max-width: 1728px; 
-    padding-inline: 64px;
+    padding-inline: $padding-4xl;
   }
