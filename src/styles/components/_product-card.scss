@@ -1,25 +1,25 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .product-list__item {
-    background-color: $color-background-block-dark;
-    padding: $padding-2xl;
-    display: inline-block;
-  }
-  
-  .product-card {
-    &__img {
+  background-color: $color-background-block-dark;
+  padding: $padding-2xl;
+  display: inline-block;
+}
+
+.product-card {
+  &__img {
     object-fit: cover;
   }
-  
+
   &__name {
-    color: $color-text-secondary; 
+    color: $color-text-secondary;
     opacity: 0.82;
     font-weight: 500;
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     margin-block: 0;
   }
-  
+
   &__price {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
@@ -28,19 +28,19 @@
     margin-block: 0;
   }
 }
-  
-  .product-label {
-    background-color: #F5F8FB;
-    padding-block: $padding-xs;
-    padding-inline: $padding-sm;
-    color: #0265DC;
-    font-weight: $font-weight-secondary;
-    line-height: $line-height-sm;
-    text-align: center;
-    display: inline-block;
 
-    &--updated {
-      background-color:#EA3829;
-      color: $color-text-base;
-    }
+.product-label {
+  background-color: #f5f8fb;
+  padding-block: $padding-xs;
+  padding-inline: $padding-sm;
+  color: #0265dc;
+  font-weight: $font-weight-secondary;
+  line-height: $line-height-sm;
+  text-align: center;
+  display: inline-block;
+
+  &--updated {
+    background-color: #ea3829;
+    color: $color-text-base;
   }
+}

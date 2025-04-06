@@ -1,11 +1,8 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 @use "../components/main-nav";
 @use "../components/header-buttons";
 
 .header {
-    justify-content: space-between;
-    padding: $padding-3xl;
-  }
-
-  
- 
+  justify-content: space-between;
+  padding: $padding-3xl;
+}
