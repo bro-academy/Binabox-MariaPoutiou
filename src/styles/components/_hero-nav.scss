@@ -1,34 +1,22 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .hero-section__list {
-    margin: 0;
-  }
-  
-  .hero-section__nav {
-    text-align: center;
-  }
-  
-  .hero-section__list-item {
-    display: inline-block;
-    margin: 20px;
-  }
-  
-  .hero-section__link {
-    color: #F5F8FB;
-    text-decoration: none;
-    font-weight: $font-weight-secondary;
-    line-height: $line-height-sm;
-    text-align: center;
-  }
-  
-  .hero-section__link:hover {
-    color: #3892f3;
-  }
-  
-  .hero-section__link:focus {
-    border: 4px solid #3892f3;
-  }
-  
-  .hero-section__link:active {
-    color: #0054b6;
-  }
+  margin: 0;
+}
+
+.hero-section__nav {
+  text-align: center;
+}
+
+.hero-section__list-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+.hero-section__link {
+  @include link-style(false);
+  color: $color-text-base;
+  line-height: $line-height-sm;
+  text-align: center;
+}

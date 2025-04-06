@@ -2,49 +2,18 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section__button {
-    border: 2px;
-    padding-block: $padding-sm;
-    padding-inline: $padding-2xl;
-    margin-top: 15px;
-  }
-  
-  .hero-section__button--primary {
-    background-color: #0265DC;
-    border-color: #0265DC;
-    color: #F5F8FB;
-  }
-  
-  .hero-section__button--primary:hover {
-    background-color: #3892F3;
-  }
-  
-  .hero-section__button--primary:active {
-    background-color: #0054B6;
-  }
-  
-  .hero-section__button--primary:focus {
-    background-color: #0265DC;
-  }
-  
-  .hero-section__button--secondary {
-    background-color: transparent;
-    border: 2px solid #D0D7FB2B;
-  }
-  
-  .hero-section__button--secondary:hover {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .hero-section__button--secondary:active {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .hero-section__button--secondary:focus {
-    background-color: #bfc5ee1f;
-  }
-  
-  .hero-section__button--text{
-    color: #F5F8FB;
-    }
+  @include button-base;
+  margin-top: 15px;
+}
+
+.hero-section__button--primary {
+  @include button-primary;
+}
+
+.hero-section__button--secondary {
+  @include button-secondary;
+}
+
+.hero-section__button--text {
+  color: $color-text-base;
+}

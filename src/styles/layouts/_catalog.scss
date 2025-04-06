@@ -1,124 +1,85 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 @use "../components/product-card";
 
 .catalog-section {
-    padding: $padding-4xl;
-    margin-bottom: 10px;
+  padding: $padding-4xl;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: $font-size-4xl;
+  line-height: $line-height-4xl;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: $font-headings;
+  margin-block: 0 40px;
+}
+
+.section-title--catalog {
+  color: $color-text-tertiary;
+  font-size: $font-size-2xl;
+  line-height: $line-height-xl;
+  letter-spacing: 0;
+  font-family: $font-headings;
+  margin-block: 0;
+  text-align: left;
+}
+
+.catalog-header__divider {
+  width: 1167px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #d0d7fb2b;
+}
+
+.catalog__button--all {
+  background-color: transparent;
+  border: 2px solid;
+  color: #d0d7fb2b;
+  padding-block: $padding-sm;
+  padding-inline: $padding-2xl;
+  margin-right: 24px;
+  @include button-secondary;
+}
+
+.catalog__button--text {
+  color: $color-text-base;
+  font-weight: $font-weight-secondary;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.catalog__controls-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #d0d7fb2b;
+}
+
+.catalog__button--prev {
+  background-color: transparent;
+  border: 2px solid;
+  color: #d0d7fb2b;
+  padding-block: $padding-lg;
+  @include button-secondary;
+}
+
+.catalog__button--next {
+  background-color: #0265dc;
+  padding-block: $padding-lg;
+  color: $color-text-base;
+  @include button-primary;
+}
+
+.catalog__button--prev-text {
+  color: $color-text-base;
+  top: 5px;
+  left: 8px;
+
+  &--next-text {
+    color: #0d0d15;
   }
-  
-  .section-title {
-    font-size: $font-size-4xl;
-    line-height: $line-height-4xl;
-    letter-spacing: -0.5px;
-    text-align: center;
-    font-family: $font-headings;
-    margin-block: 0 40px;
-  }
-  
-  .section-title--catalog { 
-    color: #F8F7FF;
-    font-size: $font-size-2xl;
-    line-height: $line-height-xl;
-    letter-spacing: 0;
-    font-family: "Bakbak One", "Georgia", sans-serif;
-    margin-block: 0;
-    text-align: left;
-  }
-  
-  .catalog-header__divider {
-    width: 1167px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #D0D7FB2B; 
-  }
-  
-  .catalog__button--all {
-    background-color: transparent;
-    border: 2px solid; color: #D0D7FB2B;
-    padding-block: $padding-sm;
-    padding-inline: $padding-2xl;
-    margin-right: 24px;
-  }
-  
-  .catalog__button--all:hover {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .catalog__button--all:active {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .catalog__button--all:focus {
-    background-color: #bfc5ee1f;
-    border: 4px solid #3892f3;
-  }
-  
-  .catalog__button--text {
-    color: #F5F8FB;
-    font-weight: $font-weight-secondary;
-    font-size: $font-size-lg;
-    line-height: $line-height-lg;
-    letter-spacing: 0;
-    text-align: center;
-  }
-  
-  .catalog__controls-separator {
-    width: 2px;
-    height: 24px;
-    border-radius: 2px;
-    background-color: #D0D7FB2B;
-  }
-  
-  .catalog__button--prev {
-    background-color: transparent;
-    border: 2px solid; color: #D0D7FB2B;
-    padding-block: $padding-lg;
-  }
-  
-  .catalog__button--prev:hover {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .catalog__button--prev:active {
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .catalog__button--prev:focus {
-    background-color: #bfc5ee1f;
-    border: 4px solid #3892f3;
-  }
-  
-  .catalog__button--prev-text {
-    color: #F5F8FB;
-    top: 5px;
-    left: 8px;
-  }
-  
-  .catalog__button--next {
-    background-color: #0265DC;
-    padding-block: $padding-lg;
-    color: #F5F8FB;
-  }
-  
-  .catalog__button--next:hover {
-    background-color: #3892F3;
-  }
-  
-  .catalog__button--next:active {
-    background-color: #0054B6;
-  }
-  
-  .catalog__button--next:focus {
-    background-color: #0265DC;
-    border: 4px solid #3892F3;
-  }
-  
-  .catalog__button--next-text {
-    color: #0D0D15;
-    top: 5px;
-    left: 8px;
-  }
+}

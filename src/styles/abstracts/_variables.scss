@@ -3,6 +3,8 @@ $color-background: #0d0d15;
 $color-background-block-dark: #1D1C28;
 $color-background-block-light: #1A1925;
 $color-text-base: #F5F8FB;
+$color-text-secondary: #EFF5FAD1;
+$color-text-tertiary: #F8F7FF;
 $color-hover: #3892f3;
 $color-active: #0054b6;
 $color-focus-border: #3892F3;
@@ -16,8 +18,8 @@ $color-text-highlight: #78bbfa;
 $font-primary: 'Poppins', 'Arial', sans-serif;
 $font-headings: 'Bakbak One', 'Georgia', sans-serif;
 
-$font-weight-primary: "400";
-$font-weight-secondary: "600";
+$font-weight-primary: 400;
+$font-weight-secondary: 600;
 
 $font-size-xs: 12px;
 $font-size-sm: 14px;
@@ -47,8 +49,3 @@ $padding-xl: 20px;
 $padding-2xl: 24px;
 $padding-3xl: 32px;
 $padding-4xl: 64px;
-
-// Border Radius
-$border-radius-sm: 2px;
-$border-radius-md: 8px;
-$border-radius-lg: 16px;

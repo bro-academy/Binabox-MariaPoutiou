@@ -1,21 +1,13 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .main-nav-list__list-link {
+    @include link-style(false);
     color: $color-text-base;
-    text-decoration: none;
-    font-weight: $font-weight-secondary;
     font-size: $font-size-md;
     line-height: $line-height-md;
     display: inline-block;
     padding: $padding-xs $padding-xl;
-
-    &:hover {
-        color:$color-hover;
-    }
-
-    &:active {
-        color: $color-active;
-    }
 
     &--active {
         border-bottom: 2px solid #0265DC;

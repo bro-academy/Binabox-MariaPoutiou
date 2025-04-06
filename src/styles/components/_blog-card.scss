@@ -1,94 +1,71 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
+@use '../abstracts/mixins' as *;
 
 .blog-card {
-    background-color: $color-background-block-dark;
-    display: inline-block;
-  }
-  
-  .blog-card--large {
+  background-color: $color-background-block-dark;
+  display: inline-block;
+
+  &--large {
     min-width: 512px;
     padding: $padding-2xl;
     margin-block: 24px;
     margin-inline: 24px;
   }
-  
-  .blog-card--small {
+
+  &--small {
     padding: $padding-2xl;
     margin-block: 30px;
     margin-inline: 30px;
   }
-  
-  .blog-card__label {
-    background-color: #F5F8FB;
+
+  &__label {
+    background-color: #f5f8fb;
     padding-inline: $padding-sm;
     padding-top: $padding-xs;
     padding-block: $padding-sm;
-    display: inline-block
+    display: inline-block;
   }
-  
-  .blog-card__text-label {
-    color: #0265DC;
+
+  &__text-label {
+    color: #0265dc;
     line-height: $line-height-sm;
     text-align: right;
   }
-  
-  .blog-card__author {
-    color: #EFF5FAD1; 
+
+  &__author,
+  &__date {
+    color: #eff5fad1;
     opacity: 0.82;
-    line-height: $line-height-sm;
+    line-height: 20px;
     letter-spacing: 0;
   }
-  
-  .blog-card__date {
-    color: #EFF5FAD1; 
-    opacity: 0.82;
-    line-height: $line-height-sm;
-  }
-  
-  .blog-card__title {
+
+  &__title {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
     letter-spacing: 0;
     font-family: "Bakbak One", "Georgia", sans-serif;
     margin-bottom: 10px;
   }
-  
-  .blog-card__description {
-    color: #EFF5FAD1; 
+
+  &__description {
+    color: $color-text-secondary;
     opacity: 0.82;
     font-size: $font-size-md;
     line-height: $line-height-md;
   }
-  
-  .blog-link {
-    
-    /* read more button of blog cards */
-    text-decoration: none;
-    font-weight: $font-weight-secondary;
-    font-size: $font-size-md;
-    line-height: $line-height-md;
-    color: #F5F8FB;
-    border: 2px solid #D0D7FB2B;
-    text-align: center;
-    padding-block: $padding-xs;
-    padding-inline: $padding-xl;
-  }
-  
-  .blog-link:hover {
-    color: #f5f8fb;
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-  }
-  
-  .blog-link:active {
-    color: #f5f8fb;
-    background-color: #bfc5ee1f;
-    border: 2px solid #bfc5ee1f;
-    border: 4px solid #3892f3;
-  }
-  
-  .blog-link:active:focus {
-    color: #f5f8fb;
-    background-color: #bfc5ee1f;
-    border: 4px solid #3892f3;
-  }
+}
+
+.blog-link {
+  /* read more button of blog cards */
+  text-decoration: none;
+  font-weight: $font-weight-secondary;
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+  color: $color-text-base;
+  border: 2px solid #d0d7fb2b;
+  text-align: center;
+  padding-block: $padding-xs;
+  padding-inline: $padding-xl;
+  @include button-secondary;
+}
