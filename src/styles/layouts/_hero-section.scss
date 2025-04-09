@@ -16,7 +16,7 @@
 }
 
 .hero-section__brand {
-  color: #0265dc;
+  color: $color-primary;
 }
 
 .hero-section__description {
@@ -34,7 +34,7 @@
   font-size: $font-size-5xl;
   line-height: $line-height-5xl;
   letter-spacing: 0.5px;
-  text-shadow: 0 4px 13px #ffffff66;
+  text-shadow: 0 4px 13px $color-shadow;
   font-family: $font-headings;
   margin: 0;
 }

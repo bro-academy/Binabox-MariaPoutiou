@@ -30,16 +30,15 @@
   width: 1167px;
   height: 2px;
   border-radius: 2px;
-  background-color: #d0d7fb2b;
+  background-color: $color-catalog-divider;
 }
 
 .catalog__button--all {
-  background-color: transparent;
-  border: 2px solid;
-  color: #d0d7fb2b;
+  color: $color-secondary-button-border;
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
   margin-right: 24px;
+
   @include button-secondary;
 }
 
@@ -56,21 +55,19 @@
   width: 2px;
   height: 24px;
   border-radius: 2px;
-  background-color: #d0d7fb2b;
+  background-color: $color-catalog-divider;
 }
 
 .catalog__button--prev {
-  background-color: transparent;
-  border: 2px solid;
-  color: #d0d7fb2b;
+  color: $color-secondary-button-border;
   padding-block: $padding-lg;
+
   @include button-secondary;
 }
 
 .catalog__button--next {
-  background-color: #0265dc;
   padding-block: $padding-lg;
-  color: $color-text-base;
+
   @include button-primary;
 }
 
@@ -80,6 +77,6 @@
   left: 8px;
 
   &--next-text {
-    color: #0d0d15;
+    color: $color-background;
   }
 }

@@ -13,8 +13,9 @@
   font-size: $font-size-lg;
   line-height: $line-height-lg;
   color: $color-text-base;
-  border: 2px solid #d0d7fb2b;
+  border: 2px solid $color-secondary-button-border;
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
+
   @include button-secondary;
 }

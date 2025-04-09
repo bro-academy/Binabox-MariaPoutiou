@@ -28,7 +28,7 @@
 
 .hero-section__word--blog-article {
   /* highlighted word */
-  color: #e7eef7a8;
+  color: $color-highlighted-word;
   opacity: 0.66;
   font-weight: $font-weight-secondary;
   line-height: $line-height-sm;

@@ -21,7 +21,7 @@
 }
 
 .blog-article__label {
-  background-color: #0265dc;
+  background-color: $color-primary;
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
   font-weight: $font-weight-secondary;
@@ -49,7 +49,7 @@
 .blog-article__word-bg {
   /* highlighted word "players" */
   margin: 0;
-  background-color: #0265dc;
+  background-color: $color-primary;
   color: $color-text-tertiary;
   font-weight: $font-weight-secondary;
   font-size: $font-size-lg;
@@ -103,7 +103,7 @@
 }
 
 .blog-article__quote-wrapper {
-  background-color: #002754;
+  background-color: $color-quote;
   padding: $padding-lg;
   border-radius: 16px;
   margin-top: 40px;
@@ -116,15 +116,17 @@
   font-family: $font-headings;
 }
 
+.blog-article__quote-value {
+  color: $color-text-secondary;
+  opacity: 0.82;
+  font-weight: $font-weight-secondary;
+  line-height: $line-height-sm;
+}
+
 .blog-article__quote-author {
   color: $color-text-tertiary;
   font-weight: $font-weight-secondary;
   line-height: $line-height-sm;
-
-  &__quote-value {
-    color: $color-text-secondary;
-    opacity: 0.82;
-  }
 }
 
 .blog-article__gallery-caption {

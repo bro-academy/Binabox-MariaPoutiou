@@ -3,14 +3,14 @@
 @use "../components/tags";
 
 .aside__block {
-  background-color: #bfc5ee1f;
+  background-color: $color-background-block-secondary;
   padding: $padding-2xl;
   margin-block: 0 21px;
 }
 
 .aside__block-title {
   padding-bottom: $padding-lg;
-  border-bottom: 1px solid #bfc5ee1f;
+  border-bottom: 1px solid $color-background-block-secondary;
   font-size: $font-size-2xl;
   line-height: $line-height-xl;
   font-family: $font-headings;
@@ -30,5 +30,6 @@
   color: $color-text-base;
   line-height: $line-height-sm;
   margin-bottom: 20px;
+
   @include link-style(false);
 }

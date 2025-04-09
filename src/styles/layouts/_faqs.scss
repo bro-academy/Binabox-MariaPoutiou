@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+
 .faqs {
   padding-top: $padding-4xl;
   padding-inline: $padding-4xl;
@@ -6,7 +7,7 @@
 }
 
 .faqs__item {
-  background-color: #1d1c28;
+  background-color: $color-background-block-dark;
   padding-top: $padding-2xl;
   padding-bottom: $padding-3xl;
   padding-inline: $padding-2xl;
@@ -15,7 +16,7 @@
 }
 
 .faqs__question {
-  border-bottom: 1px solid #bfc5ee1f;
+  border-bottom: 1px solid $color-background-block-secondary;
   padding-bottom: $padding-2xl;
 }
 

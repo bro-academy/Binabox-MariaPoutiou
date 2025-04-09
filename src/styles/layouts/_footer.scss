@@ -12,7 +12,7 @@
 
 .footer-lower {
   justify-content: space-between;
-  border-top: 1px solid #bfc5ee1f;
+  border-top: 1px solid $color-background-block-secondary;
 }
 
 .footer__description {
@@ -32,6 +32,7 @@
   line-height: $line-height-xs;
   display: block;
   padding-block: 4px;
+
   @include link-style(false);
 }
 

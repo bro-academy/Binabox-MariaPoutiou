@@ -16,6 +16,7 @@
 
 .hero-section__link {
   @include link-style(false);
+
   color: $color-text-base;
   line-height: $line-height-sm;
   text-align: center;

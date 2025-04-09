@@ -6,12 +6,13 @@
   padding-inline: $padding-md;
   margin-inline: 5px;
   display: inline-block;
-  border: 2px solid #d0d7fb2b;
+  border: 2px solid $color-secondary-button-border;
 }
 
 .tag-list__link {
   @include link-style(false);
-  color: #f8f7ff;
+
+  color: $color-text-tertiary;
   line-height: $line-height-sm;
   align-items: center;
 }

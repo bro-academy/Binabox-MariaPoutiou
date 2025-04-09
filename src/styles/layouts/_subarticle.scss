@@ -30,7 +30,7 @@
 }
 
 .subarticle__share-title {
-  color: #f8f7ff;
+  color: $color-text-tertiary;
   font-size: $font-size-md;
   line-height: $line-height-md;
   margin-left: 700px;
@@ -41,12 +41,13 @@
   margin-block: 5px;
   margin-inline: 5px;
   display: inline-block;
-  border: 2px solid #d0d7fb2b;
+  border: 2px solid $color-secondary-button-border;
 }
 
 .subarticle__socials-link {
-  color: #f8f7ff;
+  color: $color-text-tertiary;
   line-height: $line-height-sm;
   align-items: center;
+
   @include link-style(false);
 }
