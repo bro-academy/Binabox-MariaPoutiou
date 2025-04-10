@@ -2,27 +2,27 @@
 
 .about {
   padding: $padding-4xl;
-}
 
-.about__description {
-  color: $color-text-secondary;
-  opacity: 0.82;
-  font-weight: 500;
-  font-size: $font-size-xl;
-  line-height: $line-height-lg;
-  text-align: center;
+  &__description {
+    color: $color-text-secondary;
+    opacity: 0.82;
+    font-weight: 500;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    text-align: center;
+  }
 }
 
 .about-list {
   counter-reset: about-counter;
   padding: 0;
-}
 
-.about-list__item {
-  position: relative;
-  counter-increment: about-counter;
-  background-color: $color-background-block-light;
-  padding: $padding-3xl $padding-3xl $padding-3xl 50px;
+  &__item {
+    position: relative;
+    counter-increment: about-counter;
+    background-color: $color-background-block-light;
+    padding: $padding-3xl $padding-3xl $padding-3xl 50px;
+  }
 }
 
 .about-list__item::before {

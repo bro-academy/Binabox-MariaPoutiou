@@ -2,136 +2,128 @@
 
 .blog-article {
   padding-bottom: $padding-4xl;
-}
 
-.blog-article__caption {
-  color: $color-text-tertiary;
-  font-weight: 500;
-  font-size: $font-size-md;
-  line-height: $line-height-md;
-}
+  &__caption,
+  &__gallery-caption {
+    color: $color-text-tertiary;
+    font-weight: 500;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
 
-.blog-article__title {
-  color: $color-text-tertiary;
-  font-size: $font-size-4xl;
-  line-height: $line-height-4xl;
-  letter-spacing: -0.5px;
-  font-family: $font-headings;
-  margin-block: 16px;
-}
+  &__title {
+    color: $color-text-tertiary;
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+    letter-spacing: -0.5px;
+    font-family: $font-headings;
+    margin-block: 16px;
+  }
 
-.blog-article__label {
-  background-color: $color-primary;
-  padding-block: $padding-sm;
-  padding-inline: $padding-2xl;
-  font-weight: $font-weight-secondary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-  text-align: center;
-}
+  &__label {
+    background-color: $color-primary;
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    text-align: center;
+  }
 
-.blog-article {
   &__author,
   &__date {
     color: $color-text-secondary;
     opacity: 0.82;
     line-height: $line-height-sm;
   }
-}
 
-.blog-article__text {
-  color: $color-text-tertiary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-  margin-block: 40px;
-}
-
-.blog-article__word-bg {
-  /* highlighted word "players" */
-  margin: 0;
-  background-color: $color-primary;
-  color: $color-text-tertiary;
-  font-weight: $font-weight-secondary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-}
-
-.blog-article__word {
-  /* highlighted word */
-  color: $color-text-highlight;
-  text-decoration: none;
-  font-weight: $font-weight-secondary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-
-  &:hover {
-    color: $color-hover;
+  &__text {
+    color: $color-text-tertiary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    margin-block: 40px;
   }
 
-  &:focus {
+  &__word-bg {
+    /* highlighted word "players" */
+    margin: 0;
+    background-color: $color-primary;
+    color: $color-text-tertiary;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+
+  &__word {
+    /* highlighted word */
     color: $color-text-highlight;
-    border: 4px solid $color-focus-border;
+    text-decoration: none;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:focus {
+      color: $color-text-highlight;
+      border: 4px solid $color-focus-border;
+    }
+
+    &:active {
+      color: $color-active;
+    }
   }
 
-  &:active {
-    color: $color-active;
+  &__bullet-list {
+    list-style: disc;
+    padding-left: $padding-xl;
+    margin-top: 40px;
+    margin-left: 20px;
   }
-}
 
-.blog-article__bullet-list {
-  list-style: disc;
-  padding-left: $padding-xl;
-  margin-top: 40px;
-  margin-left: 20px;
-}
+  &__bullet-item {
+    color: $color-text-tertiary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
 
-.blog-article__bullet-item {
-  color: $color-text-tertiary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-}
+  &__list {
+    margin-top: 40px;
+  }
 
-.blog-article__list {
-  margin-top: 40px;
-}
+  &__item {
+    color: $color-text-tertiary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    margin-bottom: 8px;
+  }
 
-.blog-article__item {
-  color: $color-text-tertiary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-  margin-bottom: 8px;
-}
+  &__quote-wrapper {
+    background-color: $color-quote;
+    padding: $padding-lg;
+    border-radius: 16px;
+    margin-top: 40px;
+  }
 
-.blog-article__quote-wrapper {
-  background-color: $color-quote;
-  padding: $padding-lg;
-  border-radius: 16px;
-  margin-top: 40px;
-}
+  &__quote-text {
+    color: $color-text-tertiary;
+    font-size: $font-size-3xl;
+    line-height: 36px;
+    font-family: $font-headings;
+  }
 
-.blog-article__quote-text {
-  color: $color-text-tertiary;
-  font-size: $font-size-3xl;
-  line-height: 36px;
-  font-family: $font-headings;
-}
+  &__quote-value {
+    color: $color-text-secondary;
+    opacity: 0.82;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
+  }
 
-.blog-article__quote-value {
-  color: $color-text-secondary;
-  opacity: 0.82;
-  font-weight: $font-weight-secondary;
-  line-height: $line-height-sm;
-}
-
-.blog-article__quote-author {
-  color: $color-text-tertiary;
-  font-weight: $font-weight-secondary;
-  line-height: $line-height-sm;
-}
-
-.blog-article__gallery-caption {
-  color: $color-text-tertiary;
-  font-weight: 500;
-  font-size: $font-size-md;
-  line-height: $line-height-md;
+  &__quote-author {
+    color: $color-text-tertiary;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
+  }
 }

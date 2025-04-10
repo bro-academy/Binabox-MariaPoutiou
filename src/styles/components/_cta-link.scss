@@ -4,11 +4,11 @@
 .cta-more {
   margin-top: 40px;
   text-align: center;
-}
 
-.cta-more__link {
+  &__link {
     text-decoration: none;
     color: $color-text-base;
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
+  }
 }

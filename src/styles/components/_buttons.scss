@@ -4,16 +4,11 @@
 .button {
   @include button-base;
   @include button-focus;
-}
 
-.button--primary {
-  @include button-primary;
-}
-
-.button--secondary {
-  @include button-secondary;
-}
-
-.header-button__text {
-  color: $color-text-base;
+  &--primary {
+    @include button-primary;
+  }
+  &--secondary {
+    @include button-secondary;
+  }
 }

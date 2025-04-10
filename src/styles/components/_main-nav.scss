@@ -1,21 +1,21 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .main-nav-list__list-link {
-    @include link-style(false);
+  @include link-style(false);
 
-    color: $color-text-base;
-    font-size: $font-size-md;
-    line-height: $line-height-md;
-    display: inline-block;
-    padding: $padding-xs $padding-xl;
+  color: $color-text-base;
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+  display: inline-block;
+  padding: $padding-xs $padding-xl;
 
-    &--active {
-        border-bottom: 2px solid $color-primary;
-    }
+  &--active {
+    border-bottom: 2px solid $color-primary;
   }
-  
-  .main-nav-list {
-    display: flex;
-    justify-content: center;
-  }
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+}

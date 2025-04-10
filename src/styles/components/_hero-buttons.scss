@@ -6,8 +6,8 @@
   padding-inline: $padding-2xl;
   margin-top: 15px;
   @include button-base;
-}
 
-.hero-section__button--text {
-  color: $color-text-base;
+  &--text {
+    color: $color-text-base;
+  }
 }

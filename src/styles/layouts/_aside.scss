@@ -5,30 +5,30 @@
   background-color: $color-background-block-secondary;
   padding: $padding-2xl;
   margin-block: 0 21px;
-}
 
-.aside__block-title {
-  padding-bottom: $padding-lg;
-  border-bottom: 1px solid $color-background-block-secondary;
-  font-size: $font-size-2xl;
-  line-height: $line-height-xl;
-  font-family: $font-headings;
-}
+  &-title {
+    padding-bottom: $padding-lg;
+    border-bottom: 1px solid $color-background-block-secondary;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    font-family: $font-headings;
+  }
 
-.aside__block--lower {
-  padding: $padding-2xl;
-}
+  &--lower {
+    padding: $padding-2xl;
+  }
 
-.aside__block-item {
-  min-width: 200px;
-  padding-block: $padding-2xs;
-  padding-inline: $padding-md;
-}
+  &-item {
+    min-width: 200px;
+    padding-block: $padding-2xs;
+    padding-inline: $padding-md;
+  }
 
-.aside__block-link {
-  color: $color-text-base;
-  line-height: $line-height-sm;
-  margin-bottom: 20px;
+  &-link {
+    color: $color-text-base;
+    line-height: $line-height-sm;
+    margin-bottom: 20px;
 
-  @include link-style(false);
+    @include link-style(false);
+  }
 }

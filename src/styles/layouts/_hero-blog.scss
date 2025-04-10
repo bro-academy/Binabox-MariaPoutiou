@@ -3,26 +3,26 @@
 .hero-section {
   position: static;
   padding-top: $padding-4xl;
-}
 
-.hero-section--blog-article {
-  background-image: url("/img/hero-section-banner-background-2x.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &--blog-article {
+    background-image: url("/img/hero-section-banner-background-2x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.hero-section__blog-title {
-  font-size: $font-size-5xl;
-  line-height: $line-height-5xl;
-  letter-spacing: -0.5px;
-  text-align: center;
-  font-family: $font-headings;
-  margin-block: 0 20px;
-}
+  &__blog-title {
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-family: $font-headings;
+    margin-block: 0 20px;
+  }
 
-.blog-article__figure {
-  margin: 0;
+  &__figure {
+    margin: 0;
+  }
 }
 
 .hero-section__word--blog-article {

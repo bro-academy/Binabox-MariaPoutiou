@@ -1,9 +1,5 @@
 @use "../abstracts/variables" as *;
 
-.team-member__img {
-  border-radius: 50%;
-}
-
 .team-member {
   background-color: $color-background-block-dark;
   padding: $padding-3xl;
@@ -11,19 +7,23 @@
   margin-block: 20px;
   margin-inline: 20px;
   text-align: center;
-}
 
-.team-member__name {
-  font-size: $font-size-2xl;
-  line-height: $line-height-xl;
-  font-family: $font-headings;
-  margin-block: 0;
-}
+  &__img {
+    border-radius: 50%;
+  }
 
-.team-member__role {
-  color: $color-text-secondary;
-  opacity: 0.82;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-  margin-block: 0;
+  &__name {
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    font-family: $font-headings;
+    margin-block: 0;
+  }
+
+  &__role {
+    color: $color-text-secondary;
+    opacity: 0.82;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    margin-block: 0;
+  }
 }
