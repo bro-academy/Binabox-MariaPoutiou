@@ -8,14 +8,6 @@
   @include button-base;
 }
 
-.hero-section__button--primary {
-  @include button-primary; 
-}
-
-.hero-section__button--secondary {
-  @include button-secondary;
-}
-
 .hero-section__button--text {
   color: $color-text-base;
 }

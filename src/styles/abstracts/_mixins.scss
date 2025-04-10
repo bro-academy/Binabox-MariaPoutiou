@@ -6,6 +6,10 @@
   line-height: $line-height-lg;
   text-align: center;
   border: 2px solid transparent;
+  display: inline-block;
+  padding-block: $padding-sm;
+  padding-inline: $padding-2xl;
+  text-decoration: none
 }
 
 @mixin button-focus {
@@ -38,9 +42,7 @@
   border: 2px solid $color-secondary-button-border;
 
   &:hover,
-  
   &:active,
-
   &:focus {
     background-color: $color-secondary-hover;
     border-color: $color-secondary-hover;

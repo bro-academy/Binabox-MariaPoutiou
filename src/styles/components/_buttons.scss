@@ -14,11 +14,6 @@
   @include button-secondary;
 }
 
-.header__button {
-  padding-block: $padding-sm;
-  padding-inline: $padding-2xl;
-}
-
 .header-button__text {
   color: $color-text-base;
 }

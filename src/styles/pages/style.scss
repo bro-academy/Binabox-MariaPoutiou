@@ -4,15 +4,21 @@
 
 /********** HOMEPAGE STARTS HERE ************/
 @use "../layouts/header";
+@use "../components/main-nav";
+@use "../components/buttons";
 
 /* HERO SECTION */
 @use "../layouts/hero-section";
+@use "../components/hero-buttons";
 
 /* CATALOG SECTION */
 @use "../layouts/catalog";
+@use "../components/product-card";
 
 /* BLOG SECTION */
 @use "../layouts/our-blog";
+@use "../components/blog-card";
+@use "../components/cta-link";
 
 /* ABOUT SECTION */
 @use "../layouts/about-us";
@@ -30,12 +36,14 @@
 
 /* HERO SECTION BLOG PAGE */
 @use "../layouts/hero-blog";
+@use "../components/hero-nav";
 
 /* ARTICLE SECTION */
 @use "../layouts/article";
 
 /* SUBARTICLE SECTION */
 @use "../layouts/subarticle";
+@use "../components/tags";
 
 /* ASIDE SECTION */
 @use "../layouts/aside";

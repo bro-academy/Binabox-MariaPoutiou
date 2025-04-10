@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
-@use "../components/product-card";
+
 
 .catalog-section {
   padding: $padding-4xl;
@@ -21,7 +21,6 @@
   font-size: $font-size-2xl;
   line-height: $line-height-xl;
   letter-spacing: 0;
-  font-family: $font-headings;
   margin-block: 0;
   text-align: left;
 }
