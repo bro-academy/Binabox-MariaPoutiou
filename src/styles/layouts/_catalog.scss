@@ -26,20 +26,10 @@
   text-align: left;
 }
 
-.catalog-header__divider {
-  width: 1167px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: $color-catalog-divider;
-}
-
 .catalog__button--all {
-  color: $color-secondary-button-border;
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
   margin-right: 24px;
-
-  @include button-secondary;
 }
 
 .catalog__button--text {
@@ -51,24 +41,12 @@
   text-align: center;
 }
 
-.catalog__controls-separator {
-  width: 2px;
-  height: 24px;
-  border-radius: 2px;
-  background-color: $color-catalog-divider;
-}
-
 .catalog__button--prev {
-  color: $color-secondary-button-border;
   padding-block: $padding-lg;
-
-  @include button-secondary;
 }
 
 .catalog__button--next {
   padding-block: $padding-lg;
-
-  @include button-primary;
 }
 
 .catalog__button--prev-text {

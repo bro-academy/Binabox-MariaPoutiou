@@ -73,9 +73,7 @@
   },
 
   "catalogSection": {
-    "title": "Catalog",
-    "img": "https://via.placeholder.com/150",
-    "alt": "folder icon"
+    "title": "Catalog"
   },
 
   "catalogButtons": {

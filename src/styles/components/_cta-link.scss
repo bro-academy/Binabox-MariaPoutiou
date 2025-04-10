@@ -7,15 +7,9 @@
 }
 
 .cta-more__link {
-  /* read more button of the whole section */
-  text-decoration: none;
-  font-weight: $font-weight-secondary;
-  font-size: $font-size-lg;
-  line-height: $line-height-lg;
-  color: $color-text-base;
-  border: 2px solid $color-secondary-button-border;
-  padding-block: $padding-sm;
-  padding-inline: $padding-2xl;
-
-  @include button-secondary;
+    /* read more button of the whole section */
+    text-decoration: none;
+    color: $color-text-base;
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
 }

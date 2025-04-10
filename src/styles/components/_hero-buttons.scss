@@ -2,13 +2,14 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section__button {
-  @include button-base;
-
+  padding-block: $padding-sm;
+  padding-inline: $padding-2xl;
   margin-top: 15px;
+  @include button-base;
 }
 
 .hero-section__button--primary {
-  @include button-primary;
+  @include button-primary; 
 }
 
 .hero-section__button--secondary {
