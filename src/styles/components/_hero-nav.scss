@@ -1,23 +1,25 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.hero-section__list {
-  margin: 0;
-}
+.hero-section {
+  &__list {
+    margin: 0;
+  }
 
-.hero-section__nav {
-  text-align: center;
-}
+  &__nav {
+    text-align: center;
+  }
 
-.hero-section__list-item {
-  display: inline-block;
-  margin: 20px;
-}
+  &__list-item {
+    display: inline-block;
+    margin: 20px;
+  }
 
-.hero-section__link {
-  @include link-style(false);
+  &__link {
+    @include link-style(false);
 
-  color: $color-text-base;
-  line-height: $line-height-sm;
-  text-align: center;
+    color: $color-text-base;
+    line-height: $line-height-sm;
+    text-align: center;
+  }
 }

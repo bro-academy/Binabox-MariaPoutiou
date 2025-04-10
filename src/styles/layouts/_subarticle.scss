@@ -35,17 +35,19 @@
   }
 }
 
-.subarticle__socials-item {
-  padding: $padding-xs;
-  margin-block: 5px;
-  margin-inline: 5px;
-  display: inline-block;
-  border: 2px solid $color-secondary-button-border;
-}
+.subarticle {
+  &__socials-item {
+    padding: $padding-xs;
+    margin-block: 5px;
+    margin-inline: 5px;
+    display: inline-block;
+    border: 2px solid $color-secondary-button-border;
+  }
 
-.subarticle__socials-link {
-  color: $color-text-tertiary;
-  line-height: $line-height-sm;
-  align-items: center;
-  @include link-style(false);
+  &__socials-link {
+    color: $color-text-tertiary;
+    line-height: $line-height-sm;
+    align-items: center;
+    @include link-style(false);
+  }
 }

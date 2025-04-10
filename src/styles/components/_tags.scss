@@ -1,18 +1,20 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.tag-list__item {
-  padding-block: $padding-2xs;
-  padding-inline: $padding-md;
-  margin-inline: 5px;
-  display: inline-block;
-  border: 2px solid $color-secondary-button-border;
-}
+.tag-list {
+  &__item {
+    padding-block: $padding-2xs;
+    padding-inline: $padding-md;
+    margin-inline: 5px;
+    display: inline-block;
+    border: 2px solid $color-secondary-button-border;
+  }
 
-.tag-list__link {
-  @include link-style(false);
+  &__link {
+    @include link-style(false);
 
-  color: $color-text-tertiary;
-  line-height: $line-height-sm;
-  align-items: center;
+    color: $color-text-tertiary;
+    line-height: $line-height-sm;
+    align-items: center;
+  }
 }

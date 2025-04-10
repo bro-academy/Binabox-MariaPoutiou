@@ -1,11 +1,5 @@
 @use "../abstracts/variables" as *;
 
-.hero-section--homepage {
-  padding-block: $padding-4xl;
-  background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
-    #0d0d15;
-}
-
 .hero-section {
   &__title {
     font-size: $font-size-5xl;
@@ -44,5 +38,11 @@
     line-height: $line-height-md;
     letter-spacing: 0;
     margin: 0;
+  }
+
+  &--homepage {
+    padding-block: $padding-4xl;
+    background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
+      #0d0d15;
   }
 }

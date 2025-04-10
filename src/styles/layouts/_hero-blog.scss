@@ -23,13 +23,13 @@
   &__figure {
     margin: 0;
   }
-}
 
-.hero-section__word--blog-article {
-  /* highlighted word */
-  color: $color-highlighted-word;
-  opacity: 0.66;
-  font-weight: $font-weight-secondary;
-  line-height: $line-height-sm;
-  text-align: center;
+  &__word--blog-article {
+    /* highlighted word */
+    color: $color-highlighted-word;
+    opacity: 0.66;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
+    text-align: center;
+  }
 }
