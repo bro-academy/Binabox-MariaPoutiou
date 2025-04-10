@@ -6,8 +6,4 @@
   padding-inline: $padding-2xl;
   margin-top: 15px;
   @include button-base;
-
-  &--text {
-    color: $color-text-base;
-  }
 }
