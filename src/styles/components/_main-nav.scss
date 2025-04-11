@@ -13,9 +13,9 @@
     line-height: $line-height-md;
     display: inline-block;
     padding: $padding-xs $padding-xl;
-  }
 
-  &__list-link--active {
-    border-bottom: 2px solid $color-primary;
+    &--active {
+      border-bottom: 2px solid $color-primary;
+    }
   }
 }

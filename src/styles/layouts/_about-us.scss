@@ -22,17 +22,17 @@
     counter-increment: about-counter;
     background-color: $color-background-block-light;
     padding: $padding-3xl $padding-3xl $padding-3xl 50px;
-  }
 
-  &__item::before {
-    content: "0" counter(about-counter);
-    font-size: 70px;
-    font-weight: 700;
-    opacity: 0.5;
-    color: transparent;
-    border: 2px;
-    -webkit-text-stroke: 2px $color-primary;
-    position: absolute;
+    &::before {
+      content: "0" counter(about-counter);
+      font-size: 70px;
+      font-weight: 700;
+      opacity: 0.5;
+      color: transparent;
+      border: 2px;
+      -webkit-text-stroke: 2px $color-primary;
+      position: absolute;
+    }
   }
 
   &__title {
