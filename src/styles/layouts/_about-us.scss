@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+
+.about {
+  padding: $padding-4xl;
+
+  &__description {
+    color: $color-text-secondary;
+    opacity: 0.82;
+    font-weight: 500;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    text-align: center;
+  }
+}
+
+.about-list {
+  counter-reset: about-counter;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    counter-increment: about-counter;
+    background-color: $color-background-block-light;
+    padding: $padding-3xl $padding-3xl $padding-3xl 50px;
+
+    &::before {
+      content: "0" counter(about-counter);
+      font-size: 70px;
+      font-weight: 700;
+      opacity: 0.5;
+      color: transparent;
+      border: 2px;
+      -webkit-text-stroke: 2px $color-primary;
+      position: absolute;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    font-family: $font-headings;
+    margin-block: 0 24px;
+  }
+
+  &__description {
+    color: $color-text-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    margin-block: 0;
+  }
+}

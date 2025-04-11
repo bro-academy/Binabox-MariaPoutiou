@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-section {
+  &__list {
+    margin: 0;
+  }
+
+  &__nav {
+    text-align: center;
+  }
+
+  &__list-item {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  &__link {
+    @include link-style(false);
+
+    color: $color-text-base;
+    line-height: $line-height-sm;
+    text-align: center;
+  }
+}

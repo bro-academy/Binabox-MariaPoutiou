@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+
+.header {
+  justify-content: space-between;
+  padding: $padding-3xl;
+}

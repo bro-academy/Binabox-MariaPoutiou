@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+
+  &__list-link {
+    @include link-style(false);
+
+    color: $color-text-base;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    display: inline-block;
+    padding: $padding-xs $padding-xl;
+
+    &--active {
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}

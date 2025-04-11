@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-section {
+  padding: $padding-4xl;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: $font-size-4xl;
+  line-height: $line-height-4xl;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: $font-headings;
+  margin-block: 0 40px;
+
+  &--catalog {
+    color: $color-text-tertiary;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
+    letter-spacing: 0;
+    margin-block: 0;
+    text-align: left;
+  }
+}
+
+.catalog__button {
+  &--all {
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
+    margin-right: 24px;
+  }
+
+  &--text {
+    color: $color-text-base;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &--prev {
+    padding-block: $padding-lg;
+  }
+
+  &--next {
+    padding-block: $padding-lg;
+  }
+
+  &--prev-text {
+    color: $color-text-base;
+    top: 5px;
+    left: 8px;
+  }
+
+  &--next-text {
+    color: $color-background;
+  }
+}

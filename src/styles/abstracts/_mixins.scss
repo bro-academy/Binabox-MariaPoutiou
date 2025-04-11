@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+@mixin button-base {
+  font-weight: $font-weight-secondary;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  text-align: center;
+  border: 2px solid transparent;
+  display: inline-block;
+  padding-block: $padding-sm;
+  padding-inline: $padding-2xl;
+  text-decoration: none
+}
+
+@mixin button-focus {
+  &:focus {
+    border-color: $color-focus-border;
+  }
+}
+
+@mixin button-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-base;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    border-color: $color-hover;
+  }
+}
+
+@mixin button-secondary {
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary-button-border;
+  color: $color-text-base;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-secondary-hover;
+    border-color: $color-secondary-hover;
+  }
+}
+
+@mixin link-style($has-focus: true) {
+  text-decoration: none;
+  font-weight: $font-weight-secondary;
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  @if $has-focus {
+    &:focus {
+      border: 4px solid $color-focus-border;
+    }
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
