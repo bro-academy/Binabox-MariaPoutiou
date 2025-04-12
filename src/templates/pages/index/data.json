@@ -14,13 +14,17 @@
       },
       {
         "text": "Catalog",
-        "link": "https://via.placeholder.com/150"
+        "link": "catalog.html"
       },
       {
         "text": "Contact us",
-        "link": "https://via.placeholder.com/150"
+        "link": "form.html"
       }
     ]
+  },
+
+  "headerSearch": {
+    "headerPlaceholder": "Search"
   },
 
   "headerButtons": {
