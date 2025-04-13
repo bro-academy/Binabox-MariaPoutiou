@@ -5,18 +5,18 @@ title = "Contact Us | BINABOX" %}
 {% set description = "Contact BINABOX for
 support, questions, or partnerships. Reach us via our secure form, email, or
 phone. The best place to get help with NFT rarity checking." %}
-{% set page ="form-page" %}
+{% set page ="contact-us" %}
 {% block content %}
   <!--MAIN STARTS HERE-->
   <main
     class="main">
     <!--HERO SECTION-->
-    {% include "partials/hero-form.njk" %}
+    {% include "partials/hero-contact.njk" %}
     <!--FORM HEADER-->
     <section class="form-header container">
       {% include "partials/form-header.njk" %}
       <!--FORM-->
-      {% include "partials/form.njk" %}
+      {% include "partials/contact-form.njk" %}
     </section>
   </main>
 {% endblock %}
