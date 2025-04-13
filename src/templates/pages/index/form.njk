@@ -1,7 +1,7 @@
-{% set currentPage = "Contact us" %} {% extends "layouts/base.njk" %} {% set title =
+{% set currentPage = "Catalog" %} {% extends "layouts/base.njk" %} {% set title =
 "Contact Us | BINABOX" %} {% set description = "Contact BINABOX for support, questions, or 
 partnerships. Reach us via our secure form, email, or phone. The best place to get help with NFT 
-rarity checking." %} {% set page = "Contact us" %} 
+rarity checking." %} {% set page = "Catalog" %} 
 
 {% block content %}
 
@@ -92,7 +92,7 @@ rarity checking." %} {% set page = "Contact us" %}
           <input class="input-terms" type="checkbox" name="terms" value="agree" id="terms" required />
           <label class="form__label form__label--terms" for="terms">
             By clicking on the ‘Send Message’ button I agree to
-            <a href="#"> all the terms of the security policy </a></label>
+            <a class="form__link" href="#"> all the terms of the security policy </a></label>
         </div>
         <button class="button button--primary" type="submit" required>Send Message</button>
       </form>

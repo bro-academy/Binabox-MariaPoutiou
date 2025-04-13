@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.hero-section {
+  &--contact {
+    background-image: url("/img/hero-section-banner-background-2x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__contact-title {
+    font-family: $font-headings;
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+    text-align: $text-align-center;
+  }
+
+  &__list {
+    display: inline;
+  }
+}

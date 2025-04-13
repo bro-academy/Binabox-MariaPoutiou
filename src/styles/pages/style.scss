@@ -51,4 +51,10 @@
 /********** BLOG-ARTICLE ENDS HERE ************/
 
 /********** FORM STARTS HERE ************/
+@use "../components/form-header";
+@use "../components/hero-form";
 @use "../layouts/form";
+
+/********** CATALOG PAGE STARTS HERE ************/
+@use "../components/hero-catalog-page";
+@use "../layouts/catalog-page";

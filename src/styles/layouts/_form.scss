@@ -1,218 +1,242 @@
-/***FORM STARTS HERE***/
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
-.header-search__bar {
-    background-color: transparent;
-    border: 2px solid #D0D7FB2B;
-    color: #E7EEF7A8;
-    line-height: 20px;
+.form {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 104px;
+
+  &-title {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+    text-align: $text-align-center;
+    font-family: $font-headings;
   }
-  
-  .hero-section--contact {
-    background-image: url("/img/hero-section-banner-background-2x.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+  &-description {
+    color: $color-text-secondary;
+    font-weight: $font-weight-tertiary;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    text-align: $text-align-center;
   }
-  
-  .hero-section__contact-title {
-    font-family: "Bakbak One", "Georgia", sans-serif;
-    font-size: 52px;
-    line-height: 62px;
-    text-align: center;
-  }
-  
-  .hero-section__list {
-    display: inline;
-  }
-  
-  .form-header {
-    padding-top: 64px;
-    padding-bottom: 0px;
-    padding-inline: 64px;
-  }
-  
-  .form-header__item {
-    min-width: 40px;
-    max-width: 232px;
-    border: 1px solid #D4D9F242;
-    padding-block: 40px;
-    padding-inline: 32px;
-  }
-  
-  .form-header__item-title {
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    font-family: "Bakbak One", "Georgia", sans-serif;
-  }
-  
-  .form-header__item-details {
-    color: #EFF5FAD1;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-  }
-  
-  .form-title {
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    font-family: "Bakbak One", "Georgia", sans-serif;
-  }
-  
-  .form-description {
-    color: #EFF5FAD1;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-  }
-  
-  .form {
-    max-width: 640px;
-    margin: 0 auto;
-    margin-bottom: 104px;
-  }
-  
-  .form__consent {
-    background: #1D1C28;
-    padding: 24px;
+
+  &__consent {
+    background-color: $color-background-block-dark;
+    padding: $padding-2xl;
     margin-bottom: 52px;
   }
-  
-  .form__consent-text {
-    line-height: 20px;
+
+  &__consent-text {
+    line-height: $line-height-sm;
   }
-  
-  /* Hide checkbox */
-  .toggle-input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .toggle-label {
-    display: inline-block;
-    width: 40px;
-    height: 24px;
-    background: #E5ECFB5C;
-    border: 1px solid #E5ECFB5C;
-    border-radius: 10px;
-    position: relative;
-  
-    &::before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      top: 3px;
-      left: 2px;
-      position: absolute;
-      border-radius: 50%;
-      background: #FFFFFF;
-    }
-  
-    &:hover {
-      background-color: #D4D9F242;
-    }
-  
-    &:focus-visible {
-      outline: 2px solid #3892F3;
-    }
-  
-    &:active {
-      background-color: #EFF5FAD1;
-    }
-  
-    &:disabled {
-      background-color: #D0D7FB2B;
-      cursor: not-allowed;
-    }
-  }
-  
-  .toggle-input:checked+.toggle-label {
-    background: #0265DC;
-    border-color: #0265DC;
-  
-    &::before {
-      left: 20px;
-      top: 3px
-    }
-  
-    &:hover {
-      background-color: #3892F3;
-    }
-  
-    &:active {
-      background-color: #3892F3;
-    }
-  
-    &:disabled {
-      background-color: #D0D7FB2B;
-      cursor: not-allowed;
-    }
-  }
-  
-  .form__item {
+
+  &__item {
     margin-bottom: 24px;
   }
-  
-  .form__label {
-    line-height: 20px;
+
+  &__label {
+    line-height: $line-height-sm;
   }
-  
-  .input {
-    background-color: transparent;
-    border: 2px solid #D0D7FB2B;
-    color: #F5F8FB;
-    line-height: 20px;
-  
-    &:user-invalid:not(:placeholder-shown) {
-      border-color: #EA3829;
-    }
-  
-    &:valid {
-      border-color: #D0D7FB2B;
-    }
-  
-    &:hover {
-      border-color: #3892F3;
-    }
-  
-    &:focus {
-      border: 3px solid #3892F3;
-    }
-  
-    &:disabled {
-      background-color: #BFC5EE1F;
-    }
-  }
-  
-  .radio-input {
+}
+
+/* Hide checkbox/radio input */
+.toggle-input,
+.radio-input,
+.input-terms {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  background-color: $color-toggle;
+  border: 1px solid $color-toggle;
+  border-radius: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 2px;
     position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+
+  &:hover {
+    background-color: $color-styling-grey;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-hover;
+  }
+
+  &:active {
+    background-color: $color-text-secondary;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.toggle-input:checked + .toggle-label {
+  background: $color-primary;
+  border-color: $color-primary;
+
+  &::before {
+    left: 20px;
+    top: 3px;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-hover;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.input {
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary-button-border;
+  line-height: $line-height-sm;
+
+  &:user-invalid:not(:placeholder-shown) {
+    border-color: $color-invalid;
+  }
+
+  &:valid {
+    border-color: $color-secondary-button-border;
+  }
+
+  &:hover {
+    border-color: $color-hover;
+  }
+
+  &:focus {
+    border: 3px solid $color-hover;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.form__label--radio {
+  padding-left: $padding-1xl;
+  margin-bottom: 16px;
+  display: flex;
+
+  &::before {
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    border: 2px solid $color-styling-grey;
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    background-color: $color-background-block-dark;
+  }
+
+  &:disabled::before {
+    background-color: $color-disabled;
+  }
+
+  &:invalid::before {
+    border-color: $color-invalid;
+  }
+}
+
+/** This appears in the default view, even though it should appear ONLY after we try to submit. Please tell me how to fix it
+  .radio-input:invalid + .form__label--radio::before {
+  border-color: #EA3829;
   }
   
-  .form__label--radio {
-    padding-left: 28px;
-    margin-bottom: 16px;
-    display: flex;
-  
-    &::before {
-      content: "";
-      top: 4px;
-      left: 4px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: transparent;
-      border: 2px solid #D4D9F242;
-      box-sizing: border-box;
-    }
+  .radio-input:invalid + .form__label--radio:hover::before {
+  background-color: #1D1C28;
+  border-color: #EA3829;
+  } **/
+
+.radio-input:checked + .form__label--radio::before {
+  border: 5px solid $color-primary;
+}
+
+.form__label--terms {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    background-color: $color-secondary;
+    border: 2px solid $color-styling-grey;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
-  
-  .radio-input:checked+.form__label--radio::before {
-    border: 5px solid #0265DC;
+
+  &:hover::before {
+    background-color: $color-background-block-dark;
   }
+
+  &:active::before {
+    background-color: $color-active-bg;
+  }
+
+  &:active::before {
+    background-color: $color-background-block-light;
+    border-color: $color-hover;
+  }
+
+  &:disabled::before {
+    background-color: $color-secondary-button-border;
+    border-color: $color-secondary-button-border;
+  }
+}
+
+.input-terms {
+  &:checked + .form__label--terms::before {
+    background-color: $color-primary;
+  }
+
+  &:checked + .form__label--terms:hover::before {
+    top: 4px;
+    left: 4px;
+    background-color: $color-hover;
+  }
+
+  &:checked + .form__label--terms:focus::before {
+    background-color: $color-primary;
+    border-color: $color-hover;
+  }
+}
+
+/** Here, the same issue as above
+  .input-terms:invalid + .form__label--terms::before {
+    border-color: #EA3829;
+  } **/
+
+.form__link {
+  @include link-style(false);
+}
