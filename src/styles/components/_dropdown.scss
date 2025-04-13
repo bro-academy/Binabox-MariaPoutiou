@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.option__value {
+  font-weight: $font-weight-secondary;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+}
+
+.option-dropdown {
+  @include button-base;
+  @include button-focus;
+  @include button-secondary;
+}
+
+.option__item {
+  line-height: $line-height-sm;
+}

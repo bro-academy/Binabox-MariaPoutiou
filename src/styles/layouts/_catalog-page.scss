@@ -14,31 +14,6 @@
   line-height: $line-height-sm;
 }
 
-.aside__block-label--checkbox {
-  position: relative;
-  display: inline-block;
-  padding-left: $padding-1xl;
-  display: flex;
-  align-items: center;
-
-  &:hover::before {
-    background-color: $color-styling-grey;
-  }
-
-  &:active::before {
-    background-color: $color-active-bg;
-  }
-
-  &:disabled::before {
-    background-color: $color-disabled;
-  }
-
-  &:focus::before {
-    background-color: $color-background-block-light;
-    border-color: $color-focus-border;
-  }
-}
-
 .aside__block-label {
   &--checkbox::before {
     content: "";
@@ -81,6 +56,31 @@
     &:invalid::before {
       border-color: $color-invalid;
     }
+  }
+}
+
+.aside__block-label--checkbox {
+  position: relative;
+  display: inline-block;
+  padding-left: $padding-1xl;
+  display: flex;
+  align-items: center;
+
+  &:hover::before {
+    background-color: $color-styling-grey;
+  }
+
+  &:active::before {
+    background-color: $color-active-bg;
+  }
+
+  &:disabled::before {
+    background-color: $color-disabled;
+  }
+
+  &:focus::before {
+    background-color: $color-background-block-light;
+    border-color: $color-focus-border;
   }
 }
 

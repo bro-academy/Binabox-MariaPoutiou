@@ -1,0 +1,14 @@
+<ul class="form-header__list">
+  {% for item in formHeader.list %}
+  <li class="form-header__item">
+    <img
+      class="form-header__item-img"
+      src="{{ item.img }}"
+      alt="{{ item.alt }}"
+      loading="lazy"
+    />
+    <h2 class="form-header__item-title">{{ item.title }}</h2>
+    <p class="form-header__item-details">{{ item.details }}</p>
+  </li>
+  {% endfor %}
+</ul>

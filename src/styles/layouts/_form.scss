@@ -41,13 +41,16 @@
 }
 
 /* Hide checkbox/radio input */
-.toggle-input,
-.radio-input,
-.input-terms {
+.visually-hidden {
   position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .toggle-label {
@@ -114,10 +117,6 @@
   border: 2px solid $color-secondary-button-border;
   line-height: $line-height-sm;
 
-  &:user-invalid:not(:placeholder-shown) {
-    border-color: $color-invalid;
-  }
-
   &:valid {
     border-color: $color-secondary-button-border;
   }
@@ -132,6 +131,10 @@
 
   &:disabled {
     background-color: $color-disabled;
+  }
+
+  &:user-invalid:not(:placeholder-shown) {
+    border-color: $color-invalid;
   }
 }
 
@@ -204,11 +207,6 @@
     background-color: $color-active-bg;
   }
 
-  &:active::before {
-    background-color: $color-background-block-light;
-    border-color: $color-hover;
-  }
-
   &:disabled::before {
     background-color: $color-secondary-button-border;
     border-color: $color-secondary-button-border;
@@ -238,5 +236,10 @@
   } **/
 
 .form__link {
-  @include link-style(false);
+  text-decoration: none;
+  color: $color-text-highlight;
+
+  &:hover {
+    color: #3892F3;
+  }
 }

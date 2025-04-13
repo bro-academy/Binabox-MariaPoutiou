@@ -18,7 +18,7 @@
       },
       {
         "text": "Contact us",
-        "link": "form.html"
+        "link": "form-page.html"
       }
     ]
   },
@@ -804,5 +804,85 @@
       "img": "https://via.placeholder.com/150",
       "alt": "Discord-logo"
     }
-  ]
+  ],
+
+  "heroCatalog": {
+    "title": "Catalog",
+    "list": [
+      {
+        "text": "Home",
+        "link": "index.html"
+      },
+      {
+        "text": "Catalog"
+      }
+    ]
+  },
+
+  "dropdownFilter": {
+    "placeholder": "Sort by",
+    "placeholderValue": "options",
+    "options": [
+      {
+        "value": "newest",
+        "label": "Newest"
+      },
+      {
+        "value": "popular",
+        "label": "Most popular"
+      },
+      {
+        "value": "priceIncreasing",
+        "label": "Increasing in price"
+      },
+      {
+        "value": "priceLower",
+        "label": "Lowering the price"
+      }
+    ]
+  },
+
+  "catalogSearch": {
+    "name": "search",
+    "maxlength": 30,
+    "placeholder": "Search NFT",
+    "autocomplete": "on"
+  },
+
+  "heroForm": {
+    "title": "Contact Us",
+    "list": [
+      {
+        "item": "Home",
+        "link": "index.html"
+      },
+      {
+        "item": "Contact Us",
+        "link": null
+      }
+    ]
+  },
+
+  "formHeader": {
+    "list": [
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "location-icon",
+        "title": "Location",
+        "details": "2163 Phillips Gap Rd"
+      },
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "email-icon",
+        "title": "Email",
+        "details": "Info.avitex@gmail.com"
+      },
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "phone-icon",
+        "title": "Phone",
+        "details": "+1 666 8888"
+      }
+    ]
+  }
 }

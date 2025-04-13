@@ -1,0 +1,127 @@
+<h3 class="form-title">Get in touch</h3>
+<h4 class="form-description">
+  Browse through the most frequently asked questions
+</h4>
+<form class="form" action="https://some-url.com" method="post">
+  <div class="form__consent">
+    <p class="form__consent-text">Use my profile information</p>
+    <input
+      class="visually-hidden toggle-input form__consent-toggle"
+      type="checkbox"
+      name="consent"
+      value="agree"
+      id="toggle"
+    />
+    <label class="toggle-label" for="toggle"></label>
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="name"> Name </label>
+    <input
+      class="input"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="your name"
+      required
+      minlength="2"
+    />
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="surname"> Last name </label>
+    <input
+      class="input"
+      type="text"
+      name="surname"
+      id="surname"
+      placeholder="your surname"
+      required
+      minlength="2"
+    />
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="birthday"> Date of birth </label>
+    <input
+      class="input"
+      type="date"
+      name="birthday"
+      id="birthday"
+      required
+      max="2025-04-10"
+    />
+  </div>
+  <div class="form__item">
+    <p>Gender</p>
+    <input
+      class="visually-hidden radio-input"
+      type="radio"
+      name="gender"
+      value="male"
+      id="male"
+      required
+    />
+    <label class="form__label form__label--radio" for="male"> Male </label>
+    <input
+      class="visually-hidden radio-input"
+      type="radio"
+      name="gender"
+      value="female"
+      id="female"
+    />
+    <label class="form__label form__label--radio" for="female"> Female </label>
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="email"> Email </label>
+    <input
+      class="input"
+      type="email"
+      name="email"
+      id="email"
+      placeholder="your email"
+      required
+    />
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="tel"> Phone number </label>
+    <input
+      class="input"
+      type="tel"
+      name="tel"
+      id="tel"
+      placeholder="your phone"
+      required
+      minlength="9"
+      pattern="[0-9]+"
+      inputmode="numeric"
+    />
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="message"> Message </label>
+    <textarea
+      class="input form__textarea"
+      name="message"
+      id="message"
+      rows="5"
+      required
+    ></textarea>
+  </div>
+
+  <div class="form__item form__item--checkbox">
+    <input
+      class="visually-hidden input-terms"
+      type="checkbox"
+      name="terms"
+      value="agree"
+      id="terms"
+      required
+    />
+    <label class="form__label form__label--terms" for="terms">
+      By clicking on the ‘Send Message’ button I agree to
+      <a class="form__link" href="#">
+        all the terms of the security policy
+      </a></label
+    >
+  </div>
+  <button class="button button--primary" type="submit" required>
+    Send Message
+  </button>
+</form>

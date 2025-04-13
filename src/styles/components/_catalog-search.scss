@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.catalog__search-bar {
+  background-color: $color-background-block-light;
+  border: 2px solid $color-secondary-button-border;
+  color: $color-text-searchbar;
+  line-height: $line-height-sm;
+}
