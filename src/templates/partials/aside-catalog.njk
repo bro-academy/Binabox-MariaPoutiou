@@ -1,124 +1,28 @@
-<form class="form-aside" action="https://some-url.com" method="post">
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Clothing</h3>
-                </summary>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="clothes" value="Combatant" id="combatant"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="combatant">
-                        Combatant</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="clothes" value="Ninja" id="ninja"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="ninja">Ninja</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="clothes" value="King" id="king"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="king">King</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="clothes" value="Queen" id="queen"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="queen">Queen</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="clothes" value="Robot" id="robot"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="robot">Robot</label>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <!--ASIDE3-->
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Eyes</h3>
-                </summary>
-                <div class="aside__block-item aside-block--radio">
-                    <input class="visually-hidden aside-radio" type="radio" name="eyes" value="Yellow" id="eyes_yellow"/>
-                    <label class="aside__block-label aside__block-label--radio" for="eyes_yellow">Yellow</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside-radio" type="radio" name="eyes" value="Green" id="eyes_green"/>
-                    <label class="aside__block-label aside__block-label--radio" for="eyes_green">Green</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside-radio" type="radio" name="eyes" value="Mix" id="eyes_mix"/>
-                    <label class="aside__block-label aside__block-label--radio" for="eyes_mix">Mix</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside-radio" type="radio" name="eyes" value="Orange" id="eyes_orange"/>
-                    <label class="aside__block-label aside__block-label--radio" for="eyes_orange">Orange</label>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <!--ASIDE3-->
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Face</h3>
-                </summary>
-                <div class="aside__block-item">
-                    <p class="aside__block-detalis">#</p>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <!--ASIDE4-->
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Skin</h3>
-                </summary>
-                <div class="aside__block-item">
-                    <p class="aside__block-detalis">#</p>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <!--ASIDE5-->
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Background</h3>
-                </summary>
-                <div class="aside__block-item">
-                    <p class="aside__block-detalis">#</p>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <!--ASIDE6-->
-    <aside class="aside-section">
-        <section class="aside__block">
-            <details class="aside__block-details">
-                <summary class="aside__block-summary">
-                    <h3 class="aside__block-title">Special</h3>
-                </summary>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="special" value="Yellow" id="yellow"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="yellow">Yellow</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="special" value="Green" id="green"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="green">Green</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="special" value="Mix" id="mix"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="mix">Mix</label>
-                </div>
-                <div class="aside__block-item aside-block--checkbox">
-                    <input class="visually-hidden aside__input aside__input--checkbox" type="checkbox" name="special" value="Orange" id="orange"/>
-                    <label class="aside__block-label aside__block-label--checkbox" for="orange">Orange</label>
-                </div>
-            </details>
-        </section>
-    </aside>
-    <button class="button button--primary" type="submit" required>Apply</button>
+<form
+  class="form-aside"
+  action="{{ asideForm.action }}"
+  method="{{ asideForm.method }}"
+>
+  <!--ASIDE1-->
+  {% include "partials/aside-catalog-first.njk" %}
+  <!--ASIDE2-->
+  {% include "partials/aside-catalog-second.njk" %}
+  <!--ASIDE3, ASIDE 4, ASIDE 5-->
+  {% include "partials/aside-catalog-empty.njk" %}
+  <!--ASIDE6-->
+  {% include "partials/aside-catalog-sixth.njk" %}
+  <button
+    class="button button--primary"
+    type="{{ asideFormSubmit.type }}"
+    {%
+    if
+    asideFormSubmit.required
+    %}
+    required
+    {%
+    endif
+    %}
+  >
+    {{ asideFormSubmit.text }}
+  </button>
 </form>

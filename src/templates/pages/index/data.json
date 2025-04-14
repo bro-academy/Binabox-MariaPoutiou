@@ -849,6 +849,125 @@
     "autocomplete": "on"
   },
 
+  "asideForm": {
+    "action": "https://some-url.com",
+    "method": "post"
+  },
+
+  "asideClothing": {
+    "title": "Clothing",
+    "name": "clothes",
+    "type": "checkbox",
+    "options": [
+      {
+        "value": "Combatant",
+        "label": "Combatant",
+        "id": "combatant"
+      },
+
+      {
+        "value": "Ninja",
+        "label": "Ninja",
+        "id": "ninja"
+      },
+
+      {
+        "value": "King",
+        "label": "King",
+        "id": "king"
+      },
+
+      {
+        "value": "Queen",
+        "label": "Queen",
+        "id": "queen"
+      },
+
+      {
+        "value": "Robot",
+        "label": "Robot",
+        "id": "robot"
+      }
+    ]
+  },
+
+  "asideEyes": {
+    "title": "Eyes",
+    "name": "eyes",
+    "type": "radio",
+    "options": [
+      {
+        "value": "Yellow",
+        "label": "Yellow",
+        "id": "eyes_yellow"
+      },
+      {
+        "value": "Green",
+        "label": "Green",
+        "id": "eyes_green"
+      },
+      {
+        "value": "Mix",
+        "label": "Mix",
+        "id": "eyes_mix"
+      },
+      {
+        "value": "Orange",
+        "label": "Orange",
+        "id": "eyes_orange"
+      }
+    ]
+  },
+
+  "asideTextBlocks": [
+    {
+      "title": "Face",
+      "text": "#"
+    },
+    {
+      "title": "Skin",
+      "text": "#"
+    },
+    {
+      "title": "Background",
+      "text": "#"
+    }
+  ],
+
+  "asideSpecial": {
+    "title": "Special",
+    "name": "special",
+    "type": "checkbox",
+    "options": [
+      {
+        "label": "Yellow",
+        "value": "Yellow",
+        "id": "yellow"
+      },
+      {
+        "label": "Green",
+        "value": "Green",
+        "id": "green"
+      },
+      {
+        "label": "Mix",
+        "value": "Mix",
+        "id": "mix"
+      },
+      {
+        "label": "Orange",
+        "value": "Orange",
+        "id": "orange"
+      }
+    ]
+  },
+
+  "asideFormSubmit": {
+    "text": "Apply",
+    "type": "submit",
+    "required": true
+  },
+
   "heroForm": {
     "title": "Contact Us",
     "list": [
@@ -884,5 +1003,113 @@
         "details": "+1 666 8888"
       }
     ]
+  },
+
+  "contactForm": {
+    "title": "Get in touch",
+    "description": "Browse through the most frequently asked questions",
+    "action": "https://some-url.com",
+    "method": "post",
+    "class": "form"
+  },
+
+  "formConsent": {
+    "text": "Use my profile information",
+    "type": "checkbox",
+    "name": "consent",
+    "value": "agree",
+    "id": "toggle"
+  },
+
+  "formFields": [
+    {
+      "type": "text",
+      "name": "name",
+      "id": "name",
+      "label": "Name",
+      "placeholder": "your name",
+      "required": true,
+      "minlength": 2
+    },
+    {
+      "type": "text",
+      "name": "surname",
+      "id": "surname",
+      "label": "Last name",
+      "placeholder": "your surname",
+      "required": true,
+      "minlength": 2
+    },
+    {
+      "type": "date",
+      "name": "birthday",
+      "id": "birthday",
+      "label": "Date of birth",
+      "required": true,
+      "max": "2025-04-10"
+    }
+  ],
+
+  "genderField": {
+    "label": "Gender",
+    "name": "gender",
+    "required": true,
+    "options": [
+      {
+        "label": "Male",
+        "value": "male",
+        "id": "male"
+      },
+      {
+        "label": "Female",
+        "value": "female",
+        "id": "female"
+      }
+    ]
+  },
+
+  "phoneField": [
+    {
+      "type": "tel",
+      "name": "tel",
+      "id": "tel",
+      "label": "Phone number",
+      "placeholder": "your phone",
+      "required": true,
+      "minlength": 9,
+      "pattern": "[0-9]+",
+      "inputmode": "numeric"
+    }
+  ],
+
+  "messageField": [
+    {
+      "type": "textarea",
+      "name": "message",
+      "id": "message",
+      "label": "Message",
+      "rows": 5,
+      "required": true
+    }
+  ],
+
+  "termsField": [
+    {
+      "name": "terms",
+      "value": "agree",
+      "id": "terms",
+      "required": true,
+      "text": "By clicking on the ‘Send Message’ button I agree to",
+      "link": {
+        "text": "all the terms of the security policy",
+        "href": "https://some-url.com"
+      }
+    }
+  ],
+
+  "contactFormSubmit": {
+    "text": "Send Message",
+    "type": "submit",
+    "required": true
   }
 }

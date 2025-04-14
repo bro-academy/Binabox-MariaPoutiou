@@ -1,127 +1,188 @@
-<h3 class="form-title">Get in touch</h3>
-<h4 class="form-description">
-  Browse through the most frequently asked questions
-</h4>
-<form class="form" action="https://some-url.com" method="post">
+<h3 class="form-title">{{ contactForm.title }}</h3>
+<h4 class="form-description">{{ contactForm.description }}</h4>
+<form
+  class="{{ contactForm.class }}"
+  action="{{ contactForm.action }}"
+  method="{{ contactForm.method }}"
+>
   <div class="form__consent">
-    <p class="form__consent-text">Use my profile information</p>
+    <p class="form__consent-text">{{ formConsent.text }}</p>
     <input
       class="visually-hidden toggle-input form__consent-toggle"
-      type="checkbox"
-      name="consent"
-      value="agree"
-      id="toggle"
+      type="{{ formConsent.type }}"
+      name="{{ formConsent.name }}"
+      value="{{ formConsent.value }}"
+      id="{{ formConsent.id }}"
     />
-    <label class="toggle-label" for="toggle"></label>
+    <label class="toggle-label" for="{{ formConsent.id }}"></label>
   </div>
+  {% for field in formFields %}
   <div class="form__item">
-    <label class="form__label" for="name"> Name </label>
+    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
     <input
       class="input"
-      type="text"
-      name="name"
-      id="name"
-      placeholder="your name"
+      type="{{ field.type }}"
+      name="{{ field.name }}"
+      id="{{ field.id }}"
+      {%
+      if
+      field.placeholder
+      %}
+      placeholder="{{ field.placeholder }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.required
+      %}
       required
-      minlength="2"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.minlength
+      %}
+      minlength="{{ field.minlength }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.max
+      %}
+      max="{{ field.max }}"
+      {%
+      endif
+      %}
     />
   </div>
+  {% endfor %}
   <div class="form__item">
-    <label class="form__label" for="surname"> Last name </label>
-    <input
-      class="input"
-      type="text"
-      name="surname"
-      id="surname"
-      placeholder="your surname"
-      required
-      minlength="2"
-    />
-  </div>
-  <div class="form__item">
-    <label class="form__label" for="birthday"> Date of birth </label>
-    <input
-      class="input"
-      type="date"
-      name="birthday"
-      id="birthday"
-      required
-      max="2025-04-10"
-    />
-  </div>
-  <div class="form__item">
-    <p>Gender</p>
+    <p>{{ genderField.label }}</p>
+    {% for option in genderField.options %}
     <input
       class="visually-hidden radio-input"
       type="radio"
-      name="gender"
-      value="male"
-      id="male"
+      name="{{ genderField.name }}"
+      value="{{ option.value }}"
+      id="{{ option.id }}"
+      {%
+      if
+      genderField.required
+      and
+      loop.index=""
+      ="1"
+      %}
       required
+      {%
+      endif
+      %}
     />
-    <label class="form__label form__label--radio" for="male"> Male </label>
-    <input
-      class="visually-hidden radio-input"
-      type="radio"
-      name="gender"
-      value="female"
-      id="female"
-    />
-    <label class="form__label form__label--radio" for="female"> Female </label>
+    <label class="form__label form__label--radio" for="{{ option.id }}">
+      {{ option.label }}
+    </label>
+    {% endfor %}
   </div>
+  {% for field in phoneField %}
   <div class="form__item">
-    <label class="form__label" for="email"> Email </label>
-    <input
-      class="input"
-      type="email"
-      name="email"
-      id="email"
-      placeholder="your email"
-      required
-    />
-  </div>
-  <div class="form__item">
-    <label class="form__label" for="tel"> Phone number </label>
+    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
     <input
       class="input"
-      type="tel"
-      name="tel"
-      id="tel"
-      placeholder="your phone"
+      type="{{ field.type }}"
+      name="{{ field.name }}"
+      id="{{ field.id }}"
+      placeholder="{{ field.placeholder }}"
+      {%
+      if
+      field.required
+      %}
       required
-      minlength="9"
-      pattern="[0-9]+"
-      inputmode="numeric"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.minlength
+      %}
+      minlength="{{ field.minlength }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.pattern
+      %}
+      pattern="{{ field.pattern }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.inputmode
+      %}
+      inputmode="{{ field.inputmode }}"
+      {%
+      endif
+      %}
     />
   </div>
+  {% endfor %} {% for field in messageField %}
   <div class="form__item">
-    <label class="form__label" for="message"> Message </label>
+    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
     <textarea
       class="input form__textarea"
-      name="message"
-      id="message"
-      rows="5"
+      name="{{ field.name }}"
+      id="{{ field.id }}"
+      rows="{{ field.rows }}"
+      {%
+      if
+      field.required
+      %}
       required
+      {%
+      endif
+      %}
     ></textarea>
   </div>
-
+  {% endfor %} {% for field in termsField %}
   <div class="form__item form__item--checkbox">
     <input
       class="visually-hidden input-terms"
       type="checkbox"
-      name="terms"
-      value="agree"
-      id="terms"
+      name="{{ field.name }}"
+      value="{{ field.value }}"
+      id="{{ field.id }}"
+      {%
+      if
+      field.required
+      %}
       required
+      {%
+      endif
+      %}
     />
-    <label class="form__label form__label--terms" for="terms">
-      By clicking on the ‘Send Message’ button I agree to
-      <a class="form__link" href="#">
-        all the terms of the security policy
-      </a></label
-    >
+    <label class="form__label form__label--terms" for="{{ field.id }}">
+      {{ field.text }}
+      <a class="form__link" href="{{ field.link.href }}">
+        {{ field.link.text }}
+      </a>
+    </label>
   </div>
-  <button class="button button--primary" type="submit" required>
-    Send Message
+  {% endfor %}
+  <button
+    class="button button--primary"
+    type="{{ contactFormSubmit.type }}"
+    {%
+    if
+    contactFormSubmit.required
+    %}
+    required
+    {%
+    endif
+    %}
+  >
+    {{ contactFormSubmit.text }}
   </button>
 </form>
