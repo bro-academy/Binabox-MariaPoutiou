@@ -221,7 +221,10 @@
     </label>
   </div>
   {% endfor %}
-  <button class="button button--primary" type="{{ contactFormSubmit.type }}">
+  <button
+    class="button button__form button--primary"
+    type="{{ contactFormSubmit.type }}"
+  >
     {{ contactFormSubmit.text }}
   </button>
 </form>
