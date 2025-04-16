@@ -140,7 +140,6 @@
 }
 
 .form__label--radio {
-  padding-left: $padding-1xl;
   margin-bottom: 16px;
   display: flex;
 
@@ -169,15 +168,14 @@
   }
 }
 
-/** This appears in the default view, even though it should appear ONLY after we try to submit. Please tell me how to fix it
-  .radio-input:invalid + .form__label--radio::before {
+.radio-input:invalid + .form__label--radio::before {
   border-color: #EA3829;
   }
   
-  .radio-input:invalid + .form__label--radio:hover::before {
+.radio-input:invalid + .form__label--radio:hover::before {
   background-color: #1D1C28;
   border-color: #EA3829;
-  } **/
+  }
 
 .radio-input:checked + .form__label--radio::before {
   border: 5px solid $color-primary;
@@ -231,10 +229,9 @@
   }
 }
 
-/** Here, the same issue as above
-  .input-terms:invalid + .form__label--terms::before {
+.input-terms:invalid + .form__label--terms::before {
     border-color: #EA3829;
-  } **/
+  } 
 
 .form__link {
   text-decoration: none;

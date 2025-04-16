@@ -964,8 +964,7 @@
 
   "asideFormSubmit": {
     "text": "Apply",
-    "type": "submit",
-    "required": true
+    "type": "submit"
   },
 
   "heroForm": {
