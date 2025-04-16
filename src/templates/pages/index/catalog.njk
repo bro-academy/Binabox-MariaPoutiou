@@ -5,13 +5,9 @@ clothing, eyes, and skin. Discover the most unique NFTs easily." %} {% set page
 = "catalog" %} {% block content %}
 <!--HERO SECTION-->
 {% include "partials/hero-catalog.njk" %}
-<!--MAIN STARTS HERE-->
-<main class="main">
-  <!--DROPDOWN-->
-  {% include "partials/dropdown.njk" %}
-  <!--SEARCH-BAR-->
-  {% include "partials/catalog-search.njk" %}
-  <!--ASIDE-->
-  {% include "partials/aside-catalog.njk" %}
-</main>
-{% endblock %}
+<!--DROPDOWN -->
+{% include "partials/dropdown.njk" %}
+<!--SEARCH-BAR-->
+{% include "partials/catalog-search.njk" %}
+<!--ASIDE-->
+{% include "partials/aside-catalog.njk" %} {% endblock %}

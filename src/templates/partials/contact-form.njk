@@ -56,6 +56,14 @@
       {%
       endif
       %}
+      {%
+      if
+      field.pattern
+      %}
+      pattern="{{ field.pattern }}"
+      {%
+      endif
+      %}
     />
   </div>
   {% endfor %}
@@ -64,26 +72,59 @@
     {% for option in genderField.options %}
     <input
       class="visually-hidden radio-input"
-      type="radio"
+      type="{{ genderField.type }}"
       name="{{ genderField.name }}"
       value="{{ option.value }}"
       id="{{ option.id }}"
-      {%
-      if
-      genderField.required
-      and
-      loop.index=""
-      ="1"
-      %}
-      required
-      {%
-      endif
-      %}
     />
     <label class="form__label form__label--radio" for="{{ option.id }}">
       {{ option.label }}
     </label>
     {% endfor %}
+  </div>
+  <div class="form__item">
+    <label class="form__label" for="{{ emailField.id }}">
+      {{ emailField.label }}
+    </label>
+    <input
+      class="input"
+      type="{{ emailField.type }}"
+      name="{{ emailField.name }}"
+      id="{{ emailField.id }}"
+      placeholder="{{ emailField.placeholder }}"
+      {%
+      if
+      emailField.required
+      %}
+      required
+      {%
+      endif
+      %}
+      {%
+      if
+      emailField.minlength
+      %}
+      minlength="{{ emailField.minlength }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      emailField.pattern
+      %}
+      pattern="{{ emailField.pattern }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      emailField.title
+      %}
+      title="{{ emailField.title }}"
+      {%
+      endif
+      %}
+    />
   </div>
   {% for field in phoneField %}
   <div class="form__item">
@@ -123,6 +164,14 @@
       field.inputmode
       %}
       inputmode="{{ field.inputmode }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      field.title
+      %}
+      title="{{ field.title }}"
       {%
       endif
       %}
@@ -168,21 +217,11 @@
       <a class="form__link" href="{{ field.link.href }}">
         {{ field.link.text }}
       </a>
+      {% if field.required %} required {% endif %}
     </label>
   </div>
   {% endfor %}
-  <button
-    class="button button--primary"
-    type="{{ contactFormSubmit.type }}"
-    {%
-    if
-    contactFormSubmit.required
-    %}
-    required
-    {%
-    endif
-    %}
-  >
+  <button class="button button--primary" type="{{ contactFormSubmit.type }}">
     {{ contactFormSubmit.text }}
   </button>
 </form>

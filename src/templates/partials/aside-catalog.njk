@@ -11,18 +11,7 @@
   {% include "partials/aside-catalog-empty.njk" %}
   <!--ASIDE6-->
   {% include "partials/aside-catalog-sixth.njk" %}
-  <button
-    class="button button--primary"
-    type="{{ asideFormSubmit.type }}"
-    {%
-    if
-    asideFormSubmit.required
-    %}
-    required
-    {%
-    endif
-    %}
-  >
+  <button class="button button--primary" type="{{ asideFormSubmit.type }}">
     {{ asideFormSubmit.text }}
   </button>
 </form>

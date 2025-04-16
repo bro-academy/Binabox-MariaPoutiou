@@ -4,15 +4,19 @@
     <nav class="hero-section__nav">
       <ul class="hero-section__list">
         {% for item in heroCatalog.list %}
-          <li class="hero-section__list-item">
-            {% if item.link %}
-              <a class="hero-section__link" href="{{ item.link }}">{{ item.text }}</a>
-            {% else %}
-              <span class="hero-section__word hero-section__word--catalog">{{ item.text }}</span>
-            {% endif %}
-          </li>
+        <li class="hero-section__list-item">
+          {% if item.link %}
+          <a class="hero-section__link" href="{{ item.link }}"
+            >{{ item.text }}</a
+          >
+          {% else %}
+          <span class="hero-section__word hero-section__word--catalog"
+            >{{ item.text }}</span
+          >
+          {% endif %}
+        </li>
         {% endfor %}
       </ul>
     </nav>
   </div>
-</section
+</section>

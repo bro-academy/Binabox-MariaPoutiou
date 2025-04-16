@@ -1051,6 +1051,7 @@
   ],
 
   "genderField": {
+    "type": "radio",
     "label": "Gender",
     "name": "gender",
     "required": true,
@@ -1068,6 +1069,17 @@
     ]
   },
 
+  "emailField": {
+      "type": "email",
+      "name": "email",
+      "id": "email",
+      "label": "Email",
+      "placeholder": "your@email.com",
+      "required": true,
+      "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+      "title": "Format: your@email.com"
+    },
+
   "phoneField": [
     {
       "type": "tel",
@@ -1077,8 +1089,9 @@
       "placeholder": "your phone",
       "required": true,
       "minlength": 9,
-      "pattern": "[0-9]+",
-      "inputmode": "numeric"
+      "pattern": "\\+38\\d{10}",
+      "inputmode": "numeric",
+      "title": "Format: +380XXXXXXXXX"
     }
   ],
 
@@ -1109,7 +1122,6 @@
 
   "contactFormSubmit": {
     "text": "Send Message",
-    "type": "submit",
-    "required": true
+    "type": "submit"
   }
 }
