@@ -10,74 +10,69 @@
 
 .aside__block-label {
   line-height: $line-height-sm;
-}
 
-.aside__block-label--checkbox {
-  position: relative;
-  padding-left: $padding-1xl;
-  display: flex;
-  align-items: center;
+  &--checkbox {
+    position: relative;
+    padding-left: $padding-1xl;
+    display: flex;
+    align-items: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 16px;
-    height: 16px;
-    background-color: $color-background;
-    border: 2px solid $color-styling-grey;
-    border-radius: 4px;
-    box-sizing: border-box;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      background-color: $color-background;
+      border: 2px solid $color-styling-grey;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    &:hover::before {
+      background-color: $color-styling-grey;
+    }
+
+    &:active::before {
+      background-color: $color-active-bg;
+    }
+
+    &:disabled::before {
+      background-color: $color-disabled;
+    }
+    &:focus::before {
+      background-color: $color-background-block-light;
+      border-color: $color-focus-border;
+    }
   }
 
-  &:hover::before {
-    background-color: $color-styling-grey;
-  }
-
-  &:active::before {
-    background-color: $color-active-bg;
-  }
-
-  &:disabled::before {
-    background-color: $color-disabled;
-  }
-
-  &:focus::before {
-    background-color: $color-background-block-light;
-    border-color: $color-focus-border;
-  }
-}
-
-.aside__block-label--radio {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 16px;
-  display: flex;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: $color-secondary;
-    border: 2px solid $color-styling-grey;
-    box-sizing: border-box;
-  }
-
-  &:hover::before {
-    background-color: $color-background-block-dark;
-  }
-
-  &:disabled::before {
-    background-color: $color-disabled;
-  }
-
-  &:invalid::before {
-    border-color: $color-invalid;
+  &--radio {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 16px;
+    display: flex;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+      border: 2px solid $color-styling-grey;
+      box-sizing: border-box;
+    }
+    &:hover::before {
+      background-color: $color-background-block-dark;
+    }
+    &:disabled::before {
+      background-color: $color-disabled;
+    }
+    &:invalid::before {
+      border-color: $color-invalid;
+    }
   }
 }
 
@@ -86,27 +81,25 @@
 }
 
 .aside__input {
-  &:checked + .aside__block-label--checkbox::before {
-    background-color: $color-primary;
-    border-color: $color-primary;
-  }
-
-  &:checked + .aside__block-label--checkbox:hover::before {
-    background-color: $color-focus-border;
-    border-color: $color-focus-border;
-  }
-
-  &:checked + .aside__block-label--checkbox:active::before {
-    background-color: $color-active-bg;
-    border-color: $color-active-bg;
-  }
-
-  &:checked + .aside__block-label--checkbox:focus::before {
-    background-color: $color-primary;
-    border-color: $color-focus-border;
-  }
-
-  &:checked + .aside__block-label--checkbox:disabled::before {
-    background-color: $color-disabled;
+  &:checked + .aside__block-label--checkbox {
+    &::before {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+    &:hover::before {
+      background-color: $color-focus-border;
+      border-color: $color-focus-border;
+    }
+    &:active::before {
+      background-color: $color-active-bg;
+      border-color: $color-active-bg;
+    }
+    &:focus::before {
+      background-color: $color-primary;
+      border-color: $color-focus-border;
+    }
+    &:disabled::before {
+      background-color: $color-disabled;
+    }
   }
 }
