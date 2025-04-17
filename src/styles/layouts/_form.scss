@@ -32,25 +32,24 @@
   }
 
   &__item {
-    margin-bottom: 24px;
-  }
+      display: flex;
+      flex-direction: column;
+      gap: 8px; 
+      margin-bottom: 24px;
+    }
 
   &__label {
     line-height: $line-height-sm;
+  }
+
+  &__textarea {
+    height: 160px;
   }
 }
 
 /* Hide checkbox/radio input */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  display: none;
 }
 
 .toggle-label {
@@ -59,7 +58,7 @@
   height: 24px;
   background-color: $color-toggle;
   border: 1px solid $color-toggle;
-  border-radius: 10px;
+  border-radius: 19px;
   position: relative;
 
   &::before {
@@ -117,10 +116,12 @@
   border: 2px solid $color-secondary-button-border;
   line-height: $line-height-sm;
   color: $color-text-base;
+  font-family: $font-primary;
+  font-size: $font-size-sm;
   padding-block: 10px;
   padding-inline: 12px;
   height: 40px;
-  width: 640px;
+  width: 100%;
 
   &:valid {
     border-color: $color-secondary-button-border;
@@ -144,6 +145,10 @@
   }
 }
 
+.input__date {
+  color: $color-text-date;
+}
+
 .form__label--radio {
   margin-bottom: 16px;
   display: flex;
@@ -153,7 +158,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 4px;
     width: 16px;
     height: 16px;
@@ -198,7 +203,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    top: 4px;
+    top: 2px;
     left: 4px;
     background-color: $color-secondary;
     border: 2px solid $color-styling-grey;

@@ -1040,6 +1040,7 @@
       "minlength": 2
     },
     {
+      "class": "input__date",
       "type": "date",
       "name": "birthday",
       "id": "birthday",
@@ -1110,7 +1111,6 @@
       "name": "terms",
       "value": "agree",
       "id": "terms",
-      "required": true,
       "text": "By clicking on the ‘Send Message’ button I agree to",
       "link": {
         "text": "all the terms of the security policy",

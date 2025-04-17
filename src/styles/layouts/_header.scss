@@ -5,9 +5,12 @@
   padding: $padding-3xl;
 
   &__search-bar {
-    background-color: $color-secondary;
+    background-color: $color-background-block-light;
     border: 2px solid $color-secondary-button-border;
     color: $color-text-searchbar;
     line-height: $line-height-sm;
+    height: 48px;
+    padding-block: $padding-xs;
+    padding-inline: $padding-md;
   }
 }

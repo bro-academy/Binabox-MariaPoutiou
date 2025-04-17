@@ -16,210 +16,94 @@
     />
     <label class="toggle-label" for="{{ formConsent.id }}"></label>
   </div>
-  {% for field in formFields %}
-  <div class="form__item">
-    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
-    <input
-      class="input"
-      type="{{ field.type }}"
-      name="{{ field.name }}"
-      id="{{ field.id }}"
-      {%
-      if
-      field.placeholder
-      %}
-      placeholder="{{ field.placeholder }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.required
-      %}
-      required
-      {%
-      endif
-      %}
-      {%
-      if
-      field.minlength
-      %}
-      minlength="{{ field.minlength }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.max
-      %}
-      max="{{ field.max }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.pattern
-      %}
-      pattern="{{ field.pattern }}"
-      {%
-      endif
-      %}
-    />
-  </div>
+    {% for field in formFields %}
+    <div class="form__item">
+      <label class="form__label" for="{{ field.id }}">{{ field.label }}</label>
+      <input
+        class="input input__date"
+        type="{{ field.type }}"
+        name="{{ field.name }}"
+        id="{{ field.id }}"
+        {% if field.placeholder %}placeholder="{{ field.placeholder }}"{% endif %}
+        {% if field.required %}required{% endif %}
+        {% if field.minlength %}minlength="{{ field.minlength }}"{% endif %}
+        {% if field.max %}max="{{ field.max }}"{% endif %}
+        {% if field.pattern %}pattern="{{ field.pattern }}"{% endif %}
+      />
+    </div>
   {% endfor %}
   <div class="form__item">
     <p>{{ genderField.label }}</p>
     {% for option in genderField.options %}
-    <input
-      class="visually-hidden radio-input"
-      type="{{ genderField.type }}"
-      name="{{ genderField.name }}"
-      value="{{ option.value }}"
-      id="{{ option.id }}"
-    />
-    <label class="form__label form__label--radio" for="{{ option.id }}">
-      {{ option.label }}
-    </label>
+      <input
+        class="visually-hidden radio-input"
+        type="{{ genderField.type }}"
+        name="{{ genderField.name }}"
+        value="{{ option.value }}"
+        id="{{ option.id }}"
+      />
+      <label class="form__label form__label--radio" for="{{ option.id }}">{{ option.label }}</label>
     {% endfor %}
   </div>
   <div class="form__item">
-    <label class="form__label" for="{{ emailField.id }}">
-      {{ emailField.label }}
-    </label>
+    <label class="form__label" for="{{ emailField.id }}">{{ emailField.label }}</label>
     <input
       class="input"
       type="{{ emailField.type }}"
       name="{{ emailField.name }}"
       id="{{ emailField.id }}"
       placeholder="{{ emailField.placeholder }}"
-      {%
-      if
-      emailField.required
-      %}
-      required
-      {%
-      endif
-      %}
-      {%
-      if
-      emailField.minlength
-      %}
-      minlength="{{ emailField.minlength }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      emailField.pattern
-      %}
-      pattern="{{ emailField.pattern }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      emailField.title
-      %}
-      title="{{ emailField.title }}"
-      {%
-      endif
-      %}
+      {% if emailField.required %}required{% endif %}
+      {% if emailField.minlength %}minlength="{{ emailField.minlength }}"{% endif %}
+      {% if emailField.pattern %}pattern="{{ emailField.pattern }}"{% endif %}
+      {% if emailField.title %}title="{{ emailField.title }}"{% endif %}
     />
   </div>
   {% for field in phoneField %}
-  <div class="form__item">
-    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
-    <input
-      class="input"
-      type="{{ field.type }}"
-      name="{{ field.name }}"
-      id="{{ field.id }}"
-      placeholder="{{ field.placeholder }}"
-      {%
-      if
-      field.required
-      %}
-      required
-      {%
-      endif
-      %}
-      {%
-      if
-      field.minlength
-      %}
-      minlength="{{ field.minlength }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.pattern
-      %}
-      pattern="{{ field.pattern }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.inputmode
-      %}
-      inputmode="{{ field.inputmode }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      field.title
-      %}
-      title="{{ field.title }}"
-      {%
-      endif
-      %}
-    />
-  </div>
-  {% endfor %} {% for field in messageField %}
-  <div class="form__item">
-    <label class="form__label" for="{{ field.id }}"> {{ field.label }} </label>
-    <textarea
-      class="input form__textarea"
-      name="{{ field.name }}"
-      id="{{ field.id }}"
-      rows="{{ field.rows }}"
-      {%
-      if
-      field.required
-      %}
-      required
-      {%
-      endif
-      %}
-    ></textarea>
-  </div>
-  {% endfor %} {% for field in termsField %}
-  <div class="form__item form__item--checkbox">
-    <input
-      class="visually-hidden input-terms"
-      type="checkbox"
-      name="{{ field.name }}"
-      value="{{ field.value }}"
-      id="{{ field.id }}"
-      {%
-      if
-      field.required
-      %}
-      required
-      {%
-      endif
-      %}
-    />
-    <label class="form__label form__label--terms" for="{{ field.id }}">
-      {{ field.text }}
-      <a class="form__link" href="{{ field.link.href }}">
-        {{ field.link.text }}
-      </a>
-      {% if field.required %} required {% endif %}
-    </label>
-  </div>
+    <div class="form__item">
+      <label class="form__label" for="{{ field.id }}">{{ field.label }}</label>
+      <input
+        class="input"
+        type="{{ field.type }}"
+        name="{{ field.name }}"
+        id="{{ field.id }}"
+        placeholder="{{ field.placeholder }}"
+        {% if field.required %}required{% endif %}
+        {% if field.minlength %}minlength="{{ field.minlength }}"{% endif %}
+        {% if field.pattern %}pattern="{{ field.pattern }}"{% endif %}
+        {% if field.inputmode %}inputmode="{{ field.inputmode }}"{% endif %}
+        {% if field.title %}title="{{ field.title }}"{% endif %}
+      />
+    </div>
+  {% endfor %}
+  {% for field in messageField %}
+    <div class="form__item">
+      <label class="form__label" for="{{ field.id }}">{{ field.label }}</label>
+      <textarea
+        class="input form__textarea"
+        name="{{ field.name }}"
+        id="{{ field.id }}"
+        rows="{{ field.rows }}"
+        {% if field.required %}required{% endif %}
+      ></textarea>
+    </div>
+  {% endfor %}
+  {% for field in termsField %}
+    <div class="form__item form__item--checkbox">
+      <input
+        class="visually-hidden input-terms"
+        type="checkbox"
+        name="{{ field.name }}"
+        value="{{ field.value }}"
+        id="{{ field.id }}"
+        {% if field.required %}required{% endif %}
+      />
+      <label class="form__label form__label--terms" for="{{ field.id }}">
+        {{ field.text }}
+        <a class="form__link" href="{{ field.link.href }}">{{ field.link.text }}</a>
+        {% if field.required %}required{% endif %}
+      </label>
+    </div>
   {% endfor %}
   <button
     class="button button__form button--primary"

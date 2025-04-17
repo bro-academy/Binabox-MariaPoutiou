@@ -11,6 +11,9 @@
   @include button-base;
   @include button-focus;
   @include button-secondary;
+  height: 48px;
+  padding-block: 10px;
+  padding-inline: 24px;
 }
 
 .option__item {
