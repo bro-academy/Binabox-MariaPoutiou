@@ -34,17 +34,18 @@
   &__item {
       display: flex;
       flex-direction: column;
-      gap: 8px; 
+      gap: 6px; 
       margin-bottom: 24px;
     }
 
   &__label {
     line-height: $line-height-sm;
   }
+}
 
-  &__textarea {
-    height: 160px;
-  }
+.input.form__textarea {
+  height: 160px;
+  resize: none;
 }
 
 /* Hide checkbox/radio input */
@@ -55,9 +56,8 @@
 .toggle-label {
   display: inline-block;
   width: 40px;
-  height: 24px;
+  height: 20px;
   background-color: $color-toggle;
-  border: 1px solid $color-toggle;
   border-radius: 19px;
   position: relative;
 
@@ -65,7 +65,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    top: 3px;
+    top: 2px;
     left: 2px;
     position: absolute;
     border-radius: 50%;
@@ -94,8 +94,8 @@
   border-color: $color-primary;
 
   &::before {
-    left: 20px;
-    top: 3px;
+    left: 22px;
+    top: 2px;
   }
 
   &:hover {
@@ -122,6 +122,13 @@
   padding-inline: 12px;
   height: 40px;
   width: 100%;
+
+  &::placeholder {
+    color: $color-text-searchbar; 
+    font-size: $font-size-sm;
+    font-family: $font-primary;
+    font-weight: $font-weight-primary;
+  }
 
   &:valid {
     border-color: $color-secondary-button-border;

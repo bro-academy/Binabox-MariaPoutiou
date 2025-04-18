@@ -11,11 +11,21 @@
   @include button-base;
   @include button-focus;
   @include button-secondary;
+  appearance: none;
+  -webkit-appearance: none;
   height: 48px;
-  padding-block: 10px;
-  padding-inline: 24px;
+  padding-block: $padding-sm;
+  padding-inline: $padding-2xl;
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
 }
 
 .option__item {
   line-height: $line-height-sm;
+  padding-block: $padding-3xs;
+  padding-inline: $padding-md;
+  height: 32px;
+  background-color: $color-dropdown;
 }
