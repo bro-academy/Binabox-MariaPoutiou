@@ -2,23 +2,34 @@
 @use "../abstracts/mixins";
 @use "../abstracts/global";
 
-/********** HOMEPAGE STARTS HERE ************/
-@use "../layouts/header";
+/********** GENERAL COMPONENTS ************/
 @use "../components/main-nav";
 @use "../components/buttons";
+@use "../components/hero-buttons";
+@use "../components/hero-nav";
+@use "../components/product-card";
+@use "../components/blog-card";
+@use "../components/tags";
+@use "../components/hero-contact-page";
+@use "../components/contact-form";
+@use "../components/inputs";
+@use "../components/hero-catalog-page";
+@use "../components/catalog-dropdown";
+@use "../components/cta-link";
+
+/* HEADER */
+@use "../layouts/header";
+
+/******* HOMEAPAGE STARTS HERE  ********/
 
 /* HERO SECTION */
 @use "../layouts/hero-section";
-@use "../components/hero-buttons";
 
 /* CATALOG SECTION */
 @use "../layouts/catalog";
-@use "../components/product-card";
 
 /* BLOG SECTION */
 @use "../layouts/our-blog";
-@use "../components/blog-card";
-@use "../components/cta-link";
 
 /* ABOUT SECTION */
 @use "../layouts/about-us";
@@ -32,31 +43,22 @@
 /* FOOTER */
 @use "../layouts/footer";
 
-/********** HOMEPAGE ENDS HERE - BLOG-ARTICLE STARTS HERE  ************/
+/******* BLOG-ARTICLE STARTS HERE  ********/
 
 /* HERO SECTION BLOG PAGE */
 @use "../layouts/hero-blog";
-@use "../components/hero-nav";
 
 /* ARTICLE SECTION */
 @use "../layouts/article";
 
 /* SUBARTICLE SECTION */
 @use "../layouts/subarticle";
-@use "../components/tags";
 
 /* ASIDE SECTION */
 @use "../layouts/aside";
 
-/********** BLOG-ARTICLE ENDS HERE ************/
-
 /********** FORM STARTS HERE ************/
-@use "../components/hero-contact-page";
-@use "../components/form-header";
-@use "../layouts/form";
-@use "../components/inputs";
+@use "../layouts/contact-page";
 
 /********** CATALOG PAGE STARTS HERE ************/
-@use "../components/hero-catalog-page";
-@use "../components/dropdown";
-@use "../layouts/catalog-page";
+@use "../layouts/catalog-sidebar-filter";
