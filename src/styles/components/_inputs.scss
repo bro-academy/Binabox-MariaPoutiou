@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as *;
+
+.input {
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary-button-border;
+  line-height: $line-height-sm;
+  color: $color-text-base;
+  font-family: $font-primary;
+  font-size: $font-size-sm;
+  padding-block: $padding-sm;
+  padding-inline: $padding-md;
+  height: 40px;
+  width: 100%;
+
+  &::placeholder {
+    color: $color-text-placeholder;
+    font-size: $font-size-sm;
+    font-family: $font-primary;
+    font-weight: $font-weight-primary;
+  }
+
+  &:valid {
+    border-color: $color-secondary-button-border;
+  }
+
+  &:hover {
+    border-color: $color-hover;
+  }
+
+  &:focus {
+    border: 3px solid $color-hover;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+
+  &:user-invalid:not(:placeholder-shown) {
+    border-color: $color-invalid;
+  }
+
+  // Modifier: Date input
+  &__date {
+    color: $color-text-placeholder;
+  }
+
+  // Modifier: Message textarea inside form
+  &.form__textarea {
+    height: 160px;
+    resize: none;
+  }
+
+  // Modifier: Header search input
+  &--header {
+    height: 48px;
+    width: 188px;
+    padding-block: $padding-xs;
+  }
+
+  // Modifier: Catalog search input
+  &--catalog {
+    background-color: $color-background-block-light;
+    height: 48px;
+    width: 423px;
+  }
+}

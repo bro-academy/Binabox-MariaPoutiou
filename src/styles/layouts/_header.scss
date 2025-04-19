@@ -3,10 +3,4 @@
 .header {
   justify-content: space-between;
   padding: $padding-3xl;
-
-  &__search-bar {
-    height: 48px;
-    width: 188px;
-    padding-block: $padding-xs;
-  }
 }
