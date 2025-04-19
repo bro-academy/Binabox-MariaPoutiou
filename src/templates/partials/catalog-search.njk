@@ -1,6 +1,7 @@
 <form class="catalog-search" method="get">
+  {% include "partials/dropdown.njk" %}
   <input
-    class="catalog__search-bar"
+    class="input catalog__search-bar"
     type="search"
     name="{{ catalogSearch.name }}"
     maxlength="{{ catalogSearch.maxlength }}"
