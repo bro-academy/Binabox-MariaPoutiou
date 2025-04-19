@@ -1,0 +1,227 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.form {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 104px;
+
+  &-title {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+    text-align: $text-align-center;
+    font-family: $font-headings;
+  }
+
+  &-description {
+    color: $color-text-secondary;
+    font-weight: $font-weight-tertiary;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    text-align: $text-align-center;
+  }
+
+  &__consent {
+    background-color: $color-background-block-dark;
+    padding: $padding-2xl;
+    margin-bottom: 52px;
+  }
+
+  &__consent-text {
+    line-height: $line-height-sm;
+  }
+
+  &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px; 
+      margin-bottom: 24px;
+    }
+
+  &__label {
+    line-height: $line-height-sm;
+  }
+}
+
+/* Hide checkbox/radio input */
+.visually-hidden {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: $color-toggle;
+  border-radius: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+
+  &:hover {
+    background-color: $color-styling-grey;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-hover;
+  }
+
+  &:active {
+    background-color: $color-text-secondary;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.toggle-input:checked + .toggle-label {
+  background: $color-primary;
+  border-color: $color-primary;
+
+  &::before {
+    left: 22px;
+    top: 2px;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-hover;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.form__label--radio {
+  margin-bottom: 16px;
+  display: flex;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    border: 2px solid $color-styling-grey;
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    background-color: $color-background-block-dark;
+  }
+
+  &:disabled::before {
+    background-color: $color-disabled;
+  }
+
+  &:invalid::before {
+    border-color: $color-invalid;
+  }
+}
+
+.radio-input:checked + .form__label--radio::before {
+  border: 5px solid $color-primary;
+}
+
+.radio-input:invalid + .form__label--radio::before {
+  border-color: #ea3829;
+
+  &:hover::before {
+    background-color: #1d1c28;
+    border-color: #ea3829;
+  }
+}
+
+.form__label--terms {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 4px;
+    background-color: $color-secondary;
+    border: 2px solid $color-styling-grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    background-color: $color-background-block-dark;
+  }
+
+  &:focus::before {
+    border: 2px solid $color-focus-border;
+  }
+
+  &:active::before {
+    background-color: $color-active-bg;
+  }
+
+  &:disabled::before {
+    background-color: $color-secondary-button-border;
+    border-color: $color-secondary-button-border;
+  }
+}
+
+.input-terms {
+  &:invalid + .form__label--terms::before {
+    border-color: #ea3829;
+  }
+
+  &:disabled + .form__label--terms::before {
+    border-radius: 4px;
+    background-color: $color-disabled;
+  }
+
+  &:checked + .form__label--terms::before {
+    background-color: $color-primary;
+  }
+
+  &:checked + .form__label--terms:hover::before {
+    top: 2px;
+    left: 4px;
+    background-color: $color-hover;
+  }
+
+  &:checked + .form__label--terms:focus::before {
+    background-color: $color-primary;
+    border-color: $color-hover;
+  }
+}
+
+.form__link {
+  text-decoration: none;
+  color: $color-text-highlight;
+
+  &:hover {
+    color: $color-focus-border;
+  }
+}
+
+.button__form {
+  width: 640px;
+  height: 48px;
+}

@@ -14,13 +14,17 @@
       },
       {
         "text": "Catalog",
-        "link": "https://via.placeholder.com/150"
+        "link": "catalog.html"
       },
       {
         "text": "Contact us",
-        "link": "https://via.placeholder.com/150"
+        "link": "contact-us.html"
       }
     ]
+  },
+
+  "headerSearch": {
+    "headerPlaceholder": "Search"
   },
 
   "headerButtons": {
@@ -800,5 +804,323 @@
       "img": "https://via.placeholder.com/150",
       "alt": "Discord-logo"
     }
-  ]
+  ],
+
+  "heroCatalog": {
+    "title": "Catalog",
+    "list": [
+      {
+        "text": "Home",
+        "link": "index.html"
+      },
+      {
+        "text": "Catalog"
+      }
+    ]
+  },
+
+  "dropdownFilter": {
+    "placeholder": "Sort by",
+    "placeholderValue": "options",
+    "options": [
+      {
+        "value": "newest",
+        "label": "Newest"
+      },
+      {
+        "value": "popular",
+        "label": "Most popular"
+      },
+      {
+        "value": "priceIncreasing",
+        "label": "Increasing in price"
+      },
+      {
+        "value": "priceLower",
+        "label": "Lowering the price"
+      }
+    ]
+  },
+
+  "catalogSearch": {
+    "name": "search",
+    "maxlength": 30,
+    "placeholder": "Search NFT",
+    "autocomplete": "on"
+  },
+
+  "asideForm": {
+    "action": "https://some-url.com",
+    "method": "post"
+  },
+
+  "asideClothing": {
+    "title": "Clothing",
+    "name": "clothes",
+    "type": "checkbox",
+    "options": [
+      {
+        "value": "Combatant",
+        "label": "Combatant",
+        "id": "combatant"
+      },
+
+      {
+        "value": "Ninja",
+        "label": "Ninja",
+        "id": "ninja"
+      },
+
+      {
+        "value": "King",
+        "label": "King",
+        "id": "king"
+      },
+
+      {
+        "value": "Queen",
+        "label": "Queen",
+        "id": "queen"
+      },
+
+      {
+        "value": "Robot",
+        "label": "Robot",
+        "id": "robot"
+      }
+    ]
+  },
+
+  "asideEyes": {
+    "title": "Eyes",
+    "name": "eyes",
+    "type": "radio",
+    "options": [
+      {
+        "value": "Yellow",
+        "label": "Yellow",
+        "id": "eyes_yellow"
+      },
+      {
+        "value": "Green",
+        "label": "Green",
+        "id": "eyes_green"
+      },
+      {
+        "value": "Mix",
+        "label": "Mix",
+        "id": "eyes_mix"
+      },
+      {
+        "value": "Orange",
+        "label": "Orange",
+        "id": "eyes_orange"
+      }
+    ]
+  },
+
+  "asideTextBlocks": [
+    {
+      "title": "Face",
+      "text": "#"
+    },
+    {
+      "title": "Skin",
+      "text": "#"
+    },
+    {
+      "title": "Background",
+      "text": "#"
+    }
+  ],
+
+  "asideSpecial": {
+    "title": "Special",
+    "name": "special",
+    "type": "checkbox",
+    "options": [
+      {
+        "label": "Yellow",
+        "value": "Yellow",
+        "id": "yellow"
+      },
+      {
+        "label": "Green",
+        "value": "Green",
+        "id": "green"
+      },
+      {
+        "label": "Mix",
+        "value": "Mix",
+        "id": "mix"
+      },
+      {
+        "label": "Orange",
+        "value": "Orange",
+        "id": "orange"
+      }
+    ]
+  },
+
+  "asideFormSubmit": {
+    "text": "Apply",
+    "type": "submit"
+  },
+
+  "heroForm": {
+    "title": "Contact Us",
+    "list": [
+      {
+        "item": "Home",
+        "link": "index.html"
+      },
+      {
+        "item": "Contact Us",
+        "link": null
+      }
+    ]
+  },
+
+  "formHeader": {
+    "list": [
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "location-icon",
+        "title": "Location",
+        "details": "2163 Phillips Gap Rd"
+      },
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "email-icon",
+        "title": "Email",
+        "details": "Info.avitex@gmail.com"
+      },
+      {
+        "img": "https://via.placeholder.com/150",
+        "alt": "phone-icon",
+        "title": "Phone",
+        "details": "+1 666 8888"
+      }
+    ]
+  },
+
+  "contactForm": {
+    "title": "Get in touch",
+    "description": "Browse through the most frequently asked questions",
+    "action": "https://some-url.com",
+    "method": "post",
+    "class": "form"
+  },
+
+  "formConsent": {
+    "text": "Use my profile information",
+    "type": "checkbox",
+    "name": "consent",
+    "value": "agree",
+    "id": "toggle"
+  },
+
+  "formFields": [
+    {
+      "type": "text",
+      "name": "name",
+      "id": "name",
+      "label": "Name",
+      "placeholder": "your name",
+      "required": true,
+      "minlength": 2
+    },
+    {
+      "type": "text",
+      "name": "surname",
+      "id": "surname",
+      "label": "Last name",
+      "placeholder": "your surname",
+      "required": true,
+      "minlength": 2
+    },
+    {
+      "class": "input__date",
+      "type": "date",
+      "name": "birthday",
+      "id": "birthday",
+      "label": "Date of birth",
+      "required": true,
+      "max": "2025-04-10"
+    }
+  ],
+
+  "genderField": {
+    "type": "radio",
+    "label": "Gender",
+    "name": "gender",
+    "required": true,
+    "options": [
+      {
+        "label": "Male",
+        "value": "male",
+        "id": "male"
+      },
+      {
+        "label": "Female",
+        "value": "female",
+        "id": "female"
+      }
+    ]
+  },
+
+  "emailField": {
+      "type": "email",
+      "name": "email",
+      "id": "email",
+      "label": "Email",
+      "placeholder": "your@email.com",
+      "required": true,
+      "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+      "title": "Format: your@email.com"
+    },
+
+  "phoneField": [
+    {
+      "type": "tel",
+      "name": "tel",
+      "id": "tel",
+      "label": "Phone number",
+      "placeholder": "your phone",
+      "required": true,
+      "minlength": 9,
+      "pattern": "\\+38\\d{10}",
+      "inputmode": "numeric",
+      "title": "Format: +380XXXXXXXXX"
+    }
+  ],
+
+  "messageField": [
+    {
+      "type": "textarea",
+      "name": "message",
+      "id": "message",
+      "label": "Message",
+      "rows": 5,
+      "required": true
+    }
+  ],
+
+  "termsField": [
+    {
+      "name": "terms",
+      "value": "agree",
+      "id": "terms",
+      "text": "By clicking on the ‘Send Message’ button I agree to",
+      "link": {
+        "text": "all the terms of the security policy",
+        "href": "https://some-url.com"
+      }
+    }
+  ],
+
+  "contactFormSubmit": {
+    "text": "Send Message",
+    "type": "submit"
+  }
 }

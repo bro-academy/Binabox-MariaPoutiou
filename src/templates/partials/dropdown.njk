@@ -1,0 +1,10 @@
+<select class="option-dropdown" name="filter">
+  <option class="option__value" value="{{ dropdownFilter.placeholderValue }}">
+    {{ dropdownFilter.placeholder }}
+  </option>
+  {% for option in dropdownFilter.options %}
+  <option class="option__item" value="{{ option.value }}">
+    {{ option.label }}
+  </option>
+  {% endfor %}
+</select>

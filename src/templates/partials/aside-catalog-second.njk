@@ -1,0 +1,26 @@
+<aside class="aside-section">
+  <section class="aside__block">
+    <details class="aside__block-details">
+      <summary class="aside__block-summary">
+        <h3 class="aside__block-title">{{ asideEyes.title }}</h3>
+      </summary>
+      {% for option in asideEyes.options %}
+      <div class="aside__block-item aside-block--radio">
+        <input
+          class="visually-hidden aside-radio"
+          type="{{ asideEyes.type }}"
+          name="{{ asideEyes.name }}"
+          value="{{ option.value }}"
+          id="{{ option.id }}"
+        />
+        <label
+          class="aside__block-label aside__block-label--radio"
+          for="{{ option.id }}"
+        >
+          {{ option.label }}
+        </label>
+      </div>
+      {% endfor %}
+    </details>
+  </section>
+</aside>

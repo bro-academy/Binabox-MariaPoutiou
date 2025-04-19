@@ -1,0 +1,17 @@
+<form
+  class="form-aside"
+  action="{{ asideForm.action }}"
+  method="{{ asideForm.method }}"
+>
+  <!--ASIDE1-->
+  {% include "partials/aside-catalog-first.njk" %}
+  <!--ASIDE2-->
+  {% include "partials/aside-catalog-second.njk" %}
+  <!--ASIDE3, ASIDE 4, ASIDE 5-->
+  {% include "partials/aside-catalog-empty.njk" %}
+  <!--ASIDE6-->
+  {% include "partials/aside-catalog-sixth.njk" %}
+  <button class="button button--primary" type="{{ asideFormSubmit.type }}">
+    {{ asideFormSubmit.text }}
+  </button>
+</form>

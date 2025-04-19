@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.form-header {
+  padding-top: $padding-4xl;
+  padding-inline: $padding-4xl;
+
+  &__item {
+    min-width: 40px;
+    max-width: 232px;
+    border: 1px solid $color-styling-grey;
+    padding-block: $padding-3xxl;
+    padding-inline: $padding-3xl;
+
+    &-title {
+      font-size: $font-size-4xl;
+      line-height: $line-height-4xl;
+      text-align: $text-align-center;
+      font-family: $font-headings;
+    }
+
+    &-details {
+      color: $color-text-secondary;
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+      text-align: $text-align-center;
+    }
+  }
+}
