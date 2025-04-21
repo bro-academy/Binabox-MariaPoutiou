@@ -1,6 +1,42 @@
 @use "../abstracts/variables" as *;
 
 .header {
-  justify-content: space-between;
   padding: $padding-3xl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo__image {
+  height: 40px;
+  width: auto;
+  gap: 32px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-search {
+  position: relative;
+  margin-left: 32px;
+}
+
+.header-search::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 32px;
+    background-color: rgba(208, 215, 251, 0.168);
+    z-index: 1;
+  }
