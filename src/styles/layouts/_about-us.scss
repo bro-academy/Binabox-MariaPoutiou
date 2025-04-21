@@ -16,6 +16,11 @@
 .about-list {
   counter-reset: about-counter;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 32px;
 
   &__item {
     position: relative;
