@@ -24,15 +24,15 @@
   &__description {
     line-height: $line-height-sm;
   }
-}
 
-.footer-logo {
-  max-width: 320px;
-}
+  &-logo {
+    max-width: 320px;
+  }
 
-.footer__list-wrapper {
-  display: flex;
-  gap: 48px;
+  &__list-wrapper {
+    display: flex;
+    gap: 48px;
+  }
 }
 
 .footer-nav {

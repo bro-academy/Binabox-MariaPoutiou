@@ -1,9 +1,28 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.catalog-section {
+.catalog {
+&-section {
   padding: $padding-4xl;
   margin-bottom: 10px;
+}
+
+&-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+&__controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+&__pagination {
+  display: flex;
+  gap: 16px;
+}
 }
 
 .section-title {
@@ -27,32 +46,13 @@
       content: "";
       position: absolute;
       left: calc(100% + 32px);
-      width: 1167px;
+      max-width: 1167px;      
       top: 23px;
       bottom: 23px;
       height: 2px;
       background-color: $color-divider;
       transform: translateY(-50%);
     }
-  }
-}
-
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.catalog {
-  &__controls {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-  &__pagination {
-    display: flex;
-    gap: 16px;
   }
 }
 
