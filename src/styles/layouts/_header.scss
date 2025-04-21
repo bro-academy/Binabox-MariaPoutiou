@@ -7,21 +7,21 @@
   justify-content: space-between;
 
   &-logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   &-logo__image {
-  height: 40px;
-  width: auto;
-  gap: 32px;
-}
+    height: 40px;
+    width: auto;
+    gap: 32px;
+  }
 
-&-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 .header-search {
