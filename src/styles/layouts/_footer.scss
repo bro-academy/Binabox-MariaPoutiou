@@ -6,11 +6,18 @@
   padding: $padding-4xl $padding-4xl $padding-3xl;
 
   &-upper {
+    display: flex;
+    top: 64px;
+    align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 64px;
   }
 
   &-lower {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 16px;
     border-top: 1px solid $color-background-block-secondary;
   }
 
@@ -19,7 +26,18 @@
   }
 }
 
+.footer-logo {
+  max-width: 320px;
+}
+
+.footer__list-wrapper {
+  display: flex;
+  gap: 48px;
+}
+
 .footer-nav {
+  display: block;
+
   &__title {
     font-weight: 500;
     line-height: $line-height-lg;
@@ -35,10 +53,6 @@
     padding-block: 4px;
 
     @include link-style(false);
-  }
-
-  &__list {
-    margin: 0;
   }
 }
 
