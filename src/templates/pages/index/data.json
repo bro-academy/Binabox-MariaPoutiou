@@ -82,8 +82,8 @@
 
   "catalogButtons": {
     "all": "See all",
-    "prev": "&lt;",
-    "next": "&gt;"
+    "prev": "#",
+    "next": "#"
   },
 
   "products": [

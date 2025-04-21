@@ -21,6 +21,38 @@
     letter-spacing: 0;
     margin-block: 0;
     text-align: left;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(100% + 32px);
+      width: 1167px;
+      top: 23px;
+      bottom: 23px;
+      height: 2px;
+      background-color: $color-divider;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog {
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+  &__pagination {
+    display: flex;
+    gap: 16px;
   }
 }
 
@@ -28,7 +60,18 @@
   &--all {
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
-    margin-right: 24px;
+    height: 48px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: -16px;
+      width: 2px;
+      height: 32px;
+      background-color: $color-divider;
+    }
   }
 
   &--text {
@@ -40,12 +83,13 @@
     text-align: center;
   }
 
-  &--prev {
-    padding-block: $padding-lg;
-  }
-
+  &--prev,
   &--next {
     padding-block: $padding-lg;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &--prev-text {
