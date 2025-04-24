@@ -4,19 +4,19 @@
 .catalog {
   &-section {
     padding: $padding-4xl;
-    margin-bottom: 10px;
   }
 
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
   }
 
   &__controls {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 34px;
   }
 
   &__pagination {
@@ -40,18 +40,14 @@
     letter-spacing: 0;
     margin-block: 0;
     text-align: left;
-    position: relative;
+    display: flex;
 
     &::after {
       content: "";
-      position: absolute;
-      left: calc(100% + 32px);
+      display: inline-block;
       width: 1167px;
-      top: 23px;
-      bottom: 23px;
       height: 2px;
       background-color: $color-divider;
-      transform: translateY(-50%);
     }
   }
 }
@@ -61,15 +57,14 @@
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
     height: 48px;
-    position: relative;
 
-    &::before {
+    &::after {
       content: "";
-      position: absolute;
-      top: 8px;
-      right: -16px;
+      display: inline-block;
+      left: 1rem;
       width: 2px;
-      height: 32px;
+      height: 24px;
+      border-radius: 2px;
       background-color: $color-divider;
     }
   }
