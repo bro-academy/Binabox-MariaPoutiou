@@ -11,6 +11,7 @@
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
   text-decoration: none;
+  font-family: $font-primary;
 }
 
 @mixin button-focus {

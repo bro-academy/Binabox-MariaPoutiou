@@ -4,13 +4,14 @@
 .main-nav-list {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  top: 36px;
+
+  &__item {
+    display: inline-block;
+    gap: 8px;
+  }
 
   &__list-link {
     @include link-style(false);
-    position: relative;
-    display: inline-block;
     color: $color-text-base;
     font-size: $font-size-md;
     line-height: $line-height-md;
