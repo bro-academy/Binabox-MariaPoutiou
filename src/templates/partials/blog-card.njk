@@ -1,6 +1,6 @@
 {% for blog in blogCard %}
 <article class="blog-card">
-    <picture class="blog-card__picture">
+    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}">
       <source
         srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x"
         type="image/avif"
@@ -41,9 +41,10 @@
     </div>
     <h4 class="blog-card__title">{{ blog.cardTitle }}</h4>
     <p class="blog-card__description">{{ blog.cardDescription }}</p>
+    <div>
     <a class="button button--secondary blog-link" href="{{ blog.link }}"
-      >{{ blog.linkText }}</a
-    >
+      >{{ blog.linkText }}</a>
+      </div>
   </article>
   {% endfor %}
 </article>

@@ -2,13 +2,13 @@
 
 .hero-section {
   position: static;
-  padding-top: $padding-4xl;
 
   &--blog-article {
     background-image: url("/img/hero-section-banner-background-2x.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: $padding-4xl;
   }
 
   &__blog-title {

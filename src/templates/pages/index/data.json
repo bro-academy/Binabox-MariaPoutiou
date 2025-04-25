@@ -142,7 +142,8 @@
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
+      "link": "https://via.placeholder.com/150",
+      "isSmall": false
     },
     {
       "img": "sonic-live-skeleton",
@@ -157,7 +158,8 @@
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
+      "link": "https://via.placeholder.com/150",
+      "isSmall": true
     },
     {
       "img": "sonic-live-cat",
@@ -172,7 +174,8 @@
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
+      "link": "https://via.placeholder.com/150",
+      "isSmall": true
     },
     {
       "img": "sonic-live-gorilla",
@@ -187,23 +190,10 @@
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
+      "link": "https://via.placeholder.com/150",
+      "isSmall": true
     },
-    {
-      "img": "sonic-live-duck",
-      "alt": "futuristic duck with a digital background and neon elements",
-      "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
-      "authorIconAlt": "person icon",
-      "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
-      "dateIconAlt": "calendar icon",
-      "dateISO": "20 Jun 2022",
-      "cardTitle": "Sonic Live",
-      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
-      "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
-    },
+
     {
       "img": "sonic-live-console",
       "alt": "cyberpunk holographic game console",
@@ -217,7 +207,25 @@
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
-      "link": "https://via.placeholder.com/150"
+      "link": "https://via.placeholder.com/150",
+      "isSmall": false
+    },
+
+    {
+      "img": "sonic-live-duck",
+      "alt": "futuristic duck with a digital background and neon elements",
+      "label": "NFT",
+      "authorIcon": "https://via.placeholder.com/150",
+      "authorIconAlt": "person icon",
+      "authorName": "Tony Nguyen",
+      "dateIcon": "https://via.placeholder.com/150",
+      "dateIconAlt": "calendar icon",
+      "dateISO": "20 Jun 2022",
+      "cardTitle": "Sonic Live",
+      "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
+      "linkText": "Read more",
+      "link": "https://via.placeholder.com/150",
+      "isSmall": true
     }
   ],
 

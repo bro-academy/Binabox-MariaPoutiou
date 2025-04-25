@@ -12,6 +12,7 @@
   padding-inline: $padding-2xl;
   text-decoration: none;
   font-family: $font-primary;
+  white-space: nowrap;
 }
 
 @mixin button-focus {

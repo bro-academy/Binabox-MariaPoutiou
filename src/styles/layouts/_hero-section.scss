@@ -5,7 +5,7 @@
     font-size: $font-size-5xl;
     line-height: $line-height-5xl;
     letter-spacing: -0.5px;
-    margin-bottom: 0;
+    margin-block: 0;
     font-family: $font-headings;
   }
 
@@ -41,7 +41,6 @@
   }
 
   &--homepage {
-    padding-block: $padding-4xl;
     background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
       #0d0d15;
     display: flex;

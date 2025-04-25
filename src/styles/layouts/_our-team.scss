@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  text-align: center;
 
   &__img {
     border-radius: 50%;
@@ -31,7 +32,6 @@
 
   &__role {
     color: $color-text-secondary;
-    opacity: 0.82;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-block: 0;
