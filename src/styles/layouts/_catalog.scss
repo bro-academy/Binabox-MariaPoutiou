@@ -71,9 +71,6 @@
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
     height: 48px;
-  }
-
-  &--text {
     color: $color-text-base;
     font-weight: $font-weight-secondary;
     font-size: $font-size-lg;
@@ -93,8 +90,6 @@
 
   &--prev-text {
     color: $color-text-base;
-    top: 5px;
-    left: 8px;
   }
 
   &--next-text {

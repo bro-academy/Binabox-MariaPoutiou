@@ -143,7 +143,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": false
+      "isSmall": false,
+      "custom": false
     },
     {
       "img": "sonic-live-skeleton",
@@ -159,7 +160,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": true
+      "isSmall": true,
+      "custom": true
     },
     {
       "img": "sonic-live-cat",
@@ -175,7 +177,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": true
+      "isSmall": true,
+      "custom": false
     },
     {
       "img": "sonic-live-gorilla",
@@ -191,7 +194,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": true
+      "isSmall": true,
+      "custom": false
     },
 
     {
@@ -208,7 +212,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": false
+      "isSmall": false,
+      "custom": false
     },
 
     {
@@ -225,7 +230,8 @@
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
       "link": "https://via.placeholder.com/150",
-      "isSmall": true
+      "isSmall": true,
+      "custom": true
     }
   ],
 

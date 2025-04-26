@@ -1,6 +1,6 @@
 {% for blog in blogCard %}
 <article class="blog-card">
-    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}">
+    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom %} blog-card__picture--custom{% endif %}">
       <source
         srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x"
         type="image/avif"

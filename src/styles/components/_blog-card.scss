@@ -23,7 +23,7 @@
   &__picture {
     flex-grow: 1;
     overflow: hidden;
-    max-height: 664px;
+    max-height: 682px;
   }
 
   &__picture--small {
@@ -80,10 +80,14 @@
   }
 }
 
+.blog-card__picture--small.blog-card__picture--custom .blog-card__img {
+  object-position: center 20%;
+}
+
 .blog-link {
   font-size: $font-size-md;
-  line-height: $line-height-md;
+  height: 40px;
   color: $color-text-base;
-  padding-block: $padding-xs;
+  padding-block: $padding-2xs;
   padding-inline: $padding-xl;
 }

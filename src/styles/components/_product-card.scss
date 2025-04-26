@@ -18,6 +18,10 @@
 .product-card {
   position: relative;
 
+  &__img-wrapper {
+    margin-bottom: 24px;
+  }
+
   &__img {
     object-fit: cover;
   }
