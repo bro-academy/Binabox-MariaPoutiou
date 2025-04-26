@@ -1,12 +1,27 @@
 @use "../abstracts/variables" as *;
 
+.team__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 .team-member {
   background-color: $color-background-block-dark;
   padding: $padding-3xl;
-  display: inline-block;
-  margin-block: 20px;
-  margin-inline: 20px;
+  max-width: 20%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
   text-align: center;
+
+  &__details {
+    margin-bottom: 16px;
+  }
 
   &__img {
     border-radius: 50%;
@@ -21,7 +36,6 @@
 
   &__role {
     color: $color-text-secondary;
-    opacity: 0.82;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-block: 0;

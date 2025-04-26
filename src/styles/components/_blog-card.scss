@@ -1,29 +1,49 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.blog-card {
-  background-color: $color-background-block-dark;
-  display: inline-block;
+.blog-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 450px);
+  gap: 32px;
+}
 
-  &--large {
-    min-width: 512px;
-    padding: $padding-2xl;
-    margin-block: 24px;
-    margin-inline: 24px;
+.blog-card {
+  padding: $padding-2xl;
+  background-color: $color-background-block-dark;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child,
+  &:nth-child(5) {
+    grid-row-end: span 2;
   }
 
-  &--small {
-    padding: $padding-2xl;
-    margin-block: 30px;
-    margin-inline: 30px;
+  &__picture {
+    flex-grow: 1;
+    overflow: hidden;
+    max-height: 682px;
+  }
+
+  &__picture--small {
+    max-height: 198px;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
   }
 
   &__label {
     background-color: $color-text-base;
     padding-inline: $padding-sm;
-    padding-top: $padding-xs;
-    padding-block: $padding-sm;
+    padding-block: $padding-xs;
     display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
   }
 
   &__text-label {
@@ -32,20 +52,23 @@
     text-align: right;
   }
 
+  &__meta {
+    margin-block-start: 24px;
+  }
+
   &__author,
   &__date {
     color: $color-text-secondary;
     opacity: 0.82;
-    line-height: 20px;
+    line-height: $line-height-sm;
     letter-spacing: 0;
   }
 
   &__title {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
-    letter-spacing: 0;
     font-family: $font-headings;
-    margin-bottom: 10px;
+    margin-block: 16px 0;
   }
 
   &__description {
@@ -53,13 +76,17 @@
     opacity: 0.82;
     font-size: $font-size-md;
     line-height: $line-height-md;
+    margin-block: 0 16px;
   }
+}
+
+.blog-card__picture--small.blog-card__picture--custom .blog-card__img {
+  object-position: center 20%;
 }
 
 .blog-link {
   font-size: $font-size-md;
-  line-height: $line-height-md;
-  color: $color-text-base;
-  padding-block: $padding-xs;
+  height: 40px;
+  padding-block: $padding-2xs;
   padding-inline: $padding-xl;
 }

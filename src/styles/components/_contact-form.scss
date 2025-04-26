@@ -32,11 +32,11 @@
   }
 
   &__item {
-      display: flex;
-      flex-direction: column;
-      gap: 6px; 
-      margin-bottom: 24px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
 
   &__label {
     line-height: $line-height-sm;

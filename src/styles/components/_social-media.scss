@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.subarticle {
+  &__socials-item {
+    padding: $padding-xs;
+    margin-block: 5px;
+    margin-inline: 5px;
+    display: inline-block;
+    border: 2px solid $color-secondary-button-border;
+  }
+
+  &__socials-link {
+    color: $color-text-tertiary;
+    line-height: $line-height-sm;
+    align-items: center;
+    @include link-style(false);
+  }
+}
+
+.social-media-list {
+  margin: 0;
+}
+
+.social-media-list--team {
+  display: inline-block;
+  flex-wrap: nowrap;
+}

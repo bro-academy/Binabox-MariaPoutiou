@@ -6,20 +6,39 @@
   padding: $padding-4xl $padding-4xl $padding-3xl;
 
   &-upper {
+    display: flex;
+    top: 64px;
+    align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 64px;
   }
 
   &-lower {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 16px;
     border-top: 1px solid $color-background-block-secondary;
+    padding-top: $padding-3xl;
   }
 
   &__description {
     line-height: $line-height-sm;
   }
+
+  &-logo {
+    max-width: 320px;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    gap: 48px;
+  }
 }
 
 .footer-nav {
+  display: block;
+
   &__title {
     font-weight: 500;
     line-height: $line-height-lg;
@@ -36,14 +55,11 @@
 
     @include link-style(false);
   }
-
-  &__list {
-    margin: 0;
-  }
 }
 
 .copyright__text {
   line-height: $line-height-sm;
+  margin: 0;
 }
 
 .social-media__list-item {

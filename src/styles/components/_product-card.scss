@@ -1,5 +1,14 @@
 @use "../abstracts/variables" as *;
 
+.product-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+  margin-block: 40px 0;
+}
+
 .product-list__item {
   background-color: $color-background-block-dark;
   padding: $padding-2xl;
@@ -7,6 +16,12 @@
 }
 
 .product-card {
+  position: relative;
+
+  &__img-wrapper {
+    margin-bottom: 24px;
+  }
+
   &__img {
     object-fit: cover;
   }
@@ -38,6 +53,9 @@
   line-height: $line-height-sm;
   text-align: center;
   display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 
   &--updated {
     background-color: $color-updated-label;

@@ -3,13 +3,19 @@
 @mixin button-base {
   font-weight: $font-weight-secondary;
   font-size: $font-size-lg;
-  line-height: $line-height-lg;
+  line-height: $line-height-2md;
   text-align: center;
   border: 2px solid transparent;
   display: inline-block;
+  height: 48px;
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
   text-decoration: none;
+  font-family: $font-primary;
+  white-space: nowrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin button-focus {
