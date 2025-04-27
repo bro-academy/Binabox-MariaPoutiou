@@ -50,13 +50,13 @@
 @use "../layouts/hero-blog";
 
 /* ARTICLE SECTION */
-@use "../layouts/article";
+@use "../layouts/blog-article";
 
 /* SUBARTICLE SECTION */
 @use "../layouts/subarticle";
 
 /* ASIDE SECTION */
-@use "../layouts/aside";
+@use "../layouts/blog-aside";
 
 /********** FORM STARTS HERE ************/
 @use "../layouts/contact-page";

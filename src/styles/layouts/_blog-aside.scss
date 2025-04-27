@@ -1,10 +1,20 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.aside-section--blog {
+  flex-shrink: 1;
+  display: block;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
 .aside__block {
   background-color: $color-background-block-dark;
   padding: $padding-2xl;
   margin-block: 0 21px;
+  width: 328px;
+  min-width: 220px;
 
   &-title {
     padding-bottom: $padding-lg;
@@ -12,6 +22,7 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
+    margin-block: 0 24px;
   }
 
   &--lower {
@@ -19,7 +30,6 @@
   }
 
   &-item {
-    min-width: 200px;
     padding-block: $padding-2xs;
     padding-inline: $padding-md;
   }
