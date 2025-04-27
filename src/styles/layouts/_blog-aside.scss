@@ -1,9 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.aside-section--blog {
+.aside__section--blog {
   flex-shrink: 1;
-  display: block;
   position: sticky;
   top: 0;
   align-self: flex-start;
