@@ -4,15 +4,37 @@
 .hero-section {
   &__list {
     margin: 0;
-  }
-
-  &__nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
   }
 
   &__list-item {
-    display: inline-block;
-    margin: 20px;
+    padding-block: 6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 24px;
+      border-radius: 1px;
+      background-color: $color-divider;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  &__list-item--highlighted {
+    /* highlighted word */
+    color: $color-highlighted-word;
+    opacity: 0.66;
+    font-weight: $font-weight-secondary;
+    line-height: $line-height-sm;
   }
 
   &__link {
