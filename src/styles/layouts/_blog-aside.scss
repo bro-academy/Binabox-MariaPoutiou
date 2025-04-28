@@ -25,17 +25,14 @@
   }
 
   &--lower {
-    padding: $padding-2xl;
-  }
-
-  &-nav {
-    padding-top: 16px;
+    margin-bottom: 0;
   }
 
   &-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 0;
   }
 
   &-item {
@@ -49,4 +46,8 @@
 
     @include link-style(false);
   }
+}
+
+.tag-list--aside {
+  margin-bottom: 0;
 }

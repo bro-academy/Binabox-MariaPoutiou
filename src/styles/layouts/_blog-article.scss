@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
-  gap: 32px; 
+  gap: 32px;
   padding-inline: 108px;
   position: relative;
 }
@@ -144,9 +144,13 @@
   &__quote-text {
     color: $color-text-tertiary;
     font-size: $font-size-3xl;
-    line-height: $line-height-1xl;
+    line-height: $line-height-2xl;
     font-family: $font-headings;
     margin: 0;
+  }
+
+  &__quote-meta {
+    margin-top: 8px;
   }
 
   &__quote-value {
@@ -184,5 +188,4 @@
     left: 24px;
     bottom: 10px;
   }
-  }
-
+}
