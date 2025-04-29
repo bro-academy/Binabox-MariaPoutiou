@@ -4,25 +4,37 @@
   padding-top: $padding-4xl;
   padding-inline: $padding-4xl;
 
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0;
+  }
+
   &__item {
-    min-width: 40px;
-    max-width: 232px;
+    width: 328px;
     border: 1px solid $color-styling-grey;
     padding-block: $padding-3xxl;
     padding-inline: $padding-3xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &-title {
       font-size: $font-size-4xl;
       line-height: $line-height-4xl;
       text-align: $text-align-center;
       font-family: $font-headings;
+      margin-bottom: 0;
     }
 
     &-details {
       color: $color-text-secondary;
       font-size: $font-size-md;
       line-height: $line-height-md;
-      text-align: $text-align-center;
+      margin-block: 0;
     }
   }
 }
