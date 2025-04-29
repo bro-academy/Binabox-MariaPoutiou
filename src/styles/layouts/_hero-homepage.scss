@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as *;
+
+.hero-section {
+  &__home-title {
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+    letter-spacing: -0.5px;
+    margin-block: 0;
+    font-family: $font-headings;
+  }
+
+  &__home-brand {
+    color: $color-primary;
+  }
+
+  &__home-description {
+    font-weight: 500;
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    margin-block: 0 32px;
+  }
+
+  &__stats {
+    display: inline-block;
+  }
+
+  &__stat-value {
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 13px $color-shadow;
+    font-family: $font-headings;
+    margin: 0;
+  }
+
+  &__stat-label {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  &--home {
+    background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
+      #0d0d15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+  }
+
+  &__home-block {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  &__home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__home-text-content {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__home-img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+  }
+}

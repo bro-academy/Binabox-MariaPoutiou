@@ -1,6 +1,6 @@
-<section class="hero-section hero-section--catalog container">
+<section class="hero-section hero-section--banner container">
   <div class="hero-section__banner-text">
-    <h1 class="hero-section__catalog-title">{{ heroCatalog.title }}</h1>
+    <h1 class="hero-section__title">{{ heroCatalog.title }}</h1>
     <nav class="hero-section__nav">
       <ul class="hero-section__list">
         {% for item in heroCatalog.list %}
@@ -10,7 +10,7 @@
             >{{ item.text }}</a
           >
           {% else %}
-          <span class="hero-section__word hero-section__word--catalog"
+          <span class="hero-section__list-item hero-section__list-item--highlighted"
             >{{ item.text }}</span
           >
           {% endif %}

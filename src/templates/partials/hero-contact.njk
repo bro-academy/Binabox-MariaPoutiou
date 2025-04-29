@@ -1,8 +1,8 @@
-<section class="hero-section hero-section--contact container">
+<section class="hero-section hero-section--banner container">
   <div class="hero-section__banner-text">
-    <h1 class="hero-section__contact-title">{{ heroForm.title }}</h1>
+    <h1 class="hero-section__title">{{ heroForm.title }}</h1>
     <nav class="hero-section__nav">
-      <ul class="hero-section__list-contact">
+      <ul class="hero-section__list">
         {% for listItem in heroForm.list %}
         <li class="hero-section__list-item">
           {% if listItem.link %}
@@ -10,7 +10,7 @@
             >{{ listItem.item }}</a
           >
           {% else %}
-          <span class="hero-section__word hero-section__word--contact"
+          <span class="hero-section__list-item hero-section__list-item--highlighted"
             >{{ listItem.item }}</span
           >
           {% endif %}

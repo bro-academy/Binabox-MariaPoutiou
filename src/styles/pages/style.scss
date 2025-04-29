@@ -10,10 +10,8 @@
 @use "../components/product-card";
 @use "../components/social-media";
 @use "../components/tags";
-@use "../components/hero-contact-page";
 @use "../components/inputs";
 @use "../components/contact-form";
-@use "../components/hero-catalog-page";
 @use "../components/catalog-dropdown";
 @use "../components/cta-link";
 
@@ -23,7 +21,7 @@
 /******* HOMEAPAGE STARTS HERE  ********/
 
 /* HERO SECTION */
-@use "../layouts/hero-section";
+@use "../layouts/hero-homepage";
 
 /* CATALOG SECTION */
 @use "../layouts/catalog";
@@ -46,7 +44,7 @@
 /******* BLOG-ARTICLE STARTS HERE  ********/
 
 /* HERO SECTION BLOG PAGE */
-@use "../layouts/hero-blog";
+@use "../layouts/hero-section";
 
 /* ARTICLE SECTION */
 @use "../layouts/blog-article";
