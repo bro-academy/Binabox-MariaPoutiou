@@ -7,18 +7,14 @@ gaming and crypto." %} {% set page = "blog-article" %} {% block content %}
 {% include "partials/hero-blog.njk" %}
 
 <!--BLOG CONTENT-->
-<article class="blog-article">
-  {% include "partials/main-article.njk" %}
+<div class="container blog-layout">
+  <article class="blog-article">
+    {% include "partials/main-article.njk" %}
+  </article>
 
-  <!--NFT EXPLANATION-->
-  {% include "partials/subarticle.njk" %}
-</article>
-
-<!--SIDEBAR CATEGORIES-->
-<aside class="aside-section">
-  {% include "partials/aside-upper.njk" %}
-
-  <!--SIDEBAR TAG-->
-  {% include "partials/aside-lower.njk" %}
-</aside>
+  <!--SIDEBAR CATEGORIES-->
+  <aside class="aside-section aside__section--blog">
+    {% include "partials/aside-blog.njk" %}
+  </aside>
+</div>
 {% endblock %}

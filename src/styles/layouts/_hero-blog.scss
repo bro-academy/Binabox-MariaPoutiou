@@ -8,6 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding-top: $padding-4xl;
+    height: 375px;
   }
 
   &__blog-title {
@@ -21,14 +22,5 @@
 
   &__figure {
     margin: 0;
-  }
-
-  &__word--blog-article {
-    /* highlighted word */
-    color: $color-highlighted-word;
-    opacity: 0.66;
-    font-weight: $font-weight-secondary;
-    line-height: $line-height-sm;
-    text-align: center;
   }
 }

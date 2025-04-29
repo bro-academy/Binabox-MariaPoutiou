@@ -8,7 +8,6 @@
 @use "../components/hero-buttons";
 @use "../components/hero-nav";
 @use "../components/product-card";
-@use "../components/blog-card";
 @use "../components/social-media";
 @use "../components/tags";
 @use "../components/hero-contact-page";
@@ -30,7 +29,7 @@
 @use "../layouts/catalog";
 
 /* BLOG SECTION */
-@use "../layouts/our-blog";
+@use "../components/blog-card";
 
 /* ABOUT SECTION */
 @use "../layouts/about-us";
@@ -50,13 +49,13 @@
 @use "../layouts/hero-blog";
 
 /* ARTICLE SECTION */
-@use "../layouts/article";
+@use "../layouts/blog-article";
 
 /* SUBARTICLE SECTION */
 @use "../layouts/subarticle";
 
 /* ASIDE SECTION */
-@use "../layouts/aside";
+@use "../layouts/blog-aside";
 
 /********** FORM STARTS HERE ************/
 @use "../layouts/contact-page";

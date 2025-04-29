@@ -1,6 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.blog-section {
+  padding: $padding-4xl;
+}
+
 .blog-section__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

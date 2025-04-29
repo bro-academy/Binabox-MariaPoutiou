@@ -11,7 +11,14 @@
         {% for stat in heroStats %} {% include "partials/hero-stats.njk" %} {%
         endfor %}
       </div>
-      {% include "partials/hero-buttons.njk" %}
+      <div class="hero-section__buttons">
+        <button class="button button--primary">
+          {{ heroButtons.primary }}
+        </button>
+        <button class="button button--secondary">
+          {{ heroButtons.secondary }}
+        </button>
+      </div>
     </div>
   </div>
   <picture>

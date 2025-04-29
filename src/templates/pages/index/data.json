@@ -71,9 +71,12 @@
       {
         "link": "blog-article.html",
         "text": "Our blog"
+      },
+      {
+        "link": null,
+        "text": "The Basilisks NFT"
       }
-    ],
-    "textHighlighted": "The Basilisks NFT"
+    ]
   },
 
   "catalogSection": {
