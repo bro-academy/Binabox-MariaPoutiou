@@ -6,8 +6,10 @@
     padding: $padding-xs;
     margin-block: 5px;
     margin-inline: 5px;
-    display: inline-block;
     border: 2px solid $color-secondary-button-border;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
   }
 
   &__socials-link {

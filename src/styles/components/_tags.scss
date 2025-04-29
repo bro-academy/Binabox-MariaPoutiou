@@ -10,6 +10,9 @@
     padding-block: $padding-2xs;
     padding-inline: $padding-md;
     border: 2px solid $color-secondary-button-border;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
   }
 
   &__link {
