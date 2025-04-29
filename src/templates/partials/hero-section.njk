@@ -5,7 +5,9 @@
       <span class="hero-section__home-brand">{{ heroSection.brand }}</span>
       {{ heroSection.suffix }}
     </h1>
-    <h2 class="hero-section__home-description">{{ heroSection.description }}</h2>
+    <h2 class="hero-section__home-description">
+      {{ heroSection.description }}
+    </h2>
     <div class="hero-section__home-content">
       <div class="hero-section__home-text-content">
         {% for stat in heroStats %} {% include "partials/hero-stats.njk" %} {%
