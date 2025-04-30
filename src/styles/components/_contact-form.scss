@@ -30,16 +30,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
   }
 
   &__consent-text {
     line-height: $line-height-sm;
+    margin-block: auto;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     margin-bottom: 24px;
   }
 
@@ -112,10 +114,10 @@
 }
 
 .form__label--radio {
-  margin-bottom: 16px;
   display: flex;
   padding-left: 28px;
   position: relative;
+  gap: 8px;
 
   &::before {
     content: "";
