@@ -10,8 +10,13 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: center;
-    margin-bottom: auto;
+    margin: 0;
   }
+}
+
+/** i added a modifier here because the margin is different than other sections **/
+.section-title--about { 
+  margin-bottom: 16px;
 }
 
 .about-list {
