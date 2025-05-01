@@ -1,5 +1,9 @@
 @use "../abstracts/variables" as *;
 
+.team {
+  padding: $padding-4xl;
+}
+
 .team__list {
   display: flex;
   justify-content: center;

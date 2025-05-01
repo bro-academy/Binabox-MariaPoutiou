@@ -10,23 +10,25 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: center;
+    margin-bottom: auto;
   }
 }
 
 .about-list {
   counter-reset: about-counter;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 32px;
+  margin-block: 40px 0;
 
   &__item {
     position: relative;
     counter-increment: about-counter;
     background-color: $color-background-block-light;
-    padding: $padding-3xl $padding-3xl $padding-3xl 50px;
+    padding: $padding-3xl;
 
     &::before {
       content: "0" counter(about-counter);
@@ -37,6 +39,9 @@
       border: 2px;
       -webkit-text-stroke: 2px $color-primary;
       position: absolute;
+      top: 20px;
+      left: 32;
+      z-index: 0;
     }
   }
 
@@ -44,7 +49,9 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
-    margin-block: 0 24px;
+    margin-block: 30px 24px;
+    position: relative;
+    z-index: 1;
   }
 
   &__description {
@@ -52,5 +59,7 @@
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-block: 0;
+    position: relative;
+    z-index: 1;
   }
 }

@@ -1,11 +1,10 @@
 @use "../abstracts/variables" as *;
 
 .product-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   gap: 24px;
-  flex-wrap: nowrap;
   margin-block: 40px 0;
 }
 
