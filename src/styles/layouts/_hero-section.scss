@@ -1,78 +1,25 @@
 @use "../abstracts/variables" as *;
 
 .hero-section {
+  &--banner {
+    background-image: url("/img/hero-section-banner-background-2x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: $padding-4xl;
+    height: 375px;
+  }
+
   &__title {
     font-size: $font-size-5xl;
     line-height: $line-height-5xl;
     letter-spacing: -0.5px;
-    margin-block: 0;
+    text-align: center;
     font-family: $font-headings;
+    margin-block: 0 20px;
   }
 
-  &__brand {
-    color: $color-primary;
-  }
-
-  &__description {
-    font-weight: 500;
-    font-size: $font-size-xl;
-    line-height: $line-height-lg;
-    margin-block: 0 32px;
-  }
-
-  &__stats {
-    display: inline-block;
-  }
-
-  &__stat-value {
-    font-size: $font-size-5xl;
-    line-height: $line-height-5xl;
-    letter-spacing: 0.5px;
-    text-shadow: 0 4px 13px $color-shadow;
-    font-family: $font-headings;
+  &__figure {
     margin: 0;
-  }
-
-  &__stat-label {
-    font-size: $font-size-md;
-    line-height: $line-height-md;
-    letter-spacing: 0;
-    margin: 0;
-  }
-
-  &--homepage {
-    background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
-      #0d0d15;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 64px;
-  }
-
-  &__block {
-    flex: 1;
-    max-width: 600px;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  &__text-content {
-    display: flex;
-    gap: 64px;
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 16px;
-  }
-
-  &__img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
   }
 }

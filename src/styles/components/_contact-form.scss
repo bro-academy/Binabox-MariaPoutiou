@@ -11,6 +11,7 @@
     line-height: $line-height-4xl;
     text-align: $text-align-center;
     font-family: $font-headings;
+    margin-block: 64px 0;
   }
 
   &-description {
@@ -19,22 +20,28 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: $text-align-center;
+    margin-block: 8px 40px;
   }
 
   &__consent {
     background-color: $color-background-block-dark;
     padding: $padding-2xl;
-    margin-bottom: 52px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 
   &__consent-text {
     line-height: $line-height-sm;
+    margin-block: auto;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     margin-bottom: 24px;
   }
 
@@ -107,10 +114,10 @@
 }
 
 .form__label--radio {
-  margin-bottom: 16px;
   display: flex;
   padding-left: 28px;
   position: relative;
+  margin-bottom: 8px;
 
   &::before {
     content: "";

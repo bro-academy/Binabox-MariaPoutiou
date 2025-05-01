@@ -1,13 +1,15 @@
-<section class="hero-section hero-section--homepage container">
-  <div class="hero-section__block">
-    <h1 class="hero-section__title">
+<section class="container hero-section hero-section--home">
+  <div class="hero-section__home-block">
+    <h1 class="hero-section__home-title">
       {{ heroSection.prefix }}
-      <span class="hero-section__brand">{{ heroSection.brand }}</span>
+      <span class="hero-section__home-brand">{{ heroSection.brand }}</span>
       {{ heroSection.suffix }}
     </h1>
-    <h2 class="hero-section__description">{{ heroSection.description }}</h2>
-    <div class="hero-section__content">
-      <div class="hero-section__text-content">
+    <h2 class="hero-section__home-description">
+      {{ heroSection.description }}
+    </h2>
+    <div class="hero-section__home-content">
+      <div class="hero-section__home-text-content">
         {% for stat in heroStats %} {% include "partials/hero-stats.njk" %} {%
         endfor %}
       </div>
@@ -31,7 +33,7 @@
       type="image/webp"
     />
     <img
-      class="hero-section__img"
+      class="hero-section__home-img"
       src="/img/{{ heroSection.img }}-2x.webp"
       alt="{{ heroSection.alt }}"
       width="534"
