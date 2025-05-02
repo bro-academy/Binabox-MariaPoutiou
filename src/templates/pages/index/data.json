@@ -95,35 +95,135 @@
       "alt": "futiristc skeleton in front of smoke",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttons": false,
+      "section": "homepage"
     },
     {
       "img": "product-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttons": false,
+      "section": "homepage"
     },
     {
       "img": "product-scissors",
       "alt": "futuristic dark colored scissors",
       "label": "Sold out",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttons": false,
+      "section": "homepage"
     },
     {
       "img": "product-digital-card",
       "alt": "glowing green futuristic digital card",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttons": false,
+      "section": "homepage"
     },
     {
       "img": "product-console",
       "alt": "cyberpunk holographic game console",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttons": false,
+      "section": "homepage"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": true,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "Sold out",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
+    },
+
+    {
+      "img": "sonic-live-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttons": false,
+      "section": "catalog"
     }
   ],
 

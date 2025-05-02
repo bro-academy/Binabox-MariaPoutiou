@@ -18,7 +18,15 @@
           height="324"
           loading="lazy"
         />
+                    {% if product.buttons %}
+        <div class="product-card__buttons">
+          <button class="button button--quarterly">♥ Favourites</button>
+          <button class="button button--primary">Buy</button>
+        </div>
+      {% endif %}
       </picture>
+
+    </div>
       <div
         class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"
       >

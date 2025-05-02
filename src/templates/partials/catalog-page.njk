@@ -1,0 +1,15 @@
+<section class="container catalog">
+    <div class="catalog__page-header">
+    <h2 class="section-title section-title--catalog-page">All item</h2>
+      {% include "partials/dropdown.njk" %}
+    {% include "partials/catalog-search.njk" %}
+{% include "partials/catalog-page-header.njk" %}
+</div>
+<ul class="product-wrapper">
+  {% for product in products %}
+    {% if product.section == "catalog" %}
+      {% include "partials/product-card.njk" %}
+    {% endif %}
+  {% endfor %}
+</ul>
+</section>

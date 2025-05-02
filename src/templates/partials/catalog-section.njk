@@ -1,4 +1,4 @@
-<section class="catalog-section container">
+<section class="container catalog-section">
   <div class="catalog-header">
     <div class="catalog-header__title">
       <h3 class="section-title section-title--catalog">
@@ -9,8 +9,11 @@
       {% include "partials/catalog-buttons.njk" %}
     </div>
   </div>
-  <ul class="product-wrapper">
-    {% for product in products %} {% set product = product %} {% include
-    "partials/product-card.njk" %} {% endfor %}
-  </ul>
+<ul class="product-wrapper">
+  {% for product in products %}
+    {% if product.section == "homepage" %}
+      {% include "partials/product-card.njk" %}
+    {% endif %}
+  {% endfor %}
+</ul>
 </section>
