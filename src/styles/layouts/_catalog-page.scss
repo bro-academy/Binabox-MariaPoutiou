@@ -1,0 +1,12 @@
+.catalog-layout {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: 64px;
+    position: relative;
+  }
+
+  .catalog {
+    flex: 1;
+    max-width: 1024px;
+  }

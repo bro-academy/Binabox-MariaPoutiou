@@ -18,20 +18,18 @@
           height="324"
           loading="lazy"
         />
-                    {% if product.buttons %}
-        <div class="product-card__buttons">
-          <button class="button button--quarterly">♥ Favourites</button>
-          <button class="button button--primary">Buy</button>
-        </div>
-      {% endif %}
       </picture>
-
-    </div>
-      <div
-        class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"
-      >
-        {{ product.label }}
+      {% if product.buttons %}
+      <div class="product-card__buttons">
+        <button class="button button--quarterly">Favourites</button>
+        <button class="button button--primary">Buy</button>
       </div>
+      {% endif %}
+    </div>
+    <div
+      class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"
+    >
+      {{ product.label }}
     </div>
     <p class="product-card__price">{{ product.price }}</p>
     <h4 class="product-card__name">{{ product.name }}</h4>

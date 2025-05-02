@@ -6,6 +6,9 @@ clothing, eyes, and skin. Discover the most unique NFTs easily." %} {% set page
 <!--HERO SECTION-->
 {% include "partials/hero-catalog.njk" %}
 <!--MAIN-->
-{% include "partials/catalog-page.njk"%}
-<!--ASIDE-->
-{% include "partials/aside-catalog.njk" %} {% endblock %}
+<div class="container catalog-layout">
+  {% include "partials/catalog-page.njk"%}
+  <!--ASIDE-->
+  {% include "partials/aside-catalog.njk" %}
+</div>
+{% endblock %}

@@ -9,11 +9,8 @@
       {% include "partials/catalog-buttons.njk" %}
     </div>
   </div>
-<ul class="product-wrapper">
-  {% for product in products %}
-    {% if product.section == "homepage" %}
-      {% include "partials/product-card.njk" %}
-    {% endif %}
-  {% endfor %}
-</ul>
+  <ul class="product-wrapper">
+    {% for product in products %} {% if product.section == "homepage" %} {%
+    include "partials/product-card.njk" %} {% endif %} {% endfor %}
+  </ul>
 </section>
