@@ -1,12 +1,58 @@
+@use "../abstracts/variables" as *;
+
 .catalog-layout {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    gap: 64px;
-    position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 32px;
+  justify-content: center;
   }
 
   .catalog {
     flex: 1;
     max-width: 1024px;
+  }
+
+  .product-wrapper--catalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 32px;
+    margin-block: 64px;
+  }
+
+  .catalog__page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog__page-functions {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog__header-buttons {
+    background-color: #1D1C28;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-block: 32px;
+  }
+
+  .button__catalog {
+    height: 32px;
+    padding-block: 6px;
+    padding-inline: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .section-title--catalog-page {
+    margin: 0;
   }

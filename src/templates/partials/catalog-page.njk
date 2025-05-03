@@ -1,11 +1,13 @@
 <section class="catalog">
   <div class="catalog__page-header">
     <h2 class="section-title section-title--catalog-page">All item</h2>
+    <div class="catalog__page-functions">
     {% include "partials/dropdown.njk" %} {% include
     "partials/catalog-search.njk" %}
+    </div>
   </div>
   {% include "partials/catalog-page-header.njk" %}
-  <ul class="product-wrapper">
+  <ul class="product-wrapper product-wrapper--catalog">
     {% for product in products %} {% if product.section == "catalog" %} {%
     include "partials/product-card.njk" %} {% endif %} {% endfor %}
   </ul>
