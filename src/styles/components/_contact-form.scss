@@ -45,6 +45,10 @@
     margin-bottom: 24px;
   }
 
+  &__item-label {
+    margin-block: 2px 8px;
+  }
+
   &__label {
     line-height: $line-height-sm;
   }

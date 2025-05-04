@@ -1,5 +1,9 @@
 @use "../abstracts/variables" as *;
 
+.form-aside {
+  margin-right: 64px;
+}
+
 .aside__input,
 .aside-radio {
   position: absolute;

@@ -1,70 +1,76 @@
 @use "../abstracts/variables" as *;
 
-.catalog-layout {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  gap: 32px;
-  justify-content: center;
-  }
+.catalog {
+  flex: 1;
+  max-width: 1024px;
 
-  .catalog {
-    flex: 1;
-    max-width: 1024px;
-  }
-
-  .product-wrapper--catalog {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  &-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
     gap: 32px;
-    margin-block: 64px;
-
-    &:nth-child(2) {
-      position: relative;
-    }
+    justify-content: center;
   }
 
-  .product-card__buttons {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 80%;
-    gap: 24px;
-    top: 100px;
-  }
-
-  .catalog__page-header {
+  &__page-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .catalog__page-functions {
+  &__page-functions {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 16px;
     justify-content: space-between;
     align-items: center;
   }
 
-  .catalog__header-buttons {
-    background-color: #1D1C28;
-    padding: 16px;
+  &__header-buttons {
+    background-color: #1d1c28;
+    padding: $padding-lg;
     display: flex;
     gap: 16px;
     align-items: flex-start;
     margin-block: 32px;
   }
+}
 
-  .button__catalog {
-    height: 32px;
-    padding-block: 6px;
-    padding-inline: 12px;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.product__wrapper-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
 
-  .section-title--catalog-page {
-    margin: 0;
+  &:nth-child(2) {
+    position: relative;
   }
+}
+
+.product-card__buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  gap: 24px;
+  top: 100px;
+  margin-inline: 40px;
+}
+
+.button__catalog {
+  height: 32px;
+  padding-block: $padding-2xs;
+  padding-inline: $padding-md;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  align-items: center;
+}
+
+.button__product-card {
+  height: 52px;
+}
+
+.section-title--catalog-page {
+  margin: 0;
+}

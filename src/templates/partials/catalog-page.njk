@@ -7,7 +7,7 @@
     </div>
   </div>
   {% include "partials/catalog-page-header.njk" %}
-  <ul class="product-wrapper product-wrapper--catalog">
+  <ul class="product__wrapper-catalog">
     {% for product in products %} {% if product.section == "catalog" %} {%
     include "partials/product-card.njk" %} {% endif %} {% endfor %}
   </ul>
