@@ -1,18 +1,20 @@
 {% set currentPage = "Blog" %} {% extends "layouts/base.njk" %} {% set title =
-"BINABOX - The Basilisks NFT & Crypto Gaming Insights" %} {% set description =
+"BINABOX - The Basilisks NFT & Crypto Gaming Insights" %}
+{% set description =
 "Explore the latest insights on NFTs, blockchain gaming, and metaverse trends.
 Learn about The Basilisks NFT, digital assets, and how they shape the future of
-gaming and crypto." %} {% set page = "blog-article" %} {% block content %}
+gaming and crypto." %}
+{% set page = "blog-article" %} {% block content %}
 <!--HERO SECTION-->
 {% include "partials/hero-blog.njk" %}
 
 <!--BLOG CONTENT-->
 <div class="container blog-layout">
   <article class="blog-article">
-    {% include "pages/index/main-article.njk" %}
+    {% include "partials/main-article.njk" %}
   </article>
 
   <!--SIDEBAR CATEGORIES-->
-  <aside class="aside-section">{% include "pages/index/aside-blog.njk" %}</aside>
+  <aside class="aside-section">{% include "partials/aside-blog.njk" %}</aside>
 </div>
 {% endblock %}
