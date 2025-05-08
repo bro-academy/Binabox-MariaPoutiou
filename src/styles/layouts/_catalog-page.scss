@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 
 .catalog {
-  flex: 1;
   max-width: 1024px;
 
   &-layout {
@@ -41,20 +40,6 @@
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 32px;
   margin-bottom: 64px;
-
-  &:nth-child(2) {
-    position: relative;
-  }
-}
-
-.product-card__buttons {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  gap: 24px;
-  top: 100px;
-  margin-inline: 40px;
 }
 
 .button__catalog {
@@ -64,10 +49,6 @@
   font-size: $font-size-sm;
   line-height: $line-height-sm;
   align-items: center;
-}
-
-.button__product-card {
-  height: 52px;
 }
 
 .section-title--catalog-page {

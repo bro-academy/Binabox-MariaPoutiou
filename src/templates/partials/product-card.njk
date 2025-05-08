@@ -19,12 +19,10 @@
           loading="lazy"
         />
       </picture>
-      {% if product.buttons %}
       <div class="product-card__buttons">
-        <button class="button button__product-card button--quarterly">Favourites</button>
-        <button class="button button__product-card button--primary">Buy</button>
+        <button class="button button__product-card button--quarterly">{{ product.buttonOne }}</button>
+        <button class="button button__product-card button--primary">{{ product.buttonTwo }}</button>
       </div>
-      {% endif %}
     </div>
     <div
       class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"

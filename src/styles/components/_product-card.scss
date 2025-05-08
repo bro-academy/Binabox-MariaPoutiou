@@ -13,11 +13,22 @@
   padding: $padding-2xl;
 }
 
+.product-card__buttons {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: calc(100% - 32px);
+  gap: 24px;
+  bottom: 67px;
+  margin-inline: 16px;
+}
+
 .product-card {
   position: relative;
 
   &__img-wrapper {
     margin-bottom: 24px;
+    position: relative;
   }
 
   &__img {
@@ -42,6 +53,10 @@
   }
 }
 
+.product-card:hover .product-card__buttons {
+  display: flex;
+}
+
 .product-label {
   background-color: $color-text-base;
   padding-block: $padding-xs;
@@ -59,4 +74,9 @@
     background-color: $color-updated-label;
     color: $color-text-base;
   }
+}
+
+.product-card:hover .product-card__img,
+.product-card:hover .product-label {
+  opacity: 0.3;
 }

@@ -96,7 +96,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "homepage"
     },
     {
@@ -105,7 +106,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "homepage"
     },
     {
@@ -114,7 +116,8 @@
       "label": "Sold out",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "homepage"
     },
     {
@@ -123,7 +126,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "homepage"
     },
     {
@@ -132,7 +136,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "homepage"
     },
 
@@ -142,7 +147,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -152,7 +158,8 @@
       "label": "Popular",
       "price": "$199",
       "name": "Name Product",
-      "buttons": true,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -162,7 +169,8 @@
       "label": "Sold out",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -172,7 +180,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -182,7 +191,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -192,7 +202,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -202,7 +213,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -212,7 +224,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     },
 
@@ -222,7 +235,8 @@
       "label": "New",
       "price": "$199",
       "name": "Name Product",
-      "buttons": false,
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
       "section": "catalog"
     }
   ],
