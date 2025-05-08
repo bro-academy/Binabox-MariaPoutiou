@@ -53,6 +53,10 @@
   }
 }
 
+.product-card:hover {
+  opacity: 0.3;
+}
+
 .product-card:hover .product-card__buttons {
   display: flex;
 }
