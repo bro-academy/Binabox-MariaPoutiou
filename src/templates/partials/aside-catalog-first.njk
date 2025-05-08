@@ -3,8 +3,9 @@
     <summary class="aside__block-summary">
       <h3 class="aside__block-title">{{ asideClothing.title }}</h3>
     </summary>
+    <div class="aside__block-wrapper">
     {% for option in asideClothing.options %}
-    <div class="aside__block-item aside-block--checkbox">
+    <div class="aside__block-item-catalog">
       <input
         class="visually-hidden aside__input aside__input--checkbox"
         type="{{ asideClothing.type }}"
@@ -20,5 +21,6 @@
       </label>
     </div>
     {% endfor %}
+    </div>
   </details>
 </section>
