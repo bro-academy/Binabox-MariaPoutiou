@@ -6,7 +6,7 @@
   &__description {
     color: $color-text-secondary;
     opacity: 0.82;
-    font-weight: 500;
+    font-weight: $font-weight-tertiary;
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: center;
@@ -15,7 +15,7 @@
 }
 
 /** i added a modifier here because the margin is different than other sections **/
-.section-title--about { 
+.section-title--about {
   margin-bottom: 16px;
 }
 

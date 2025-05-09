@@ -19,10 +19,6 @@
           loading="lazy"
         />
       </picture>
-      <div class="product-card__buttons">
-        <button class="button button__product-card button--quarterly">{{ product.buttonOne }}</button>
-        <button class="button button__product-card button--primary">{{ product.buttonTwo }}</button>
-      </div>
     </div>
     <div
       class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"
@@ -32,4 +28,8 @@
     <p class="product-card__price">{{ product.price }}</p>
     <h4 class="product-card__name">{{ product.name }}</h4>
   </article>
+  <div class="product-list__buttons">
+    <button class="button button--quarterly">{{ product.buttonOne }}</button>
+    <button class="button button--primary">{{ product.buttonTwo }}</button>
+  </div>
 </li>
