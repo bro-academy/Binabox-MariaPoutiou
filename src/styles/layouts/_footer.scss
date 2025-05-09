@@ -40,7 +40,7 @@
   display: block;
 
   &__title {
-    font-weight: 500;
+    font-weight: $font-weight-tertiary;
     line-height: $line-height-lg;
     font-size: $font-size-xl;
     margin-block: 0 8px;

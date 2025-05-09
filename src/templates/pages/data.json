@@ -95,35 +95,149 @@
       "alt": "futiristc skeleton in front of smoke",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "homepage"
     },
     {
       "img": "product-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "homepage"
     },
     {
       "img": "product-scissors",
       "alt": "futuristic dark colored scissors",
       "label": "Sold out",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "homepage"
     },
     {
       "img": "product-digital-card",
       "alt": "glowing green futuristic digital card",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "homepage"
     },
     {
       "img": "product-console",
       "alt": "cyberpunk holographic game console",
       "label": "New",
       "price": "$199",
-      "name": "Name Product"
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "homepage"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "Popular",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "Sold out",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
+    },
+
+    {
+      "img": "medusa-face",
+      "alt": "abstract cyber face illustration",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product",
+      "buttonOne": "Favourites",
+      "buttonTwo": "Buy",
+      "section": "catalog"
     }
   ],
 

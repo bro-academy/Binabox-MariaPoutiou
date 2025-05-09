@@ -45,6 +45,10 @@
     margin-bottom: 24px;
   }
 
+  &__item-label {
+    margin-block: 2px 8px;
+  }
+
   &__label {
     line-height: $line-height-sm;
   }
@@ -115,7 +119,7 @@
 
 .form__label--radio {
   display: flex;
-  padding-left: 28px;
+  padding-left: $padding-1xl;
   position: relative;
   margin-bottom: 8px;
 

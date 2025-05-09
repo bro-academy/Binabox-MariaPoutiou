@@ -1,0 +1,13 @@
+{% set currentPage = "Catalog" %} {% extends "layouts/base.njk" %} {% set title
+= "Explore NFT Catalog | BINABOX Rarity Checker" %} 
+{% set description = "Explore the BINABOX NFT catalog with powerful filters for rarity traits like clothing, eyes, and skin. Discover the most unique NFTs easily." %} 
+{% set page= "catalog" %} {% block content %}
+<!--HERO SECTION-->
+{% include "partials/hero-catalog.njk" %}
+<!--MAIN-->
+<div class="container catalog-layout">
+  {% include "partials/catalog-page.njk"%}
+  <!--ASIDE-->
+  {% include "partials/aside-catalog.njk" %}
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+
+.catalog {
+  max-width: 1024px;
+
+  &-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__page-functions {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-buttons {
+    background-color: #1d1c28;
+    padding: $padding-lg;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-block: 32px;
+  }
+}
+
+.product__wrapper-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.button__catalog {
+  height: 32px;
+  padding-block: $padding-2xs;
+  padding-inline: $padding-md;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  align-items: center;
+}
+
+.section-title--catalog-page {
+  margin: 0;
+}
