@@ -1,7 +1,26 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .team {
   padding: $padding-4xl;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 64px;
+    padding-inline: 24px;
+  }
+
+  @include mobile {
+    padding-block: 32px;
+    padding-inline: 16px;
+  }
+}
+
+.section-title--team {
+  @include tablet {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 .team__list {
@@ -10,6 +29,33 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+    margin-block: 0;
+
+  }
 }
 
 .team-member {
@@ -22,6 +68,20 @@
   align-items: center;
   overflow: hidden;
   text-align: center;
+
+  @include laptop {
+    max-width: 100%;
+  }
+
+  @include tablet {
+    flex: 0 0 293px;
+    width: 293px;
+  }
+
+  @include mobile {
+    flex: 0 0 240px;
+    width: 293px;
+  }
 
   &__details {
     margin-bottom: 16px;
@@ -43,5 +103,11 @@
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-block: 0;
+  }
+}
+
+@include mobile {
+  .team-member:last-child {
+    grid-column: 2;
   }
 }

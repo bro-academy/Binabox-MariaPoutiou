@@ -3,6 +3,18 @@
 
 .blog-section {
   padding: $padding-4xl;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 64px;
+    padding-inline: 24px;
+  }
+
+  @include mobile {
+    padding-block: 32px;
+    padding-inline: 16px; 
+    overflow-x: auto; 
+  }
 }
 
 .blog-section__grid {
@@ -10,6 +22,28 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 450px);
   gap: 32px;
+
+  @include laptop {
+    grid-template-columns: 1fr 96px 1fr;
+    grid-template-rows: repeat(4, 450px);
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 450px);
+    gap: 32px;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .blog-card {
@@ -19,19 +53,59 @@
   display: flex;
   flex-direction: column;
 
-  &:first-child,
-  &:nth-child(5) {
-    grid-row-end: span 2;
+  @include desktop {
+    &:first-child,
+    &:nth-child(5) {
+      grid-row-end: span 2;
+    }
+  }
+
+  @include laptop {
+    &:not(:first-child):not(:nth-child(5)) {
+      grid-column-end: span 2;
+    }
+  }
+
+  @include tablet {
+    grid-row-end: unset;
+    grid-column-end: unset;
+
+    &:first-child,
+    &:nth-child(5) {
+      grid-row-end: unset;
+    }
+  }
+
+  @include mobile {
+    flex: 0 0 293px;
+    scroll-snap-align: start;
+
+    &:first-child,
+    &:nth-child(5) {
+      grid-row-end: unset;
+    }
   }
 
   &__picture {
     flex-grow: 1;
     overflow: hidden;
     max-height: 682px;
+
+    @include tablet {
+      flex-grow: unset; 
+    }
+  
+    @include mobile {
+      flex-grow: unset;
+    }
   }
 
   &__picture--small {
     max-height: 198px;
+
+    @include tablet {
+      max-height: unset;
+    }
   }
 
   &__img {
@@ -73,6 +147,16 @@
     line-height: $line-height-4xl;
     font-family: $font-headings;
     margin-block: 16px 0;
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   &__description {

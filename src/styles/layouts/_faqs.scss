@@ -1,9 +1,22 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .faqs {
   padding-top: $padding-4xl;
   padding-inline: $padding-4xl;
   padding-bottom: 104px;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 64px;
+    padding-inline: 24px;
+  }
+
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-inline: 16px;
+  }
 
   &__item {
     background-color: $color-background-block-dark;
@@ -24,6 +37,16 @@
     line-height: $line-height-xl;
     font-family: $font-headings;
     margin-block: 0;
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    @include mobile {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 
   &__answer {
