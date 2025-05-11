@@ -74,3 +74,25 @@
     color: $color-active;
   }
 }
+
+@mixin desktop {
+  @media screen and (max-width: #{$screen-desktop}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: #{$screen-laptop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: #{$screen-mobile}) {
+    @content;
+  }
+}

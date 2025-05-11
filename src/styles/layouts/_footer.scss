@@ -5,12 +5,32 @@
   background-color: $color-background-block-light;
   padding: $padding-4xl $padding-4xl $padding-3xl;
 
+  @include mobile {
+    padding-inline: $padding-lg;
+    padding-block: $padding-4xl $padding-3xl;
+  }
+
+  @include tablet {
+    padding-inline: $padding-2xl;
+    padding-block: $padding-4xl $padding-3xl;
+  }
+
   &-upper {
     display: flex;
     top: 64px;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 64px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      gap: 36px;
+    }
   }
 
   &-lower {
@@ -20,10 +40,20 @@
     gap: 16px;
     border-top: 1px solid $color-background-block-secondary;
     padding-top: $padding-3xl;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
   }
 
   &__description {
     line-height: $line-height-sm;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &-logo {
@@ -59,9 +89,18 @@
 
 .copyright__text {
   line-height: $line-height-sm;
+  white-space: nowrap;
   margin: 0;
 }
 
 .social-media__list-item {
   display: inline-block;
 }
+
+.social-media-list--footer {
+  @include mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+

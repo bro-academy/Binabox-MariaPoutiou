@@ -1,4 +1,10 @@
 <header class="header container">
+  <div class="header__menu-wrapper">
+  <div class="header__burger-wrapper">
+    <div class="header__burger-btn">
+    <img class="header__burger-img" src="{{ header.burgerImg }}" alt="{{ header.burgerAlt }}">
+    </div>
+    </div>
   <div class="header-logo">
     <a class="header-logo__link" href="{{ header.logolink }}">
       <img
@@ -8,6 +14,7 @@
         loading="eager"
       />
     </a>
+  </div>
   </div>
   <nav class="main-nav">
     <ul class="main-nav-list">
