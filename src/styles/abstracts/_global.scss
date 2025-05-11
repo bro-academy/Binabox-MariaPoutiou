@@ -11,6 +11,14 @@ body {
   font-family: $font-primary;
   font-weight: $font-weight-primary;
   font-size: $font-size-sm;
+
+  @include tablet {
+    overflow-x: hidden;
+  }
+
+  @include mobile {
+    overflow-x: hidden;
+  }
 }
 
 h1,
@@ -33,24 +41,23 @@ img {
 }
 
 .container {
-
   @include desktop {
-      width: 100%;
-      padding-inline: $padding-4xl;
-    }
+    width: 100%;
+    padding-inline: $padding-4xl;
+  }
 
   @include laptop {
     width: 100%;
-    padding-inline: $padding-4xl
+    padding-inline: $padding-4xl;
   }
 
   @include tablet {
     width: 100%;
     padding-inline: $padding-2xl;
-    }
+  }
 
   @include mobile {
     width: 100%;
     padding-inline: $padding-lg;
-    }
   }
+}
