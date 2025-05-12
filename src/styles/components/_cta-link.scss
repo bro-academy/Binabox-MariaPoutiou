@@ -4,14 +4,6 @@
 .cta-more {
   margin-top: 40px;
   text-align: center;
-
-  @include tablet {
-    width: 100%;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
 .button--cta {

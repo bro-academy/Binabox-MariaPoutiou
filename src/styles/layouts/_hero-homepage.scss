@@ -76,12 +76,12 @@
     }
   
     @include tablet {
-      padding-inline: 24px;
+      padding-inline: $padding-2xl;
     }
   
     @include mobile {
-      padding-inline: 16px;
-      padding-block: 23px;
+      padding-inline: $padding-lg;
+      padding-block: $padding-3xl;
     }
   }
 

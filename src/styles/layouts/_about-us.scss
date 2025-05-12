@@ -5,14 +5,14 @@
   padding: $padding-4xl;
 
   @include mobile {
-  padding-block: 32px;
-  padding-inline: 16px;
+  padding-block: $padding-3xl;
+  padding-inline: $padding-lg;
   }
 
   @include tablet {
     padding-top: 0;
-    padding-bottom: 64px;
-    padding-inline: 24px;
+    padding-bottom: $padding-4xl;
+    padding-inline: $padding-2xl;
   }
 
 
@@ -106,13 +106,13 @@
     z-index: 1;
 
     @include tablet {
-      font-size: 28px;
-      line-height: 26px;
+      font-size: $font-size-3xl;
+      line-height: $line-height-2md;
     }
 
     @include mobile {
-      font-size: 28px;
-      line-height: 26px;
+      font-size: $font-size-3xl;
+      line-height: $line-height-2md;
     }
   }
 

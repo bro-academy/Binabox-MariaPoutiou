@@ -8,14 +8,14 @@
 
   @include tablet {
     padding-top: 0;
-    padding-bottom: 64px;
-    padding-inline: 24px;
+    padding-bottom: $padding-4xl;
+    padding-inline: $padding-2xl;
   }
 
   @include mobile {
-    padding-top: 32px;
-    padding-bottom: 64px;
-    padding-inline: 16px;
+    padding-top: $padding-3xl;
+    padding-bottom: $padding-4xl;
+    padding-inline: $padding-lg;
   }
 
   &__item {
@@ -39,13 +39,13 @@
     margin-block: 0;
 
     @include tablet {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: $font-size-3xl;
+      line-height: $line-height-2xl;
     }
 
     @include mobile {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: $font-size-3xl;
+      line-height: $line-height-2xl;
     }
   }
 

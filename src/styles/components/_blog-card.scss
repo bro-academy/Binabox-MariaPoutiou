@@ -6,13 +6,13 @@
 
   @include tablet {
     padding-top: 0;
-    padding-bottom: 64px;
-    padding-inline: 24px;
+    padding-bottom: $padding-4xl;
+    padding-inline: $padding-2xl;
   }
 
   @include mobile {
-    padding-block: 32px;
-    padding-inline: 16px; 
+    padding-block: $padding-3xl;
+    padding-inline: $padding-lg;
     overflow-x: auto; 
   }
 }
@@ -40,7 +40,7 @@
     flex-wrap: nowrap;
     gap: 32px;
     overflow-x: auto;
-    padding-bottom: 16px;
+    padding-bottom: $padding-lg;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
@@ -149,13 +149,13 @@
     margin-block: 16px 0;
 
     @include tablet {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: $font-size-3xl;
+      line-height: $line-height-2xl;
     }
 
     @include mobile {
-      font-size: 24px;
-      line-height: 32px;
+      font-size: $font-size-2xl;
+      line-height: $line-height-xl;
     }
   }
 
