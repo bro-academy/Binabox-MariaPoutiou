@@ -3,16 +3,9 @@
 
 .footer {
   background-color: $color-background-block-light;
-  padding-inline: $padding-lg;
-  padding-block: $padding-4xl $padding-3xl;
 
-  @include tablet {
-    padding-inline: $padding-2xl;
+  @include mobile {
     padding-block: $padding-4xl $padding-3xl;
-  }
-
-  @include laptop {
-    padding: $padding-4xl $padding-4xl $padding-3xl;
   }
 
   &-upper {

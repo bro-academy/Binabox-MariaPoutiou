@@ -2,17 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .about {
-  padding-block: $padding-3xl;
-  padding-inline: $padding-lg;
+  @include mobile {
+    padding-block: 32px;
+  }
 
   @include tablet {
     padding-top: 0;
     padding-bottom: $padding-4xl;
-    padding-inline: $padding-2xl;
   }
 
   @include laptop {
-    padding: $padding-4xl;
+    padding-block: $padding-4xl;
   }
 
   &__description {

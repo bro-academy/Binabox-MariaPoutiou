@@ -35,17 +35,16 @@ img {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-inline: $padding-lg;
+
+  @include mobile {
+    padding-inline: $padding-lg;
+  }
 
   @include tablet {
     padding-inline: $padding-2xl;
   }
 
   @include laptop {
-    padding-inline: $padding-4xl;
-  }
-
-  @include desktop {
     padding-inline: $padding-4xl;
   }
 }

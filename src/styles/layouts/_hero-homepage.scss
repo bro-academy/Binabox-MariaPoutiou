@@ -76,11 +76,11 @@
 
     @include tablet {
       padding-inline: $padding-2xl;
+      padding-block: $padding-4xl;
     }
 
     @include laptop {
-      padding-inline: 118px;
-      padding-block: 56px;
+      padding-inline: 164px;
     }
   }
 
