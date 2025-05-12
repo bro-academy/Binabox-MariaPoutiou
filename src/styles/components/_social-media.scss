@@ -16,6 +16,7 @@
     color: $color-text-tertiary;
     line-height: $line-height-sm;
     align-items: center;
+
     @include link-style(false);
   }
 }

@@ -2,22 +2,22 @@
 @use "../abstracts/mixins" as *;
 
 .team {
-  padding: $padding-4xl;
+  padding-block: $padding-3xl;
+  padding-inline: $padding-lg;
 
-  @include tablet {
+  @include tablet { 
     padding-top: 0;
     padding-bottom: $padding-4xl;
     padding-inline: $padding-2xl;
   }
 
-  @include mobile {
-    padding-block: $padding-3xl;
-    padding-inline: $padding-lg;
+  @include laptop { 
+    padding: $padding-4xl;
   }
 }
 
 .section-title--team {
-  @include tablet {
+  @include tablet { 
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
   }
@@ -25,10 +25,17 @@
 
 .team__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: $padding-lg;
+  -webkit-overflow-scrolling: touch;
+  margin-block: 0;
+
+  @include tablet {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
 
   @include laptop {
     display: grid;
@@ -37,50 +44,40 @@
     justify-items: center;
   }
 
-  @include tablet {
+  @include desktop {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 32px;
-    overflow-x: auto;
-    padding-bottom: $padding-lg;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  @include mobile {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 16px;
-    overflow-x: auto;
-    padding-bottom: $padding-lg;
-    -webkit-overflow-scrolling: touch;
-    margin-block: 0;
-
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .team-member {
   background-color: $color-background-block-dark;
   padding: $padding-3xl;
-  max-width: 20%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   text-align: center;
-
-  @include laptop {
-    max-width: 100%;
-  }
+  flex: 0 0 240px;
+  width: 293px;
 
   @include tablet {
     flex: 0 0 293px;
     width: 293px;
   }
 
-  @include mobile {
-    flex: 0 0 240px;
-    width: 293px;
+  @include laptop {
+    max-width: 100%;
+    flex: unset;
+    width: auto;
+  }
+
+  @include desktop {
+    max-width: 20%;
+    width: auto;
   }
 
   &__details {

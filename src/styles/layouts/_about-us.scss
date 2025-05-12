@@ -2,12 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 .about {
-  padding: $padding-4xl;
-
-  @include mobile {
   padding-block: $padding-3xl;
   padding-inline: $padding-lg;
-  }
 
   @include tablet {
     padding-top: 0;
@@ -15,6 +11,9 @@
     padding-inline: $padding-2xl;
   }
 
+  @include laptop {
+    padding: $padding-4xl;
+  }
 
   &__description {
     color: $color-text-secondary;
@@ -35,24 +34,25 @@
   counter-reset: about-counter;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
   margin-block: 40px 0;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 32px;
+  }
 
   @include laptop {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include tablet {
-    grid-template-columns: 1fr;
-    }
-
-  @include mobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 16px;
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
   }
 
   &__item {
@@ -61,21 +61,28 @@
     background-color: $color-background-block-light;
     padding: $padding-3xl;
 
-    @include laptop {
+    @include mobile {
       &:last-child {
-        grid-column: span 3;
-        grid-row-start: 2;
+        grid-column: unset;
+        grid-row-start: unset;
       }
     }
-  
+
     @include tablet {
       &:last-child {
         grid-column: unset;
         grid-row-start: unset;
       }
     }
-  
-    @include mobile {
+
+    @include laptop {
+      &:last-child {
+        grid-column: span 3;
+        grid-row-start: 2;
+      }
+    }
+
+    @include desktop {
       &:last-child {
         grid-column: unset;
         grid-row-start: unset;
@@ -98,21 +105,16 @@
   }
 
   &__title {
-    font-size: $font-size-2xl;
-    line-height: $line-height-xl;
+    font-size: $font-size-3xl;
+    line-height: $line-height-2md;
     font-family: $font-headings;
     margin-block: 30px 24px;
     position: relative;
     z-index: 1;
 
-    @include tablet {
-      font-size: $font-size-3xl;
-      line-height: $line-height-2md;
-    }
-
-    @include mobile {
-      font-size: $font-size-3xl;
-      line-height: $line-height-2md;
+    @include laptop {
+      font-size: $font-size-2xl;
+      line-height: $line-height-xl;
     }
   }
 

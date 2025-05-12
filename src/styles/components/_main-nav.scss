@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .main-nav-list {
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
   flex-shrink: 0;
   white-space: nowrap;
@@ -16,6 +16,7 @@
 
   &__list-link {
     @include link-style(false);
+
     color: $color-text-base;
     font-size: $font-size-md;
     line-height: $line-height-md;
@@ -33,8 +34,8 @@
   }
 }
 
-@include mobile {
+@include laptop {
   .main-nav-list {
-    display: none;
+    display: flex;
   }
 }

@@ -2,10 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
-
   &__home-title {
-    font-size: $font-size-5xl;
-    line-height: $line-height-5xl;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: -0.5px;
     margin-block: 0;
     font-family: $font-headings;
@@ -15,9 +14,9 @@
       line-height: 48px;
     }
 
-    @include mobile {
-      font-size: 28px;
-      line-height: 36px;
+    @include laptop {
+      font-size: $font-size-5xl;
+      line-height: $line-height-5xl;
     }
   }
 
@@ -37,8 +36,8 @@
   }
 
   &__stat-value {
-    font-size: $font-size-5xl;
-    line-height: $line-height-5xl;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: 0.5px;
     text-shadow: 0 4px 13px $color-shadow;
     font-family: $font-headings;
@@ -49,9 +48,9 @@
       line-height: 48px;
     }
 
-    @include mobile {
-      font-size: 28px;
-      line-height: 36px;
+    @include laptop {
+      font-size: $font-size-5xl;
+      line-height: $line-height-5xl;
     }
   }
 
@@ -70,18 +69,18 @@
     justify-content: space-between;
     gap: 64px;
 
-    @include laptop {
-      padding-inline: 118px;
-      padding-block: 56px;
-    }
-  
-    @include tablet {
-      padding-inline: $padding-2xl;
-    }
-  
     @include mobile {
       padding-inline: $padding-lg;
       padding-block: $padding-3xl;
+    }
+
+    @include tablet {
+      padding-inline: $padding-2xl;
+    }
+
+    @include laptop {
+      padding-inline: 118px;
+      padding-block: 56px;
     }
   }
 
@@ -103,11 +102,11 @@
 
   &__buttons {
     display: flex;
+    flex-direction: column;
     gap: 16px;
 
-    @include mobile {
-      flex-direction: column;
-      gap: 16px;
+    @include tablet {
+      flex-direction: row;
     }
   }
 }
@@ -116,12 +115,9 @@
   flex: 1;
   max-width: 100%;
   height: auto;
+  display: none;
 
-  @include tablet {
-    display: none;
-  }
-  
-  @include mobile {
-    display: none;
+  @include laptop {
+    display: block;
   }
 }

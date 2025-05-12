@@ -76,23 +76,25 @@
 }
 
 @mixin desktop {
-  @media screen and (max-width: #{$screen-desktop}) {
+  @media screen and (width >= #{$screen-desktop}) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media screen and (max-width: #{$screen-laptop}) {
+  @media screen and (width >= #{$screen-laptop}) {
     @content;
   }
 }
+
 @mixin tablet {
-  @media screen and (max-width: #{$screen-tablet}) {
+  @media screen and (width >= #{$screen-tablet}) {
     @content;
   }
 }
+
 @mixin mobile {
-  @media screen and (max-width: #{$screen-mobile}) {
+  @media screen and (width >= #{$screen-mobile}) {
     @content;
   }
 }

@@ -2,13 +2,41 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  padding: $padding-3xl;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  gap: 32px;
+  gap: 16px;
+  padding: $padding-lg;
+
+  &__menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  &__burger-wrapper {
+    align-items: center;
+  }
+
+  &__burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid $color-secondary-button-border;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__burger-img {
+    width: 24px;
+    height: auto;
+  }
 
   &-logo {
     display: flex;
@@ -32,68 +60,33 @@
   }
 
   &-search {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    display: none;
 
     &::after {
       content: "";
-      display: inline-block;
-      width: 2px;
-      height: 24px;
-      border-radius: 1px;
-      background-color: $color-divider;
-    }
-  }
-
-    &__burger-btn {
       display: none;
     }
   }
 
+  &__button-secondary {
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  &__button-primary {
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+}
 
 @include tablet {
   .header {
     padding: $padding-lg;
 
-    &__menu-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      justify-content: space-between;
-    }
-
-    &__burger-wrapper {
-      align-items: center;
-    }
-
-    &__burger-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 48px;
-      height: 48px;
-      background: transparent;
-      border: 2px solid $color-secondary-button-border;
-      cursor: pointer;
-      position: relative;
-    }
-
-    &__burger-img {
-      width: 24px; 
-      height: auto;
-    }
-
-    &-logo__image {
-      height: 40px;
-      width: auto;
-      gap: 32px;
-    }
-
     &-search {
       display: none;
-      align-items: center;
-      gap: 16px;
 
       &::after {
         content: "";
@@ -108,69 +101,73 @@
   }
 }
 
-@include mobile {
-  .header {
-    display: flex;
-    gap: 16px;
-    padding: $padding-lg;
-    justify-content: space-between;
-
-    &__menu-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      justify-content: space-between;
-    }
-
-    &__burger-wrapper {
-      align-items: center;
-    }
-
-    &__burger-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 48px;
-      height: 48px;
-      background: transparent;
-      border: 2px solid $color-secondary-button-border;
-      cursor: pointer;
-      position: relative;
-    }
-
-    &__burger-img {
-      width: 24px; 
-      height: auto;
-    }
-
-    &-logo__image {
-      height: 40px;
-      width: auto;
+@include laptop {
+    .header {
       gap: 32px;
-    }
+      padding: $padding-3xl;
 
-    &-search {
-      display: none;
-
-      &::after {
-        content: "";
+      &__burger-btn {
         display: none;
       }
-    }
 
-    &__button-secondary {
-      width: 48px;
-      height: 48px;
-    }
+      &-search {
+        display: flex;
+        align-items: center;
+        gap: 16px;
 
-    &__button-primary {
-      text-indent: -9999px;
-      overflow: hidden;
-    }
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 24px;
+          border-radius: 1px;
+          background-color: $color-divider;
+        }
+      }
 
-    &__button-secondary {
-      text-indent: -9999px;
-      overflow: hidden;
+      &__button-primary,
+      &__button-secondary {
+        text-indent: initial;
+        overflow: initial;
+        width: auto;
+        height: auto;
+      }
     }
   }
-}
+
+  @include desktop {
+    .header {
+      gap: 32px;
+      padding: $padding-3xl;
+
+      &__burger-btn {
+        display: none;
+      }
+
+      &-search {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 24px;
+          border-radius: 1px;
+          background-color: $color-divider;
+        }
+      }
+
+      &__button-primary,
+      &__button-secondary {
+        text-indent: initial;
+        overflow: initial;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  
+

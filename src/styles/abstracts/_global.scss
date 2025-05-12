@@ -32,35 +32,20 @@ img {
   height: auto;
 }
 
-  @include desktop {
-     .container { 
-    width: 100%;
-    margin: 0;
-    padding-inline: $padding-4xl;
-  }
-}
-
-  @include laptop {
-    .container {
-    width: 100%;
-    margin: 0;
-    padding-inline: $padding-4xl;
-  }
-}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: $padding-lg;
 
   @include tablet {
-    .container {
-    width: 100%;
-    margin: 0;
     padding-inline: $padding-2xl;
   }
-}
 
-  @include mobile {
-    .container {
-    width: 100%;
-    margin: 0;
-    padding-inline: $padding-lg;
+  @include laptop {
+    padding-inline: $padding-4xl;
+  }
+
+  @include desktop {
+    padding-inline: $padding-4xl;
   }
 }
-

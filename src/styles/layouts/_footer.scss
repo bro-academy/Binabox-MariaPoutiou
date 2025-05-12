@@ -3,56 +3,54 @@
 
 .footer {
   background-color: $color-background-block-light;
-  padding: $padding-4xl $padding-4xl $padding-3xl;
-
-  @include mobile {
-    padding-inline: $padding-lg;
-    padding-block: $padding-4xl $padding-3xl;
-  }
+  padding-inline: $padding-lg;
+  padding-block: $padding-4xl $padding-3xl;
 
   @include tablet {
     padding-inline: $padding-2xl;
     padding-block: $padding-4xl $padding-3xl;
   }
 
+  @include laptop {
+    padding: $padding-4xl $padding-4xl $padding-3xl;
+  }
+
   &-upper {
     display: flex;
-    top: 64px;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    gap: 36px;
     margin-bottom: 64px;
 
-    @include mobile {
-      flex-direction: column;
-      gap: 36px;
-    }
-
-    @include tablet {
-      flex-direction: column;
-      gap: 36px;
+    @include laptop {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      top: 64px;
     }
   }
 
   &-lower {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
     border-top: 1px solid $color-background-block-secondary;
     padding-top: $padding-3xl;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
+    @include laptop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
     }
   }
 
   &__description {
-    line-height: $line-height-sm;
+    margin-bottom: 0;
 
-    @include mobile {
-      margin-bottom: 0;
+    @include laptop {
+      line-height: $line-height-sm;
     }
   }
 
@@ -98,9 +96,6 @@
 }
 
 .social-media-list--footer {
-  @include mobile {
-    display: flex;
-    justify-content: flex-start;
-  }
+  display: flex;
+  justify-content: flex-start;
 }
-

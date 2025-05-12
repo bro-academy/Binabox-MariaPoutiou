@@ -2,7 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .blog-section {
-  padding: $padding-4xl;
+  padding-block: $padding-3xl;
+  padding-inline: $padding-lg;
+  overflow-x: auto;
 
   @include tablet {
     padding-top: 0;
@@ -10,23 +12,19 @@
     padding-inline: $padding-2xl;
   }
 
-  @include mobile {
-    padding-block: $padding-3xl;
-    padding-inline: $padding-lg;
-    overflow-x: auto; 
+  @include laptop {
+    padding: $padding-4xl;
   }
 }
 
 .blog-section__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 450px);
+  display: flex;
+  flex-wrap: nowrap;
   gap: 32px;
-
-  @include laptop {
-    grid-template-columns: 1fr 96px 1fr;
-    grid-template-rows: repeat(4, 450px);
-  }
+  overflow-x: auto;
+  padding-bottom: $padding-lg;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 
   @include tablet {
     display: grid;
@@ -35,14 +33,17 @@
     gap: 32px;
   }
 
-  @include mobile {
-    display: flex;
-    flex-wrap: nowrap;
+  @include laptop {
+    display: grid;
+    grid-template-columns: 1fr 96px 1fr;
+    grid-template-rows: repeat(4, 450px);
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 450px);
     gap: 32px;
-    overflow-x: auto;
-    padding-bottom: $padding-lg;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -52,21 +53,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  @include desktop {
-    &:first-child,
-    &:nth-child(5) {
-      grid-row-end: span 2;
-    }
-  }
-
-  @include laptop {
-    &:not(:first-child):not(:nth-child(5)) {
-      grid-column-end: span 2;
-    }
-  }
+  flex: 0 0 293px;
+  scroll-snap-align: start;
 
   @include tablet {
+    width: 100%;
+    scroll-snap-align: unset;
     grid-row-end: unset;
     grid-column-end: unset;
 
@@ -76,27 +68,29 @@
     }
   }
 
-  @include mobile {
-    flex: 0 0 293px;
-    scroll-snap-align: start;
+  @include laptop {
+    flex: unset;
+    width: 100%;
+    &:not(:first-child, :nth-child(5)) {
+      grid-column-end: span 2;
+    }
+  }
 
+  @include desktop {
+    flex: unset;
+    width: 100%;
     &:first-child,
     &:nth-child(5) {
-      grid-row-end: unset;
+      grid-row-end: span 2;
     }
   }
 
   &__picture {
-    flex-grow: 1;
     overflow: hidden;
     max-height: 682px;
 
-    @include tablet {
-      flex-grow: unset; 
-    }
-  
-    @include mobile {
-      flex-grow: unset;
+    @include desktop {
+      flex-grow: 1;
     }
   }
 
@@ -143,8 +137,8 @@
   }
 
   &__title {
-    font-size: $font-size-4xl;
-    line-height: $line-height-4xl;
+    font-size: $font-size-2xl;
+    line-height: $line-height-xl;
     font-family: $font-headings;
     margin-block: 16px 0;
 
@@ -153,9 +147,9 @@
       line-height: $line-height-2xl;
     }
 
-    @include mobile {
-      font-size: $font-size-2xl;
-      line-height: $line-height-xl;
+    @include laptop {
+      font-size: $font-size-4xl;
+      line-height: $line-height-4xl;
     }
   }
 
