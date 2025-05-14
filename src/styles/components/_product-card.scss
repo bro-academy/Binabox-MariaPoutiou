@@ -24,13 +24,14 @@
 
 .product-list__item {
   background-color: $color-background-block-dark;
-  padding: $padding-2xl;
+  padding: $padding-lg;
   position: relative;
   flex: 0 0 328px;
   scroll-snap-align: start;
 
   @include tablet {
     flex: 0 0 303px;
+    padding: $padding-2xl;
   }
 
   @include laptop {
@@ -66,13 +67,16 @@
   }
 
   &__price {
+    font-family: $font-headings;
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
+    margin-bottom: 8px;
 
-    @include laptop {
+    @include tablet {
       font-size: $font-size-4xl;
       line-height: $line-height-4xl;
       letter-spacing: -0.5px;
+      margin-top: 8px;
     }
   }
 }

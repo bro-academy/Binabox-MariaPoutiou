@@ -42,7 +42,7 @@
 }
 
 .blog-card {
-  padding: $padding-2xl;
+  padding: $padding-lg;
   background-color: $color-background-block-dark;
   position: relative;
   display: flex;
@@ -51,6 +51,7 @@
   scroll-snap-align: start;
 
   @include tablet {
+    padding: $padding-2xl;
     width: 100%;
   }
 
