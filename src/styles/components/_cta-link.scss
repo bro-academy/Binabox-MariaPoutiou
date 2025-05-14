@@ -9,10 +9,6 @@
 .button--cta {
   width: 100%;
 
-  @include tablet {
-    width: 100%;
-  }
-
     @include laptop {
     width: auto;
   }

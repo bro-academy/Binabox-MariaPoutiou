@@ -7,8 +7,7 @@
   }
 
   @include tablet {
-    padding-top: 0;
-    padding-bottom: $padding-4xl;
+    padding-block: 0 $padding-4xl;
   }
 
   @include laptop {
@@ -40,7 +39,6 @@
   margin-block: 40px 0;
 
   @include tablet {
-    grid-template-columns: 1fr;
     grid-template-rows: unset;
     gap: 32px;
   }
@@ -60,20 +58,6 @@
     counter-increment: about-counter;
     background-color: $color-background-block-light;
     padding: $padding-3xl;
-
-    @include mobile {
-      &:last-child {
-        grid-column: unset;
-        grid-row-start: unset;
-      }
-    }
-
-    @include tablet {
-      &:last-child {
-        grid-column: unset;
-        grid-row-start: unset;
-      }
-    }
 
     @include laptop {
       &:last-child {

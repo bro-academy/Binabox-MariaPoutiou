@@ -5,7 +5,7 @@
   overflow-x: auto;
 
   @include mobile {
-    padding-block: 32px;
+    padding-block: $padding-3xl;
   }
 
   @include tablet {
@@ -23,27 +23,21 @@
   gap: 32px;
   overflow-x: auto;
   padding-bottom: $padding-lg;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 
   @include tablet {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(3, 450px);
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   @include laptop {
-    display: grid;
     grid-template-columns: 1fr 96px 1fr;
     grid-template-rows: repeat(4, 450px);
   }
 
   @include desktop {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 450px);
-    gap: 32px;
   }
 }
 
@@ -58,52 +52,40 @@
 
   @include tablet {
     width: 100%;
-    scroll-snap-align: unset;
-    grid-row-end: unset;
-    grid-column-end: unset;
-
-    &:first-child,
-    &:nth-child(5) {
-      grid-row-end: unset;
-    }
   }
 
   @include laptop {
     flex: unset;
-    width: 100%;
     &:not(:first-child, :nth-child(5)) {
       grid-column-end: span 2;
     }
-  }
-
-  @include desktop {
-    flex: unset;
-    width: 100%;
     &:first-child,
     &:nth-child(5) {
       grid-row-end: span 2;
     }
   }
 
-  &__picture {
-    overflow: hidden;
-    max-height: 682px;
-
-    @include desktop {
-      flex-grow: 1;
+  @include desktop {
+    &:not(:first-child, :nth-child(5)) {
+      grid-column-end: unset;
     }
   }
 
-  &__picture--small {
-    max-height: 198px;
+  &__picture {
+    overflow: hidden;
+    max-height: 682px;
+  }
 
-    @include tablet {
-      max-height: unset;
+  &__picture--small {
+
+    @include desktop {
+    max-height: 198px;
     }
   }
 
   &__img {
     object-fit: cover;
+    width: 100%;
     height: 100%;
   }
 
