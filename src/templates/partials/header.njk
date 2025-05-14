@@ -16,21 +16,24 @@
     </a>
   </div>
   </div>
-  <nav class="main-nav">
-    <ul class="main-nav-list">
-      {% for item in header.nav %}
-      <li class="main-nav-list__item">
-        <a
-          class="main-nav-list__list-link{% if item.text == currentPage %} main-nav-list__list-link--active{% endif %}"
-          href="{{ item.link }}"
-          >{{ item.text }}</a
-        >
-      </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="header-section">
+    {% include "partials/header-search.njk" %}
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        {% for item in header.nav %}
+        <li class="main-nav-list__item">
+          <a
+            class="main-nav-list__list-link{% if item.text == currentPage %} main-nav-list__list-link--active{% endif %}"
+            href="{{ item.link }}"
+            >{{ item.text }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
   <div class="header-actions">
-    {% include "partials/header-search.njk" %} {% include
+    {% include
     "partials/header-buttons.njk" %}
   </div>
 </header>

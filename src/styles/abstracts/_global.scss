@@ -11,6 +11,16 @@ body {
   font-family: $font-primary;
   font-weight: $font-weight-primary;
   font-size: $font-size-sm;
+  overflow-x: hidden;
+  margin: 0;
+
+  &.cropped {
+    @include laptopMax {
+      .main, .footer {
+        display: none;
+      }
+    }
+  }
 }
 
 h1,
@@ -35,10 +45,7 @@ img {
 .container {
   width: 100%;
   margin: 0 auto;
-
-  @include mobile {
-    padding-inline: $padding-lg;
-  }
+  padding-inline: $padding-lg;
 
   @include tablet {
     padding-inline: $padding-2xl;

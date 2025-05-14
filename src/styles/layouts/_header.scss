@@ -10,20 +10,18 @@
   gap: 16px;
   padding: $padding-lg;
 
-  @include laptop {
-    padding: $padding-3xl;
-    gap: 32px;
-  }
-
   &__menu-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: space-between;
+    @include laptopMax {
+      display: flex;
+      gap: 16px;
+    }
   }
 
   &__burger-wrapper {
-    align-items: center;
+    display: none;
+    @include laptopMax {
+      display: block;
+    }
   }
 
   &__burger-btn {
@@ -36,10 +34,6 @@
     border: 2px solid $color-secondary-button-border;
     cursor: pointer;
     position: relative;
-
-    @include laptop {
-      display: none;
-    }
   }
 
   &__burger-img {
@@ -58,6 +52,30 @@
     gap: 32px;
   }
 
+  &-section {
+    @include laptopMax {
+      &:not(.is-shown) {
+        display: none;
+      }
+
+      position: fixed;
+      z-index: 999;
+      padding: 16px;
+      height: 100%;
+      left: 0;
+      top: 80px;
+      width: 100%;
+      background-color: $color-background;
+      overflow-y: auto;
+    }
+
+    @include laptop {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+  }
+
   &-actions {
     display: flex;
     flex-wrap: nowrap;
@@ -68,19 +86,40 @@
     gap: 16px;
   }
 
-  &-search {
-    display: none;
+  &__button-secondary {
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+  &__button-primary {
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+}
 
-    &::after {
-      content: "";
+@include tablet {
+  .header {
+    padding: $padding-lg;
+    &__button-secondary {
+      text-indent: -9999px;
+      overflow: hidden;
+    }
+  }
+}
+
+@include laptop {
+  .header {
+    gap: 16px;
+    padding: $padding-3xl;
+    &__burger-btn {
       display: none;
     }
-
-    @include laptop {
+    &-search {
       display: flex;
       align-items: center;
       gap: 16px;
-
+      order: 1;
       &::after {
         content: "";
         display: inline-block;
@@ -90,32 +129,41 @@
         background-color: $color-divider;
       }
     }
-  }
-
-  &__button-secondary {
-    width: 48px;
-    height: 48px;
-    text-indent: -9999px;
-    overflow: hidden;
-
-    @include tablet {
-      text-indent: -9999px;
-      overflow: hidden;
-    }
-
-    @include laptop {
+    &__button-primary,
+    &__button-secondary {
       text-indent: initial;
       overflow: initial;
       width: auto;
       height: auto;
     }
   }
+}
 
-  &__button-primary {
-    text-indent: -9999px;
-    overflow: hidden;
+@include desktop {
+  .header {
+    gap: 32px;
+    padding: $padding-3xl;
+    
+    &__burger-btn {
+      display: none;
+    }
 
-    @include tablet {
+    &-search {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 24px;
+        border-radius: 1px;
+        background-color: $color-divider;
+      }
+    }
+
+    &__button-primary,
+    &__button-secondary {
       text-indent: initial;
       overflow: initial;
       width: auto;

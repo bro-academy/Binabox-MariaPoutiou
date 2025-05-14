@@ -81,6 +81,12 @@
   }
 }
 
+@mixin laptopMax {
+  @media screen and (width < #{$screen-laptop}) {
+    @content;
+  }
+}
+
 @mixin laptop {
   @media screen and (width >= #{$screen-laptop}) {
     @content;
