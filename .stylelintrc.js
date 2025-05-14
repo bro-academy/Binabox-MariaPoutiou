@@ -37,5 +37,12 @@ export default {
         camelCaseSvgKeywords: true,
       },
     ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        ignoreAtRules: ["media"],
+        ignore: ["blockless-after-same-name-blockless", "inside-block", "after-comment"]
+      }
+    ],
   },
 };
