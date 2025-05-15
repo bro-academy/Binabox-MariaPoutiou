@@ -1141,7 +1141,7 @@
     "description": "Browse through the most frequently asked questions",
     "action": "https://some-url.com",
     "method": "post",
-    "class": "form"
+    "class": "container form"
   },
 
   "formConsent": {
