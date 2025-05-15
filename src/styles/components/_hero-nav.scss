@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   &__list-item {
@@ -35,6 +36,13 @@
     opacity: 0.66;
     font-weight: $font-weight-secondary;
     line-height: $line-height-sm;
+    flex-basis: 100%;
+    justify-content: center;
+
+    @include tablet {
+      flex-basis: auto;
+      justify-content: flex-start;
+    }
   }
 
   &__link {
