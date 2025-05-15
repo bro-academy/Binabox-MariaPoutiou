@@ -1,27 +1,70 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .team {
-  padding: $padding-4xl;
+  padding-block: 32px;
+
+  @include tablet {
+    padding-block: 0 $padding-4xl;
+  }
+  @include laptop {
+    padding-block: $padding-4xl;
+  }
+}
+
+.section-title--team {
+  @include tablet {
+    font-size: $font-size-3xl;
+    line-height: $line-height-2xl;
+  }
 }
 
 .team__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: $padding-lg;
+  -webkit-overflow-scrolling: touch;
+  margin-block: 0;
+
+  @include tablet {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1600px;
+  }
 }
 
 .team-member {
   background-color: $color-background-block-dark;
   padding: $padding-3xl;
-  max-width: 20%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   text-align: center;
+  flex: 0 0 293px;
+
+  &:last-child {
+    grid-column: 2;
+
+    @include laptop {
+      grid-column: unset;
+    }
+  }
 
   &__details {
     margin-bottom: 16px;

@@ -25,10 +25,8 @@ import htmlLint from 'gulp-html-lint'
 import chalk from 'chalk'
 import table from 'text-table'
 import bs from 'browser-sync'
-
 const dev = 'src/';
 const dist = 'public/';
-
 const paths = {
   viewsDir: dev + 'templates/',
   distDir: dist,
@@ -41,6 +39,7 @@ const paths = {
     modernImages: dev+'images/static/**/*.{webp,avif}',
     svgStatic: dev+'images/static/**/*.svg',
     images: dev+'images/static/**/*.{jpg,jpeg,png}',
+    scripts: dev + 'js/**/*.js',
   },
   dist: {
       pages: dist,
@@ -49,7 +48,6 @@ const paths = {
       images: dist+'img',
   }
 };
-
 const config = {
   devPort: 8080,
   uiPort: 7171
@@ -58,7 +56,6 @@ const sizeOptions = {
   showFiles: true,
 }
 const sass = gulpSass(dartSass)
-
 const { values:args } = parseArgs({
   options: {
     lint: {
@@ -81,25 +78,19 @@ const { values:args } = parseArgs({
   strict: false,
   allowPositionals: true,
 })
-
 const isDev = env.NODE_ENV === 'development'
-
 export const clean = () => deleteAsync([paths.distDir])
-
 const getDataForFile = (file) => {
   const filePath = join(cwd(), paths.viewsDir, 'pages', dirname(file.relative), 'data.json');
   let fileContent
-
   try {
     fileContent = readFileSync(filePath, 'utf8')
   } catch (error) {
     fileContent = "{}"
     if (args.debug) console.warn(error.message)
   }
-
   return JSON.parse(fileContent)
 };
-
 function htmllintReporter(results) {
   function pluralize(word, count) {
     return (count === 1 ? word : `${word}s`);
@@ -109,14 +100,11 @@ function htmllintReporter(results) {
     errors = 0,
     warnings = 0,
     summaryColor = 'yellow';
-
   results.forEach((result) => {
     const issues = result.issues;
-
     if (issues.length === 0) {
       return;
     }
-
     total += issues.length;
     output += chalk.underline(result.relativeFilePath) + '\n';
     output += table(
@@ -130,7 +118,6 @@ function htmllintReporter(results) {
           messageType = chalk.yellow('warning');
           warnings++;
         }
-
         return [
           '',
           issue.line || 0,
@@ -149,7 +136,6 @@ function htmllintReporter(results) {
       });
     }).join('\n') + '\n\n';
   });
-
   if (total > 0) {
     output += chalk[summaryColor].bold([
       '\u2716 ', total, pluralize(' problem', total),
@@ -157,12 +143,10 @@ function htmllintReporter(results) {
       warnings, pluralize(' warning', warnings), ')\n'
     ].join(''));
   }
-
   return total > 0 ? output : '';
 }
-
 export const styles = () =>
-  src(paths.dev.styles, { sourcemaps: true, since: lastRun(styles) })
+  src(paths.dev.styles, { sourcemaps: true })
     .pipe(sass({
       outputStyle: 'expanded',
       indentWidth: 4
@@ -182,7 +166,6 @@ export const styles = () =>
     .pipe(dest(paths.dist.styles, { sourcemaps: true }))
     .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
-
 export const copyImages = () =>
   src(paths.dev.modernImages, { since: lastRun(copyImages), encoding: false })
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (modern raster): '})))
@@ -215,7 +198,6 @@ export const copyImages = () =>
     .pipe(dest(paths.dist.images))
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimized (modern raster): '})))
     .pipe(bs.stream())
-
 export const optimizeVectorImages = () =>
   src(paths.dev.svgStatic)
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (vector): '})))
@@ -229,7 +211,6 @@ export const optimizeVectorImages = () =>
     .pipe(dest(paths.dist.images))
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (vector): '})))
     .pipe(bs.stream())
-
 export const optimizeRasterImages = () =>
   src(paths.dev.images, { since: lastRun(images), encoding: false })
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (raster): '})))
@@ -244,9 +225,7 @@ export const optimizeRasterImages = () =>
     .pipe(dest(paths.dist.images))
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (raster): '})))
     .pipe(bs.stream())
-
 export const images = parallel(copyImages, optimizeRasterImages, optimizeVectorImages)
-
 export const sprite = () =>
   src(paths.dev.svg)
     .pipe(gulpSvgSprite({
@@ -262,7 +241,6 @@ export const sprite = () =>
     .pipe(dest('.'))
     .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised: '})))
     .pipe(bs.stream())
-
 export const markup = () =>
   src(paths.dev.pages)
     .pipe(data(getDataForFile))
@@ -278,7 +256,11 @@ export const markup = () =>
     .pipe(dest(paths.dist.pages))
     .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
-
+export const scripts = () =>
+  src(paths.dev.scripts, { since: lastRun(scripts) })
+    .pipe(dest(paths.dist.scripts))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Scripts: ' })))
+    .pipe(bs.stream())    
 export const liveReload = () =>
   bs.init({
     port: config.devPort,
@@ -297,22 +279,19 @@ export const liveReload = () =>
     watch: true,
     server: paths.distDir
   })
-
-export const build = series(clean, parallel(styles, images, sprite, markup))
-
+export const build = series(clean, parallel(styles, images, sprite, markup, scripts))
 const watchFiles = (cb) => {
   watch(paths.dev.scss, { delay: 1000 }, styles)
   watch(paths.dev.images, images)
   watch(paths.dev.svg, sprite)
   watch(paths.dev.views, markup)
+  watch(paths.dev.scripts, scripts)
   cb()
 }
 export { watchFiles as watch }
-
 export const serve = series(
   build,
   watchFiles,
   liveReload,
 )
-
 export default build

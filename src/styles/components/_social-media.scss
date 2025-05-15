@@ -2,6 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .subarticle {
+
+  &__socials-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   &__socials-item {
     padding: $padding-xs;
     margin-block: 5px;
@@ -16,6 +22,7 @@
     color: $color-text-tertiary;
     line-height: $line-height-sm;
     align-items: center;
+
     @include link-style(false);
   }
 }

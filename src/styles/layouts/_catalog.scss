@@ -3,14 +3,30 @@
 
 .catalog {
   &-section {
-    padding: $padding-4xl;
+    padding-block: 32px;
+
+    @include tablet {
+      padding-block: 0 $padding-4xl;
+    }
+
+    @include laptop {
+      padding-block: $padding-4xl;
+    }
   }
 
   &-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 32px;
+    }
   }
 
   &-header__title {
@@ -21,21 +37,25 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    width: 100%;
+    @include tablet {
+      width: auto;
+    }
   }
 
   &__pagination {
     display: flex;
     align-items: center;
     gap: 16px;
-  }
 
-  &__pagination::before {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 24px;
-    border-radius: 2px;
-    background-color: $color-divider;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 24px;
+      border-radius: 2px;
+      background-color: $color-divider;
+    }
   }
 }
 
@@ -57,6 +77,11 @@
     display: flex;
     gap: 32px;
 
+    @include tablet {
+      font-size: $font-size-3xl;
+      line-height: $line-height-2xl;
+    }
+
     &::after {
       content: "";
       height: 2px;
@@ -68,7 +93,7 @@
 
 .catalog__button {
   line-height: $line-height-lg;
-
+  flex: 1;
   &--prev,
   &--next {
     padding-block: $padding-lg;

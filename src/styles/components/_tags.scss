@@ -6,6 +6,10 @@
   flex-wrap: wrap;
   gap: 8px;
 
+  &--subarticle {
+    flex-wrap: nowrap;
+  }
+
   &__item {
     padding-block: $padding-2xs;
     padding-inline: $padding-md;

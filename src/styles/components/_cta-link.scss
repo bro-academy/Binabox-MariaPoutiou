@@ -5,3 +5,11 @@
   margin-top: 40px;
   text-align: center;
 }
+
+.button--cta {
+  width: 100%;
+
+    @include laptop {
+    width: auto;
+  }
+}

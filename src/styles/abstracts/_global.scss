@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 * {
   box-sizing: border-box;
@@ -10,6 +11,16 @@ body {
   font-family: $font-primary;
   font-weight: $font-weight-primary;
   font-size: $font-size-sm;
+  overflow-x: hidden;
+  margin: 0;
+
+  &.cropped {
+    @include laptopMax {
+      .main, .footer {
+        display: none;
+      }
+    }
+  }
 }
 
 h1,
@@ -33,6 +44,14 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1728px;
-  padding-inline: $padding-4xl;
+  margin: 0 auto;
+  padding-inline: $padding-lg;
+
+  @include tablet {
+    padding-inline: $padding-2xl;
+  }
+
+  @include laptop {
+    padding-inline: $padding-4xl;
+  }
 }

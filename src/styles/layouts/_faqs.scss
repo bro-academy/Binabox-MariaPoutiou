@@ -1,9 +1,16 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .faqs {
-  padding-top: $padding-4xl;
-  padding-inline: $padding-4xl;
-  padding-bottom: 104px;
+  padding-block: $padding-3xl $padding-4xl;
+
+  @include tablet {
+    padding-block: 0 $padding-4xl;
+  }
+
+  @include laptop {
+    padding-block: $padding-4xl;
+  }
 
   &__item {
     background-color: $color-background-block-dark;

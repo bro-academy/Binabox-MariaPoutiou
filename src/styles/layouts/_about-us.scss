@@ -1,7 +1,16 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .about {
-  padding: $padding-4xl;
+  padding-block: 32px;
+
+  @include tablet {
+    padding-block: 0 $padding-4xl;
+  }
+
+  @include laptop {
+    padding-block: $padding-4xl;
+  }
 
   &__description {
     color: $color-text-secondary;
@@ -14,7 +23,6 @@
   }
 }
 
-/** i added a modifier here because the margin is different than other sections **/
 .section-title--about {
   margin-bottom: 16px;
 }
@@ -23,17 +31,45 @@
   counter-reset: about-counter;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
   margin-block: 40px 0;
+
+  @include tablet {
+    grid-template-rows: unset;
+    gap: 32px;
+  }
+
+  @include laptop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
 
   &__item {
     position: relative;
     counter-increment: about-counter;
     background-color: $color-background-block-light;
     padding: $padding-3xl;
+
+    @include laptop {
+      &:last-child {
+        grid-column: span 3;
+        grid-row-start: 2;
+      }
+    }
+
+    @include desktop {
+      &:last-child {
+        grid-column: unset;
+        grid-row-start: unset;
+      }
+    }
 
     &::before {
       content: "0" counter(about-counter);
@@ -51,12 +87,17 @@
   }
 
   &__title {
-    font-size: $font-size-2xl;
-    line-height: $line-height-xl;
+    font-size: $font-size-3xl;
+    line-height: $line-height-2md;
     font-family: $font-headings;
     margin-block: 30px 24px;
     position: relative;
     z-index: 1;
+
+    @include laptop {
+      font-size: $font-size-2xl;
+      line-height: $line-height-xl;
+    }
   }
 
   &__description {

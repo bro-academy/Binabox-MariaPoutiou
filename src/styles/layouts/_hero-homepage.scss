@@ -1,12 +1,23 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .hero-section {
   &__home-title {
-    font-size: $font-size-5xl;
-    line-height: $line-height-5xl;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: -0.5px;
     margin-block: 0;
     font-family: $font-headings;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    @include laptop {
+      font-size: $font-size-5xl;
+      line-height: $line-height-5xl;
+    }
   }
 
   &__home-brand {
@@ -25,12 +36,22 @@
   }
 
   &__stat-value {
-    font-size: $font-size-5xl;
-    line-height: $line-height-5xl;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: 0.5px;
     text-shadow: 0 4px 13px $color-shadow;
     font-family: $font-headings;
     margin: 0;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    @include laptop {
+      font-size: $font-size-5xl;
+      line-height: $line-height-5xl;
+    }
   }
 
   &__stat-label {
@@ -43,15 +64,20 @@
   &--home {
     background: radial-gradient(45% 30% at 22% -4%, #0265dc80, #0265dc00 100%),
       #0d0d15;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 64px;
-  }
+    padding-block: $padding-3xl;
 
-  &__home-block {
-    flex: 1;
-    max-width: 600px;
+    @include tablet {
+      padding-inline: $padding-2xl;
+      padding-block: $padding-4xl;
+    }
+
+    @include laptop {
+      display: flex;
+      padding-inline: 164px;
+    }
   }
 
   &__home-content {
@@ -67,12 +93,22 @@
 
   &__buttons {
     display: flex;
+    flex-direction: column;
     gap: 16px;
-  }
 
-  &__home-img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+}
+
+.hero-section__home-img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  display: none;
+
+  @include laptop {
+    display: block;
   }
 }

@@ -1,11 +1,54 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .header {
-  padding: $padding-3xl;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  overflow: hidden;
+  gap: 16px;
+  padding: $padding-lg;
+
+  @include laptop {
+    gap: 16px;
+    padding: $padding-3xl;
+  }
+
+  &__menu-wrapper {
+    @include laptopMax {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &__burger-wrapper {
+    display: none;
+    @include laptopMax {
+      display: block;
+    }
+  }
+
+  &__burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid $color-secondary-button-border;
+    cursor: pointer;
+    position: relative;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__burger-img {
+    width: 24px;
+    height: auto;
+  }
 
   &-logo {
     display: flex;
@@ -18,17 +61,46 @@
     gap: 32px;
   }
 
+  &-section {
+    @include laptopMax {
+      &:not(.is-shown) {
+        display: none;
+      }
+
+      position: fixed;
+      z-index: 999;
+      padding: 16px;
+      height: 100%;
+      left: 0;
+      top: 80px;
+      width: 100%;
+      background-color: $color-background;
+      overflow-y: auto;
+    }
+
+    @include laptop {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+  }
+
   &-actions {
     display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    min-width: 0;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
   }
 
   &-search {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    @include laptop {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      order: 1;
 
     &::after {
       content: "";
@@ -37,6 +109,33 @@
       height: 24px;
       border-radius: 1px;
       background-color: $color-divider;
+    }
+  }
+}
+
+  &__button-secondary {
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+
+    @include laptop {
+      text-indent: initial;
+      overflow: initial;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__button-primary {
+    text-indent: -9999px;
+    overflow: hidden;
+
+    @include tablet {
+      text-indent: initial;
+      overflow: initial;
+      width: auto;
+      height: auto;
     }
   }
 }
