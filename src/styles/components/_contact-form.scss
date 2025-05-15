@@ -2,9 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .form {
-  max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 104px;
+  padding-block: $padding-3xl $padding-4xl;
+
+  @include tablet {
+    padding-block: $padding-4xl 104px;
+  }
+
+  @include laptop {
+    max-width: 640px;
+    padding-block: $padding-4xl;
+    margin-inline: auto;
+  }
 
   &-title {
     font-size: $font-size-4xl;
@@ -20,7 +28,7 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: $text-align-center;
-    margin-block: 8px 40px;
+    margin-block: 8px 0;
   }
 
   &__consent {
@@ -233,6 +241,6 @@
 }
 
 .button__form {
-  width: 640px;
+  width: 100%;
   height: 48px;
 }
