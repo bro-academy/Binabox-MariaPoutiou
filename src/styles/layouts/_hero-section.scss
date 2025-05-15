@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     padding-top: $padding-4xl;
     height: 375px;
+
+    @include laptop {
+      min-width: 600px;
+    }
   }
 
   &__title {

@@ -1,33 +1,59 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .form-header {
-  padding-top: $padding-4xl;
-  padding-inline: $padding-4xl;
-
   &__list {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    margin-block: 0;
+    display: grid;
+    padding-block: 0;
+    gap: 16px;
+    grid-template-rows: 1fr;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+
+      &:last-child {
+        grid-column: span 2;
+        justify-self: center;
+      }
+    }
+
+    @include laptop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+      padding-inline: $padding-4xl;
+    
+    }
   }
 
   &__item {
-    width: 328px;
     border: 1px solid $color-styling-grey;
     padding-block: $padding-3xxl;
     padding-inline: $padding-3xl;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    &:last-child {
+      @include tablet {
+        grid-column: span 2;
+        justify-self: center;
+        width: 50%;
+      }
+
+      @include laptop {
+        grid-column: auto;
+        justify-self: auto;
+        width: 328px;
+      }
+    }
 
     &-title {
       font-size: $font-size-4xl;
       line-height: $line-height-4xl;
       text-align: $text-align-center;
       font-family: $font-headings;
-      margin-block: 24px 0;
     }
 
     &-details {

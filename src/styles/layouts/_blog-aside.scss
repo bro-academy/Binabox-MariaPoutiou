@@ -2,18 +2,26 @@
 @use "../abstracts/mixins" as *;
 
 .aside-section {
-  flex-shrink: 1;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
+  order: -1;
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include laptop {
+    order: 0;
+    flex-shrink: 1;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    width: 328px; 
+    min-width: 220px;
+    margin-bottom: 0;
+  }
 }
 
 .aside__block {
   background-color: $color-background-block-dark;
   padding: $padding-2xl;
   margin-block: 0 21px;
-  width: 328px;
-  min-width: 220px;
 
   &-title {
     padding-bottom: $padding-lg;

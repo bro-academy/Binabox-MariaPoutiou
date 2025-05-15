@@ -4,6 +4,7 @@
 .footer {
   background-color: $color-background-block-light;
   padding-block: $padding-4xl $padding-3xl;
+  padding-inline: $padding-4xl;
 
   &-upper {
     display: flex;
