@@ -2,6 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .subarticle {
+
+  &__socials-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   &__socials-item {
     padding: $padding-xs;
     margin-block: 5px;
