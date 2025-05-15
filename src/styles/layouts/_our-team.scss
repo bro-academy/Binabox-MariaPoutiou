@@ -2,21 +2,19 @@
 @use "../abstracts/mixins" as *;
 
 .team {
-  @include mobile {
-    padding-block: 32px;
-  }
+  padding-block: 32px;
 
-  @include tablet { 
+  @include tablet {
     padding-block: 0 $padding-4xl;
   }
 
-  @include laptop { 
+  @include laptop {
     padding-block: $padding-4xl;
   }
 }
 
 .section-title--team {
-  @include tablet { 
+  @include tablet {
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
   }
@@ -102,7 +100,7 @@
   }
 }
 
-@include mobile {
+@include laptopMax {
   .team-member:last-child {
     grid-column: 2;
   }
