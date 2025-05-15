@@ -98,9 +98,3 @@
     @content;
   }
 }
-
-@mixin mobile {
-  @media screen and (width >= #{$screen-mobile}) {
-    @content;
-  }
-}
