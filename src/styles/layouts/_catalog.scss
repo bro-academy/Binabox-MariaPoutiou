@@ -3,10 +3,7 @@
 
 .catalog {
   &-section {
-
-    @include mobile {
-      padding-block: 32px;
-    }
+    padding-block: 32px;
 
     @include tablet {
       padding-block: 0 $padding-4xl;
@@ -32,32 +29,31 @@
     }
   }
 
-    &-header__title {
-      width: 100%;
-    }
-
-    &__controls {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    &__pagination {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    &__pagination::before {
-      content: "";
-      display: inline-block;
-      width: 2px;
-      height: 24px;
-      border-radius: 2px;
-      background-color: $color-divider;
-    }
+  &-header__title {
+    width: 100%;
   }
-  
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__pagination::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: $color-divider;
+  }
+}
 
 .section-title {
   font-size: $font-size-4xl;

@@ -3,10 +3,7 @@
 
 .blog-section {
   overflow-x: auto;
-
-  @include mobile {
-    padding-block: $padding-3xl;
-  }
+  padding-block: $padding-3xl;
 
   @include tablet {
     padding-block: 0 $padding-4xl;
@@ -20,13 +17,14 @@
 .blog-section__grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 32px;
+  gap: 16px;
   overflow-x: auto;
   padding-bottom: $padding-lg;
   -webkit-overflow-scrolling: touch;
 
   @include tablet {
     display: grid;
+    gap: 24px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -73,14 +71,14 @@
   }
 
   &__picture {
+    flex: 1;
     overflow: hidden;
     max-height: 682px;
   }
 
   &__picture--small {
-
     @include desktop {
-    max-height: 198px;
+      max-height: 198px;
     }
   }
 

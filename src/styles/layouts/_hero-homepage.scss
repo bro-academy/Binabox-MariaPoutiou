@@ -67,10 +67,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 64px;
-
-    @include mobile {
-      padding-block: $padding-3xl;
-    }
+    padding-block: $padding-3xl;
 
     @include tablet {
       padding-inline: $padding-2xl;

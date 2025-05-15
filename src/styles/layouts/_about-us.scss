@@ -2,9 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .about {
-  @include mobile {
-    padding-block: 32px;
-  }
+  padding-block: 32px;
 
   @include tablet {
     padding-block: 0 $padding-4xl;

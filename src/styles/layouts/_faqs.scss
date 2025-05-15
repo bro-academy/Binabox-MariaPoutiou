@@ -2,10 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .faqs {
-
-  @include mobile {
-    padding-block: $padding-3xl $padding-4xl;
-  }
+  padding-block: $padding-3xl $padding-4xl;
 
   @include tablet {
     padding-block: 0 $padding-4xl;

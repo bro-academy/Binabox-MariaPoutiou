@@ -10,6 +10,11 @@
   gap: 16px;
   padding: $padding-lg;
 
+  @include laptop {
+    gap: 16px;
+    padding: $padding-3xl;
+  }
+
   &__menu-wrapper {
     @include laptopMax {
       display: flex;
@@ -34,6 +39,10 @@
     border: 2px solid $color-secondary-button-border;
     cursor: pointer;
     position: relative;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   &__burger-img {
@@ -86,84 +95,43 @@
     gap: 16px;
   }
 
+  &-search {
+    @include laptop {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      order: 1;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 24px;
+      border-radius: 1px;
+      background-color: $color-divider;
+    }
+  }
+
   &__button-secondary {
     width: 48px;
     height: 48px;
     text-indent: -9999px;
     overflow: hidden;
-  }
-  &__button-primary {
-    text-indent: -9999px;
-    overflow: hidden;
-  }
-}
 
-@include tablet {
-  .header {
-    padding: $padding-lg;
-    &__button-secondary {
-      text-indent: -9999px;
-      overflow: hidden;
-    }
-  }
-}
-
-@include laptop {
-  .header {
-    gap: 16px;
-    padding: $padding-3xl;
-    &__burger-btn {
-      display: none;
-    }
-    &-search {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      order: 1;
-      &::after {
-        content: "";
-        display: inline-block;
-        width: 2px;
-        height: 24px;
-        border-radius: 1px;
-        background-color: $color-divider;
-      }
-    }
-    &__button-primary,
-    &__button-secondary {
+    @include laptop {
       text-indent: initial;
       overflow: initial;
       width: auto;
       height: auto;
     }
   }
-}
 
-@include desktop {
-  .header {
-    gap: 32px;
-    padding: $padding-3xl;
-    
-    &__burger-btn {
-      display: none;
-    }
+  &__button-primary {
+    text-indent: -9999px;
+    overflow: hidden;
 
-    &-search {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      &::after {
-        content: "";
-        display: inline-block;
-        width: 2px;
-        height: 24px;
-        border-radius: 1px;
-        background-color: $color-divider;
-      }
-    }
-
-    &__button-primary,
-    &__button-secondary {
+    @include tablet {
       text-indent: initial;
       overflow: initial;
       width: auto;

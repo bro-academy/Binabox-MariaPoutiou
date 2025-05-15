@@ -34,15 +34,3 @@
     }
   }
 }
-
-@include tablet {
-  .main-nav-list {
-    display: none;
-  }
-}
-
-@include laptop {
-  .main-nav-list {
-    display: flex;
-  }
-}
