@@ -37,21 +37,25 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    width: 100%;
+    @include tablet {
+      width: auto;
+    }
   }
 
   &__pagination {
     display: flex;
     align-items: center;
     gap: 16px;
-  }
 
-  &__pagination::before {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 24px;
-    border-radius: 2px;
-    background-color: $color-divider;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 24px;
+      border-radius: 2px;
+      background-color: $color-divider;
+    }
   }
 }
 
@@ -89,7 +93,7 @@
 
 .catalog__button {
   line-height: $line-height-lg;
-
+  flex: 1;
   &--prev,
   &--next {
     padding-block: $padding-lg;

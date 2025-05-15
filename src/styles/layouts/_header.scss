@@ -101,7 +101,6 @@
       align-items: center;
       gap: 16px;
       order: 1;
-    }
 
     &::after {
       content: "";
@@ -112,6 +111,7 @@
       background-color: $color-divider;
     }
   }
+}
 
   &__button-secondary {
     width: 48px;

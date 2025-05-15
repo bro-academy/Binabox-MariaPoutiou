@@ -35,6 +35,10 @@
   }
 
   @include laptop {
+    flex: 0 0 271px;
+  }
+  
+  @include desktop {
     flex: unset;
   }
 }
