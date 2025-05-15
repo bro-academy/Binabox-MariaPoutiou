@@ -7,7 +7,6 @@
   @include tablet {
     padding-block: 0 $padding-4xl;
   }
-
   @include laptop {
     padding-block: $padding-4xl;
   }
@@ -38,14 +37,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    justify-items: center;
   }
 
   @include desktop {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    width: 1600px;
   }
 }
 
@@ -58,23 +56,14 @@
   align-items: center;
   overflow: hidden;
   text-align: center;
-  flex: 0 0 240px;
-  width: 293px;
+  flex: 0 0 293px;
 
-  @include tablet {
-    flex: 0 0 293px;
-    width: 293px;
-  }
+  &:last-child {
+    grid-column: 2;
 
-  @include laptop {
-    max-width: 100%;
-    flex: unset;
-    width: auto;
-  }
-
-  @include desktop {
-    max-width: 20%;
-    width: auto;
+    @include laptop {
+      grid-column: unset;
+    }
   }
 
   &__details {
@@ -97,11 +86,5 @@
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-block: 0;
-  }
-}
-
-@include laptopMax {
-  .team-member:last-child {
-    grid-column: 2;
   }
 }
