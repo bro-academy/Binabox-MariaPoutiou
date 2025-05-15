@@ -63,6 +63,7 @@
 
     @include laptop {
       grid-column: unset;
+      grid-column: 2;
     }
   }
 
