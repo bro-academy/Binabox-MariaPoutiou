@@ -951,6 +951,10 @@
     ]
   },
 
+  "catalogFilter": {
+    "text": "Filters"
+  },
+
   "dropdownFilter": {
     "placeholder": "Sort by",
     "placeholderValue": "options",

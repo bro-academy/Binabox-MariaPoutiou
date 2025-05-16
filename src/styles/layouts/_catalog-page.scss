@@ -21,6 +21,21 @@
     }
   }
 
+  &__filter-mobile {
+    @include button-secondary;
+    margin-bottom: 64px;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__filter-text {
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $font-size-3xl;
+  }
+
   &__page-header {
     display: flex;
     flex-direction: column;
