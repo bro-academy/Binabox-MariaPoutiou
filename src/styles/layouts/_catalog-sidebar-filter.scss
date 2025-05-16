@@ -1,4 +1,17 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.aside-section--catalog {
+
+@include laptopMax {
+  display: none;
+}
+
+@include laptop {
+  max-width: 100%;
+  width: 320px;
+}
+}
 
 .form-aside {
   margin-right: 64px;

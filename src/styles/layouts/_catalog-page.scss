@@ -1,28 +1,54 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .catalog {
-  max-width: 1024px;
+  width: 100%;
+  flex: 1;
+
+  @include laptop {
+    max-width: 1024px;
+  }
 
   &-layout {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
+    width: 100%;
+
+    @include laptop {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
   }
 
   &__page-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__page-functions {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    align-items: flex-end;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 16px;
+      width: auto;
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   &__header-buttons {
@@ -36,10 +62,27 @@
 }
 
 .product__wrapper-catalog {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 32px;
   margin-bottom: 64px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+    @include desktop {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+.catalog-search {
+  width: 100%;
+
+  @include tablet {
+    width: auto;
+  }
 }
 
 .button__catalog {
@@ -52,5 +95,12 @@
 }
 
 .section-title--catalog-page {
+  font-size: $font-size-2xl;
+  line-height: $line-height-xl;
   margin: 0;
+
+  @include tablet {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+  }
 }
