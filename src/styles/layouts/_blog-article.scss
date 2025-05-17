@@ -11,11 +11,12 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: $gap-3xl;
+  gap: $gap-5xl;
   position: relative;
 
   @include laptop {
     flex-direction: row-reverse;
+    gap: $gap-3xl;
   }
 
   @include desktop {
@@ -26,8 +27,13 @@
 .blog-article {
   padding-bottom: $padding-4xl;
 
+  @include tablet {
+    padding-bottom: $padding-2xl;
+  }
+
   @include laptop {
     flex: 1;
+    padding-bottom: $padding-4xl;
   }
 
   &__figure {
@@ -39,6 +45,10 @@
     @include laptop {
       width: 100%;
     }
+  }
+
+  &__img {
+    display: block;
   }
 
   &__caption {
