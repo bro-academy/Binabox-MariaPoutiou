@@ -6,7 +6,7 @@
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
     flex-wrap: wrap;
   }
 
@@ -14,7 +14,7 @@
     padding-block: $padding-2xs;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 
     &::after {
       content: "";

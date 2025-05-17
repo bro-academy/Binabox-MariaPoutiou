@@ -4,12 +4,14 @@
 {% include "partials/hero-blog.njk" %}
 
 <!--BLOG CONTENT-->
-<div class="container blog-layout">
+  <div class="container container--blog">
+<div class="blog-layout">
   <article class="blog-article">
     {% include "partials/main-article.njk" %}
   </article>
 
   <!--SIDEBAR CATEGORIES-->
   <aside class="aside-section">{% include "partials/aside-blog.njk" %}</aside>
+  </div>
 </div>
 {% endblock %}

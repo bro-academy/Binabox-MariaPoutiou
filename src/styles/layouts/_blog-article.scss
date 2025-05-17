@@ -1,6 +1,13 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.container--blog {
+
+  @include tablet {
+  padding-inline: 64px;
+  }
+}
+
 .blog-layout {
   display: flex;
   align-items: flex-start;
@@ -8,16 +15,12 @@
   gap: 32px;
   position: relative;
 
-  @include tablet {
-    padding-inline: 64px;
-  }
-
   @include laptop {
     flex-direction: row-reverse;
   }
 
   @include desktop {
-    padding-inline: 108px;
+    margin-inline: 64px;
   }
 }
 

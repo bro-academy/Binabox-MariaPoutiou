@@ -7,11 +7,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: $padding-4xl;
-    height: 375px;
+    padding-top: $font-size-2xl;
+    height: 239px;
+
+    @include tablet {
+      height: 188px;
+    }
 
     @include laptop {
       min-width: 600px;
+      padding-top: $padding-4xl;
+      height: 376px;
     }
   }
 
@@ -21,16 +27,18 @@
     letter-spacing: -0.5px;
     text-align: center;
     font-family: $font-headings;
-    margin-block: 0 20px;
+    margin-block: 0 16px;
 
     @include tablet {
       font-size: $font-size-4xl;
       line-height: $line-height-4xl;
+      margin-block: 0;
     }
 
     @include laptop {
       font-size: $font-size-5xl;
       line-height: $line-height-5xl;
+      margin-block: 0 20px;
     }
   }
 
