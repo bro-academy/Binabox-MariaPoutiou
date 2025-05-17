@@ -17,14 +17,14 @@
 .blog-section__grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 16px;
+  gap: $gap-lg;
   overflow-x: auto;
   padding-bottom: $padding-lg;
   -webkit-overflow-scrolling: touch;
 
   @include tablet {
     display: grid;
-    gap: 24px;
+    gap: $gap-2xl;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }

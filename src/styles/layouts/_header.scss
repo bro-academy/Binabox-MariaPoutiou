@@ -7,18 +7,18 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  gap: 16px;
+  gap: $gap-lg;
   padding: $padding-lg;
 
   @include laptop {
-    gap: 16px;
+    gap: $gap-lg;
     padding: $padding-3xl;
   }
 
   &__menu-wrapper {
     @include laptopMax {
       display: flex;
-      gap: 16px;
+      gap: $gap-lg;
     }
   }
 
@@ -58,7 +58,7 @@
   &-logo__image {
     height: 40px;
     width: auto;
-    gap: 32px;
+    gap: $gap-3xl;
   }
 
   &-section {
@@ -92,14 +92,14 @@
     min-width: 0;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: $gap-lg;
   }
 
   &-search {
     @include laptop {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: $gap-lg;
       order: 1;
 
     &::after {

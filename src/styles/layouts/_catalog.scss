@@ -19,13 +19,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: $gap-5xl;
     margin-bottom: 40px;
 
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      gap: 32px;
+      gap: $gap-3xl;
     }
   }
 
@@ -36,7 +36,7 @@
   &__controls {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $gap-lg;
     width: 100%;
     @include tablet {
       width: auto;
@@ -46,7 +46,7 @@
   &__pagination {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $gap-lg;
 
     &::before {
       content: "";
@@ -75,7 +75,7 @@
     margin-block: 0;
     text-align: left;
     display: flex;
-    gap: 32px;
+    gap: $gap-3xl;
 
     @include tablet {
       font-size: $font-size-3xl;

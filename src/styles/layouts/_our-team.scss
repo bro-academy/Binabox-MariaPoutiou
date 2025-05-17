@@ -22,21 +22,21 @@
 .team__list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 16px;
+  gap: $gap-lg;
   overflow-x: auto;
   padding-bottom: $padding-lg;
   -webkit-overflow-scrolling: touch;
   margin-inline: auto;
 
   @include tablet {
-    gap: 32px;
+    gap: $gap-3xl;
     flex-wrap: nowrap;
   }
 
   @include laptop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: $gap-5xl;
   }
 
   @include desktop {

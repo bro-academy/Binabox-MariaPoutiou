@@ -33,12 +33,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  gap: 16px;
+  gap: $gap-lg;
   margin-block: 40px 0;
 
   @include tablet {
     grid-template-rows: unset;
-    gap: 32px;
+    gap: $gap-3xl;
   }
 
   @include laptop {

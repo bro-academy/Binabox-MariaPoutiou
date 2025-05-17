@@ -38,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: $gap-sm;
   }
 
   &__consent-text {
@@ -49,7 +49,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: $gap-2xs;
     margin-bottom: 24px;
   }
 

@@ -4,13 +4,13 @@
 .product-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  gap: 16px;
+  gap: $gap-lg;
   overflow-x: auto;
   padding-bottom: $padding-lg;
   max-width: 100vw;
 
   @include tablet {
-    gap: 24px;
+    gap: $gap-2xl;
   }
 
   @include desktop {
@@ -90,7 +90,7 @@
   flex-direction: column;
   position: absolute;
   width: calc(100% - 48px);
-  gap: 24px;
+  gap: $gap-2xl;
   top: 50%;
   transform: translateY(-50%);
   margin-inline: 0;
