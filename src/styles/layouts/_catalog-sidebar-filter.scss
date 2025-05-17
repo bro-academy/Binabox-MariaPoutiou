@@ -2,26 +2,25 @@
 @use "../abstracts/mixins" as *;
 
 .aside-section--catalog {
+  @include laptopMax {
+    display: none;
+  }
 
-@include laptopMax {
-  display: none;
-}
-
-@include laptop {
-  max-width: 100%;
-  width: 320px;
-}
+  @include laptop {
+    max-width: 100%;
+    width: 320px;
+  }
 }
 
 .form-aside {
-  margin-right: 64px;
+  margin-right: $margin-7xl;
 }
 
 .aside__block-wrapper {
   display: flex;
   flex-direction: column;
   gap: $gap-xs;
-  margin-block: 16px 0;
+  margin-block: $margin-lg $margin-0;
 }
 
 .aside__input,
@@ -74,7 +73,7 @@
   &--radio {
     position: relative;
     padding-left: 28px;
-    margin-bottom: 8px;
+    margin-bottom: $margin-sm;
     display: flex;
 
     &::before {
@@ -88,7 +87,6 @@
       background-color: $color-background;
       border: 2px solid $color-styling-grey;
       box-sizing: border-box;
-
     }
     &:hover::before {
       background-color: $color-background-block-dark;

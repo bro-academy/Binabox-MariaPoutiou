@@ -23,7 +23,6 @@
       justify-content: center;
       gap: $gap-2xl;
       padding-inline: $padding-4xl;
-    
     }
   }
 
@@ -34,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     &:last-child {
       @include tablet {
         grid-column: span 2;
@@ -60,7 +59,7 @@
       color: $color-text-secondary;
       font-size: $font-size-md;
       line-height: $line-height-md;
-      margin-block: 0;
+      margin-block: $margin-0;
     }
   }
 }

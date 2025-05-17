@@ -2,9 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 .container--blog {
-
   @include tablet {
-  padding-inline: 64px;
+    padding-inline: 64px;
   }
 }
 
@@ -20,7 +19,7 @@
   }
 
   @include desktop {
-    margin-inline: 64px;
+    margin-inline: $margin-7xl;
   }
 }
 
@@ -33,9 +32,9 @@
 
   &__figure {
     position: relative;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin-top: 0;
+    margin-inline-start: $margin-0;
+    margin-inline-end: $margin-0;
+    margin-top: $margin-0;
 
     @include laptop {
       width: 100%;
@@ -58,10 +57,10 @@
     line-height: $line-height-4xl;
     letter-spacing: -0.5px;
     font-family: $font-headings;
-    margin-block: 16px;
+    margin-block: $margin-lg;
 
     @include laptopMax {
-      margin-top: 32px;
+      margin-top: $margin-5xl;
     }
   }
 
@@ -79,7 +78,7 @@
   }
 
   &__meta {
-    margin-block: 32px;
+    margin-block: $margin-5xl;
   }
 
   &__author,
@@ -97,7 +96,7 @@
 
   &__word-bg {
     /* highlighted word "players" */
-    margin: 0;
+    margin: $margin-0;
     background-color: $color-primary;
     color: $color-text-tertiary;
     font-weight: $font-weight-secondary;
@@ -130,8 +129,8 @@
   &__bullet-list {
     list-style: disc;
     padding-left: $padding-xl;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: $margin-6xl;
+    margin-left: $margin-xl;
   }
 
   &__bullet-item {
@@ -141,28 +140,28 @@
   }
 
   &__list {
-    margin-top: 40px;
+    margin-top: $margin-6xl;
   }
 
   &__item {
     color: $color-text-tertiary;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-bottom: 8px;
+    margin-bottom: $margin-sm;
   }
 
   &__quote-wrapper {
     background-color: $color-quote;
     padding: $padding-lg;
     border-radius: 16px;
-    margin-block: 32px;
+    margin-block: $margin-5xl;
     display: flex;
     flex-direction: column;
     gap: $gap-xs;
   }
 
   &__quote {
-    margin: 0;
+    margin: $margin-0;
   }
 
   &__quote-text {
@@ -170,11 +169,11 @@
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
     font-family: $font-headings;
-    margin: 0;
+    margin: $margin-0;
   }
 
   &__quote-meta {
-    margin-top: 8px;
+    margin-top: $margin-sm;
   }
 
   &__quote-value {
@@ -191,8 +190,8 @@
   }
 
   &__gallery {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    margin-inline-start: $margin-0;
+    margin-inline-end: $margin-0;
     position: relative;
   }
 

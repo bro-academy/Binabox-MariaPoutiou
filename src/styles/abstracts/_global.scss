@@ -12,11 +12,12 @@ body {
   font-weight: $font-weight-primary;
   font-size: $font-size-sm;
   overflow-x: hidden;
-  margin: 0;
+  margin: $margin-0;
 
   &.cropped {
     @include laptopMax {
-      .main, .footer {
+      .main,
+      .footer {
         display: none;
       }
     }
@@ -44,7 +45,7 @@ img {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 $margin-auto;
   padding-inline: $padding-lg;
 
   @include tablet {

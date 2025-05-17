@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: $gap-4xl;
-    margin-bottom: 64px;
+    margin-bottom: $margin-7xl;
 
     @include laptop {
       flex-direction: row;
@@ -37,7 +37,7 @@
   }
 
   &__description {
-    margin-bottom: 0;
+    margin-bottom: $margin-0;
 
     @include laptop {
       line-height: $line-height-sm;
@@ -61,7 +61,7 @@
     font-weight: $font-weight-tertiary;
     line-height: $line-height-lg;
     font-size: $font-size-xl;
-    margin-block: 0 8px;
+    margin-block: $margin-0 $margin-sm;
   }
 
   &__link {
@@ -78,7 +78,7 @@
 .copyright__text {
   line-height: $line-height-sm;
   white-space: nowrap;
-  margin: 0;
+  margin: $margin-0;
 }
 
 .social-media__list-item {

@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.main-nav{
+.main-nav {
   width: 100%;
 
   @include laptopMax {
-    margin-block-start: $padding-3xl;
+    margin-block-start: $margin-5xl;
   }
 
   &-list {
@@ -14,7 +14,7 @@
     flex-shrink: 0;
     white-space: nowrap;
     justify-content: center;
-    margin: 0;
+    margin: $margin-0;
     gap: $gap-xs;
 
     @include laptopMax {

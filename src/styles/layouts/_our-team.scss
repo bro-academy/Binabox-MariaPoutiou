@@ -26,7 +26,7 @@
   overflow-x: auto;
   padding-bottom: $padding-lg;
   -webkit-overflow-scrolling: touch;
-  margin-inline: auto;
+  margin-inline: $margin-auto;
 
   @include tablet {
     gap: $gap-3xl;
@@ -68,7 +68,7 @@
   }
 
   &__details {
-    margin-bottom: 16px;
+    margin-bottom: $margin-lg;
   }
 
   &__img {
@@ -79,13 +79,13 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
-    margin-block: 0;
+    margin-block: $margin-0;
   }
 
   &__role {
     color: $color-text-secondary;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-block: 0;
+    margin-block: $margin-0;
   }
 }

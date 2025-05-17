@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
-    margin-block: 40px 0;
+    margin-block: $margin-6xl $margin-0;
     overflow: visible;
   }
 }
@@ -37,7 +37,7 @@
   @include laptop {
     flex: 0 0 271px;
   }
-  
+
   @include desktop {
     flex: unset;
   }
@@ -51,7 +51,7 @@
   position: relative;
 
   &__img-wrapper {
-    margin-bottom: 24px;
+    margin-bottom: $margin-3xl;
     position: relative;
   }
 
@@ -67,20 +67,20 @@
     font-weight: $font-weight-tertiary;
     font-size: $font-size-xl;
     line-height: $line-height-lg;
-    margin-block: 0;
+    margin-block: $margin-0;
   }
 
   &__price {
     font-family: $font-headings;
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
-    margin-bottom: 8px;
+    margin-bottom: $margin-sm;
 
     @include tablet {
       font-size: $font-size-4xl;
       line-height: $line-height-4xl;
       letter-spacing: -0.5px;
-      margin-top: 8px;
+      margin-top: $margin-sm;
     }
   }
 }
@@ -93,7 +93,7 @@
   gap: $gap-2xl;
   top: 50%;
   transform: translateY(-50%);
-  margin-inline: 0;
+  margin-inline: $margin-0;
 }
 
 @include laptop {

@@ -7,7 +7,7 @@
     font-size: $font-size-3xl;
     line-height: 38px;
     font-family: $font-headings;
-    margin-block: 32px 16px;
+    margin-block: $margin-5xl $margin-lg;
   }
 
   &__text {

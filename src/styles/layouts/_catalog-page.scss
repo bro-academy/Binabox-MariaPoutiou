@@ -23,7 +23,7 @@
 
   &__filter-mobile {
     @include button-secondary;
-    margin-bottom: 64px;
+    margin-bottom: $margin-7xl;
 
     @include laptop {
       display: none;
@@ -72,7 +72,7 @@
     display: flex;
     gap: $gap-lg;
     align-items: flex-start;
-    margin-block: 32px;
+    margin-block: $margin-5xl;
   }
 }
 
@@ -81,13 +81,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: $gap-3xl;
-  margin-bottom: 64px;
+  margin-bottom: $margin-7xl;
 
   @include tablet {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 
-    @include desktop {
+  @include desktop {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
@@ -112,7 +112,7 @@
 .section-title--catalog-page {
   font-size: $font-size-2xl;
   line-height: $line-height-xl;
-  margin: 0;
+  margin: $margin-0;
 
   @include tablet {
     font-size: $font-size-4xl;

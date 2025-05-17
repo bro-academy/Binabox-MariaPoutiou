@@ -4,7 +4,7 @@
 .hero-section__button {
   padding-block: $padding-sm;
   padding-inline: $padding-2xl;
-  margin-top: 15px;
+  margin-top: $margin-md;
 
   @include button-base;
 }

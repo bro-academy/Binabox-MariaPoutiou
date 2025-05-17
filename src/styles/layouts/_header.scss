@@ -102,16 +102,16 @@
       gap: $gap-lg;
       order: 1;
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 2px;
-      height: 24px;
-      border-radius: 1px;
-      background-color: $color-divider;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 24px;
+        border-radius: 1px;
+        background-color: $color-divider;
+      }
     }
   }
-}
 
   &__button-secondary {
     width: 48px;

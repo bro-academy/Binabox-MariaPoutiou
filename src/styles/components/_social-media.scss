@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .subarticle {
-
   &__socials-list {
     display: flex;
     flex-wrap: nowrap;
@@ -10,8 +9,8 @@
 
   &__socials-item {
     padding: $padding-xs;
-    margin-block: 5px;
-    margin-inline: 5px;
+    margin-block: $margin-xs;
+    margin-inline: $margin-xs;
     border: 2px solid $color-secondary-button-border;
     height: 32px;
     display: inline-flex;
@@ -28,7 +27,7 @@
 }
 
 .social-media-list {
-  margin: 0;
+  margin: $margin-0;
 }
 
 .social-media-list--team {

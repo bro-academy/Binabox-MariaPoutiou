@@ -11,7 +11,7 @@
   @include laptop {
     max-width: 640px;
     padding-block: $padding-4xl;
-    margin-inline: auto;
+    margin-inline: $margin-auto;
   }
 
   &-title {
@@ -19,7 +19,7 @@
     line-height: $line-height-4xl;
     text-align: $text-align-center;
     font-family: $font-headings;
-    margin-block: 64px 0;
+    margin-block: $margin-7xl $margin-0;
   }
 
   &-description {
@@ -28,13 +28,13 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: $text-align-center;
-    margin-block: 8px 0;
+    margin-block: $margin-sm $margin-0;
   }
 
   &__consent {
     background-color: $color-background-block-dark;
     padding: $padding-2xl;
-    margin-bottom: 24px;
+    margin-bottom: $margin-3xl;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,18 +43,18 @@
 
   &__consent-text {
     line-height: $line-height-sm;
-    margin-block: auto;
+    margin-block: $margin-auto;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     gap: $gap-2xs;
-    margin-bottom: 24px;
+    margin-bottom: $margin-3xl;
   }
 
   &__item-label {
-    margin-block: 2px 8px;
+    margin-block: $margin-2xs $margin-sm;
   }
 
   &__label {
@@ -129,7 +129,7 @@
   display: flex;
   padding-left: $padding-1xl;
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: $margin-sm;
 
   &::before {
     content: "";

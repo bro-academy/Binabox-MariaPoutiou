@@ -19,12 +19,12 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: center;
-    margin: 0;
+    margin: $margin-0;
   }
 }
 
 .section-title--about {
-  margin-bottom: 16px;
+  margin-bottom: $margin-lg;
 }
 
 .about-list {
@@ -34,7 +34,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   gap: $gap-lg;
-  margin-block: 40px 0;
+  margin-block: $margin-6xl $margin-0;
 
   @include tablet {
     grid-template-rows: unset;
@@ -90,7 +90,7 @@
     font-size: $font-size-3xl;
     line-height: $line-height-2md;
     font-family: $font-headings;
-    margin-block: 30px 24px;
+    margin-block: $margin-4xl $margin-3xl;
     position: relative;
     z-index: 1;
 
@@ -104,7 +104,7 @@
     color: $color-text-secondary;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-block: 0;
+    margin-block: $margin-0;
     position: relative;
     z-index: 1;
   }

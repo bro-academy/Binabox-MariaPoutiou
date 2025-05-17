@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     gap: $gap-5xl;
-    margin-bottom: 40px;
+    margin-bottom: $margin-6xl;
 
     @include tablet {
       flex-direction: row;
@@ -65,14 +65,14 @@
   letter-spacing: -0.5px;
   text-align: center;
   font-family: $font-headings;
-  margin-block: 0 40px;
+  margin-block: $margin-0 $margin-6xl;
 
   &--catalog {
     color: $color-text-tertiary;
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     align-items: center;
-    margin-block: 0;
+    margin-block: $margin-0;
     text-align: left;
     display: flex;
     gap: $gap-3xl;
