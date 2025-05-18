@@ -4,8 +4,22 @@
 .aside-section--catalog {
   @include laptopMax {
     display: none;
+    &.is-shown {
+      display: block;
+      position: fixed;
+      z-index: 999;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto ;
+      background-color: $color-background;
+      padding: 16px;
+      .form-aside {
+        margin-right: 0;
+      }
+    }
   }
-
   @include laptop {
     max-width: 100%;
     width: 320px;

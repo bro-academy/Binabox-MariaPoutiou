@@ -19,7 +19,11 @@
     line-height: $line-height-4xl;
     text-align: $text-align-center;
     font-family: $font-headings;
-    margin-block: $margin-7xl $margin-0;
+    margin-block: 32px 8px;
+
+    @include tablet {
+      margin-block: 64px 8px;
+    }
   }
 
   &-description {

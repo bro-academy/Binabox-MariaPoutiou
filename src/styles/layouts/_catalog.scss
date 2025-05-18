@@ -73,8 +73,9 @@
     line-height: $line-height-xl;
     align-items: center;
     margin-block: $margin-0;
-    text-align: left;
+    text-align: start;
     display: flex;
+    flex: 1;
     gap: $gap-3xl;
 
     @include tablet {

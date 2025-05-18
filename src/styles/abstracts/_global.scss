@@ -22,6 +22,12 @@ body {
       }
     }
   }
+
+  &.not-scrolled {
+    @include laptopMax {
+      overflow-y: hidden;
+    }
+  }
 }
 
 h1,
