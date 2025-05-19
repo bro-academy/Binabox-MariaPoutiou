@@ -1,5 +1,7 @@
 {% for blog in blogCard %}
-<article class="blog-card{% if loop.first or loop.last %} blog-card--large{% endif %}">
+<article
+  class="blog-card{% if loop.first or loop.last %} blog-card--large{% endif %}"
+>
   <picture
     class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom %} blog-card__picture--custom{% endif %}"
   >

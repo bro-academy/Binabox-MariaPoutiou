@@ -2,16 +2,28 @@
 @use "../abstracts/mixins" as *;
 
 .form {
-  max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 104px;
+  padding-block: $padding-3xl $padding-4xl;
+
+  @include tablet {
+    padding-block: $padding-4xl 104px;
+  }
+
+  @include laptop {
+    max-width: 640px;
+    padding-block: $padding-4xl;
+    margin-inline: $margin-auto;
+  }
 
   &-title {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
     text-align: $text-align-center;
     font-family: $font-headings;
-    margin-block: 64px 0;
+    margin-block: 32px 8px;
+
+    @include tablet {
+      margin-block: 64px 8px;
+    }
   }
 
   &-description {
@@ -20,33 +32,33 @@
     font-size: $font-size-xl;
     line-height: $line-height-lg;
     text-align: $text-align-center;
-    margin-block: 8px 40px;
+    margin-block: $margin-sm $margin-0;
   }
 
   &__consent {
     background-color: $color-background-block-dark;
     padding: $padding-2xl;
-    margin-bottom: 24px;
+    margin-bottom: $margin-3xl;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: $gap-sm;
   }
 
   &__consent-text {
     line-height: $line-height-sm;
-    margin-block: auto;
+    margin-block: $margin-auto;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    margin-bottom: 24px;
+    gap: $gap-2xs;
+    margin-bottom: $margin-3xl;
   }
 
   &__item-label {
-    margin-block: 2px 8px;
+    margin-block: $margin-2xs $margin-sm;
   }
 
   &__label {
@@ -121,7 +133,7 @@
   display: flex;
   padding-left: $padding-1xl;
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: $margin-sm;
 
   &::before {
     content: "";
@@ -233,6 +245,6 @@
 }
 
 .button__form {
-  width: 640px;
+  width: 100%;
   height: 48px;
 }

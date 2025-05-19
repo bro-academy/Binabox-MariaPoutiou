@@ -1,45 +1,109 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .catalog {
-  max-width: 1024px;
+  width: 100%;
+  flex: 1;
+
+  @include laptop {
+    max-width: 1024px;
+  }
 
   &-layout {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
+    width: 100%;
+
+    @include laptop {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__filter-mobile {
+    @include button-secondary;
+    margin-bottom: $margin-7xl;
+    padding-block: $padding-sm;
+    padding-inline: $padding-2xl;
+    &-area {
+
+      @include laptopMax {
+
+        &.is-chosen {
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+          background-color: $color-background;
+          padding: 16px;
+
+          .catalog__filter-mobile {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__filter-text {
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-lg;
+    line-height: $font-size-3xl;
   }
 
   &__page-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-  }
+    gap: $gap-lg;
 
-  &__page-functions {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: space-between;
-    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__header-buttons {
     background-color: #1d1c28;
     padding: $padding-lg;
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: $gap-lg;
     align-items: flex-start;
-    margin-block: 32px;
+    margin-block: $margin-5xl;
   }
 }
 
 .product__wrapper-catalog {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  gap: 32px;
-  margin-bottom: 64px;
+  grid-template-columns: 1fr;
+  gap: $gap-3xl;
+  margin-bottom: $margin-7xl;
+
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+.catalog-search {
+  width: 100%;
+
+  @include tablet {
+    width: auto;
+  }
 }
 
 .button__catalog {
@@ -52,5 +116,14 @@
 }
 
 .section-title--catalog-page {
-  margin: 0;
+  font-size: $font-size-2xl;
+  line-height: $line-height-xl;
+  margin: $margin-0;
+  text-align: start;
+  flex: 1;
+
+  @include tablet {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+  }
 }

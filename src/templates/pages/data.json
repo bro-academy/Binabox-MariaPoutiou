@@ -939,7 +939,7 @@
   ],
 
   "heroCatalog": {
-    "title": "Catalog",
+    "title": "Explore catalog",
     "list": [
       {
         "text": "Home",
@@ -949,6 +949,10 @@
         "text": "Catalog"
       }
     ]
+  },
+
+  "catalogFilter": {
+    "text": "Filters"
   },
 
   "dropdownFilter": {

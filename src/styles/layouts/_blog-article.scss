@@ -1,30 +1,54 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.container--blog {
+  @include tablet {
+    padding-inline: 64px;
+  }
+}
+
 .blog-layout {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 32px;
+  gap: $gap-5xl;
   position: relative;
 
   @include laptop {
     flex-direction: row-reverse;
-    padding-inline: 108px;
+    gap: $gap-3xl;
+  }
+
+  @include desktop {
+    margin-inline: $margin-7xl;
   }
 }
 
 .blog-article {
   padding-bottom: $padding-4xl;
-  flex: 1;
-  min-width: 600px;
+
+  @include tablet {
+    padding-bottom: $padding-2xl;
+  }
+
+  @include laptop {
+    flex: 1;
+    padding-bottom: $padding-4xl;
+  }
 
   &__figure {
-    display: flex;
     position: relative;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin-top: 0;
+    margin-inline-start: $margin-0;
+    margin-inline-end: $margin-0;
+    margin-top: $margin-0;
+
+    @include laptop {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    display: block;
   }
 
   &__caption {
@@ -43,7 +67,11 @@
     line-height: $line-height-4xl;
     letter-spacing: -0.5px;
     font-family: $font-headings;
-    margin-block: 16px;
+    margin-block: $margin-lg;
+
+    @include laptopMax {
+      margin-top: $margin-5xl;
+    }
   }
 
   &__label {
@@ -60,7 +88,7 @@
   }
 
   &__meta {
-    margin-block: 32px;
+    margin-block: $margin-5xl;
   }
 
   &__author,
@@ -78,7 +106,7 @@
 
   &__word-bg {
     /* highlighted word "players" */
-    margin: 0;
+    margin: $margin-0;
     background-color: $color-primary;
     color: $color-text-tertiary;
     font-weight: $font-weight-secondary;
@@ -111,8 +139,8 @@
   &__bullet-list {
     list-style: disc;
     padding-left: $padding-xl;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: $margin-6xl;
+    margin-left: $margin-xl;
   }
 
   &__bullet-item {
@@ -122,28 +150,28 @@
   }
 
   &__list {
-    margin-top: 40px;
+    margin-top: $margin-6xl;
   }
 
   &__item {
     color: $color-text-tertiary;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-bottom: 8px;
+    margin-bottom: $margin-sm;
   }
 
   &__quote-wrapper {
     background-color: $color-quote;
     padding: $padding-lg;
     border-radius: 16px;
-    margin-block: 32px;
+    margin-block: $margin-5xl;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: $gap-xs;
   }
 
   &__quote {
-    margin: 0;
+    margin: $margin-0;
   }
 
   &__quote-text {
@@ -151,11 +179,11 @@
     font-size: $font-size-3xl;
     line-height: $line-height-2xl;
     font-family: $font-headings;
-    margin: 0;
+    margin: $margin-0;
   }
 
   &__quote-meta {
-    margin-top: 8px;
+    margin-top: $margin-sm;
   }
 
   &__quote-value {
@@ -172,8 +200,7 @@
   }
 
   &__gallery {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    margin-inline: $margin-0;
     position: relative;
   }
 
@@ -181,11 +208,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 24px;
+    gap: $gap-2xl;
 
     @include laptop {
       flex-direction: row;
     }
+  }
+
+  &__gallery-img {
+    width: 100%;
   }
 
   &__gallery-caption {

@@ -17,14 +17,14 @@
 .blog-section__grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 16px;
+  gap: $gap-lg;
   overflow-x: auto;
   padding-bottom: $padding-lg;
   -webkit-overflow-scrolling: touch;
 
   @include tablet {
     display: grid;
-    gap: 24px;
+    gap: $gap-2xl;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -106,7 +106,7 @@
   }
 
   &__meta {
-    margin-block-start: 24px;
+    margin-block-start: $margin-3xl;
   }
 
   &__author,
@@ -121,7 +121,7 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
-    margin-block: 16px 0;
+    margin-block: $margin-lg $margin-0;
 
     @include tablet {
       font-size: $font-size-3xl;
@@ -139,7 +139,7 @@
     opacity: 0.82;
     font-size: $font-size-md;
     line-height: $line-height-md;
-    margin-block: 0 16px;
+    margin-block: $margin-0 $margin-lg;
   }
 }
 

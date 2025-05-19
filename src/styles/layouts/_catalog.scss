@@ -19,13 +19,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: $gap-5xl;
+    margin-bottom: $margin-6xl;
 
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      gap: 32px;
+      gap: $gap-3xl;
     }
   }
 
@@ -36,7 +36,7 @@
   &__controls {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $gap-lg;
     width: 100%;
     @include tablet {
       width: auto;
@@ -46,7 +46,7 @@
   &__pagination {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $gap-lg;
 
     &::before {
       content: "";
@@ -65,17 +65,18 @@
   letter-spacing: -0.5px;
   text-align: center;
   font-family: $font-headings;
-  margin-block: 0 40px;
+  margin-block: $margin-0 $margin-6xl;
 
   &--catalog {
     color: $color-text-tertiary;
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     align-items: center;
-    margin-block: 0;
-    text-align: left;
+    margin-block: $margin-0;
+    text-align: start;
     display: flex;
-    gap: 32px;
+    flex: 1;
+    gap: $gap-3xl;
 
     @include tablet {
       font-size: $font-size-3xl;

@@ -17,7 +17,7 @@
     padding-top: $padding-2xl;
     padding-bottom: $padding-3xl;
     padding-inline: $padding-2xl;
-    margin-bottom: 24px;
+    margin-bottom: $margin-3xl;
     backdrop-filter: blur(20px);
   }
 
@@ -30,12 +30,12 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
-    margin-block: 0;
+    margin-block: $margin-0;
   }
 
   &__answer {
     font-size: $font-size-md;
     line-height: $line-height-md;
-    margin-block: 16px 0;
+    margin-block: $margin-lg $margin-0;
   }
 }

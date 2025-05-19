@@ -3,18 +3,18 @@
 
 .hero-section {
   &__list {
-    margin: 0;
+    margin: $margin-0;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: $gap-xs;
     flex-wrap: wrap;
   }
 
   &__list-item {
-    padding-block: $padding-2xs;
+    padding-block-start: $padding-3xs;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $gap-xs;
 
     &::after {
       content: "";

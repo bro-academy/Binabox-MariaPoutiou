@@ -2,14 +2,14 @@
 @use "../abstracts/mixins" as *;
 
 .cta-more {
-  margin-top: 40px;
+  margin-top: $margin-6xl;
   text-align: center;
 }
 
 .button--cta {
   width: 100%;
 
-    @include laptop {
+  @include laptop {
     width: auto;
   }
 }

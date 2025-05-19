@@ -4,13 +4,14 @@
 .footer {
   background-color: $color-background-block-light;
   padding-block: $padding-4xl $padding-3xl;
+  padding-inline: $padding-4xl;
 
   &-upper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 36px;
-    margin-bottom: 64px;
+    gap: $gap-4xl;
+    margin-bottom: $margin-7xl;
 
     @include laptop {
       flex-direction: row;
@@ -23,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: $gap-xl;
     border-top: 1px solid $color-background-block-secondary;
     padding-top: $padding-3xl;
 
@@ -31,12 +32,12 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: $gap-lg;
     }
   }
 
   &__description {
-    margin-bottom: 0;
+    margin-bottom: $margin-0;
 
     @include laptop {
       line-height: $line-height-sm;
@@ -49,7 +50,7 @@
 
   &__list-wrapper {
     display: flex;
-    gap: 48px;
+    gap: $gap-6xl;
   }
 }
 
@@ -60,7 +61,7 @@
     font-weight: $font-weight-tertiary;
     line-height: $line-height-lg;
     font-size: $font-size-xl;
-    margin-block: 0 8px;
+    margin-block: $margin-0 $margin-sm;
   }
 
   &__link {
@@ -77,7 +78,7 @@
 .copyright__text {
   line-height: $line-height-sm;
   white-space: nowrap;
-  margin: 0;
+  margin: $margin-0;
 }
 
 .social-media__list-item {

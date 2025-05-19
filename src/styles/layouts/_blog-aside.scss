@@ -2,18 +2,25 @@
 @use "../abstracts/mixins" as *;
 
 .aside-section {
-  flex-shrink: 1;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
+  order: -1;
+  width: 100%;
+
+  @include laptop {
+    order: 0;
+    flex-shrink: 1;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    width: 328px;
+    min-width: 220px;
+    margin-bottom: $margin-0;
+  }
 }
 
 .aside__block {
   background-color: $color-background-block-dark;
   padding: $padding-2xl;
-  margin-block: 0 21px;
-  width: 328px;
-  min-width: 220px;
+  margin-block: $margin-0 $margin-2xl;
 
   &-title {
     padding-bottom: $padding-lg;
@@ -21,19 +28,19 @@
     font-size: $font-size-2xl;
     line-height: $line-height-xl;
     font-family: $font-headings;
-    margin-block: 0;
+    margin-block: $margin-0;
   }
 
   &--lower {
-    margin-bottom: 0;
+    margin-bottom: $margin-0;
   }
 
   &-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 0;
-    margin-block-start: 16px;
+    gap: $gap-xs;
+    margin-bottom: $margin-0;
+    margin-block-start: $margin-lg;
   }
 
   &-item {
@@ -50,6 +57,6 @@
 }
 
 .tag-list--aside {
-  margin-bottom: 0;
-  margin-block-start: 16px;
+  margin-bottom: $margin-0;
+  margin-block-start: $margin-lg;
 }
