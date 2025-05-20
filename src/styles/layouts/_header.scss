@@ -53,12 +53,24 @@
   &-logo {
     display: flex;
     align-items: center;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   &-logo__image {
     height: 40px;
     width: auto;
     gap: $gap-3xl;
+  }
+
+  &-logo__alt {
+    display:none;
+
+    @include laptop {
+      display: flex;
+    }
   }
 
   &-section {
@@ -137,5 +149,9 @@
       width: auto;
       height: auto;
     }
+  }
+
+  &-button__img {
+  margin-right: 8px;
   }
 }

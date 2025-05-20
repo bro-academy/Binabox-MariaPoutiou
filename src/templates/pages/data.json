@@ -1,8 +1,6 @@
 {
   "header": {
-    "burgerImg": "/img/menu-2x.webp",
-    "logolink": "src/images/sprite.svg#binabox-logo-white",
-    "logoimg": "/img/binaboxlogo-2x.webp",
+    "logolink": "index.html",
     "logoalt": "Binabox-logo",
     "nav": [
       {
@@ -30,10 +28,8 @@
 
   "headerButtons": {
     "textSecondary": "Discord",
-    "imgSecondary": "https://via.placeholder.com/150",
     "altSecondary": "Discord icon",
     "textPrimary": "Connect",
-    "imgPrimary": "https://via.placeholder.com/150",
     "altPrimary": "Connect icon"
   },
 
