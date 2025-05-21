@@ -36,3 +36,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+.social-media__link {
+@include link-svg;
+}

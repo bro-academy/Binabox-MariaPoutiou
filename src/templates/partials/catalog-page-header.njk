@@ -1,9 +1,9 @@
 <div class="catalog__header-buttons">
   {% for button in catalogHeaderButtons %}
-    <button class="button button__catalog">
+    <button class="button button__catalog {% if loop.last %}button--tertiary{% else %}button--secondary{% endif %}">
       {{ button.label }}
       {% if button.icon %}
-        <svg class="catalog-search__button-icon" width="24" height="24">
+        <svg class="catalog-search__button-icon" width="10" height="10">
           <use href="/img/sprite.svg#{{ button.icon }}"></use>
         </svg>
       {% endif %}

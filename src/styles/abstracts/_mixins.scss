@@ -75,6 +75,22 @@
   }
 }
 
+@mixin link-svg($has-focus: true) {
+  &:hover {
+    color: $color-hover;
+  }
+
+  @if $has-focus {
+    &:focus {
+      border: 4px solid $color-focus-border;
+    }
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
+
 @mixin desktop {
   @media screen and (width >= #{$screen-desktop}) {
     @content;

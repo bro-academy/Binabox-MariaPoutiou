@@ -27,9 +27,7 @@
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
     &-area {
-
       @include laptopMax {
-
         &.is-chosen {
           position: fixed;
           width: 100%;
@@ -123,6 +121,8 @@
 }
 
 .button__catalog {
+  display: flex;
+  gap: 8px;
   height: 32px;
   padding-block: $padding-2xs;
   padding-inline: $padding-md;
