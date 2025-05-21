@@ -1,6 +1,9 @@
 <section class="container catalog-section">
   <div class="catalog-header">
     <div class="catalog-header__title">
+      <svg class="catalog-header-img" width="24" height="24" aria-label="{{ catalogSection.imgAlt }}">
+        <use href="/img/sprite.svg#folder-icon"></use>
+      </svg>
       <h3 class="section-title section-title--catalog">
         {{ catalogSection.title }}
       </h3>
@@ -10,7 +13,10 @@
     </div>
   </div>
   <ul class="product-wrapper">
-    {% for product in products %} {% if product.section == "homepage" %} {%
-    include "partials/product-card.njk" %} {% endif %} {% endfor %}
+    {% for product in products %}
+      {% if product.section == "homepage" %}
+        {% include "partials/product-card.njk" %}
+      {% endif %}
+    {% endfor %}
   </ul>
 </section>
