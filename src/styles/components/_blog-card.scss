@@ -107,6 +107,9 @@
 
   &__meta {
     margin-block-start: $margin-3xl;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__author,
