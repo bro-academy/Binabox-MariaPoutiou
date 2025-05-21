@@ -882,7 +882,7 @@
   "footer": {
     "title": "Binabox",
     "logolink": "https://via.placeholder.com/150",
-    "logoimg": "https://via.placeholder.com/150",
+    "logoimg": "binabox-logo-blue",
     "logoalt": "Binabox logo",
     "description": "We are the best way to check the rarity of NFT collection",
     "copyright": "BINABOX 2022 - All rights reserved"
@@ -890,33 +890,33 @@
 
   "footerSocials": [
     {
-      "link": "https://www.instagram.com/",
-      "img": "https://via.placeholder.com/150",
-      "alt": "Instagram-logo"
+      "link": "https://x.com/",
+      "img": "twitter-icon",
+      "alt": "twitter-logo"
     },
     {
       "link": "https://www.facebook.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "facebook-icon",
       "alt": "Facebook-logo"
     },
     {
       "link": "https://web.telegram.org/k/",
-      "img": "https://via.placeholder.com/150",
+      "img": "telegram-icon",
       "alt": "Telegram-logo"
     },
     {
       "link": "https://www.youtube.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "youtube-icon",
       "alt": "YouTube-logo"
     },
     {
       "link": "https://www.tiktok.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "tiktok-icon",
       "alt": "TikTok-logo"
     },
     {
       "link": "https://discord.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "discord-icon",
       "alt": "Discord-logo"
     }
   ],
