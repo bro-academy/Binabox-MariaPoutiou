@@ -1,5 +1,5 @@
 <section class="aside__block">
-  <h3 class="aside__block-title-blog">{{ asideUpper.title }}</h3>
+  <h3 class="aside__block-title aside__block-title--blog">{{ asideUpper.title }}</h3>
   <nav class="aside__block-nav">
     <ul class="aside__block-list">
       {% for item in asideUpper.item %}
@@ -11,7 +11,7 @@
   </nav>
 </section>
 <section class="aside__block aside__block--lower">
-  <h4 class="aside__block-title">{{ asideLower.title }}</h4>
+  <h4 class="aside__block-title aside__block-title--blog">{{ asideLower.title }}</h4>
   <ul class="tag-list tag-list--aside">
     {% for item in asideLower.item %}
     <li class="tag-list__item">

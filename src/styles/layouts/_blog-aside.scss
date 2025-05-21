@@ -29,10 +29,10 @@
     font-family: $font-headings;
     margin-block: $margin-0;
 
-    &-blog {
-          border-bottom: 1px solid $color-background-block-secondary;
-    }
+    &--blog {
+    border-bottom: 1px solid $color-background-block-secondary;
   }
+}
 
   &--lower {
     margin-bottom: $margin-0;
