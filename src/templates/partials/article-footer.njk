@@ -5,9 +5,9 @@
     </p>
     <ul class="tag-list tag-list--subarticle">
       {% for tag in subarticleTags.item %}
-      <li class="tag-list__item">
-        <a class="tag-list__link" href="{{ tag.link }}">{{ tag.tag }}</a>
-      </li>
+        <li class="tag-list__item">
+          <a class="tag-list__link" href="{{ tag.link }}">{{ tag.tag }}</a>
+        </li>
       {% endfor %}
     </ul>
   </div>
@@ -17,20 +17,13 @@
     </p>
     <ul class="subarticle__socials-list">
       {% for social in subarticleSocials.socials %}
-      <li class="subarticle__socials-item">
-        <a
-          class="subarticle__socials-link"
-          href="{{ social.link }}"
-          target="_blank"
-        >
-          <img
-            class="subarticle__socials-icon"
-            src="{{ social.icon }}"
-            alt="{{ social.alt }}"
-            loading="lazy"
-          />
-        </a>
-      </li>
+        <li class="subarticle__socials-item">
+          <a class="subarticle__socials-link" href="{{ social.link }}" target="_blank">
+            <svg class="subarticle__socials-icon" width="16" height="16" aria-label="{{ social.alt }}">
+              <use href="/img/sprite.svg#{{ social.icon }}"></use>
+            </svg>
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </div>

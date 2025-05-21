@@ -89,6 +89,9 @@
 
   &__meta {
     margin-block: $margin-5xl;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__author,
@@ -149,15 +152,23 @@
     line-height: $line-height-lg;
   }
 
+  &__list-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
   &__list {
     margin-top: $margin-6xl;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   &__item {
     color: $color-text-tertiary;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-bottom: $margin-sm;
   }
 
   &__quote-wrapper {
@@ -184,6 +195,9 @@
 
   &__quote-meta {
     margin-top: $margin-sm;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__quote-value {

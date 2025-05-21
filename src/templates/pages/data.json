@@ -747,10 +747,10 @@
     "caption": "Photo caption",
     "title": "The Basilisks NFT",
     "label": "Gaming",
-    "authorIcon": "https://via.placeholder.com/150",
+    "authorIcon": "person-icon",
     "authorIconAlt": "person-icon",
     "author": "Tony Nguyen",
-    "dateIcon": "https://via.placeholder.com/150",
+    "dateIcon": "calendar-icon",
     "dateIconAlt": "calendar",
     "datetime": "20 Jun 2022"
   },
@@ -769,15 +769,23 @@
     "secondItemSuffix": "on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
     "list": [
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 1"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 2"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 3"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 4"
       }
     ]
@@ -785,7 +793,7 @@
 
   "quoteWrapper": {
     "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
-    "icon": "https://via.placeholder.com/150",
+    "icon": "star-icon",
     "iconAlt": "star icon",
     "value": "8.5/10",
     "author": "Markout Corporation",
@@ -833,17 +841,17 @@
     "title": "Share:",
     "socials": [
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "twitter-icon",
         "alt": "twitter-logo",
         "link": "https://x.com/?lang=en&mx=2"
       },
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "facebook-icon",
         "alt": "facebook-logo",
         "link": "https://www.facebook.com/"
       },
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "instagram-icon",
         "alt": "instagram-logo",
         "link": "https://www.instagram.com/"
       }
