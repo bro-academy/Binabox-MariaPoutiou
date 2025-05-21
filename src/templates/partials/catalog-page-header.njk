@@ -1,6 +1,12 @@
 <div class="catalog__header-buttons">
-  <button class="button button__catalog button--secondary">NFT</button>
-  <button class="button button__catalog button--secondary">ICO</button>
-  <button class="button button__catalog button--secondary">Crypto</button>
-  <button class="button button__catalog button--tertiary">Clear all</button>
+  {% for button in catalogHeaderButtons %}
+    <button class="button button__catalog">
+      {{ button.label }}
+      {% if button.icon %}
+        <svg class="catalog-search__button-icon" width="24" height="24">
+          <use href="/img/sprite.svg#{{ button.icon }}"></use>
+        </svg>
+      {% endif %}
+    </button>
+  {% endfor %}
 </div>

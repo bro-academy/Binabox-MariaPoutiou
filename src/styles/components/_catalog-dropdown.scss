@@ -12,6 +12,7 @@
   @include button-focus;
   @include button-secondary;
 
+  appearance: none;
   height: 48px;
   width: 145px;
   padding-block: $padding-sm;

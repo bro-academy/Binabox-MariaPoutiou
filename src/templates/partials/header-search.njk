@@ -1,10 +1,8 @@
 <form class="header-search" method="get">
-  <input
-    class="input input--header"
-    type="search"
-    name="search"
-    maxlength="30"
-    placeholder="{{ headerSearch.headerPlaceholder }}"
-    autocomplete="on"
-  />
+  <div class="input-wrapper">
+    <svg class="header-search__icon" width="24" height="24" aria-label="{{ headerSearch.iconAlt }}">
+      <use href="/img/sprite.svg#{{ headerSearch.icon }}"></use>
+    </svg>
+    <input class="input input--header" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on"/>
+  </div>
 </form>

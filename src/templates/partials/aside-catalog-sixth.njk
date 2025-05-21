@@ -1,25 +1,26 @@
 <section class="aside__block">
   <details class="aside__block-details">
     <summary class="aside__block-summary">
-      <h3 class="aside__block-title">{{ asideSpecial.title }}</h3>
+      <div class="aside__block-summary-wrapper">
+        <h3 class="aside__block-title">{{ asideSpecial.title }}</h3>
+        <div>
+        <svg class="aside__summary-icon" width="16" height="16">
+          <use href="/img/sprite.svg#{{ asideSpecial.iconClosed }}"></use>
+        </svg>
+        <svg class="aside__summary-icon-open" width="16" height="16">
+          <use href="/img/sprite.svg#{{ asideSpecial.iconOpen }}"></use>
+        </svg>
+        </div>
+      </div>
     </summary>
     <div class="aside__block-wrapper">
       {% for option in asideSpecial.options %}
-      <div class="aside__block-item-catalog aside-block--checkbox">
-        <input
-          class="visually-hidden aside__input aside__input--checkbox"
-          type="{{ asideSpecial.type }}"
-          name="{{ asideSpecial.name }}"
-          value="{{ option.value }}"
-          id="{{ option.id }}"
-        />
-        <label
-          class="aside__block-label aside__block-label--checkbox"
-          for="{{ option.id }}"
-        >
-          {{ option.label }}
-        </label>
-      </div>
+        <div class="aside__block-item-catalog aside-block--checkbox">
+          <input class="visually-hidden aside__input aside__input--checkbox" type="{{ asideSpecial.type }}" name="{{ asideSpecial.name }}" value="{{ option.value }}" id="{{ option.id }}"/>
+          <label class="aside__block-label aside__block-label--checkbox" for="{{ option.id }}">
+            {{ option.label }}
+          </label>
+        </div>
       {% endfor %}
     </div>
   </details>

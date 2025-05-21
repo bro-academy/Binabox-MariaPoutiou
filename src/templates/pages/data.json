@@ -27,7 +27,9 @@
   },
 
   "headerSearch": {
-    "headerPlaceholder": "Search"
+    "headerPlaceholder": "Search",
+    "icon": "search-icon",
+    "iconAlt": "search icon"
   },
 
   "headerButtons": {
@@ -983,6 +985,7 @@
 
   "dropdownFilter": {
     "placeholder": "Sort by",
+    "icon": "arrow-up",
     "placeholderValue": "options",
     "options": [
       {
@@ -1008,16 +1011,32 @@
     "name": "search",
     "maxlength": 30,
     "placeholder": "Search NFT",
-    "autocomplete": "on"
+    "autocomplete": "on",
+    "icon": "search-icon"
   },
 
-  "asideForm": {
-    "action": "https://some-url.com",
-    "method": "post"
-  },
+  "catalogHeaderButtons": [
+    {
+      "label": "NFT",
+      "icon": "x-icon"
+    },
+    {
+      "label": "ICO",
+      "icon": "x-icon"
+    },
+    {
+      "label": "Crypto",
+      "icon": "x-icon"
+    },
+    {
+      "label": "Clear all"
+    }
+  ],
 
   "asideClothing": {
     "title": "Clothing",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "clothes",
     "type": "checkbox",
     "options": [
@@ -1055,6 +1074,8 @@
 
   "asideEyes": {
     "title": "Eyes",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "eyes",
     "type": "radio",
     "options": [
@@ -1084,20 +1105,28 @@
   "asideTextBlocks": [
     {
       "title": "Face",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     },
     {
       "title": "Skin",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     },
     {
       "title": "Background",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     }
   ],
 
   "asideSpecial": {
     "title": "Special",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "special",
     "type": "checkbox",
     "options": [

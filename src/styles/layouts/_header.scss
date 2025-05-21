@@ -108,6 +108,12 @@
   }
 
   &-search {
+    &__icon {
+      position: absolute;
+      left: 12px;
+      pointer-events: none;
+    }
+
     @include laptop {
       display: flex;
       align-items: center;
@@ -161,4 +167,10 @@
       padding-inline: 24px;
     }
   }
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
