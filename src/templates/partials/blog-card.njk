@@ -10,11 +10,11 @@
     </div>
     <div class="blog-card__meta">
       <svg class="blog-card__meta-img" width="16" height="16" aria-label="{{ blog.authorIconAlt }}">
-        <use href="/img/sprite.svg#person-icon"></use>
+        <use href="/img/sprite.svg#{{ blog.authorIcon }}"></use>
       </svg>
       <span class="blog-card__author">{{ blog.authorName }}</span>
       <svg class="blog-card__date-img" width="16" height="16" aria-label="{{ blog.dateIconAlt }}">
-        <use href="/img/sprite.svg#calendar-icon"></use>
+        <use href="/img/sprite.svg#{{ blog.dateIcon }}"></use>
       </svg>
       <time class="blog-card__date" datetime="2022-06-20">{{ blog.dateISO }}
       </time>

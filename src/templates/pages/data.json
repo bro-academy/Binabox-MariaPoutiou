@@ -1,7 +1,11 @@
 {
   "header": {
     "logolink": "index.html",
-    "logoalt": "Binabox-logo",
+    "logoImgSmall": "binabox-icon",
+    "logoAltSmall": "Binabox logo",
+    "logoImgWhite": "binabox-logo-white",
+    "burgerIcon": "burger-icon",
+    "burgerAlt": "burger icon",
     "nav": [
       {
         "text": "Home",
@@ -28,7 +32,9 @@
 
   "headerButtons": {
     "textSecondary": "Discord",
+    "imgSecondary": "discord-icon",
     "altSecondary": "Discord icon",
+    "imgPrimary": "connect-icon",
     "textPrimary": "Connect",
     "altPrimary": "Connect icon"
   },
@@ -78,10 +84,15 @@
 
   "catalogSection": {
     "title": "Catalog",
+    "img": "folder-icon",
     "imgAlt": "folder icon"
   },
 
   "catalogButtons": {
+    "prevImg": "arrow-left",
+    "prevAlt": "arrow icon left",
+    "nextImg": "arrow-right",
+    "nextAlt": "arrow icon left",
     "all": "See all"
   },
 
@@ -246,8 +257,10 @@
       "img": "sonic-live-face",
       "alt": "abstract cyber face illustration",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
@@ -261,8 +274,10 @@
       "img": "sonic-live-skeleton",
       "alt": "futiristc skeleton in front of smoke",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
@@ -276,8 +291,10 @@
       "img": "sonic-live-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
@@ -291,8 +308,10 @@
       "img": "sonic-live-gorilla",
       "alt": "AI-enhanced gorilla with piercing eyes and cybernetic effects",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
@@ -307,8 +326,10 @@
       "img": "sonic-live-console",
       "alt": "cyberpunk holographic game console",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
@@ -323,8 +344,10 @@
       "img": "sonic-live-duck",
       "alt": "futuristic duck with a digital background and neon elements",
       "label": "NFT",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
