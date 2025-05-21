@@ -668,18 +668,30 @@
   "faqsItem": [
     {
       "question": "What are the NFTs?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     },
     {
       "question": "How do i get NFTs?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     },
     {
       "question": "How can we buy your NFTs",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     },
     {
       "question": "Who are the team behind the project?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     }
   ],

@@ -22,8 +22,12 @@
   }
 
   &__question {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid $color-background-block-secondary;
     padding-bottom: $padding-2xl;
+    list-style: none;
+    cursor: pointer;
   }
 
   &__question-text {
@@ -38,4 +42,16 @@
     line-height: $line-height-md;
     margin-block: $margin-lg $margin-0;
   }
+}
+
+.faqs__question-icon-open {
+  display:none
+}
+
+details[open] .faqs__question-icon {
+  display: none;
+}
+
+details[open] .faqs__question-icon-open {
+  display: inline-block;
 }
