@@ -1,6 +1,7 @@
 {% for blog in blogCard %}
   <article class="blog-card{% if loop.first or loop.last %} blog-card--large{% endif %}">
-    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom %}blog-card__picture--custom{% endif %}">
+    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom
+        %}blog-card__picture--custom{% endif %}">
       <source srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x" type="image/avif"/>
       <source srcset="/img/{{ blog.img }}-1x.webp 1x, /img/{{ blog.img }}-2x.webp 2x" type="image/webp"/>
       <img class="blog-card__img" src="/img/{{ blog.img }}-2x.webp" alt="{{ blog.alt }}" width="736" height="664" loading="lazy"/>
@@ -21,8 +22,12 @@
     </div>
     <h4 class="blog-card__title">{{ blog.cardTitle }}</h4>
     <p class="blog-card__description">{{ blog.cardDescription }}</p>
-    <div>
-      <a class="button button--secondary blog-link" href="{{ blog.link }}">{{ blog.linkText }}</a>
+    <div class="blog-card__button-wrapper">
+      <a class="button button--secondary blog-link" href="{{ blog.link }}">{{ blog.linkText }}
+      <svg class="blog-link__img" aria-hidden="true">
+        <use href="/img/sprite.svg#{{ blog.icon }}"></use>
+      </svg>
+      </a>
     </div>
   </article>
 {% endfor %}
