@@ -82,7 +82,8 @@
 }
 
 .social-media__list-item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 40px;
 }
 

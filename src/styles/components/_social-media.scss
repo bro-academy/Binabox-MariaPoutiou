@@ -19,7 +19,7 @@
 
   &__socials-link {
     color: $color-text-tertiary;
-    line-height: $line-height-sm;
+    height: 16px;
     align-items: center;
 
     @include link-style(false);
@@ -38,5 +38,5 @@
 }
 
 .social-media__link {
-@include link-svg;
+@include link-style;
 }

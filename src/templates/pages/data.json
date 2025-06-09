@@ -989,7 +989,7 @@
 
   "dropdownFilter": {
     "placeholder": "Sort by",
-    "icon": "arrow-up",
+    "icon": "arrow-down",
     "placeholderValue": "options",
     "options": [
       {

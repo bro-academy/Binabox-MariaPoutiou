@@ -65,23 +65,8 @@
   }
 
   @if $has-focus {
-    &:focus {
-      border: 4px solid $color-focus-border;
-    }
-  }
-
-  &:active {
-    color: $color-active;
-  }
-}
-
-@mixin link-svg($has-focus: true) {
-  &:hover {
-    color: $color-hover;
-  }
-
-  @if $has-focus {
-    &:focus {
+    &:focus-visible {
+      outline: none;
       border: 4px solid $color-focus-border;
     }
   }

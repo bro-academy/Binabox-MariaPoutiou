@@ -44,6 +44,7 @@
     border-bottom: 1px solid $color-background-block-secondary;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &::-webkit-details-marker {
