@@ -1,10 +1,12 @@
 <select class="option-dropdown" name="filter">
-  <option class="option__value" value="{{ dropdownFilter.placeholderValue }}">
-    {{ dropdownFilter.placeholder }}
-    <svg class="option__value-icon" width="24" height="24" aria-hidden="true">
-      <use href="/img/sprite.svg#{{ dropdownFilter.icon }}"></use>
-    </svg>
-  </option>
+  <svg class="option__value-icon" width="24" height="24" aria-hidden="true">
+    <use href="/img/sprite.svg#{{ dropdownFilter.icon }}"></use>
+  </svg>
+  <div>
+    <option class="option__value" value="{{ dropdownFilter.placeholderValue }}">
+      {{ dropdownFilter.placeholder }}
+    </option>
+  </div>
   {% for option in dropdownFilter.options %}
     <option class="option__item" value="{{ option.value }}">
       {{ option.label }}
