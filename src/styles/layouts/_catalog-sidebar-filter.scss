@@ -51,6 +51,11 @@
   }
 }
 
+
+.aside__block-title--catalog {
+  padding-bottom: 0;
+}
+
 .aside__summary-icon-open {
   display: none;
 }
@@ -79,10 +84,6 @@ details[open] .aside__block-title--catalog {
   opacity: 0;
   width: 0;
   height: 0;
-}
-
-.aside__block-title--catalog {
-  padding-bottom: 0;
 }
 
 .aside__block-label {
