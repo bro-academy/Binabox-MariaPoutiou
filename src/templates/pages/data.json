@@ -1046,7 +1046,8 @@
   },
 
   "catalogFilter": {
-    "text": "Filters"
+    "text": "Filters",
+    "icon": "filter-lines"
   },
 
   "dropdownFilter": {

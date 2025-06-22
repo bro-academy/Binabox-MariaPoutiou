@@ -23,6 +23,8 @@
 
   &__filter-mobile {
     @include button-secondary;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: $margin-7xl;
     padding-block: $padding-sm;
     padding-inline: $padding-2xl;
