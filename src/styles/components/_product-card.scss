@@ -104,6 +104,10 @@
   .product-list__item:hover .product-card {
     opacity: 0.3;
   }
+
+  .product-list__item:hover .hover-icon {
+    opacity: 1;
+  }
 }
 
 .product-label {

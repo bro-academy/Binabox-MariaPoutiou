@@ -105,7 +105,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-cat",
@@ -115,7 +117,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-scissors",
@@ -125,7 +129,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-digital-card",
@@ -135,7 +141,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-console",
@@ -145,7 +153,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -156,7 +166,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -167,7 +179,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -178,7 +192,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -189,7 +205,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -200,7 +218,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -211,7 +231,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -222,7 +244,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -233,7 +257,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -244,7 +270,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     }
   ],
 
@@ -268,6 +296,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": false,
       "custom": false
     },
@@ -286,6 +316,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": true
     },
@@ -304,6 +336,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": false
     },
@@ -322,6 +356,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": false
     },
@@ -341,6 +377,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": false,
       "custom": false
     },
@@ -360,6 +398,8 @@
       "linkText": "Read more",
       "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": true
     }
@@ -378,19 +418,27 @@
   "aboutCard": [
     {
       "title": "High quality",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Big collection",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Top resource",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Big community",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     }
   ],
 
@@ -404,6 +452,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -442,6 +492,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -480,6 +532,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -518,6 +572,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -556,6 +612,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -594,6 +652,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
@@ -632,6 +692,8 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",

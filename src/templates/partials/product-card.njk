@@ -2,27 +2,12 @@
   <article class="product-card">
     <div class="product-card__img-wrapper">
       <picture class="product-card__picture">
-        <source
-          srcset="/img/{{ product.img }}-1x.avif 1x, /img/{{ product.img }}-2x.avif 2x"
-          type="image/avif"
-        />
-        <source
-          srcset="/img/{{ product.img }}-1x.webp 1x, /img/{{ product.img }}-2x.webp 2x"
-          type="image/webp"
-        />
-        <img
-          class="product-card__img"
-          src="/img/{{ product.img }}-2x.webp"
-          alt="{{ product.alt }}"
-          width="253"
-          height="324"
-          loading="lazy"
-        />
+        <source srcset="/img/{{ product.img }}-1x.avif 1x, /img/{{ product.img }}-2x.avif 2x" type="image/avif"/>
+        <source srcset="/img/{{ product.img }}-1x.webp 1x, /img/{{ product.img }}-2x.webp 2x" type="image/webp"/>
+        <img class="product-card__img" src="/img/{{ product.img }}-2x.webp" alt="{{ product.alt }}" width="253" height="324" loading="lazy"/>
       </picture>
     </div>
-    <div
-      class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}"
-    >
+    <div class="product-label{% if product.label == 'Sold out' %} product-label--updated{% endif %}">
       {{ product.label }}
     </div>
     <p class="product-card__price">{{ product.price }}</p>
@@ -31,5 +16,13 @@
   <div class="product-list__buttons">
     <button class="button button--quarterly">{{ product.buttonOne }}</button>
     <button class="button button--primary">{{ product.buttonTwo }}</button>
+  </div>
+  <div class="product-card__hover-icons">
+    <svg class="hover-icon hover-icon--top product-card__hover-icon" width="70" height="90">
+      <use href="/img/sprite.svg#{{ product.hoverTop }}"></use>
+    </svg>
+    <svg class="hover-icon hover-icon--bottom product-card__hover-icon" width="80" height="104">
+      <use href="/img/sprite.svg#{{ product.hoverBottom }}"></use>
+    </svg>
   </div>
 </li>

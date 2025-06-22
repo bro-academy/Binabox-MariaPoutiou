@@ -23,6 +23,14 @@
             </li>
           {% endfor %}
         </ul>
+        <div class="team-member__hover-icons">
+          <svg class="hover-icon hover-icon--top team-member__hover-icon" width="70" height="90">
+            <use href="/img/sprite.svg#{{ member.hoverTop }}"></use>
+          </svg>
+          <svg class="hover-icon hover-icon--bottom team-member__hover-icon" width="80" height="104">
+            <use href="/img/sprite.svg#{{ member.hoverBottom }}"></use>
+          </svg>
+        </div>
       </li>
     {% endfor %}
   </ul>

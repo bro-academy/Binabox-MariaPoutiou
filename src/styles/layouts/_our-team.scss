@@ -57,6 +57,7 @@
   overflow: hidden;
   text-align: center;
   flex: 0 0 293px;
+  position: relative;
 
   &:last-child {
     grid-column: 2;
@@ -88,4 +89,9 @@
     line-height: $line-height-lg;
     margin-block: $margin-0;
   }
+}
+
+
+.team-member:hover .hover-icon {
+  opacity: 1;
 }
