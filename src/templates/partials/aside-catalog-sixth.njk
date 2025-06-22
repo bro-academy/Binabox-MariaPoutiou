@@ -4,12 +4,12 @@
       <div class="aside__block-summary-wrapper">
         <h3 class="aside__block-title aside__block-title--catalog">{{ asideSpecial.title }}</h3>
         <div>
-        <svg class="aside__summary-icon" width="16" height="16">
-          <use href="/img/sprite.svg#{{ asideSpecial.iconClosed }}"></use>
-        </svg>
-        <svg class="aside__summary-icon-open" width="16" height="16">
-          <use href="/img/sprite.svg#{{ asideSpecial.iconOpen }}"></use>
-        </svg>
+          <svg class="aside__summary-icon" width="16" height="16">
+            <use href="/img/sprite.svg#{{ asideSpecial.iconClosed }}"></use>
+          </svg>
+          <svg class="aside__summary-icon-open" width="16" height="16">
+            <use href="/img/sprite.svg#{{ asideSpecial.iconOpen }}"></use>
+          </svg>
         </div>
       </div>
     </summary>
@@ -19,6 +19,9 @@
           <input class="visually-hidden aside__input aside__input--checkbox" type="{{ asideSpecial.type }}" name="{{ asideSpecial.name }}" value="{{ option.value }}" id="{{ option.id }}"/>
           <label class="aside__block-label aside__block-label--checkbox" for="{{ option.id }}">
             {{ option.label }}
+            <svg class="aside__block-label-icon" width="8" height="6">
+              <use href="/img/sprite.svg#{{ option.icon }}"></use>
+            </svg>
           </label>
         </div>
       {% endfor %}

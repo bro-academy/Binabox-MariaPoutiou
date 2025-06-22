@@ -51,7 +51,6 @@
   }
 }
 
-
 .aside__block-title--catalog {
   padding-bottom: 0;
 }
@@ -68,7 +67,6 @@ details[open] .aside__summary-icon-open {
   display: inline-block;
   margin-bottom: 16px;
 }
-
 
 details[open] .aside__block-summary-wrapper {
   border-bottom: 1px solid $color-background-block-secondary;
@@ -187,6 +185,17 @@ details[open] .aside__block-title--catalog {
       background-color: $color-disabled;
     }
   }
+}
+
+.aside__block-label-icon {
+  position: absolute;
+  left: 4px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.aside__input:checked ~ .aside__block-label .aside__block-label-icon {
+  opacity: 1;
 }
 
 .button--primary-form {

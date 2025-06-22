@@ -1110,30 +1110,35 @@
       {
         "value": "Combatant",
         "label": "Combatant",
+        "icon": "check-icon",
         "id": "combatant"
       },
 
       {
         "value": "Ninja",
         "label": "Ninja",
+        "icon": "check-icon",
         "id": "ninja"
       },
 
       {
         "value": "King",
         "label": "King",
+        "icon": "check-icon",
         "id": "king"
       },
 
       {
         "value": "Queen",
         "label": "Queen",
+        "icon": "check-icon",
         "id": "queen"
       },
 
       {
         "value": "Robot",
         "label": "Robot",
+        "icon": "check-icon",
         "id": "robot"
       }
     ]
@@ -1200,21 +1205,25 @@
       {
         "label": "Yellow",
         "value": "Yellow",
+        "icon": "check-icon",
         "id": "yellow"
       },
       {
         "label": "Green",
         "value": "Green",
+        "icon": "check-icon",
         "id": "green"
       },
       {
         "label": "Mix",
         "value": "Mix",
+        "icon": "check-icon",
         "id": "mix"
       },
       {
         "label": "Orange",
         "value": "Orange",
+        "icon": "check-icon",
         "id": "orange"
       }
     ]
