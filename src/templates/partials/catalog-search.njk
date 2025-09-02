@@ -1,10 +1,8 @@
 <form class="catalog-search" method="get">
-  <input
-    class="input input--catalog"
-    type="search"
-    name="{{ catalogSearch.name }}"
-    maxlength="{{ catalogSearch.maxlength }}"
-    placeholder="{{ catalogSearch.placeholder }}"
-    autocomplete="{{ catalogSearch.autocomplete }}"
-  />
+  <div class="catalog-search__wrapper">
+    <svg class="catalog-search__icon" width="24" height="24">
+      <use href="/img/sprite.svg#{{ catalogSearch.icon }}"></use>
+    </svg>
+    <input class="input input--catalog" type="search" name="{{ catalogSearch.name }}" maxlength="{{ catalogSearch.maxlength }}" placeholder="{{ catalogSearch.placeholder }}" autocomplete="{{ catalogSearch.autocomplete }}"/>
+  </div>
 </form>

@@ -1,54 +1,41 @@
 {% for blog in blogCard %}
-<article
-  class="blog-card{% if loop.first or loop.last %} blog-card--large{% endif %}"
->
-  <picture
-    class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom %} blog-card__picture--custom{% endif %}"
-  >
-    <source
-      srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x"
-      type="image/avif"
-    />
-    <source
-      srcset="/img/{{ blog.img }}-1x.webp 1x, /img/{{ blog.img }}-2x.webp 2x"
-      type="image/webp"
-    />
-    <img
-      class="blog-card__img"
-      src="/img/{{ blog.img }}-2x.webp"
-      alt="{{ blog.alt }}"
-      width="736"
-      height="664"
-      loading="lazy"
-    />
-  </picture>
-  <div class="blog-card__label">
-    <span class="blog-card__text-label">{{ blog.label }}</span>
+  <article class="blog-card{% if loop.first or loop.last %} blog-card--large{% endif %}">
+    <picture class="blog-card__picture{% if blog.isSmall %} blog-card__picture--small{% endif %}{% if blog.custom
+        %}blog-card__picture--custom{% endif %}">
+      <source srcset="/img/{{ blog.img }}-1x.avif 1x, /img/{{ blog.img }}-2x.avif 2x" type="image/avif"/>
+      <source srcset="/img/{{ blog.img }}-1x.webp 1x, /img/{{ blog.img }}-2x.webp 2x" type="image/webp"/>
+      <img class="blog-card__img" src="/img/{{ blog.img }}-2x.webp" alt="{{ blog.alt }}" width="736" height="664" loading="lazy"/>
+    </picture>
+    <div class="blog-card__label">
+      <span class="blog-card__text-label">{{ blog.label }}</span>
+    </div>
+    <div class="blog-card__meta">
+      <svg class="blog-card__meta-img" width="16" height="16" aria-label="{{ blog.authorIconAlt }}">
+        <use href="/img/sprite.svg#{{ blog.authorIcon }}"></use>
+      </svg>
+      <span class="blog-card__author">{{ blog.authorName }}</span>
+      <svg class="blog-card__date-img" width="16" height="16" aria-label="{{ blog.dateIconAlt }}">
+        <use href="/img/sprite.svg#{{ blog.dateIcon }}"></use>
+      </svg>
+      <time class="blog-card__date" datetime="2022-06-20">{{ blog.dateISO }}
+      </time>
+    </div>
+    <h4 class="blog-card__title">{{ blog.cardTitle }}</h4>
+    <p class="blog-card__description">{{ blog.cardDescription }}</p>
+    <div class="blog-card__button-wrapper">
+      <a class="button button--secondary blog-link" href="{{ blog.link }}">{{ blog.linkText }}
+      <svg class="blog-link__img" aria-hidden="true" width="24" height="24">
+        <use href="/img/sprite.svg#{{ blog.icon }}"></use>
+      </svg>
+      </a>
+    </div>
+      <div class="blog-card__hover-icons">
+    <svg class="hover-icon hover-icon--top blog-card__hover-icon" width="70" height="90">
+      <use href="/img/sprite.svg#{{ blog.hoverTop }}"></use>
+    </svg>
+    <svg class="hover-icon hover-icon--bottom blog-card__hover-icon" width="80" height="104">
+      <use href="/img/sprite.svg#{{ blog.hoverBottom }}"></use>
+    </svg>
   </div>
-  <div class="blog-card__meta">
-    <img
-      class="blog-card__author-icon"
-      src="{{ blog.authorIcon }}"
-      alt="{{ blog.authorIconAlt }}"
-      loading="lazy"
-    />
-    <span class="blog-card__author">{{ blog.authorName }}</span>
-    <img
-      class="blog-card__date-icon"
-      src="{{ blog.dateIcon }}"
-      alt="{{ blog.dateIconAlt }}"
-      loading="lazy"
-    />
-    <time class="blog-card__date" datetime="2022-06-20"
-      >{{ blog.dateISO }}</time
-    >
-  </div>
-  <h4 class="blog-card__title">{{ blog.cardTitle }}</h4>
-  <p class="blog-card__description">{{ blog.cardDescription }}</p>
-  <div>
-    <a class="button button--secondary blog-link" href="{{ blog.link }}"
-      >{{ blog.linkText }}</a
-    >
-  </div>
-</article>
+  </article>
 {% endfor %}

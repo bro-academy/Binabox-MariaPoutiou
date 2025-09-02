@@ -1,9 +1,11 @@
 {
   "header": {
-    "burgerImg": "/img/menu-2x.webp",
-    "logolink": "https://via.placeholder.com/150",
-    "logoimg": "/img/binaboxlogo-2x.webp",
-    "logoalt": "Binabox-logo",
+    "logolink": "index.html",
+    "logoImgSmall": "binabox-icon",
+    "logoAltSmall": "Binabox logo",
+    "logoImgWhite": "binabox-logo-white",
+    "burgerIcon": "burger-icon",
+    "burgerAlt": "burger icon",
     "nav": [
       {
         "text": "Home",
@@ -25,16 +27,16 @@
   },
 
   "headerSearch": {
-    "headerPlaceholder": "Search"
+    "headerPlaceholder": "Search",
+    "icon": "search-icon",
+    "iconAlt": "search icon"
   },
 
   "headerButtons": {
     "textSecondary": "Discord",
-    "imgSecondary": "https://via.placeholder.com/150",
-    "altSecondary": "Discord icon",
-    "textPrimary": "Connect",
-    "imgPrimary": "https://via.placeholder.com/150",
-    "altPrimary": "Connect icon"
+    "imgSecondary": "discord-icon",
+    "imgPrimary": "connect-icon",
+    "textPrimary": "Connect"
   },
 
   "heroSection": {
@@ -81,13 +83,17 @@
   },
 
   "catalogSection": {
-    "title": "Catalog"
+    "title": "Catalog",
+    "img": "folder-icon",
+    "imgAlt": "folder icon"
   },
 
   "catalogButtons": {
-    "all": "See all",
-    "prev": "#",
-    "next": "#"
+    "prevImg": "arrow-left",
+    "prevAlt": "arrow icon left",
+    "nextImg": "arrow-right",
+    "nextAlt": "arrow icon left",
+    "all": "See all"
   },
 
   "products": [
@@ -99,7 +105,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-cat",
@@ -109,7 +117,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-scissors",
@@ -119,7 +129,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-digital-card",
@@ -129,7 +141,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "img": "product-console",
@@ -139,7 +153,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "homepage"
+      "section": "homepage",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -150,7 +166,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -161,7 +179,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -172,7 +192,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -183,7 +205,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -194,7 +218,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -205,7 +231,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -216,7 +244,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -227,7 +257,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
 
     {
@@ -238,7 +270,9 @@
       "name": "Name Product",
       "buttonOne": "Favourites",
       "buttonTwo": "Buy",
-      "section": "catalog"
+      "section": "catalog",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     }
   ],
 
@@ -251,16 +285,19 @@
       "img": "sonic-live-face",
       "alt": "abstract cyber face illustration",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": false,
       "custom": false
     },
@@ -268,16 +305,19 @@
       "img": "sonic-live-skeleton",
       "alt": "futiristc skeleton in front of smoke",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": true
     },
@@ -285,16 +325,19 @@
       "img": "sonic-live-cat",
       "alt": "cyber looking cat with green eyes glowing in the dark",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": false
     },
@@ -302,16 +345,19 @@
       "img": "sonic-live-gorilla",
       "alt": "AI-enhanced gorilla with piercing eyes and cybernetic effects",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": false
     },
@@ -320,16 +366,19 @@
       "img": "sonic-live-console",
       "alt": "cyberpunk holographic game console",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": false,
       "custom": false
     },
@@ -338,16 +387,19 @@
       "img": "sonic-live-duck",
       "alt": "futuristic duck with a digital background and neon elements",
       "label": "NFT",
-      "authorIcon": "https://via.placeholder.com/150",
+      "authorIcon": "person-icon",
       "authorIconAlt": "person icon",
       "authorName": "Tony Nguyen",
-      "dateIcon": "https://via.placeholder.com/150",
+      "dateIcon": "calendar-icon",
       "dateIconAlt": "calendar icon",
       "dateISO": "20 Jun 2022",
       "cardTitle": "Sonic Live",
       "cardDescription": "One September 22, 2021 A volutpat nulla eros, nulla ultric",
       "linkText": "Read more",
+      "icon": "arrow-right",
       "link": "https://via.placeholder.com/150",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "isSmall": true,
       "custom": true
     }
@@ -366,19 +418,27 @@
   "aboutCard": [
     {
       "title": "High quality",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Big collection",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Top resource",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     },
     {
       "title": "Big community",
-      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom"
     }
   ],
 
@@ -392,35 +452,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -430,35 +492,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -468,35 +532,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -506,35 +572,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -544,35 +612,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -582,35 +652,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -620,35 +692,37 @@
       "alt": "Portrait of Jason Smith",
       "name": "Jason Smith",
       "role": "Co-Founder",
+      "hoverTop": "hover-top",
+      "hoverBottom": "hover-bottom",
       "socials": [
         {
           "platform": "Twitter",
           "link": "https://x.com/?lang=en&mx=2",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "twitter-icon",
           "alt": "twitter-logo"
         },
         {
           "platform": "Facebook",
           "link": "https://www.facebook.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "facebook-icon",
           "alt": "facebook-logo"
         },
         {
           "platform": "Telegram",
           "link": "https://web.telegram.org/k/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "telegram-icon",
           "alt": "telegram-logo"
         },
         {
           "platform": "LinkedIn",
           "link": "https://www.linkedin.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "linkedin-icon",
           "alt": "linkedin-logo"
         },
         {
           "platform": "Instagram",
           "link": "https://www.instagram.com/",
-          "icon": "https://via.placeholder.com/150",
+          "icon": "instagram-icon",
           "alt": "instagram-logo"
         }
       ]
@@ -662,18 +736,30 @@
   "faqsItem": [
     {
       "question": "What are the NFTs?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     },
     {
       "question": "How do i get NFTs?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     },
     {
       "question": "How can we buy your NFTs",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     },
     {
       "question": "Who are the team behind the project?",
+      "icon": "minus-icon",
+      "iconOpen": "plus-icon",
+      "altIcon": "open marker",
       "answer": "#"
     }
   ],
@@ -729,10 +815,10 @@
     "caption": "Photo caption",
     "title": "The Basilisks NFT",
     "label": "Gaming",
-    "authorIcon": "https://via.placeholder.com/150",
+    "authorIcon": "person-icon",
     "authorIconAlt": "person-icon",
     "author": "Tony Nguyen",
-    "dateIcon": "https://via.placeholder.com/150",
+    "dateIcon": "calendar-icon",
     "dateIconAlt": "calendar",
     "datetime": "20 Jun 2022"
   },
@@ -751,15 +837,23 @@
     "secondItemSuffix": "on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.",
     "list": [
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 1"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 2"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 3"
       },
       {
+        "listIcon": "binabox-icon",
+        "listIconAlt": "binabox icon",
         "item": "List name 4"
       }
     ]
@@ -767,7 +861,7 @@
 
   "quoteWrapper": {
     "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
-    "icon": "https://via.placeholder.com/150",
+    "icon": "star-icon",
     "iconAlt": "star icon",
     "value": "8.5/10",
     "author": "Markout Corporation",
@@ -815,17 +909,17 @@
     "title": "Share:",
     "socials": [
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "twitter-icon",
         "alt": "twitter-logo",
         "link": "https://x.com/?lang=en&mx=2"
       },
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "facebook-icon",
         "alt": "facebook-logo",
         "link": "https://www.facebook.com/"
       },
       {
-        "icon": "https://via.placeholder.com/150",
+        "icon": "instagram-icon",
         "alt": "instagram-logo",
         "link": "https://www.instagram.com/"
       }
@@ -899,7 +993,7 @@
   "footer": {
     "title": "Binabox",
     "logolink": "https://via.placeholder.com/150",
-    "logoimg": "https://via.placeholder.com/150",
+    "logoimg": "binabox-logo-blue",
     "logoalt": "Binabox logo",
     "description": "We are the best way to check the rarity of NFT collection",
     "copyright": "BINABOX 2022 - All rights reserved"
@@ -907,33 +1001,33 @@
 
   "footerSocials": [
     {
-      "link": "https://www.instagram.com/",
-      "img": "https://via.placeholder.com/150",
-      "alt": "Instagram-logo"
+      "link": "https://x.com/",
+      "img": "twitter-icon",
+      "alt": "twitter-logo"
     },
     {
       "link": "https://www.facebook.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "facebook-icon",
       "alt": "Facebook-logo"
     },
     {
       "link": "https://web.telegram.org/k/",
-      "img": "https://via.placeholder.com/150",
+      "img": "telegram-icon",
       "alt": "Telegram-logo"
     },
     {
       "link": "https://www.youtube.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "youtube-icon",
       "alt": "YouTube-logo"
     },
     {
       "link": "https://www.tiktok.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "tiktok-icon",
       "alt": "TikTok-logo"
     },
     {
       "link": "https://discord.com/",
-      "img": "https://via.placeholder.com/150",
+      "img": "discord-icon",
       "alt": "Discord-logo"
     }
   ],
@@ -952,11 +1046,13 @@
   },
 
   "catalogFilter": {
-    "text": "Filters"
+    "text": "Filters",
+    "icon": "filter-lines"
   },
 
   "dropdownFilter": {
     "placeholder": "Sort by",
+    "icon": "arrow-down",
     "placeholderValue": "options",
     "options": [
       {
@@ -982,46 +1078,67 @@
     "name": "search",
     "maxlength": 30,
     "placeholder": "Search NFT",
-    "autocomplete": "on"
+    "autocomplete": "on",
+    "icon": "search-icon"
   },
 
-  "asideForm": {
-    "action": "https://some-url.com",
-    "method": "post"
-  },
+  "catalogHeaderButtons": [
+    {
+      "label": "NFT",
+      "icon": "x-icon"
+    },
+    {
+      "label": "ICO",
+      "icon": "x-icon"
+    },
+    {
+      "label": "Crypto",
+      "icon": "x-icon"
+    },
+    {
+      "label": "Clear all"
+    }
+  ],
 
   "asideClothing": {
     "title": "Clothing",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "clothes",
     "type": "checkbox",
     "options": [
       {
         "value": "Combatant",
         "label": "Combatant",
+        "icon": "check-icon",
         "id": "combatant"
       },
 
       {
         "value": "Ninja",
         "label": "Ninja",
+        "icon": "check-icon",
         "id": "ninja"
       },
 
       {
         "value": "King",
         "label": "King",
+        "icon": "check-icon",
         "id": "king"
       },
 
       {
         "value": "Queen",
         "label": "Queen",
+        "icon": "check-icon",
         "id": "queen"
       },
 
       {
         "value": "Robot",
         "label": "Robot",
+        "icon": "check-icon",
         "id": "robot"
       }
     ]
@@ -1029,6 +1146,8 @@
 
   "asideEyes": {
     "title": "Eyes",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "eyes",
     "type": "radio",
     "options": [
@@ -1058,41 +1177,53 @@
   "asideTextBlocks": [
     {
       "title": "Face",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     },
     {
       "title": "Skin",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     },
     {
       "title": "Background",
+      "iconClosed": "plus-icon",
+      "iconOpen": "minus-icon",
       "text": "#"
     }
   ],
 
   "asideSpecial": {
     "title": "Special",
+    "iconClosed": "plus-icon",
+    "iconOpen": "minus-icon",
     "name": "special",
     "type": "checkbox",
     "options": [
       {
         "label": "Yellow",
         "value": "Yellow",
+        "icon": "check-icon",
         "id": "yellow"
       },
       {
         "label": "Green",
         "value": "Green",
+        "icon": "check-icon",
         "id": "green"
       },
       {
         "label": "Mix",
         "value": "Mix",
+        "icon": "check-icon",
         "id": "mix"
       },
       {
         "label": "Orange",
         "value": "Orange",
+        "icon": "check-icon",
         "id": "orange"
       }
     ]
@@ -1120,19 +1251,19 @@
   "formHeader": {
     "list": [
       {
-        "img": "https://via.placeholder.com/150",
+        "img": "location-icon",
         "alt": "location-icon",
         "title": "Location",
         "details": "2163 Phillips Gap Rd"
       },
       {
-        "img": "https://via.placeholder.com/150",
-        "alt": "email-icon",
+        "img": "mail-icon",
+        "alt": "mail-icon",
         "title": "Email",
         "details": "Info.avitex@gmail.com"
       },
       {
-        "img": "https://via.placeholder.com/150",
+        "img": "phone-icon",
         "alt": "phone-icon",
         "title": "Phone",
         "details": "+1 666 8888"

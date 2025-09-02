@@ -107,6 +107,9 @@
 
   &__meta {
     margin-block-start: $margin-3xl;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__author,
@@ -147,9 +150,20 @@
   object-position: center 20%;
 }
 
-.blog-link {
+.blog {
+
+&-link {
   font-size: $font-size-md;
   height: 40px;
   padding-block: $padding-2xs;
   padding-inline: $padding-xl;
+}
+
+&-link__img {
+  margin-left: 8px;
+}
+}
+
+.blog-card:hover .hover-icon {
+  opacity: 1;
 }

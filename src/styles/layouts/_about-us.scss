@@ -109,3 +109,7 @@
     z-index: 1;
   }
 }
+
+.about-list__item:hover .hover-icon {
+  opacity: 1;
+}

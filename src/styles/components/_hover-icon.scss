@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hover-icon {
+  position: absolute;
+  color: #0265dc;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.hover-icon--top {
+  top: 0;
+  left: 0;
+}
+
+.hover-icon--bottom {
+  bottom: 0;
+  right: 0;
+}
+
+
+
+

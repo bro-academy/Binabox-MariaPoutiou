@@ -1,59 +1,30 @@
 {% set header = mainArticleHeader %}
 <figure class="blog-article__figure">
   <picture class="blog-article__picture">
-    <source
-      srcset="/img/{{ header.img }}-1x.avif 1x, /img/{{ header.img }}-2x.avif 2x"
-      type="image/avif"
-    />
-    <source
-      srcset="/img/{{ header.img }}-1x.webp 1x, /img/{{ header.img }}-2x.webp 2x"
-      type="image/webp"
-    />
-    <img
-      class="blog-article__img"
-      src="/img/{{ header.img }}-2x.webp"
-      alt="{{ header.alt }}"
-      width="1200"
-      height="557"
-      loading="lazy"
-    />
+    <source srcset="/img/{{ header.img }}-1x.avif 1x, /img/{{ header.img }}-2x.avif 2x" type="image/avif"/>
+    <source srcset="/img/{{ header.img }}-1x.webp 1x, /img/{{ header.img }}-2x.webp 2x" type="image/webp"/>
+    <img class="blog-article__img" src="/img/{{ header.img }}-2x.webp" alt="{{ header.alt }}" width="1200" height="557" loading="lazy"/>
   </picture>
   <figcaption class="blog-article__caption">{{ header.caption }}</figcaption>
 </figure>
 <h2 class="blog-article__title">{{ header.title }}</h2>
 <div class="blog-article__label">{{ header.label }}</div>
 <div class="blog-article__meta">
-  <img
-    class="blog-article__author-icon"
-    src="{{ header.authorIcon }}"
-    alt="{{ header.authorIconAlt }}"
-    width="16"
-    height="16"
-    loading="lazy"
-  />
+  <svg class="blog-article__author-icon" width="16" height="16" aria-label="{{ header.authorIconAlt }}">
+    <use href="/img/sprite.svg#{{ header.authorIcon }}"></use>
+  </svg>
   <span class="blog-article__author">{{ header.author }}</span>
-  <img
-    class="blog-article__date-icon"
-    src="{{ header.dateIcon }}"
-    alt="{{ header.dateIconAlt }}"
-    width="16"
-    height="16"
-    loading="lazy"
-  />
-  <time class="blog-article__date" datetime="2022-06-20"
-    >{{ header.datetime }}</time
-  >
+  <svg class="blog-article__author-icon" width="16" height="16" aria-label="{{ header.dateIconAlt }}">
+    <use href="/img/sprite.svg#{{ header.dateIcon }}"></use>
+  </svg>
+  <time class="blog-article__date" datetime="2022-06-20">{{ header.datetime }}</time>
 </div>
 <p class="blog-article__text">
   {{ mainArticle.textPrefix }}
-  <strong class="blog-article__word-bg"
-    >{{ mainArticle.highlightedWord }}</strong
-  >
+  <strong class="blog-article__word-bg">{{ mainArticle.highlightedWord }}</strong>
   {{ mainArticle.textSuffix }}
   <a class="blog-article__link" href="{{ mainArticle.highlightedWordLink }}">
-    <strong class="blog-article__word"
-      >{{ mainArticle.highlightedWordNew }}</strong
-    >
+    <strong class="blog-article__word">{{ mainArticle.highlightedWordNew }}</strong>
   </a>
   {{ mainArticle.textAfterSuffix }}
 </p>
@@ -69,7 +40,12 @@
 </ul>
 <ul class="blog-article__list">
   {% for text in mainArticle.list %}
-  <li class="blog-article__item">{{ text.item }}</li>
+    <div class="blog-article__list-wrapper">
+      <svg class="blog-article__list-icon" width="24" height="24" aria-label="{{ text.listIconAlt }}">
+        <use href="/img/sprite.svg#{{ text.listIcon }}"></use>
+      </svg>
+      <li class="blog-article__item">{{ text.item }}</li>
+    </div>
   {% endfor %}
 </ul>
 {% include "partials/quote-wrapper.njk" %}

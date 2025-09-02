@@ -19,7 +19,7 @@
 
   &__socials-link {
     color: $color-text-tertiary;
-    line-height: $line-height-sm;
+    height: 16px;
     align-items: center;
 
     @include link-style(false);
@@ -31,6 +31,16 @@
 }
 
 .social-media-list--team {
-  display: inline-block;
+  display: flex;
+  gap: 8px;
   flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.social-media__icon {
+  color: #F5F8FB;
+}
+
+.social-media__link {
+@include link-style;
 }

@@ -8,6 +8,14 @@
     <li class="about-list__item">
       <h4 class="about-list__title">{{ item.title }}</h4>
       <p class="about-list__description">{{ item.description }}</p>
+        <div class="about-list__hover-icons">
+    <svg class="hover-icon hover-icon--top about-list__hover-icon" width="70" height="90">
+      <use href="/img/sprite.svg#{{ item.hoverTop }}"></use>
+    </svg>
+    <svg class="hover-icon hover-icon--bottom about-list__hover-icon" width="80" height="104">
+      <use href="/img/sprite.svg#{{ item.hoverBottom }}"></use>
+    </svg>
+  </div>
     </li>
     {% endfor %}
   </ul>

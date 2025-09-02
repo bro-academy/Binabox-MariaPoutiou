@@ -4,7 +4,15 @@
 .footer {
   background-color: $color-background-block-light;
   padding-block: $padding-4xl $padding-3xl;
-  padding-inline: $padding-4xl;
+  padding-inline: 16px;
+
+  @include tablet {
+    padding-inline: 24px;
+  }
+
+  @include laptop {
+    padding-inline: 64px;
+  }
 
   &-upper {
     display: flex;
@@ -28,7 +36,7 @@
     border-top: 1px solid $color-background-block-secondary;
     padding-top: $padding-3xl;
 
-    @include laptop {
+    @include tablet {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
@@ -82,7 +90,9 @@
 }
 
 .social-media__list-item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 40px;
 }
 
 .social-media-list--footer {

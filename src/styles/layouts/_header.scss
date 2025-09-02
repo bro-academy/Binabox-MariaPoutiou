@@ -53,12 +53,24 @@
   &-logo {
     display: flex;
     align-items: center;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   &-logo__image {
     height: 40px;
     width: auto;
     gap: $gap-3xl;
+  }
+
+  &-logo__alt {
+    display: none;
+
+    @include laptop {
+      display: flex;
+    }
   }
 
   &-section {
@@ -96,6 +108,12 @@
   }
 
   &-search {
+    &__icon {
+      position: absolute;
+      left: 12px;
+      pointer-events: none;
+    }
+
     @include laptop {
       display: flex;
       align-items: center;
@@ -118,24 +136,46 @@
     height: 48px;
     text-indent: -9999px;
     overflow: hidden;
+    padding-inline: 0;
+    align-items: center;
 
     @include laptop {
+      display: flex;
+      gap: 8px;
+      align-items: center;
       text-indent: initial;
       overflow: initial;
       width: auto;
       height: auto;
+      padding-inline: 24px;
     }
   }
 
   &__button-primary {
     text-indent: -9999px;
     overflow: hidden;
+    padding-inline: 12px;
 
     @include tablet {
+      display: flex;
+      gap: 8px;
+      align-items: center;
       text-indent: initial;
       overflow: initial;
       width: auto;
       height: auto;
+      padding-inline: 24px;
     }
   }
+
+  &-button__img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
